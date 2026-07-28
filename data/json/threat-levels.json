@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Trivial",
+        "level_adjustment": -2
+    },
+    {
+        "name": "Low",
+        "level_adjustment": -1
+    },
+    {
+        "name": "Moderate",
+        "level_adjustment": 0
+    },
+    {
+        "name": "Severe",
+        "level_adjustment": 1
+    },
+    {
+        "name": "Extreme",
+        "level_adjustment": 2
+    }
+]

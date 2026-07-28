@@ -3,162 +3,162 @@
     "name": "Alchemist",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=56",
-    "summary": "Smart and resourceful, the alchemist crafts alchemical items such as bombs, elixirs, and poisons that they use to defeat foes and aid allies."
+    "description": "Smart and resourceful, the alchemist crafts alchemical items such as bombs, elixirs, and poisons that they use to defeat foes and aid allies."
   },
   {
     "name": "Animist",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=64",
-    "summary": "Animists gain magical spells from spirits called apparitions that they attune to, choosing new apparitions as the circumstances demand."
+    "description": "Animists gain magical spells from spirits called apparitions that they attune to, choosing new apparitions as the circumstances demand."
   },
   {
     "name": "Barbarian",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=57",
-    "summary": "The barbarian is a fearsome embodiment of rage, unleashing the unstoppable power of their fury against anyone who stands in their way."
+    "description": "The barbarian is a fearsome embodiment of rage, unleashing the unstoppable power of their fury against anyone who stands in their way."
   },
   {
     "name": "Bard",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=32",
-    "summary": "An artist and a scholar, the bard uses performance and esoteric learning to bolster their companions and foil their enemies. Sometimes sneaky."
+    "description": "An artist and a scholar, the bard uses performance and esoteric learning to bolster their companions and foil their enemies. Sometimes sneaky."
   },
   {
     "name": "Champion",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=58",
-    "summary": "Wielding a weapon of their faith, the champion fights for a cause espoused by their deity. A champion is steadfast in their beliefs."
+    "description": "Wielding a weapon of their faith, the champion fights for a cause espoused by their deity. A champion is steadfast in their beliefs."
   },
   {
     "name": "Cleric",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=33",
-    "summary": "The cleric is dedicated to the worship of a single deity and draws divine magic from this devotion. Clerics can be vastly different."
+    "description": "The cleric is dedicated to the worship of a single deity and draws divine magic from this devotion. Clerics can be vastly different."
   },
   {
     "name": "Commander",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=66",
-    "summary": "The commander is a battlefield leader whose clever use of tactics and knowledge of war can turn the tide of any fight"
+    "description": "The commander is a battlefield leader whose clever use of tactics and knowledge of war can turn the tide of any fight"
   },
   {
     "name": "Druid",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=34",
-    "summary": "The druid walks the wild, primordial places of the world without fear, harnessing the primal magic of nature and controlling it with calm purpose."
+    "description": "The druid walks the wild, primordial places of the world without fear, harnessing the primal magic of nature and controlling it with calm purpose."
   },
   {
     "name": "Exemplar",
     "rarity": "Rare",
     "url": "/Classes.aspx?ID=65",
-    "summary": "Exemplars channel a spark of divine power through sacred relics called ikons and draw power from the epithets they build for themselves."
+    "description": "Exemplars channel a spark of divine power through sacred relics called ikons and draw power from the epithets they build for themselves."
   },
   {
     "name": "Fighter",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=35",
-    "summary": "With calculated daring and fearless determination, the fighter confronts their enemies while defending allies from harm. A master of the battlefield."
+    "description": "With calculated daring and fearless determination, the fighter confronts their enemies while defending allies from harm. A master of the battlefield."
   },
   {
     "name": "Guardian",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=67",
-    "summary": "The guardian is a defensive combatant who focuses on squeezing every last drop of protection from their armor."
+    "description": "The guardian is a defensive combatant who focuses on squeezing every last drop of protection from their armor."
   },
   {
     "name": "Gunslinger",
     "rarity": "Uncommon",
     "url": "/Classes.aspx?ID=20",
-    "summary": "While most people can fire a gun or crossbow, a gunslinger knows such weapons better than anyone."
+    "description": "While most people can fire a gun or crossbow, a gunslinger knows such weapons better than anyone."
   },
   {
     "name": "Inventor",
     "rarity": "Uncommon",
     "url": "/Classes.aspx?ID=19",
-    "summary": "Any tinkerer can follow a diagram to make a device, but the inventor creates the impossible and challenges the boundaries of reality."
+    "description": "Any tinkerer can follow a diagram to make a device, but the inventor creates the impossible and challenges the boundaries of reality."
   },
   {
     "name": "Investigator",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=59",
-    "summary": "Clever and insightful, the investigator solves mysteries and teems with knowledge. In battle, they play out every possibility in advance."
+    "description": "Clever and insightful, the investigator solves mysteries and teems with knowledge. In battle, they play out every possibility in advance."
   },
   {
     "name": "Kineticist",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=23",
-    "summary": "Elemental matter blasts from a magical gate within every kineticist. Shaping these elements into magical impulses, a kineticist can fight nonstop"
+    "description": "Elemental matter blasts from a magical gate within every kineticist. Shaping these elements into magical impulses, a kineticist can fight nonstop"
   },
   {
     "name": "Magus",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=17",
-    "summary": "The magus, a polymath of battle, trains in both spells and strikes. Combining these arts, a magus channels spells into their weapon or body"
+    "description": "The magus, a polymath of battle, trains in both spells and strikes. Combining these arts, a magus channels spells into their weapon or body"
   },
   {
     "name": "Monk",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=60",
-    "summary": "The monk seeks perfection in all things, including using their body as the perfect weapon. They can transform into a blur of deadly blows."
+    "description": "The monk seeks perfection in all things, including using their body as the perfect weapon. They can transform into a blur of deadly blows."
   },
   {
     "name": "Oracle",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=61",
-    "summary": "The oracle is a paradox of divine magic, able to tap into energies that grant potent revelations. Such power comes at the cost of a curse."
+    "description": "The oracle is a paradox of divine magic, able to tap into energies that grant potent revelations. Such power comes at the cost of a curse."
   },
   {
     "name": "Psychic",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=68",
-    "summary": "Guided by the personal combination of their subconscious and conscious mind, a psychic calls forth occult magic with but a thought."
+    "description": "Guided by the personal combination of their subconscious and conscious mind, a psychic calls forth occult magic with but a thought."
   },
   {
     "name": "Ranger",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=36",
-    "summary": "Resourceful and cunning, the ranger is a hunter, tracker, and warrior who preserves the natural world and protects civilization from its ravages."
+    "description": "Resourceful and cunning, the ranger is a hunter, tracker, and warrior who preserves the natural world and protects civilization from its ravages."
   },
   {
     "name": "Rogue",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=37",
-    "summary": "Cunning and quick, the rogue brings skill and expertise few of their comrades can match. In battle, they excel at sneak attacks and ambushes."
+    "description": "Cunning and quick, the rogue brings skill and expertise few of their comrades can match. In battle, they excel at sneak attacks and ambushes."
   },
   {
     "name": "Sorcerer",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=62",
-    "summary": "The intense magic the sorcerer commands comes from neither study nor worship it comes from their blood, the power of their heritage flowing through their veins."
+    "description": "The intense magic the sorcerer commands comes from neither study nor worship it comes from their blood, the power of their heritage flowing through their veins."
   },
   {
     "name": "Summoner",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=18",
-    "summary": "A summoner acts as the living anchor to a powerful being called an eidolon, which they call upon for aid."
+    "description": "A summoner acts as the living anchor to a powerful being called an eidolon, which they call upon for aid."
   },
   {
     "name": "Swashbuckler",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=63",
-    "summary": "To a swashbuckler, anything worth doing is worth doing with style. This dynamic daredevil performs flamboyant attacks and bold feats of derring-do."
+    "description": "To a swashbuckler, anything worth doing is worth doing with style. This dynamic daredevil performs flamboyant attacks and bold feats of derring-do."
   },
   {
     "name": "Thaumaturge",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=69",
-    "summary": "The thaumaturge has seen every monster and knows every secret."
+    "description": "The thaumaturge has seen every monster and knows every secret."
   },
   {
     "name": "Witch",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=38",
-    "summary": "The witch is a versatile spellcaster who learns their magic from a familiar, sent to them by a powerful and mysterious patron."
+    "description": "The witch is a versatile spellcaster who learns their magic from a familiar, sent to them by a powerful and mysterious patron."
   },
   {
     "name": "Wizard",
     "rarity": "Common",
     "url": "/Classes.aspx?ID=39",
-    "summary": "The wizard is the arcane master of spellcasting, plucking incredible power from reality through complicated spell formulas."
+    "description": "The wizard is the arcane master of spellcasting, plucking incredible power from reality through complicated spell formulas."
   }
 ]

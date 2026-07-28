@@ -4,26 +4,26 @@
         "name": "Balance",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Traverse a narrow surface or avoid falling.",
+        "description": "Traverse a narrow surface or avoid falling.",
         "sample_tasks": [
             {
-                "summary": "Walking through tangled roots or on uneven cobblestones.",
+                "description": "Walking through tangled roots or on uneven cobblestones.",
                 "training": "Untrained"
             },
             {
-                "summary": "Walking across a wooden beam.",
+                "description": "Walking across a wooden beam.",
                 "training": "Trained"
             },
             {
-                "summary": "Walking across deep, loose gravel.",
+                "description": "Walking across deep, loose gravel.",
                 "training": "Expert"
             },
             {
-                "summary": "Walking across a tight rope or over a smooth sheet of ice.",
+                "description": "Walking across a tight rope or over a smooth sheet of ice.",
                 "training": "Master"
             },
             {
-                "summary": "Walking along a razor's edge or running across chunks of flooring falling in midair.",
+                "description": "Walking along a razor's edge or running across chunks of flooring falling in midair.",
                 "training": "Legendary"
             }
         ]
@@ -33,10 +33,10 @@
         "name": "Tumble Through",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Evade an enemy by tumbling through their space or any space they threaten.",
+        "description": "Evade an enemy by tumbling through their space or any space they threaten.",
         "sample_tasks": [
             {
-                "summary": "Tumbling around an enemy to get past them without being hit.",
+                "description": "Tumbling around an enemy to get past them without being hit.",
                 "training": "Untrained"
             }
         ]
@@ -46,22 +46,22 @@
         "name": "Maneuver in Flight",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Attempting a difficult maneuver while flying.",
+        "description": "Attempting a difficult maneuver while flying.",
         "sample_tasks": [
             {
-                "summary": "Making a steep ascent or descent.",
+                "description": "Making a steep ascent or descent.",
                 "training": "Trained"
             },
             {
-                "summary": "Flying against the wind or through turbulent air.",
+                "description": "Flying against the wind or through turbulent air.",
                 "training": "Expert"
             },
             {
-                "summary": "Reversing direction and flying backwards.",
+                "description": "Reversing direction and flying backwards.",
                 "training": "Master"
             },
             {
-                "summary": "Flying through gale force winds.",
+                "description": "Flying through gale force winds.",
                 "training": "Legendary"
             }
         ]
@@ -71,14 +71,14 @@
         "name": "Squeeze",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Contorting to squeeze through a space so small one can barely fit through.",
+        "description": "Contorting to squeeze through a space so small one can barely fit through.",
         "sample_tasks": [
             {
-                "summary": "Squeezing through a space barely fitting the character's shoulders.",
+                "description": "Squeezing through a space barely fitting the character's shoulders.",
                 "training": "Trained"
             },
             {
-                "summary": "Squeezing through a space barely fitting the character's head.",
+                "description": "Squeezing through a space barely fitting the character's head.",
                 "training": "Master"
             }
         ]
@@ -88,26 +88,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall Knowledge about arcane theories; magic traditions; creatures of arcane significance (like constructs, beasts, and elementals); and the Astral Plane, Elemental Planes, and the Netherworld.",
+        "description": "Recall Knowledge about arcane theories; magic traditions; creatures of arcane significance (like constructs, beasts, and elementals); and the Astral Plane, Elemental Planes, and the Netherworld.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of an important spellcaster or common magical creature.",
+                "description": "Recalling the name of an important spellcaster or common magical creature.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling something about a common or uncommon magical tradition or creature.",
+                "description": "Recalling something about a common or uncommon magical tradition or creature.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling specific details about a common or uncommon magical tradition or creature.",
+                "description": "Recalling specific details about a common or uncommon magical tradition or creature.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details about a commmon, uncommon or rare magical tradition or creature.",
+                "description": "Recalling obscure details about a commmon, uncommon or rare magical tradition or creature.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about any magical tradition or creature.",
+                "description": "Recalling obscure, secret or forgotten details about any magical tradition or creature.",
                 "training": "Legendary"
             }
         ]
@@ -117,10 +117,10 @@
         "name": "Borrow an Arcane Spell",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Prepare a spell from another spellcaster's spellbook or collection of spells.",
+        "description": "Prepare a spell from another spellcaster's spellbook or collection of spells.",
         "sample_tasks": [
             {
-                "summary": "Preparing a spell from another spellcaster's spellbook or collection of spells.",
+                "description": "Preparing a spell from another spellcaster's spellbook or collection of spells.",
                 "training": "Trained"
             }
         ]
@@ -130,22 +130,22 @@
         "name": "Decipher Writing",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Decipher a script about arcane theories or spells.",
+        "description": "Decipher a script about arcane theories or spells.",
         "sample_tasks": [
             {
-                "summary": "Deciphering an entry-level philosophical treatise on magic.",
+                "description": "Deciphering an entry-level philosophical treatise on magic.",
                 "training": "Trained"
             },
             {
-                "summary": "Deciphering a complex spell or ritual text.",
+                "description": "Deciphering a complex spell or ritual text.",
                 "training": "Expert"
             },
             {
-                "summary": "Deciphering advanced research notes on a complex magical topic.",
+                "description": "Deciphering advanced research notes on a complex magical topic.",
                 "training": "Master"
             },
             {
-                "summary": "Deciphering ancient runes or magical script that hasn't been seen for eons.",
+                "description": "Deciphering ancient runes or magical script that hasn't been seen for eons.",
                 "training": "Legendary"
             }
         ]
@@ -155,10 +155,10 @@
         "name": "Identify Magic",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Identify a spell from the arcane tradition.",
+        "description": "Identify a spell from the arcane tradition.",
         "sample_tasks": [
             {
-                "summary": "Identifying a spell cast by a wizard.",
+                "description": "Identifying a spell cast by a wizard.",
                 "training": "Trained"
             }
         ]
@@ -168,10 +168,10 @@
         "name": "Learn a Spell",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Learn a new spell from the arcane tradition.",
+        "description": "Learn a new spell from the arcane tradition.",
         "sample_tasks": [
             {
-                "summary": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+                "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
                 "training": "Trained"
             }
         ]
@@ -181,26 +181,26 @@
         "name": "Climb",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Climb up, down or across an incline, wall or other obstacle.",
+        "description": "Climb up, down or across an incline, wall or other obstacle.",
         "sample_tasks": [
             {
-                "summary": "Climbing a ladder, steep slope or low-branched tree.",
+                "description": "Climbing a ladder, steep slope or low-branched tree.",
                 "training": "Untrained"
             },
             {
-                "summary": "Climbing up a ship's rigging, a hanging rope or a typical tree.",
+                "description": "Climbing up a ship's rigging, a hanging rope or a typical tree.",
                 "training": "Trained"
             },
             {
-                "summary": "Climbing a wall with small handholds and footholds.",
+                "description": "Climbing a wall with small handholds and footholds.",
                 "training": "Expert"
             },
             {
-                "summary": "Climbing across a ceiling with handholds and footholds or up a rock wall.",
+                "description": "Climbing across a ceiling with handholds and footholds or up a rock wall.",
                 "training": "Master"
             },
             {
-                "summary": "Climbing up a smooth vertical surface such as a glass wall or a sheer ice wall.",
+                "description": "Climbing up a smooth vertical surface such as a glass wall or a sheer ice wall.",
                 "training": "Legendary"
             }
         ]
@@ -210,26 +210,26 @@
         "name": "Force Open",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Forcefully open a door, window, container or heavy gate using a tool or one's body.",
+        "description": "Forcefully open a door, window, container or heavy gate using a tool or one's body.",
         "sample_tasks": [
             {
-                "summary": "Tearing through fabric or breaking flimsy glass.",
+                "description": "Tearing through fabric or breaking flimsy glass.",
                 "training": "Untrained"
             },
             {
-                "summary": "Breaking ice or sturdy glass.",
+                "description": "Breaking ice or sturdy glass.",
                 "training": "Trained"
             },
             {
-                "summary": "Forcing open a flimsy wooden door or wooden portcullis.",
+                "description": "Forcing open a flimsy wooden door or wooden portcullis.",
                 "training": "Expert"
             },
             {
-                "summary": "Forcing open a sturdy wooden door, iron portcullis or metal bars.",
+                "description": "Forcing open a sturdy wooden door, iron portcullis or metal bars.",
                 "training": "Master"
             },
             {
-                "summary": "Forcing open a heavy stone or iron door.",
+                "description": "Forcing open a heavy stone or iron door.",
                 "training": "Legendary"
             }
         ]
@@ -239,10 +239,10 @@
         "name": "Grapple",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Grab hold of a creature.",
+        "description": "Grab hold of a creature.",
         "sample_tasks": [
             {
-                "summary": "Grabbing a creature and restraining them.",
+                "description": "Grabbing a creature and restraining them.",
                 "training": "Untrained"
             }
         ]
@@ -252,10 +252,10 @@
         "name": "High Jump",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Jump vertically as high as possible after a short run up.",
+        "description": "Jump vertically as high as possible after a short run up.",
         "sample_tasks": [
             {
-                "summary": "Leaping up to grab the top of a wall or ledge.",
+                "description": "Leaping up to grab the top of a wall or ledge.",
                 "training": "Untrained"
             }
         ]
@@ -265,10 +265,10 @@
         "name": "Long Jump",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Jump horizontally as far as possible after a short run.",
+        "description": "Jump horizontally as far as possible after a short run.",
         "sample_tasks": [
             {
-                "summary": "Leaping across a chasm or gap.",
+                "description": "Leaping across a chasm or gap.",
                 "training": "Untrained"
             }
         ]
@@ -278,10 +278,10 @@
         "name": "Reposition",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Bodily move another creature or object around.",
+        "description": "Bodily move another creature or object around.",
         "sample_tasks": [
             {
-                "summary": "Dragging a creature to the side.",
+                "description": "Dragging a creature to the side.",
                 "training": "Untrained"
             }
         ]
@@ -291,10 +291,10 @@
         "name": "Shove",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Push a creature away.",
+        "description": "Push a creature away.",
         "sample_tasks": [
             {
-                "summary": "Shoving a creature away.",
+                "description": "Shoving a creature away.",
                 "training": "Untrained"
             }
         ]
@@ -304,26 +304,26 @@
         "name": "Swim",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Swim through a body of water.",
+        "description": "Swim through a body of water.",
         "sample_tasks": [
             {
-                "summary": "Swimming in a lake or still water.",
+                "description": "Swimming in a lake or still water.",
                 "training": "Untrained"
             },
             {
-                "summary": "Swimming through flowing water, like a river.",
+                "description": "Swimming through flowing water, like a river.",
                 "training": "Trained"
             },
             {
-                "summary": "Swimming through a swiftly flowing river or strong current.",
+                "description": "Swimming through a swiftly flowing river or strong current.",
                 "training": "Expert"
             },
             {
-                "summary": "Swimming through a stormy sea.",
+                "description": "Swimming through a stormy sea.",
                 "training": "Master"
             },
             {
-                "summary": "Swimming through a maelstrom or up a waterfall.",
+                "description": "Swimming through a maelstrom or up a waterfall.",
                 "training": "Legendary"
             }
         ]
@@ -333,10 +333,10 @@
         "name": "Trip",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Knock a creature prone.",
+        "description": "Knock a creature prone.",
         "sample_tasks": [
             {
-                "summary": "Tripping a creature by kicking its legs out from under it.",
+                "description": "Tripping a creature by kicking its legs out from under it.",
                 "training": "Untrained"
             }
         ]
@@ -346,10 +346,10 @@
         "name": "Disarm",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Knock a weapon from a creature's grasp.",
+        "description": "Knock a weapon from a creature's grasp.",
         "sample_tasks": [
             {
-                "summary": "Disarming a creature of its weapon.",
+                "description": "Disarming a creature of its weapon.",
                 "training": "Trained"
             }
         ]
@@ -359,26 +359,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall Knowledge about alchemical reactions, the value of items, engineering, unusual materials, and alchemical or mechanical creatures, such as constructs.",
+        "description": "Recall Knowledge about alchemical reactions, the value of items, engineering, unusual materials, and alchemical or mechanical creatures, such as constructs.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common item or construct.",
+                "description": "Recalling the name of a common item or construct.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling something about a common or uncommon item or construct.",
+                "description": "Recalling something about a common or uncommon item or construct.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling specific details about a common or uncommon item or construct.",
+                "description": "Recalling specific details about a common or uncommon item or construct.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details about a commmon, uncommon or rare item or construct.",
+                "description": "Recalling obscure details about a commmon, uncommon or rare item or construct.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about any item or construct.",
+                "description": "Recalling obscure, secret or forgotten details about any item or construct.",
                 "training": "Legendary"
             }
         ]
@@ -388,10 +388,10 @@
         "name": "Repair",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Fix a broken item.",
+        "description": "Fix a broken item.",
         "sample_tasks": [
             {
-                "summary": "Repairing a cracked wooden shield.",
+                "description": "Repairing a cracked wooden shield.",
                 "training": "Untrained"
             }
         ]
@@ -401,10 +401,10 @@
         "name": "Craft",
         "mode": "Downtime",
         "minimum_training": "Trained",
-        "summary": "Craft an item.",
+        "description": "Craft an item.",
         "sample_tasks": [
             {
-                "summary": "Forging a weapon.",
+                "description": "Forging a weapon.",
                 "training": "Trained"
             }
         ]
@@ -414,10 +414,10 @@
         "name": "Earn Income",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Earn income by crafting or repairing items and goods for the market.",
+        "description": "Earn income by crafting or repairing items and goods for the market.",
         "sample_tasks": [
             {
-                "summary": "Crafting a chair to sell.",
+                "description": "Crafting a chair to sell.",
                 "training": "Trained"
             }
         ]
@@ -427,10 +427,10 @@
         "name": "Identify Alchemy",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Identify alchemical items and reagents.",
+        "description": "Identify alchemical items and reagents.",
         "sample_tasks": [
             {
-                "summary": "Identifying an elixir or alchemical bomb.",
+                "description": "Identifying an elixir or alchemical bomb.",
                 "training": "Trained"
             }
         ]
@@ -440,10 +440,10 @@
         "name": "Create a Diversion",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Distract a creature and draw its attention elsewhere.",
+        "description": "Distract a creature and draw its attention elsewhere.",
         "sample_tasks": [
             {
-                "summary": "Throwing a rock to distract a guard.",
+                "description": "Throwing a rock to distract a guard.",
                 "training": "Untrained"
             }
         ]
@@ -453,10 +453,10 @@
         "name": "Feint",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Perform a feint in combat to leave an opponent off-guard.",
+        "description": "Perform a feint in combat to leave an opponent off-guard.",
         "sample_tasks": [
             {
-                "summary": "Feinting in combat to leave an opponent off-guard.",
+                "description": "Feinting in combat to leave an opponent off-guard.",
                 "training": "Trained"
             }
         ]
@@ -466,10 +466,10 @@
         "name": "Impersonate",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Create a disguise to pass as someone else.",
+        "description": "Create a disguise to pass as someone else.",
         "sample_tasks": [
             {
-                "summary": "Disguising as a guard to gain access to a restricted area.",
+                "description": "Disguising as a guard to gain access to a restricted area.",
                 "training": "Untrained"
             }
         ]
@@ -479,10 +479,10 @@
         "name": "Lie",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Tell a lie to deceive someone.",
+        "description": "Tell a lie to deceive someone.",
         "sample_tasks": [
             {
-                "summary": "Telling a lie to deceive someone.",
+                "description": "Telling a lie to deceive someone.",
                 "training": "Untrained"
             }
         ]
@@ -492,26 +492,26 @@
         "name": "Gather Information",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Canvass local markets, taverns, and gathering places in an attempt to learn about a creature, individual or topic.",
+        "description": "Canvass local markets, taverns, and gathering places in an attempt to learn about a creature, individual or topic.",
         "sample_tasks": [
             {
-                "summary": "Learning the general talk of the town.",
+                "description": "Learning the general talk of the town.",
                 "training": "Untrained"
             },
             {
-                "summary": "Learning a common rumor.",
+                "description": "Learning a common rumor.",
                 "training": "Trained"
             },
             {
-                "summary": "Learning an obscure rumor or poorly guarded secret.",
+                "description": "Learning an obscure rumor or poorly guarded secret.",
                 "training": "Expert"
             },
             {
-                "summary": "Learning well-guarded or esoteric information.",
+                "description": "Learning well-guarded or esoteric information.",
                 "training": "Master"
             },
             {
-                "summary": "Learning information known only to an incredibly select few or only to rare and extraordinary beings.",
+                "description": "Learning information known only to an incredibly select few or only to rare and extraordinary beings.",
                 "training": "Legendary"
             }
         ]
@@ -521,10 +521,10 @@
         "name": "Make an Impression",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Seek to make a good impression on someone to make them temporarily agreeable.",
+        "description": "Seek to make a good impression on someone to make them temporarily agreeable.",
         "sample_tasks": [
             {
-                "summary": "Flattering a noble to gain favor.",
+                "description": "Flattering a noble to gain favor.",
                 "training": "Untrained"
             }
         ]
@@ -534,10 +534,10 @@
         "name": "Request",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Make a request of a creature.",
+        "description": "Make a request of a creature.",
         "sample_tasks": [
             {
-                "summary": "Asking a shopkeeper to lower the price of an item.",
+                "description": "Asking a shopkeeper to lower the price of an item.",
                 "training": "Untrained"
             }
         ]
@@ -547,10 +547,10 @@
         "name": "Coerce",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Threaten a creature into doing what you want.",
+        "description": "Threaten a creature into doing what you want.",
         "sample_tasks": [
             {
-                "summary": "Threatening a guard to gain passage.",
+                "description": "Threatening a guard to gain passage.",
                 "training": "Untrained"
             }
         ]
@@ -560,10 +560,10 @@
         "name": "Demoralize",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Shake an enemy's resolve and frighten them.",
+        "description": "Shake an enemy's resolve and frighten them.",
         "sample_tasks": [
             {
-                "summary": "Scaring a goblin into attacking hesitantly.",
+                "description": "Scaring a goblin into attacking hesitantly.",
                 "training": "Untrained"
             }
         ]
@@ -573,26 +573,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Use knowledge of a specific topic to recall lore.",
+        "description": "Use knowledge of a specific topic to recall lore.",
         "sample_tasks": [
             {
-                "summary": "Recalling a well-known fact about a topic.",
+                "description": "Recalling a well-known fact about a topic.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a commonly-known fact about a topic.",
+                "description": "Recalling a commonly-known fact about a topic.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling an uncommonly-known fact about a topic.",
+                "description": "Recalling an uncommonly-known fact about a topic.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling a rarely-known fact about a topic.",
+                "description": "Recalling a rarely-known fact about a topic.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling a secret or forgotten fact about a topic.",
+                "description": "Recalling a secret or forgotten fact about a topic.",
                 "training": "Legendary"
             }
         ]
@@ -602,10 +602,10 @@
         "name": "Earn Income",
         "mode": "Downtime",
         "minimum_training": "Trained",
-        "summary": "Earn income by using knowledge of a specific topic to practice a trade.",
+        "description": "Earn income by using knowledge of a specific topic to practice a trade.",
         "sample_tasks": [
             {
-                "summary": "Earning a wage as a professional.",
+                "description": "Earning a wage as a professional.",
                 "training": "Trained"
             }
         ]
@@ -615,14 +615,14 @@
         "name": "Administer First Aid",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Administer first aid to a creature that is dying or bleeding.",
+        "description": "Administer first aid to a creature that is dying or bleeding.",
         "sample_tasks": [
             {
-                "summary": "Staunching a wound to stop the bleeding.",
+                "description": "Staunching a wound to stop the bleeding.",
                 "training": "Untrained"
             },
             {
-                "summary": "Stabilizing a dying creature.",
+                "description": "Stabilizing a dying creature.",
                 "training": "Trained"
             }
         ]
@@ -632,26 +632,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall knowledge about diseases, injuries, poisons, and other ailments.",
+        "description": "Recall knowledge about diseases, injuries, poisons, and other ailments.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common disease or poison.",
+                "description": "Recalling the name of a common disease or poison.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a specific detail about a common or uncommon disease or poison.",
+                "description": "Recalling a specific detail about a common or uncommon disease or poison.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling details of a common or uncommon disease or poison.",
+                "description": "Recalling details of a common or uncommon disease or poison.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details of common, uncommon or rare disease or poison.",
+                "description": "Recalling obscure details of common, uncommon or rare disease or poison.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about even the rarest disease or poison.",
+                "description": "Recalling obscure, secret or forgotten details about even the rarest disease or poison.",
                 "training": "Legendary"
             }
         ]
@@ -661,10 +661,10 @@
         "name": "Treat Disease",
         "mode": "Downtime",
         "minimum_training": "Trained",
-        "summary": "Care for and attempt to cure a diseased creature.",
+        "description": "Care for and attempt to cure a diseased creature.",
         "sample_tasks": [
             {
-                "summary": "Providing bed rest and care for a sick creature.",
+                "description": "Providing bed rest and care for a sick creature.",
                 "training": "Trained"
             }
         ]
@@ -674,10 +674,10 @@
         "name": "Treat Poison",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Care for and attempt to cure a poisoned creature.",
+        "description": "Care for and attempt to cure a poisoned creature.",
         "sample_tasks": [
             {
-                "summary": "Treating the symptoms of a poisoned creature.",
+                "description": "Treating the symptoms of a poisoned creature.",
                 "training": "Trained"
             }
         ]
@@ -687,10 +687,10 @@
         "name": "Treat Wounds",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Care for and heal a wounded creature.",
+        "description": "Care for and heal a wounded creature.",
         "sample_tasks": [
             {
-                "summary": "Suturing and bandaging a wounded creature.",
+                "description": "Suturing and bandaging a wounded creature.",
                 "training": "Trained"
             }
         ]
@@ -700,10 +700,10 @@
         "name": "Command an Animal",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Issue a command to an animal and have it obey.",
+        "description": "Issue a command to an animal and have it obey.",
         "sample_tasks": [
             {
-                "summary": "Getting a dog to fetch a stick.",
+                "description": "Getting a dog to fetch a stick.",
                 "training": "Untrained"
             }
         ]
@@ -713,26 +713,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall knowledge about fauna, flora, geography, weather, the environment, creatures of natural origin (like animals, beasts, fey, and plants), the First World, and the Elemental Planes.",
+        "description": "Recall knowledge about fauna, flora, geography, weather, the environment, creatures of natural origin (like animals, beasts, fey, and plants), the First World, and the Elemental Planes.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common animal, plant, or a well-known fact about nature.",
+                "description": "Recalling the name of a common animal, plant, or a well-known fact about nature.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a specific detail about a common or uncommon animal, plant, or natural phenomena.",
+                "description": "Recalling a specific detail about a common or uncommon animal, plant, or natural phenomena.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling details of a common or uncommon animal, plant, or natural phenomena.",
+                "description": "Recalling details of a common or uncommon animal, plant, or natural phenomena.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details of common, uncommon or rare animal, plant, or natural phenomena.",
+                "description": "Recalling obscure details of common, uncommon or rare animal, plant, or natural phenomena.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about even the rarest animal, plant, or natural phenomena.",
+                "description": "Recalling obscure, secret or forgotten details about even the rarest animal, plant, or natural phenomena.",
                 "training": "Legendary"
             }
         ]
@@ -742,10 +742,10 @@
         "name": "Identify Magic",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Identify a spell from the primal tradition.",
+        "description": "Identify a spell from the primal tradition.",
         "sample_tasks": [
             {
-                "summary": "Identifying a spell cast by a druid.",
+                "description": "Identifying a spell cast by a druid.",
                 "training": "Trained"
             }
         ]
@@ -755,10 +755,10 @@
         "name": "Learn a Spell",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Learn a new spell from the primal tradition.",
+        "description": "Learn a new spell from the primal tradition.",
         "sample_tasks": [
             {
-                "summary": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+                "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
                 "training": "Trained"
             }
         ]
@@ -768,26 +768,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall knowledge about ancient mysteries; obscure philosophies; creatures of occult significance (like aberrations, spirits, and oozes); and esoteric planes like the Astral Plane, Creation's Forge, the Ethereal Plane, the Netherworld, and the Void.",
+        "description": "Recall knowledge about ancient mysteries; obscure philosophies; creatures of occult significance (like aberrations, spirits, and oozes); and esoteric planes like the Astral Plane, Creation's Forge, the Ethereal Plane, the Netherworld, and the Void.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common occult mystery, philosophy, creature, or plane.",
+                "description": "Recalling the name of a common occult mystery, philosophy, creature, or plane.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a specific detail about a common or uncommon occult mystery, philosophy, creature, or plane.",
+                "description": "Recalling a specific detail about a common or uncommon occult mystery, philosophy, creature, or plane.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling details of a common or uncommon occult mystery, philosophy, creature, or plane.",
+                "description": "Recalling details of a common or uncommon occult mystery, philosophy, creature, or plane.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details of common, uncommon or rare occult mystery, philosophy, creature, or plane.",
+                "description": "Recalling obscure details of common, uncommon or rare occult mystery, philosophy, creature, or plane.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about even the rarest occult mystery, philosophy, creature, or plane.",
+                "description": "Recalling obscure, secret or forgotten details about even the rarest occult mystery, philosophy, creature, or plane.",
                 "training": "Legendary"
             }
         ]
@@ -797,22 +797,22 @@
         "name": "Decipher Writing",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Decipher Writing on occult topics, including complex metaphysical systems, syncretic principles, obscure philosophies, and incoherent ramblings.",
+        "description": "Decipher Writing on occult topics, including complex metaphysical systems, syncretic principles, obscure philosophies, and incoherent ramblings.",
         "sample_tasks": [
             {
-                "summary": "Deciphering writings on common or well-known occult topics.",
+                "description": "Deciphering writings on common or well-known occult topics.",
                 "training": "Trained"
             },
             {
-                "summary": "Deciphering writings on uncommon or advanced occult topics.",
+                "description": "Deciphering writings on uncommon or advanced occult topics.",
                 "training": "Expert"
             },
             {
-                "summary": "Deciphering writings on rare or extremely complex occult topics.",
+                "description": "Deciphering writings on rare or extremely complex occult topics.",
                 "training": "Master"
             },
             {
-                "summary": "Deciphering writings on occult topics in incomprehensible languages or symbols.",
+                "description": "Deciphering writings on occult topics in incomprehensible languages or symbols.",
                 "training": "Legendary"
             }
         ]
@@ -822,10 +822,10 @@
         "name": "Identify Magic",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Identify a spell from the occult tradition.",
+        "description": "Identify a spell from the occult tradition.",
         "sample_tasks": [
             {
-                "summary": "Identifying a spell cast by a witch.",
+                "description": "Identifying a spell cast by a witch.",
                 "training": "Trained"
             }
         ]
@@ -835,10 +835,10 @@
         "name": "Learn a Spell",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Learn a new spell from the occult tradition.",
+        "description": "Learn a new spell from the occult tradition.",
         "sample_tasks": [
             {
-                "summary": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+                "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
                 "training": "Trained"
             }
         ]
@@ -848,26 +848,26 @@
         "name": "Perform",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Make a brief performance such as one song, a quick dance, or a few jokes.",
+        "description": "Make a brief performance such as one song, a quick dance, or a few jokes.",
         "sample_tasks": [
             {
-                "summary": "Impressing an audience of commoners with a brief performance.",
+                "description": "Impressing an audience of commoners with a brief performance.",
                 "training": "Untrained"
             },
             {
-                "summary": "Impressing an audience of artisans with a brief performance.",
+                "description": "Impressing an audience of artisans with a brief performance.",
                 "training": "Trained"
             },
             {
-                "summary": "Impressing an audience of merchants or minor nobles with a brief performance.",
+                "description": "Impressing an audience of merchants or minor nobles with a brief performance.",
                 "training": "Expert"
             },
             {
-                "summary": "Impressing an audience of high nobles or minor royalty with a brief performance.",
+                "description": "Impressing an audience of high nobles or minor royalty with a brief performance.",
                 "training": "Master"
             },
             {
-                "summary": "Impressing an audience of powerful, otherworldly beings or major royalty with a brief performance.",
+                "description": "Impressing an audience of powerful, otherworldly beings or major royalty with a brief performance.",
                 "training": "Legendary"
             }
         ]
@@ -877,10 +877,10 @@
         "name": "Earn Income",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Stage a performance to earn money.",
+        "description": "Stage a performance to earn money.",
         "sample_tasks": [
             {
-                "summary": "Earning money from a performance in a town square.",
+                "description": "Earning money from a performance in a town square.",
                 "training": "Trained"
             }
         ]
@@ -890,26 +890,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall knowledge about divine agents, the finer points of theology, obscure myths regarding a faith, and creatures of religious significance (like celestials, fiends, and undead), Creation's Forge, the Void, and the Outer Sphere.",
+        "description": "Recall knowledge about divine agents, the finer points of theology, obscure myths regarding a faith, and creatures of religious significance (like celestials, fiends, and undead), Creation's Forge, the Void, and the Outer Sphere.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common celestial, fiend or undead.",
+                "description": "Recalling the name of a common celestial, fiend or undead.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a specific detail about a common or uncommon celestial, fiend or undead.",
+                "description": "Recalling a specific detail about a common or uncommon celestial, fiend or undead.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling details of a common or uncommon celestial, fiend or undead.",
+                "description": "Recalling details of a common or uncommon celestial, fiend or undead.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details of common, uncommon or rare celestial, fiend or undead.",
+                "description": "Recalling obscure details of common, uncommon or rare celestial, fiend or undead.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about even the rarest celestial, fiend or undead.",
+                "description": "Recalling obscure, secret or forgotten details about even the rarest celestial, fiend or undead.",
                 "training": "Legendary"
             }
         ]
@@ -919,22 +919,22 @@
         "name": "Decipher Writing",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Decipher Writing of a religious nature, including allegories, homilies, and proverbs.",
+        "description": "Decipher Writing of a religious nature, including allegories, homilies, and proverbs.",
         "sample_tasks": [
             {
-                "summary": "Deciphering writings on common or well-known religious topics.",
+                "description": "Deciphering writings on common or well-known religious topics.",
                 "training": "Trained"
             },
             {
-                "summary": "Deciphering writings on uncommon or advanced religious topics.",
+                "description": "Deciphering writings on uncommon or advanced religious topics.",
                 "training": "Expert"
             },
             {
-                "summary": "Deciphering writings on rare or extremely complex religious topics.",
+                "description": "Deciphering writings on rare or extremely complex religious topics.",
                 "training": "Master"
             },
             {
-                "summary": "Deciphering writings on religious topics in incomprehensible languages or symbols.",
+                "description": "Deciphering writings on religious topics in incomprehensible languages or symbols.",
                 "training": "Legendary"
             }
         ]
@@ -944,10 +944,10 @@
         "name": "Identify Magic",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Identify a spell from the divine tradition.",
+        "description": "Identify a spell from the divine tradition.",
         "sample_tasks": [
             {
-                "summary": "Identifying a spell cast by a cleric.",
+                "description": "Identifying a spell cast by a cleric.",
                 "training": "Trained"
             }
         ]
@@ -957,10 +957,10 @@
         "name": "Learn a Spell",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Learn a new spell from the divine tradition.",
+        "description": "Learn a new spell from the divine tradition.",
         "sample_tasks": [
             {
-                "summary": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+                "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
                 "training": "Trained"
             }
         ]
@@ -970,26 +970,26 @@
         "name": "Recall Knowledge",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Recall knowledge about local history, important personalities, legal institutions, societal structure, and humanoid cultures. The GM might allow Society to apply to other creatures that are major elements of society in your region, such as the draconic nobility in a kingdom of humans ruled by dragons.",
+        "description": "Recall knowledge about local history, important personalities, legal institutions, societal structure, and humanoid cultures. The GM might allow Society to apply to other creatures that are major elements of society in your region, such as the draconic nobility in a kingdom of humans ruled by dragons.",
         "sample_tasks": [
             {
-                "summary": "Recalling the name of a common humanoid group or organization.",
+                "description": "Recalling the name of a common humanoid group or organization.",
                 "training": "Untrained"
             },
             {
-                "summary": "Recalling a specific detail about a common or uncommon humanoid group or organization.",
+                "description": "Recalling a specific detail about a common or uncommon humanoid group or organization.",
                 "training": "Trained"
             },
             {
-                "summary": "Recalling details of a common or uncommon humanoid group or organization.",
+                "description": "Recalling details of a common or uncommon humanoid group or organization.",
                 "training": "Expert"
             },
             {
-                "summary": "Recalling obscure details of common, uncommon or rare humanoid group or organization.",
+                "description": "Recalling obscure details of common, uncommon or rare humanoid group or organization.",
                 "training": "Master"
             },
             {
-                "summary": "Recalling obscure, secret or forgotten details about even the rarest humanoid group or organization.",
+                "description": "Recalling obscure, secret or forgotten details about even the rarest humanoid group or organization.",
                 "training": "Legendary"
             }
         ]
@@ -999,26 +999,26 @@
         "name": "Subsist",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Subsist in a settlement by finding shelter, scrounging, or begging for food.",
+        "description": "Subsist in a settlement by finding shelter, scrounging, or begging for food.",
         "sample_tasks": [
             {
-                "summary": "Surviving in a large city with plentiful resources.",
+                "description": "Surviving in a large city with plentiful resources.",
                 "training": "Untrained"
             },
             {
-                "summary": "Surviving in a village.",
+                "description": "Surviving in a village.",
                 "training": "Trained"
             },
             {
-                "summary": "Surviving in an insular hamlet.",
+                "description": "Surviving in an insular hamlet.",
                 "training": "Expert"
             },
             {
-                "summary": "Surviving in a city under siege.",
+                "description": "Surviving in a city under siege.",
                 "training": "Master"
             },
             {
-                "summary": "Surviving in a city of undead.",
+                "description": "Surviving in a city of undead.",
                 "training": "Legendary"
             }
         ]
@@ -1028,10 +1028,10 @@
         "name": "Create Forgery",
         "mode": "Downtime",
         "minimum_training": "Trained",
-        "summary": "Create a forgery of a document or object.",
+        "description": "Create a forgery of a document or object.",
         "sample_tasks": [
             {
-                "summary": "Forging an invitation to get into a party.",
+                "description": "Forging an invitation to get into a party.",
                 "training": "Trained"
             }
         ]
@@ -1041,22 +1041,22 @@
         "name": "Decipher Writing",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Decipher Writing that's a coded message, text written in an incomplete or archaic form, or in some cases, text in a language you don't know.",
+        "description": "Decipher Writing that's a coded message, text written in an incomplete or archaic form, or in some cases, text in a language you don't know.",
         "sample_tasks": [
             {
-                "summary": "Deciphering writings in common cypher or language.",
+                "description": "Deciphering writings in common cypher or language.",
                 "training": "Trained"
             },
             {
-                "summary": "Deciphering writings in uncommon language or advanced cypher.",
+                "description": "Deciphering writings in uncommon language or advanced cypher.",
                 "training": "Expert"
             },
             {
-                "summary": "Deciphering writings in rare cyphers or archaic languages.",
+                "description": "Deciphering writings in rare cyphers or archaic languages.",
                 "training": "Master"
             },
             {
-                "summary": "Deciphering writings in secret cyphers or forgotten languages.",
+                "description": "Deciphering writings in secret cyphers or forgotten languages.",
                 "training": "Legendary"
             }
         ]
@@ -1066,10 +1066,10 @@
         "name": "Conceal an Object",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Hide a small object to avoid discovery when searched.",
+        "description": "Hide a small object to avoid discovery when searched.",
         "sample_tasks": [
             {
-                "summary": "Hiding a dagger up a sleeve.",
+                "description": "Hiding a dagger up a sleeve.",
                 "training": "Untrained"
             }
         ]
@@ -1079,10 +1079,10 @@
         "name": "Hide",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Hide behind cover or blend deeper into concealment.",
+        "description": "Hide behind cover or blend deeper into concealment.",
         "sample_tasks": [
             {
-                "summary": "Hiding behind a pillar in an empty room.",
+                "description": "Hiding behind a pillar in an empty room.",
                 "training": "Untrained"
             }
         ]
@@ -1092,10 +1092,10 @@
         "name": "Sneak",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Slowly move silently or stay hidden while moving.",
+        "description": "Slowly move silently or stay hidden while moving.",
         "sample_tasks": [
             {
-                "summary": "Moving silently across creaky floorboards to avoid waking a guard.",
+                "description": "Moving silently across creaky floorboards to avoid waking a guard.",
                 "training": "Untrained"
             }
         ]
@@ -1105,26 +1105,26 @@
         "name": "Sense Direction",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Use knowledge of the natural world and survival experience to navigate.",
+        "description": "Use knowledge of the natural world and survival experience to navigate.",
         "sample_tasks": [
             {
-                "summary": "Determining the cardinal directions using the sun.",
+                "description": "Determining the cardinal directions using the sun.",
                 "training": "Untrained"
             },
             {
-                "summary": "Finding an overgrown path in a forest.",
+                "description": "Finding an overgrown path in a forest.",
                 "training": "Trained"
             },
             {
-                "summary": "Navigating a hedge maze.",
+                "description": "Navigating a hedge maze.",
                 "training": "Expert"
             },
             {
-                "summary": "Navigating a byzantine labyrinth or a relatively featureless desert.",
+                "description": "Navigating a byzantine labyrinth or a relatively featureless desert.",
                 "training": "Master"
             },
             {
-                "summary": "Navigating an ever-changing dream realm.",
+                "description": "Navigating an ever-changing dream realm.",
                 "training": "Legendary"
             }
         ]
@@ -1134,26 +1134,26 @@
         "name": "Subsist",
         "mode": "Exploration",
         "minimum_training": "Untrained",
-        "summary": "Subsist in the wild by foraging for food and building shelter.",
+        "description": "Subsist in the wild by foraging for food and building shelter.",
         "sample_tasks": [
             {
-                "summary": "Surviving in a lush forest with calm weather.",
+                "description": "Surviving in a lush forest with calm weather.",
                 "training": "Untrained"
             },
             {
-                "summary": "Surviving on a hillside.",
+                "description": "Surviving on a hillside.",
                 "training": "Trained"
             },
             {
-                "summary": "Surviving in the mountains.",
+                "description": "Surviving in the mountains.",
                 "training": "Expert"
             },
             {
-                "summary": "Surviving in a desert.",
+                "description": "Surviving in a desert.",
                 "training": "Master"
             },
             {
-                "summary": "Surviving in a barren wasteland.",
+                "description": "Surviving in a barren wasteland.",
                 "training": "Legendary"
             }
         ]
@@ -1163,10 +1163,10 @@
         "name": "Cover Tracks",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Hide any trace of passage while on the move.",
+        "description": "Hide any trace of passage while on the move.",
         "sample_tasks": [
             {
-                "summary": "Dusting away footprints in a forest.",
+                "description": "Dusting away footprints in a forest.",
                 "training": "Trained"
             }
         ]
@@ -1176,26 +1176,26 @@
         "name": "Track",
         "mode": "Exploration",
         "minimum_training": "Trained",
-        "summary": "Follow tracks left by a creature or vehicle.",
+        "description": "Follow tracks left by a creature or vehicle.",
         "sample_tasks": [
             {
-                "summary": "Following the path of a large army following a road.",
+                "description": "Following the path of a large army following a road.",
                 "training": "Untrained"
             },
             {
-                "summary": "Following the relatively fresh track of a rampaging bear through the plains.",
+                "description": "Following the relatively fresh track of a rampaging bear through the plains.",
                 "training": "Trained"
             },
             {
-                "summary": "Following a nimble panther's tracks through a jungle or tracks obscured by rainfall.",
+                "description": "Following a nimble panther's tracks through a jungle or tracks obscured by rainfall.",
                 "training": "Expert"
             },
             {
-                "summary": "Following tracks obscured by winter snow, track of a mouse or smaller creature, or tracks left on surfaces that can't hold prints like bare rock.",
+                "description": "Following tracks obscured by winter snow, track of a mouse or smaller creature, or tracks left on surfaces that can't hold prints like bare rock.",
                 "training": "Master"
             },
             {
-                "summary": "Following old tracks through a windy desert's sands or tracks after a major blizzard or hurricane.",
+                "description": "Following old tracks through a windy desert's sands or tracks after a major blizzard or hurricane.",
                 "training": "Legendary"
             }
         ]
@@ -1205,10 +1205,10 @@
         "name": "Palm an Object",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Secretly pick up a small, unattended object.",
+        "description": "Secretly pick up a small, unattended object.",
         "sample_tasks": [
             {
-                "summary": "Palming a coin from a table.",
+                "description": "Palming a coin from a table.",
                 "training": "Untrained"
             }
         ]
@@ -1218,10 +1218,10 @@
         "name": "Steal",
         "mode": "Any",
         "minimum_training": "Untrained",
-        "summary": "Secretly steal a small object from a creature.",
+        "description": "Secretly steal a small object from a creature.",
         "sample_tasks": [
             {
-                "summary": "Stealing a coin purse from a person in a crowd.",
+                "description": "Stealing a coin purse from a person in a crowd.",
                 "training": "Untrained"
             }
         ]
@@ -1231,10 +1231,10 @@
         "name": "Disable a Device",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Disarm a trap or disable a complex device.",
+        "description": "Disarm a trap or disable a complex device.",
         "sample_tasks": [
             {
-                "summary": "Disarming a simple tripwire trap.",
+                "description": "Disarming a simple tripwire trap.",
                 "training": "Trained"
             }
         ]
@@ -1244,10 +1244,10 @@
         "name": "Pick a Lock",
         "mode": "Any",
         "minimum_training": "Trained",
-        "summary": "Open a lock without a key.",
+        "description": "Open a lock without a key.",
         "sample_tasks": [
             {
-                "summary": "Picking the lock on a simple chest.",
+                "description": "Picking the lock on a simple chest.",
                 "training": "Trained"
             }
         ]

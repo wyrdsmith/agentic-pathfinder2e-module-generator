@@ -3,300 +3,300 @@
     "name": "Dwarf",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=59",
-    "summary": "Dwarves are a short, stocky people who are often stubborn, fierce, and devoted."
+    "description": "Dwarves are a short, stocky people who are often stubborn, fierce, and devoted."
   },
   {
     "name": "Elf",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=60",
-    "summary": "Elves are a tall, long-lived people with a strong tradition of art and magic."
+    "description": "Elves are a tall, long-lived people with a strong tradition of art and magic."
   },
   {
     "name": "Gnome",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=61",
-    "summary": "Gnomes are short and hardy folk, with an unquenchable curiosity and eccentric habits."
+    "description": "Gnomes are short and hardy folk, with an unquenchable curiosity and eccentric habits."
   },
   {
     "name": "Goblin",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=62",
-    "summary": "Goblins are a short, scrappy, energetic people who have spent millennia maligned and feared."
+    "description": "Goblins are a short, scrappy, energetic people who have spent millennia maligned and feared."
   },
   {
     "name": "Halfling",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=63",
-    "summary": "Halflings are a short, resilient people who exhibit remarkable curiosity and humor."
+    "description": "Halflings are a short, resilient people who exhibit remarkable curiosity and humor."
   },
   {
     "name": "Human",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=64",
-    "summary": "Humans are diverse and adaptable people with wide potential and deep ambitions."
+    "description": "Humans are diverse and adaptable people with wide potential and deep ambitions."
   },
   {
     "name": "Leshy",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=65",
-    "summary": "Leshies are immortal nature spirits placed in small plant bodies, seeking to experience the world."
+    "description": "Leshies are immortal nature spirits placed in small plant bodies, seeking to experience the world."
   },
   {
     "name": "Orc",
     "rarity": "Common",
     "url": "/Ancestries.aspx?ID=66",
-    "summary": "Orcs are proud, strong people with hardened physiques who value physical might and glory in combat."
+    "description": "Orcs are proud, strong people with hardened physiques who value physical might and glory in combat."
   },
   {
     "name": "Athamaru",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=71",
-    "summary": "Athamarus are fish-like humanoids who form tight-knit communities underseas, with villages of siblings led by a common matriarch. Athamarus engage in \u2026"
+    "description": "Athamarus are fish-like humanoids who form tight-knit communities underseas, with villages of siblings led by a common matriarch. Athamarus engage in \u2026"
   },
   {
     "name": "Azarketi",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=41",
-    "summary": "Azarketis, inheritors of a shattered empire's legacy, hold their proud traditions close but still surface to interact with the rest of the world."
+    "description": "Azarketis, inheritors of a shattered empire's legacy, hold their proud traditions close but still surface to interact with the rest of the world."
   },
   {
     "name": "Catfolk",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=77",
-    "summary": "Catfolk are highly social, feline humanoids prone to curiosity and wandering."
+    "description": "Catfolk are highly social, feline humanoids prone to curiosity and wandering."
   },
   {
     "name": "Centaur",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=73",
-    "summary": "Centaurs are half-human, half-horse nomads who range wild and free across their ancestral lands. They're survivalists with a long history of teaching \u2026"
+    "description": "Centaurs are half-human, half-horse nomads who range wild and free across their ancestral lands. They're survivalists with a long history of teaching \u2026"
   },
   {
     "name": "Fetchling",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=30",
-    "summary": "Once human and now something apart, fetchlings display the  Shadow Plane's  ancient influence through monochrome complexions, glowing eyes, and the \u2026"
+    "description": "Once human and now something apart, fetchlings display the  Shadow Plane's  ancient influence through monochrome complexions, glowing eyes, and the \u2026"
   },
   {
     "name": "Hobgoblin",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=78",
-    "summary": "Hobgoblins are taller and stronger than their goblin kin, often arranging themselves into military structures."
+    "description": "Hobgoblins are taller and stronger than their goblin kin, often arranging themselves into military structures."
   },
   {
     "name": "Kholo",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=79",
-    "summary": "Kholos are hyena-headed humanoids who embrace practicality and pragmatism."
+    "description": "Kholos are hyena-headed humanoids who embrace practicality and pragmatism."
   },
   {
     "name": "Kitsune",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=38",
-    "summary": "Kitsune are a charismatic and witty people with a connection to the spiritual that grants them many magical abilities, chiefly the power to \u2026"
+    "description": "Kitsune are a charismatic and witty people with a connection to the spiritual that grants them many magical abilities, chiefly the power to \u2026"
   },
   {
     "name": "Kobold",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=80",
-    "summary": "Kobolds are small and reptilian, with features marked by the power they choose to follow."
+    "description": "Kobolds are small and reptilian, with features marked by the power they choose to follow."
   },
   {
     "name": "Lizardfolk",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=81",
-    "summary": "Lizardfolk are scaled humanoids with a history that stretches into the distant past."
+    "description": "Lizardfolk are scaled humanoids with a history that stretches into the distant past."
   },
   {
     "name": "Merfolk",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=74",
-    "summary": "Merfolk are a half-human, half-fish aquatic people who live in every ocean and sea of Golarion. Merfolk use magic as other peoples might use common \u2026"
+    "description": "Merfolk are a half-human, half-fish aquatic people who live in every ocean and sea of Golarion. Merfolk use magic as other peoples might use common \u2026"
   },
   {
     "name": "Minotaur",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=75",
-    "summary": "Minotaurs are horned, bovine humanoids who originate from an ancient divine curse. Minotaurs are large, strong, and masters of crafts and puzzles, \u2026"
+    "description": "Minotaurs are horned, bovine humanoids who originate from an ancient divine curse. Minotaurs are large, strong, and masters of crafts and puzzles, \u2026"
   },
   {
     "name": "Nagaji",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=54",
-    "summary": "With humanoid figures and serpentine heads, nagaji are heralds, companions, and servitors of powerful  nagas . They hold a deep reverence for holy \u2026"
+    "description": "With humanoid figures and serpentine heads, nagaji are heralds, companions, and servitors of powerful  nagas . They hold a deep reverence for holy \u2026"
   },
   {
     "name": "Ratfolk",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=82",
-    "summary": "Ratfolk are small, clever, and adaptable humanoids with ratlike features and a love of community."
+    "description": "Ratfolk are small, clever, and adaptable humanoids with ratlike features and a love of community."
   },
   {
     "name": "Samsaran",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=88",
-    "summary": "Blue-skinned people native to Zi Ha, who reincarnate upon death and recall pieces of their past lives. They are  common  in Zi Ha, Po Li, and Goka."
+    "description": "Blue-skinned people native to Zi Ha, who reincarnate upon death and recall pieces of their past lives. They are  common  in Zi Ha, Po Li, and Goka."
   },
   {
     "name": "Tanuki",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=90",
-    "summary": "A name for both a raccoon-like animal native to Minkai and sapient tanuki who possess shapeshifting powers. They are  common  in Minkai, the\r\nForest \u2026"
+    "description": "A name for both a raccoon-like animal native to Minkai and sapient tanuki who possess shapeshifting powers. They are  common  in Minkai, the\r\nForest \u2026"
   },
   {
     "name": "Tengu",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=83",
-    "summary": "Tengus are gregarious and resourceful avian humanoids who collect knowledge and treasures alike."
+    "description": "Tengus are gregarious and resourceful avian humanoids who collect knowledge and treasures alike."
   },
   {
     "name": "Tripkee",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=84",
-    "summary": "Tripkees are froglike humanoids whose spirit often exceeds their stature."
+    "description": "Tripkees are froglike humanoids whose spirit often exceeds their stature."
   },
   {
     "name": "Vanara",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=55",
-    "summary": "Vanaras are inquisitive and mischievous monkey-like humanoids with short, soft fur, expressive eyes, and long, prehensile tails. Their handlike feet \u2026"
+    "description": "Vanaras are inquisitive and mischievous monkey-like humanoids with short, soft fur, expressive eyes, and long, prehensile tails. Their handlike feet \u2026"
   },
   {
     "name": "Wayang",
     "rarity": "Uncommon",
     "url": "/Ancestries.aspx?ID=91",
-    "summary": "Small people native to the Netherworld. Immigrated to Golarion after Earthfall. "
+    "description": "Small people native to the Netherworld. Immigrated to Golarion after Earthfall. "
   },
   {
     "name": "Anadi",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=42",
-    "summary": "Anadi people are reclusive, sapient spiders who hail from the jungles of southern Garund. Though they act in many ways like natural-born \u2026"
+    "description": "Anadi people are reclusive, sapient spiders who hail from the jungles of southern Garund. Though they act in many ways like natural-born \u2026"
   },
   {
     "name": "Android",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=27",
-    "summary": "Technological wonders from another world, androids have synthetic bodies and living souls. Their dual nature makes them quick-thinking and calm under \u2026"
+    "description": "Technological wonders from another world, androids have synthetic bodies and living souls. Their dual nature makes them quick-thinking and calm under \u2026"
   },
   {
     "name": "Automaton",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=48",
-    "summary": "These intelligent constructs house actual souls and represent what remains of a dying empire's last attempt at greatness. Automatons combine \u2026"
+    "description": "These intelligent constructs house actual souls and represent what remains of a dying empire's last attempt at greatness. Automatons combine \u2026"
   },
   {
     "name": "Awakened Animal",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=72",
-    "summary": "Awakened animals were once normal creatures before they obtained sapience that gave them one paw in nature and the other in the world of cities and \u2026"
+    "description": "Awakened animals were once normal creatures before they obtained sapience that gave them one paw in nature and the other in the world of cities and \u2026"
   },
   {
     "name": "Conrasu",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=43",
-    "summary": "Conrasus are shards of cosmic force given consciousness who construct intricate exoskeletons to interface with the mortal world. Both an integral \u2026"
+    "description": "Conrasus are shards of cosmic force given consciousness who construct intricate exoskeletons to interface with the mortal world. Both an integral \u2026"
   },
   {
     "name": "Dragonet",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=96",
-    "summary": "Dragonets are miniature dragons, complete with wings, dagger-like teeth, and magical breath. They can be fiercely independent and proud, at times \u2026"
+    "description": "Dragonets are miniature dragons, complete with wings, dagger-like teeth, and magical breath. They can be fiercely independent and proud, at times \u2026"
   },
   {
     "name": "Fleshwarp",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=31",
-    "summary": "Fleshwarps are people whose forms were created or radically transformed by magic, alchemy, or unnatural energies. Their unorthodox appearance can \u2026"
+    "description": "Fleshwarps are people whose forms were created or radically transformed by magic, alchemy, or unnatural energies. Their unorthodox appearance can \u2026"
   },
   {
     "name": "Ghoran",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=52",
-    "summary": "These intelligent plant people, created by a long-dead druid, possess a sort of immortality through their seeds\u2014unless these are destroyed by \u2026"
+    "description": "These intelligent plant people, created by a long-dead druid, possess a sort of immortality through their seeds\u2014unless these are destroyed by \u2026"
   },
   {
     "name": "Goloma",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=45",
-    "summary": "Golomas fear most other people and deliberately use their unusual biology to frighten off those they consider to be dangerous predators. Rarely seen \u2026"
+    "description": "Golomas fear most other people and deliberately use their unusual biology to frighten off those they consider to be dangerous predators. Rarely seen \u2026"
   },
   {
     "name": "Jotunborn",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=95",
-    "summary": "Jotunborn were forged from the blood of an ancient group of giants called titans, tasked to watch over  the Universe ."
+    "description": "Jotunborn were forged from the blood of an ancient group of giants called titans, tasked to watch over  the Universe ."
   },
   {
     "name": "Kashrishi",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=53",
-    "summary": "Kashrishi make their homes in remote areas of the world. These quiet beings have stout, durable frames and distinctive crystalline horns. Their \u2026"
+    "description": "Kashrishi make their homes in remote areas of the world. These quiet beings have stout, durable frames and distinctive crystalline horns. Their \u2026"
   },
   {
     "name": "Poppet",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=49",
-    "summary": "   PFS Note   As of June 1, 2024, all Pathfinder Society agents have access to the poppet ancestry   Poppets are small, basic constructs that \u2026"
+    "description": "   PFS Note   As of June 1, 2024, all Pathfinder Society agents have access to the poppet ancestry   Poppets are small, basic constructs that \u2026"
   },
   {
     "name": "Sarangay",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=89",
-    "summary": "Powerful carabao-headed warriors who live on the isles of Minata. Known for the magical gems in their foreheads that are said to contain their souls."
+    "description": "Powerful carabao-headed warriors who live on the isles of Minata. Known for the magical gems in their foreheads that are said to contain their souls."
   },
   {
     "name": "Shisk",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=47",
-    "summary": "Shisks are secretive mountain-dwellers, bone-feathered humanoids who lurk underground in dark tunnels and caverns. Their fascination with collecting \u2026"
+    "description": "Shisks are secretive mountain-dwellers, bone-feathered humanoids who lurk underground in dark tunnels and caverns. Their fascination with collecting \u2026"
   },
   {
     "name": "Shoony",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=16",
-    "summary": "Diminutive humanoids who resemble squat, bipedal dogs, shoonies are sometimes mistaken for weak and insular pacifists. However, their sheer \u2026"
+    "description": "Diminutive humanoids who resemble squat, bipedal dogs, shoonies are sometimes mistaken for weak and insular pacifists. However, their sheer \u2026"
   },
   {
     "name": "Skeleton",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=50",
-    "summary": "Skeletons are considered among the lowest types of undead. They're typically mindless creatures, lacking many of the abilities that make other undead \u2026"
+    "description": "Skeletons are considered among the lowest types of undead. They're typically mindless creatures, lacking many of the abilities that make other undead \u2026"
   },
   {
     "name": "Sprite",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=39",
-    "summary": "Sprites are diminutive, whimsical, and exuberant creatures from the fey realm known as the  First World . They love playing pranks, exploring new \u2026"
+    "description": "Sprites are diminutive, whimsical, and exuberant creatures from the fey realm known as the  First World . They love playing pranks, exploring new \u2026"
   },
   {
     "name": "Strix",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=40",
-    "summary": "   PFS Note   As of May 2025, all Pathfinder Society characters have access to the strix ancestry.   Known as itarii in their own language, strix are \u2026"
+    "description": "   PFS Note   As of May 2025, all Pathfinder Society characters have access to the strix ancestry.   Known as itarii in their own language, strix are \u2026"
   },
   {
     "name": "Surki",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=76",
-    "summary": "Surkis are only now emerging from the subterranean Darklands in a generational dig to the surface. This insectile and highly metamorphic species \u2026"
+    "description": "Surkis are only now emerging from the subterranean Darklands in a generational dig to the surface. This insectile and highly metamorphic species \u2026"
   },
   {
     "name": "Vishkanya",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=56",
-    "summary": "Vishkanyas are ophidian humanoids who carry potent venom within their blood and saliva. Largely misunderstood due to old tales of their toxicity and \u2026"
+    "description": "Vishkanyas are ophidian humanoids who carry potent venom within their blood and saliva. Largely misunderstood due to old tales of their toxicity and \u2026"
   },
   {
     "name": "Yaksha",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=92",
-    "summary": "Divine spirits who emigrated to Golarion from the first world."
+    "description": "Divine spirits who emigrated to Golarion from the first world."
   },
   {
     "name": "Yaoguai",
     "rarity": "Rare",
     "url": "/Ancestries.aspx?ID=93",
-    "summary": "Beings who usually begin their existence as simple animals, objects, or plants, but have found a means to transcend their original forms through the \u2026"
+    "description": "Beings who usually begin their existence as simple animals, objects, or plants, but have found a means to transcend their original forms through the \u2026"
   }
 ]

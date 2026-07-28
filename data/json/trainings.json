@@ -2,31 +2,31 @@
     {
         "training": "Untrained",
         "difficulty": 10,
-        "summary": "Any character can succeed on this check without any specialized training. This is the baseline for all checks.",
+        "description": "Any character can succeed on this check without any specialized training. This is the baseline for all checks.",
         "level": 0
     },
     {
         "training": "Trained",
         "difficulty": 15,
-        "summary": "This check requires at least a minimal level of training or education in the relevant skill. It represents a basic level of competence and knowledge that most people with some experience or study would possess.",
+        "description": "This check requires at least a minimal level of training or education in the relevant skill. It represents a basic level of competence and knowledge that most people with some experience or study would possess.",
         "level": 1
     },
     {
         "training": "Expert",
         "difficulty": 20,
-        "summary": "This check requires significant training, experience, or natural talent. A character with only basic knowledge of the skill is unlikely to succeed.",
+        "description": "This check requires significant training, experience, or natural talent. A character with only basic knowledge of the skill is unlikely to succeed.",
         "level": 3
     },
     {
         "training": "Master",
         "difficulty": 30,
-        "summary": "This check requires mastery of the skill, achieved through years of dedicated practice and study. Only the most accomplished practitioners will succeed.",
+        "description": "This check requires mastery of the skill, achieved through years of dedicated practice and study. Only the most accomplished practitioners will succeed.",
         "level": 7
     },
     {
         "training": "Legendary",
         "difficulty": 40,
-        "summary": "This check is the pinnacle of skill, achievable only by legendary figures who have dedicated their lives to mastering the skill. This check is reserved for momentous or legendary occasions.",
+        "description": "This check is the pinnacle of skill, achievable only by legendary figures who have dedicated their lives to mastering the skill. This check is reserved for momentous or legendary occasions.",
         "level": 15
     }
 ]

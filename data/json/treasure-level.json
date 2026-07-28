@@ -1,0 +1,102 @@
+[
+    {
+        "level": 1,
+        "total": 175,
+        "extra": 35
+    },
+    {
+        "level": 2,
+        "total": 300,
+        "extra": 60
+    },
+    {
+        "level": 3,
+        "total": 500,
+        "extra": 100
+    },
+    {
+        "level": 4,
+        "total": 850,
+        "extra": 170
+    },
+    {
+        "level": 5,
+        "total": 1350,
+        "extra": 270
+    },
+    {
+        "level": 6,
+        "total": 2000,
+        "extra": 400
+    },
+    {
+        "level": 7,
+        "total": 2900,
+        "extra": 580
+    },
+    {
+        "level": 8,
+        "total": 4000,
+        "extra": 800
+    },
+    {
+        "level": 9,
+        "total": 5700,
+        "extra": 1140
+    },
+    {
+        "level": 10,
+        "total": 8000,
+        "extra": 1600
+    },
+    {
+        "level": 11,
+        "total": 11500,
+        "extra": 2300
+    },
+    {
+        "level": 12,
+        "total": 16500,
+        "extra": 3300
+    },
+    {
+        "level": 13,
+        "total": 25000,
+        "extra": 5000
+    },
+    {
+        "level": 14,
+        "total": 36500,
+        "extra": 7300
+    },
+    {
+        "level": 15,
+        "total": 54500,
+        "extra": 10900
+    },
+    {
+        "level": 16,
+        "total": 82500,
+        "extra": 16500
+    },
+    {
+        "level": 17,
+        "total": 128000,
+        "extra": 25600
+    },
+    {
+        "level": 18,
+        "total": 208000,
+        "extra": 41600
+    },
+    {
+        "level": 19,
+        "total": 355000,
+        "extra": 71000
+    },
+    {
+        "level": 20,
+        "total": 490000,
+        "extra": 98000
+    }
+]

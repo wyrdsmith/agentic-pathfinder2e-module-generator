@@ -1,0 +1,502 @@
+[
+  {
+    "level": 1,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 1,
+    "threat_level": "Low",
+    "treasure": 13
+  },
+  {
+    "level": 1,
+    "threat_level": "Moderate",
+    "treasure": 18
+  },
+  {
+    "level": 1,
+    "threat_level": "Severe",
+    "treasure": 26
+  },
+  {
+    "level": 1,
+    "threat_level": "Extreme",
+    "treasure": 35
+  },
+  {
+    "level": 2,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 2,
+    "threat_level": "Low",
+    "treasure": 23
+  },
+  {
+    "level": 2,
+    "threat_level": "Moderate",
+    "treasure": 30
+  },
+  {
+    "level": 2,
+    "threat_level": "Severe",
+    "treasure": 45
+  },
+  {
+    "level": 2,
+    "threat_level": "Extreme",
+    "treasure": 60
+  },
+  {
+    "level": 3,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 3,
+    "threat_level": "Low",
+    "treasure": 38
+  },
+  {
+    "level": 3,
+    "threat_level": "Moderate",
+    "treasure": 50
+  },
+  {
+    "level": 3,
+    "threat_level": "Severe",
+    "treasure": 75
+  },
+  {
+    "level": 3,
+    "threat_level": "Extreme",
+    "treasure": 100
+  },
+  {
+    "level": 4,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 4,
+    "threat_level": "Low",
+    "treasure": 65
+  },
+  {
+    "level": 4,
+    "threat_level": "Moderate",
+    "treasure": 85
+  },
+  {
+    "level": 4,
+    "threat_level": "Severe",
+    "treasure": 130
+  },
+  {
+    "level": 4,
+    "threat_level": "Extreme",
+    "treasure": 170
+  },
+  {
+    "level": 5,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 5,
+    "threat_level": "Low",
+    "treasure": 100
+  },
+  {
+    "level": 5,
+    "threat_level": "Moderate",
+    "treasure": 135
+  },
+  {
+    "level": 5,
+    "threat_level": "Severe",
+    "treasure": 200
+  },
+  {
+    "level": 5,
+    "threat_level": "Extreme",
+    "treasure": 270
+  },
+  {
+    "level": 6,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 6,
+    "threat_level": "Low",
+    "treasure": 150
+  },
+  {
+    "level": 6,
+    "threat_level": "Moderate",
+    "treasure": 200
+  },
+  {
+    "level": 6,
+    "threat_level": "Severe",
+    "treasure": 300
+  },
+  {
+    "level": 6,
+    "threat_level": "Extreme",
+    "treasure": 400
+  },
+  {
+    "level": 7,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 7,
+    "threat_level": "Low",
+    "treasure": 220
+  },
+  {
+    "level": 7,
+    "threat_level": "Moderate",
+    "treasure": 290
+  },
+  {
+    "level": 7,
+    "threat_level": "Severe",
+    "treasure": 440
+  },
+  {
+    "level": 7,
+    "threat_level": "Extreme",
+    "treasure": 580
+  },
+  {
+    "level": 8,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 8,
+    "threat_level": "Low",
+    "treasure": 300
+  },
+  {
+    "level": 8,
+    "threat_level": "Moderate",
+    "treasure": 400
+  },
+  {
+    "level": 8,
+    "threat_level": "Severe",
+    "treasure": 600
+  },
+  {
+    "level": 8,
+    "threat_level": "Extreme",
+    "treasure": 800
+  },
+  {
+    "level": 9,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 9,
+    "threat_level": "Low",
+    "treasure": 430
+  },
+  {
+    "level": 9,
+    "threat_level": "Moderate",
+    "treasure": 570
+  },
+  {
+    "level": 9,
+    "threat_level": "Severe",
+    "treasure": 860
+  },
+  {
+    "level": 9,
+    "threat_level": "Extreme",
+    "treasure": 1140
+  },
+  {
+    "level": 10,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 10,
+    "threat_level": "Low",
+    "treasure": 600
+  },
+  {
+    "level": 10,
+    "threat_level": "Moderate",
+    "treasure": 800
+  },
+  {
+    "level": 10,
+    "threat_level": "Severe",
+    "treasure": 1200
+  },
+  {
+    "level": 10,
+    "threat_level": "Extreme",
+    "treasure": 1600
+  },
+  {
+    "level": 11,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 11,
+    "threat_level": "Low",
+    "treasure": 865
+  },
+  {
+    "level": 11,
+    "threat_level": "Moderate",
+    "treasure": 1150
+  },
+  {
+    "level": 11,
+    "threat_level": "Severe",
+    "treasure": 1725
+  },
+  {
+    "level": 11,
+    "threat_level": "Extreme",
+    "treasure": 2300
+  },
+  {
+    "level": 12,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 12,
+    "threat_level": "Low",
+    "treasure": 1250
+  },
+  {
+    "level": 12,
+    "threat_level": "Moderate",
+    "treasure": 1650
+  },
+  {
+    "level": 12,
+    "threat_level": "Severe",
+    "treasure": 2475
+  },
+  {
+    "level": 12,
+    "threat_level": "Extreme",
+    "treasure": 3300
+  },
+  {
+    "level": 13,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 13,
+    "threat_level": "Low",
+    "treasure": 1875
+  },
+  {
+    "level": 13,
+    "threat_level": "Moderate",
+    "treasure": 2500
+  },
+  {
+    "level": 13,
+    "threat_level": "Severe",
+    "treasure": 3750
+  },
+  {
+    "level": 13,
+    "threat_level": "Extreme",
+    "treasure": 5000
+  },
+  {
+    "level": 14,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 14,
+    "threat_level": "Low",
+    "treasure": 2750
+  },
+  {
+    "level": 14,
+    "threat_level": "Moderate",
+    "treasure": 3650
+  },
+  {
+    "level": 14,
+    "threat_level": "Severe",
+    "treasure": 5500
+  },
+  {
+    "level": 14,
+    "threat_level": "Extreme",
+    "treasure": 7300
+  },
+  {
+    "level": 15,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 15,
+    "threat_level": "Low",
+    "treasure": 4100
+  },
+  {
+    "level": 15,
+    "threat_level": "Moderate",
+    "treasure": 5450
+  },
+  {
+    "level": 15,
+    "threat_level": "Severe",
+    "treasure": 8200
+  },
+  {
+    "level": 15,
+    "threat_level": "Extreme",
+    "treasure": 10900
+  },
+  {
+    "level": 16,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 16,
+    "threat_level": "Low",
+    "treasure": 6200
+  },
+  {
+    "level": 16,
+    "threat_level": "Moderate",
+    "treasure": 8250
+  },
+  {
+    "level": 16,
+    "threat_level": "Severe",
+    "treasure": 12400
+  },
+  {
+    "level": 16,
+    "threat_level": "Extreme",
+    "treasure": 16500
+  },
+  {
+    "level": 17,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 17,
+    "threat_level": "Low",
+    "treasure": 9600
+  },
+  {
+    "level": 17,
+    "threat_level": "Moderate",
+    "treasure": 12800
+  },
+  {
+    "level": 17,
+    "threat_level": "Severe",
+    "treasure": 19200
+  },
+  {
+    "level": 17,
+    "threat_level": "Extreme",
+    "treasure": 25600
+  },
+  {
+    "level": 18,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 18,
+    "threat_level": "Low",
+    "treasure": 15600
+  },
+  {
+    "level": 18,
+    "threat_level": "Moderate",
+    "treasure": 20800
+  },
+  {
+    "level": 18,
+    "threat_level": "Severe",
+    "treasure": 31200
+  },
+  {
+    "level": 18,
+    "threat_level": "Extreme",
+    "treasure": 41600
+  },
+  {
+    "level": 19,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 19,
+    "threat_level": "Low",
+    "treasure": 26600
+  },
+  {
+    "level": 19,
+    "threat_level": "Moderate",
+    "treasure": 35500
+  },
+  {
+    "level": 19,
+    "threat_level": "Severe",
+    "treasure": 53250
+  },
+  {
+    "level": 19,
+    "threat_level": "Extreme",
+    "treasure": 71000
+  },
+  {
+    "level": 20,
+    "threat_level": "Trivial",
+    "treasure": 0
+  },
+  {
+    "level": 20,
+    "threat_level": "Low",
+    "treasure": 36800
+  },
+  {
+    "level": 20,
+    "threat_level": "Moderate",
+    "treasure": 49000
+  },
+  {
+    "level": 20,
+    "threat_level": "Severe",
+    "treasure": 73500
+  },
+  {
+    "level": 20,
+    "threat_level": "Extreme",
+    "treasure": 98000
+  }
+]

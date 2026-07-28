@@ -1,150 +1,150 @@
 [
   {
     "name": "Vehicles",
-    "summary": "These are vehicles used by characters to travel and are rarely rewards unless the adventure calls for travel."
+    "description": "These are vehicles used by characters to travel and are rarely rewards unless the adventure calls for travel."
   },
   {
     "name": "Weapons",
-    "summary": "These are tools of destruction. They are used to inflict damage on enemies. The category ranges from simple clubs to complex magical weapons. They are common rewards."
+    "description": "These are tools of destruction. They are used to inflict damage on enemies. The category ranges from simple clubs to complex magical weapons. They are common rewards."
   },
   {
     "name": "Adventuring Gear",
-    "summary": "These are items that are used by characters to adventure. This category includes items that are used for exploration, survival, and other adventuring purposes. They are common rewards."
+    "description": "These are items that are used by characters to adventure. This category includes items that are used for exploration, survival, and other adventuring purposes. They are common rewards."
   },
   {
     "name": "Alchemical Items",
-    "summary": "These are items that are created through the use of alchemy. This category includes items that are used for healing, combat, and other alchemical purposes. They are common rewards."
+    "description": "These are items that are created through the use of alchemy. This category includes items that are used for healing, combat, and other alchemical purposes. They are common rewards."
   },
   {
     "name": "Services",
-    "summary": "Services are rendered by non-player characters and allow player characters to acquire services as offered in an adventure, but are never rewards unless an important non-player character bestows a service upon the player characters. They are uncommon rewards."
+    "description": "Services are rendered by non-player characters and allow player characters to acquire services as offered in an adventure, but are never rewards unless an important non-player character bestows a service upon the player characters. They are uncommon rewards."
   },
   {
     "name": "Trade Goods",
-    "summary": "Trade goods represent bulk goods that are often bought and sold by merchants. These are useful rewards but are not very exciting."
+    "description": "Trade goods represent bulk goods that are often bought and sold by merchants. These are useful rewards but are not very exciting."
   },
   {
     "name": "Animals and Gear",
-    "summary": "This category is meant for items that are not easily classified as weapons, armor, alchemical items, or other such items. These are very rarely rewards and generally not very exciting."
+    "description": "This category is meant for items that are not easily classified as weapons, armor, alchemical items, or other such items. These are very rarely rewards and generally not very exciting."
   },
   {
     "name": "Materials",
-    "summary": "Materials are the building blocks of the world. They are used to create items and are often found in the environment. They are very rarely rewards."
+    "description": "Materials are the building blocks of the world. They are used to create items and are often found in the environment. They are very rarely rewards."
   },
   {
     "name": "Armor",
-    "summary": "Armor is used to protect characters from harm. It is a common reward and is essential for any character who expects to engage in combat."
+    "description": "Armor is used to protect characters from harm. It is a common reward and is essential for any character who expects to engage in combat."
   },
   {
     "name": "Assistive Items",
-    "summary": "These are things like prosthetics and are not rewards. However they are often useful for describing the player characters or for adding flavor to the game. They are never rewards."
+    "description": "These are things like prosthetics and are not rewards. However they are often useful for describing the player characters or for adding flavor to the game. They are never rewards."
   },
   {
     "name": "Adjustments",
-    "summary": "These items modify other items and are used for enhancing or specializing them. They are very rarely rewards."
+    "description": "These items modify other items and are used for enhancing or specializing them. They are very rarely rewards."
   },
   {
     "name": "Shields",
-    "summary": "Shields are used to protect characters from harm. They are a common reward and are essential for any character who expects to engage in combat."
+    "description": "Shields are used to protect characters from harm. They are a common reward and are essential for any character who expects to engage in combat."
   },
   {
     "name": "Customizations",
-    "summary": "These are modifications to armor and shields and should never be rewarded."
+    "description": "These are modifications to armor and shields and should never be rewarded."
   },
   {
     "name": "Consumables",
-    "summary": "These are items that are used up when they are used. This includes potions, scrolls, and other items that are used up when they are used. They are common rewards."
+    "description": "These are items that are used up when they are used. This includes potions, scrolls, and other items that are used up when they are used. They are common rewards."
   },
   {
     "name": "Snares",
-    "summary": "These are traps that are used to catch enemies. They are very rarely awarded."
+    "description": "These are traps that are used to catch enemies. They are very rarely awarded."
   },
   {
     "name": "Held Items",
-    "summary": "These are usually magical items that are held in the hand and activated by a character. They are common rewards."
+    "description": "These are usually magical items that are held in the hand and activated by a character. They are common rewards."
   },
   {
     "name": "Worn Items",
-    "summary": "These are items that are worn by characters and are used to enhance their abilities. They are common rewards."
+    "description": "These are items that are worn by characters and are used to enhance their abilities. They are common rewards."
   },
   {
     "name": "Grafts",
-    "summary": "These are biological modifications that are grafted onto a character. They should not be offered as rewards unless an NPC is capable of performing the medical procedure necessary to grant the graft to a player character. They are common rewards."
+    "description": "These are biological modifications that are grafted onto a character. They should not be offered as rewards unless an NPC is capable of performing the medical procedure necessary to grant the graft to a player character. They are common rewards."
   },
   {
     "name": "Tattoos",
-    "summary": "These are magical tattoos that are applied to a character. They should not be offered as rewards unless an NPC is capable of performing the magical procedure necessary to grant the tattoo to a player character. They are common rewards."
+    "description": "These are magical tattoos that are applied to a character. They should not be offered as rewards unless an NPC is capable of performing the magical procedure necessary to grant the tattoo to a player character. They are common rewards."
   },
   {
     "name": "Other",
-    "summary": "These are items that are not easily classified as weapons, armor, alchemical items, or other such items. They are very rarely rewards and generally not very exciting."
+    "description": "These are items that are not easily classified as weapons, armor, alchemical items, or other such items. They are very rarely rewards and generally not very exciting."
   },
   {
     "name": "Siege Weapons",
-    "summary": "These are weapons that are used to attack fortifications. They are never rewards."
+    "description": "These are weapons that are used to attack fortifications. They are never rewards."
   },
   {
     "name": "Runes",
-    "summary": "These are magical runes that are carved into items and are extremely important to player characters. They are very common rewards."
+    "description": "These are magical runes that are carved into items and are extremely important to player characters. They are very common rewards."
   },
   {
     "name": "Artifacts",
-    "summary": "These are items of great power and importance. They are usually epic rewards and are extremely rare, if not unique."
+    "description": "These are items of great power and importance. They are usually epic rewards and are extremely rare, if not unique."
   },
   {
     "name": "Cursed Items",
-    "summary": "These are items that are cursed and are usually not good rewards unless the curse can be removed."
+    "description": "These are items that are cursed and are usually not good rewards unless the curse can be removed."
   },
   {
     "name": "Banners",
-    "summary": "These are banners that can be carried by characters. They are uncommon rewards."
+    "description": "These are banners that can be carried by characters. They are uncommon rewards."
   },
   {
     "name": "Spellhearts",
-    "summary": "These are magical items that are used to cast spells. They are common rewards."
+    "description": "These are magical items that are used to cast spells. They are common rewards."
   },
   {
     "name": "Wands",
-    "summary": "These are magical items that are used to cast spells. They are common rewards."
+    "description": "These are magical items that are used to cast spells. They are common rewards."
   },
   {
     "name": "Staves",
-    "summary": "These are magical items that are used to cast spells. They are common rewards."
+    "description": "These are magical items that are used to cast spells. They are common rewards."
   },
   {
     "name": "Intelligent Items",
-    "summary": "These are magical items that are intelligent and can communicate with the user. They are extremely rare rewards."
+    "description": "These are magical items that are intelligent and can communicate with the user. They are extremely rare rewards."
   },
   {
     "name": "Contracts",
-    "summary": "These are contracts that are used to bind the user to a specific purpose or entity. They are never given as rewards, but can be used with an NPC to create interesting plot developments."
+    "description": "These are contracts that are used to bind the user to a specific purpose or entity. They are never given as rewards, but can be used with an NPC to create interesting plot developments."
   },
   {
     "name": "Grimoires",
-    "summary": "These are spellbooks that are used to cast spells. They are uncommon rewards."
+    "description": "These are spellbooks that are used to cast spells. They are uncommon rewards."
   },
   {
     "name": "Structures",
-    "summary": "These are structures that can be built by characters. They are never given as rewards, but can be used with an NPC to create interesting plot developments."
+    "description": "These are structures that can be built by characters. They are never given as rewards, but can be used with an NPC to create interesting plot developments."
   },
   {
     "name": "Censer",
-    "summary": "These are censers that can be used to cast spells. They are uncommon rewards."
+    "description": "These are censers that can be used to cast spells. They are uncommon rewards."
   },
   {
     "name": "Figurehead",
-    "summary": "These are figureheads that can be placed on ships. They are never rewards unless the adventure calls for a ship with a figurehead."
+    "description": "These are figureheads that can be placed on ships. They are never rewards unless the adventure calls for a ship with a figurehead."
   },
   {
     "name": "Blighted Boons",
-    "summary": "These are similar to curses in that they are never rewarded, but can be used for interesting plot hooks or developments."
+    "description": "These are similar to curses in that they are never rewarded, but can be used for interesting plot hooks or developments."
   },
   {
     "name": "High-Tech",
-    "summary": "These are advanced technological items that are not magic and are generally not found in Pathfinder campaigns unless the adventure specifically calls for them. They are never rewards unless the adventure specifically calls for them."
+    "description": "These are advanced technological items that are not magic and are generally not found in Pathfinder campaigns unless the adventure specifically calls for them. They are never rewards unless the adventure specifically calls for them."
   },
   {
     "name": "Apex Items",
-    "summary": "These are legendary items that are extremely powerful and are usually epic rewards. They are extremely rare, if not unique."
+    "description": "These are legendary items that are extremely powerful and are usually epic rewards. They are extremely rare, if not unique."
   }
 ]

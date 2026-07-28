@@ -7,10 +7,10 @@
         "medium": 5,
         "low": 2,
         "hp": 9,
-        "strikeAttack": 8,
-        "strikeDamage": "1d4+1",
-        "spellDC": 16,
-        "spellAttack": 8
+        "strike_attack": 8,
+        "strike_damage": "1d4+1",
+        "spell_dc": 16,
+        "spell_attack": 8
     },
     {
         "level": 0,
@@ -20,10 +20,10 @@
         "medium": 6,
         "low": 3,
         "hp": 18,
-        "strikeAttack": 8,
-        "strikeDamage": "1d6+2",
-        "spellDC": 16,
-        "spellAttack": 8
+        "strike_attack": 8,
+        "strike_damage": "1d6+2",
+        "spell_dc": 16,
+        "spell_attack": 8
     },
     {
         "level": 1,
@@ -33,10 +33,10 @@
         "medium": 7,
         "low": 4,
         "hp": 25,
-        "strikeAttack": 9,
-        "strikeDamage": "1d6+3",
-        "spellDC": 17,
-        "spellAttack": 9
+        "strike_attack": 9,
+        "strike_damage": "1d6+3",
+        "spell_dc": 17,
+        "spell_attack": 9
     },
     {
         "level": 2,
@@ -46,10 +46,10 @@
         "medium": 8,
         "low": 5,
         "hp": 38,
-        "strikeAttack": 11,
-        "strikeDamage": "1d10+4",
-        "spellDC": 18,
-        "spellAttack": 10
+        "strike_attack": 11,
+        "strike_damage": "1d10+4",
+        "spell_dc": 18,
+        "spell_attack": 10
     },
     {
         "level": 3,
@@ -59,10 +59,10 @@
         "medium": 9,
         "low": 6,
         "hp": 55,
-        "strikeAttack": 12,
-        "strikeDamage": "1d10+6",
-        "spellDC": 20,
-        "spellAttack": 12
+        "strike_attack": 12,
+        "strike_damage": "1d10+6",
+        "spell_dc": 20,
+        "spell_attack": 12
     },
     {
         "level": 4,
@@ -72,10 +72,10 @@
         "medium": 11,
         "low": 8,
         "hp": 75,
-        "strikeAttack": 14,
-        "strikeDamage": "2d8+5",
-        "spellDC": 21,
-        "spellAttack": 13
+        "strike_attack": 14,
+        "strike_damage": "2d8+5",
+        "spell_dc": 21,
+        "spell_attack": 13
     },
     {
         "level": 5,
@@ -85,10 +85,10 @@
         "medium": 12,
         "low": 9,
         "hp": 95,
-        "strikeAttack": 15,
-        "strikeDamage": "2d8+7",
-        "spellDC": 22,
-        "spellAttack": 14
+        "strike_attack": 15,
+        "strike_damage": "2d8+7",
+        "spell_dc": 22,
+        "spell_attack": 14
     },
     {
         "level": 6,
@@ -98,10 +98,10 @@
         "medium": 14,
         "low": 11,
         "hp": 120,
-        "strikeAttack": 17,
-        "strikeDamage": "2d8+9",
-        "spellDC": 24,
-        "spellAttack": 16
+        "strike_attack": 17,
+        "strike_damage": "2d8+9",
+        "spell_dc": 24,
+        "spell_attack": 16
     },
     {
         "level": 7,
@@ -111,10 +111,10 @@
         "medium": 15,
         "low": 12,
         "hp": 145,
-        "strikeAttack": 18,
-        "strikeDamage": "2d10+9",
-        "spellDC": 25,
-        "spellAttack": 17
+        "strike_attack": 18,
+        "strike_damage": "2d10+9",
+        "spell_dc": 25,
+        "spell_attack": 17
     },
     {
         "level": 8,
@@ -124,10 +124,10 @@
         "medium": 16,
         "low": 13,
         "hp": 170,
-        "strikeAttack": 20,
-        "strikeDamage": "2d10+11",
-        "spellDC": 26,
-        "spellAttack": 18
+        "strike_attack": 20,
+        "strike_damage": "2d10+11",
+        "spell_dc": 26,
+        "spell_attack": 18
     },
     {
         "level": 9,
@@ -137,10 +137,10 @@
         "medium": 18,
         "low": 15,
         "hp": 195,
-        "strikeAttack": 21,
-        "strikeDamage": "2d10+13",
-        "spellDC": 28,
-        "spellAttack": 20
+        "strike_attack": 21,
+        "strike_damage": "2d10+13",
+        "spell_dc": 28,
+        "spell_attack": 20
     },
     {
         "level": 10,
@@ -150,10 +150,10 @@
         "medium": 19,
         "low": 16,
         "hp": 220,
-        "strikeAttack": 23,
-        "strikeDamage": "2d12+13",
-        "spellDC": 29,
-        "spellAttack": 21
+        "strike_attack": 23,
+        "strike_damage": "2d12+13",
+        "spell_dc": 29,
+        "spell_attack": 21
     },
     {
         "level": 11,
@@ -163,10 +163,10 @@
         "medium": 21,
         "low": 18,
         "hp": 245,
-        "strikeAttack": 24,
-        "strikeDamage": "2d12+15",
-        "spellDC": 30,
-        "spellAttack": 22
+        "strike_attack": 24,
+        "strike_damage": "2d12+15",
+        "spell_dc": 30,
+        "spell_attack": 22
     },
     {
         "level": 12,
@@ -176,10 +176,10 @@
         "medium": 22,
         "low": 19,
         "hp": 270,
-        "strikeAttack": 26,
-        "strikeDamage": "3d10+14",
-        "spellDC": 32,
-        "spellAttack": 24
+        "strike_attack": 26,
+        "strike_damage": "3d10+14",
+        "spell_dc": 32,
+        "spell_attack": 24
     },
     {
         "level": 13,
@@ -189,10 +189,10 @@
         "medium": 23,
         "low": 20,
         "hp": 295,
-        "strikeAttack": 27,
-        "strikeDamage": "3d10+16",
-        "spellDC": 33,
-        "spellAttack": 25
+        "strike_attack": 27,
+        "strike_damage": "3d10+16",
+        "spell_dc": 33,
+        "spell_attack": 25
     },
     {
         "level": 14,
@@ -202,10 +202,10 @@
         "medium": 25,
         "low": 22,
         "hp": 320,
-        "strikeAttack": 29,
-        "strikeDamage": "3d10+18",
-        "spellDC": 34,
-        "spellAttack": 26
+        "strike_attack": 29,
+        "strike_damage": "3d10+18",
+        "spell_dc": 34,
+        "spell_attack": 26
     },
     {
         "level": 15,
@@ -215,10 +215,10 @@
         "medium": 26,
         "low": 23,
         "hp": 345,
-        "strikeAttack": 30,
-        "strikeDamage": "3d12+17",
-        "spellDC": 36,
-        "spellAttack": 28
+        "strike_attack": 30,
+        "strike_damage": "3d12+17",
+        "spell_dc": 36,
+        "spell_attack": 28
     },
     {
         "level": 16,
@@ -228,10 +228,10 @@
         "medium": 28,
         "low": 25,
         "hp": 370,
-        "strikeAttack": 32,
-        "strikeDamage": "3d12+18",
-        "spellDC": 37,
-        "spellAttack": 29
+        "strike_attack": 32,
+        "strike_damage": "3d12+18",
+        "spell_dc": 37,
+        "spell_attack": 29
     },
     {
         "level": 17,
@@ -241,10 +241,10 @@
         "medium": 29,
         "low": 26,
         "hp": 395,
-        "strikeAttack": 33,
-        "strikeDamage": "3d12+19",
-        "spellDC": 38,
-        "spellAttack": 30
+        "strike_attack": 33,
+        "strike_damage": "3d12+19",
+        "spell_dc": 38,
+        "spell_attack": 30
     },
     {
         "level": 18,
@@ -254,10 +254,10 @@
         "medium": 30,
         "low": 27,
         "hp": 420,
-        "strikeAttack": 35,
-        "strikeDamage": "3d12+20",
-        "spellDC": 40,
-        "spellAttack": 32
+        "strike_attack": 35,
+        "strike_damage": "3d12+20",
+        "spell_dc": 40,
+        "spell_attack": 32
     },
     {
         "level": 19,
@@ -267,10 +267,10 @@
         "medium": 32,
         "low": 29,
         "hp": 445,
-        "strikeAttack": 36,
-        "strikeDamage": "4d10+20",
-        "spellDC": 41,
-        "spellAttack": 33
+        "strike_attack": 36,
+        "strike_damage": "4d10+20",
+        "spell_dc": 41,
+        "spell_attack": 33
     },
     {
         "level": 20,
@@ -280,9 +280,9 @@
         "medium": 33,
         "low": 30,
         "hp": 470,
-        "strikeAttack": 38,
-        "strikeDamage": "4d10+22",
-        "spellDC": 42,
-        "spellAttack": 34
+        "strike_attack": 38,
+        "strike_damage": "4d10+22",
+        "spell_dc": 42,
+        "spell_attack": 34
     }
 ]

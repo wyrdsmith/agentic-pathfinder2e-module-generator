@@ -2,86 +2,86 @@
     {
         "name": "Acrobatics",
         "url": "/Skills.aspx?ID=34",
-        "summary": "Acrobatics is a Dexterity-based skill used for tumbling, balancing, and similar feats of agility. It is a skill that relies on grace and control to navigate difficult terrain and avoid dangerous situations."
+        "description": "Acrobatics is a Dexterity-based skill used for tumbling, balancing, and similar feats of agility. It is a skill that relies on grace and control to navigate difficult terrain and avoid dangerous situations."
     },
     {
         "name": "Arcana",
         "url": "/Skills.aspx?ID=35",
-        "summary": "Arcana is an Intelligence-based skill used for identifying and understanding magic. It is a skill that relies on knowledge and study to navigate the complexities of the arcane arts."
+        "description": "Arcana is an Intelligence-based skill used for identifying and understanding magic. It is a skill that relies on knowledge and study to navigate the complexities of the arcane arts."
     },
     {
         "name": "Athletics",
         "url": "/Skills.aspx?ID=36",
-        "summary": "Athletics is a Strength-based skill used for climbing, jumping, and similar feats of physical prowess. It is a skill that relies on strength and power to overcome obstacles."
+        "description": "Athletics is a Strength-based skill used for climbing, jumping, and similar feats of physical prowess. It is a skill that relies on strength and power to overcome obstacles."
     },
     {
         "name": "Crafting",
         "url": "/Skills.aspx?ID=37",
-        "summary": "Crafting is an Intelligence-based skill used for creating and repairing items. It is a skill that relies on knowledge and skill to create and repair objects."
+        "description": "Crafting is an Intelligence-based skill used for creating and repairing items. It is a skill that relies on knowledge and skill to create and repair objects."
     },
     {
         "name": "Deception",
         "url": "/Skills.aspx?ID=38",
-        "summary": "Deception is a Charisma-based skill used for lying, bluffing, and misleading others. It is a skill that relies on social manipulation to achieve one's goals."
+        "description": "Deception is a Charisma-based skill used for lying, bluffing, and misleading others. It is a skill that relies on social manipulation to achieve one's goals."
     },
     {
         "name": "Diplomacy",
         "url": "/Skills.aspx?ID=39",
-        "summary": "Diplomacy is a Charisma-based skill used for persuading, negotiating, and influencing others. It is a skill that relies on social interaction to achieve one's goals."
+        "description": "Diplomacy is a Charisma-based skill used for persuading, negotiating, and influencing others. It is a skill that relies on social interaction to achieve one's goals."
     },
     {
         "name": "Intimidation",
         "url": "/Skills.aspx?ID=40",
-        "summary": "Intimidation is a Charisma-based skill used for frightening, threatening, and coercing others. It is a skill that relies on social pressure to achieve one's goals."
+        "description": "Intimidation is a Charisma-based skill used for frightening, threatening, and coercing others. It is a skill that relies on social pressure to achieve one's goals."
     },
     {
         "name": "Lore",
         "url": "/Skills.aspx?ID=41",
-        "summary": "Lore is an Intelligence-based skill used for recalling obscure knowledge and lore. It is a skill that relies on knowledge and study to recall information."
+        "description": "Lore is an Intelligence-based skill used for recalling obscure knowledge and lore. It is a skill that relies on knowledge and study to recall information."
     },
     {
         "name": "Medicine",
         "url": "/Skills.aspx?ID=42",
-        "summary": "Medicine is an Intelligence-based skill used for healing wounds and treating diseases. It is a skill that relies on knowledge and skill to heal others."
+        "description": "Medicine is an Intelligence-based skill used for healing wounds and treating diseases. It is a skill that relies on knowledge and skill to heal others."
     },
     {
         "name": "Nature",
         "url": "/Skills.aspx?ID=43",
-        "summary": "Nature is an Intelligence-based skill used for understanding and interacting with the natural world. It is a skill that relies on knowledge and skill to understand nature."
+        "description": "Nature is an Intelligence-based skill used for understanding and interacting with the natural world. It is a skill that relies on knowledge and skill to understand nature."
     },
     {
         "name": "Occultism",
         "url": "/Skills.aspx?ID=44",
-        "summary": "Occultism is an Intelligence-based skill used for understanding and interacting with the occult world. It is a skill that relies on knowledge and skill to understand the occult."
+        "description": "Occultism is an Intelligence-based skill used for understanding and interacting with the occult world. It is a skill that relies on knowledge and skill to understand the occult."
     },
     {
         "name": "Performance",
         "url": "/Skills.aspx?ID=45",
-        "summary": "Performance is a Charisma-based skill used for entertaining, impressing, and influencing others through performance. It is a skill that relies on social interaction to achieve one's goals."
+        "description": "Performance is a Charisma-based skill used for entertaining, impressing, and influencing others through performance. It is a skill that relies on social interaction to achieve one's goals."
     },
     {
         "name": "Religion",
         "url": "/Skills.aspx?ID=46",
-        "summary": "Religion is an Wisdom-based skill used for understanding and interacting with religious matters. It is a skill that relies on knowledge and study to understand religion."
+        "description": "Religion is an Wisdom-based skill used for understanding and interacting with religious matters. It is a skill that relies on knowledge and study to understand religion."
     },
     {
         "name": "Society",
         "url": "/Skills.aspx?ID=47",
-        "summary": "Society is an Intelligence-based skill used for understanding and interacting with social matters. It is a skill that relies on knowledge and study to understand society."
+        "description": "Society is an Intelligence-based skill used for understanding and interacting with social matters. It is a skill that relies on knowledge and study to understand society."
     },
     {
         "name": "Stealth",
         "url": "/Skills.aspx?ID=48",
-        "summary": "Stealth is a Dexterity-based skill used for sneaking, hiding, and moving undetected. It is a skill that relies on grace and control to move undetected."
+        "description": "Stealth is a Dexterity-based skill used for sneaking, hiding, and moving undetected. It is a skill that relies on grace and control to move undetected."
     },
     {
         "name": "Survival",
         "url": "/Skills.aspx?ID=49",
-        "summary": "Survival is a Wisdom-based skill used for tracking, foraging, and navigating the wilderness. It is a skill that relies on awareness and observation to survive in the wilderness."
+        "description": "Survival is a Wisdom-based skill used for tracking, foraging, and navigating the wilderness. It is a skill that relies on awareness and observation to survive in the wilderness."
     },
     {
         "name": "Thievery",
         "url": "/Skills.aspx?ID=50",
-        "summary": "Thievery is a Dexterity-based skill used for picking locks, disabling traps, and stealing. It is a skill that relies on grace and control to pick locks and disable traps."
+        "description": "Thievery is a Dexterity-based skill used for picking locks, disabling traps, and stealing. It is a skill that relies on grace and control to pick locks and disable traps."
     }
 ]

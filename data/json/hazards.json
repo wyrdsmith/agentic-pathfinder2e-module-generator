@@ -5,7 +5,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A door (or other portal) slams shut and locks.",
+        "description": "A door (or other portal) slams shut and locks.",
         "url": "/Hazards.aspx?ID=132"
     },
     {
@@ -14,7 +14,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap, Visual",
-        "summary": "The reflection of a wall shows a phantom door where none exists. This door can only be manipulated while viewed through the mirror's reflection.",
+        "description": "The reflection of a wall shows a phantom door where none exists. This door can only be manipulated while viewed through the mirror's reflection.",
         "url": "/Hazards.aspx?ID=626"
     },
     {
@@ -23,7 +23,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "Audible footsteps approach from behind, but their source is not apparent.",
+        "description": "Audible footsteps approach from behind, but their source is not apparent.",
         "url": "/Hazards.aspx?ID=133"
     },
     {
@@ -32,7 +32,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental, Fungus",
-        "summary": "This human-sized purple mushroom emits a piercing shriek when disturbed.",
+        "description": "This human-sized purple mushroom emits a piercing shriek when disturbed.",
         "url": "/Hazards.aspx?ID=32"
     },
     {
@@ -41,7 +41,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "Four pressure plates along this mirrored hall rotate vertically when stepped on, sending a creature on the pressure plate tipping into an adjacent \u2026",
+        "description": "Four pressure plates along this mirrored hall rotate vertically when stepped on, sending a creature on the pressure plate tipping into an adjacent \u2026",
         "url": "/Hazards.aspx?ID=627"
     },
     {
@@ -50,7 +50,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "The blood of those who died in the area bubbles up from the earth, soaking the soil and turning it into a bloody morass.",
+        "description": "The blood of those who died in the area bubbles up from the earth, soaking the soil and turning it into a bloody morass.",
         "url": "/Hazards.aspx?ID=134"
     },
     {
@@ -59,7 +59,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Illusion, Magical, Mental, Trap",
-        "summary": "Tiny runes carved around a doorframe or on a hall's walls surreptitiously confound creatures into circling the room or hallway they attempted to exit \u2026",
+        "description": "Tiny runes carved around a doorframe or on a hall's walls surreptitiously confound creatures into circling the room or hallway they attempted to exit \u2026",
         "url": "/Hazards.aspx?ID=628"
     },
     {
@@ -68,7 +68,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.",
+        "description": "Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.",
         "url": "/Hazards.aspx?ID=135"
     },
     {
@@ -77,7 +77,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep.",
+        "description": "A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep.",
         "url": "/Hazards.aspx?ID=474"
     },
     {
@@ -86,7 +86,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "Loose snow and ice have built up on a high surface, such as a tree branch or a rooftop. Its grip on the surface is tenuous, and it is likely to fall \u2026",
+        "description": "Loose snow and ice have built up on a high surface, such as a tree branch or a rooftop. Its grip on the surface is tenuous, and it is likely to fall \u2026",
         "url": "/Hazards.aspx?ID=482"
     },
     {
@@ -95,7 +95,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "The temperature suddenly drops as spectral forces gather in the area.",
+        "description": "The temperature suddenly drops as spectral forces gather in the area.",
         "url": "/Hazards.aspx?ID=136"
     },
     {
@@ -104,7 +104,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Illusion, Magical, Trap, Visual",
-        "summary": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, \u2026",
+        "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, \u2026",
         "url": "/Hazards.aspx?ID=629"
     },
     {
@@ -113,7 +113,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "Semitransparent sheets of webbing span the entryway, ready to capture small insects or hamper larger creatures that pass through.",
+        "description": "Semitransparent sheets of webbing span the entryway, ready to capture small insects or hamper larger creatures that pass through.",
         "url": "/Hazards.aspx?ID=473"
     },
     {
@@ -122,7 +122,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A spring-loaded, poisoned spine is hidden near the keyhole of a lock. Disabling or breaking the trap does not disable or break the lock.",
+        "description": "A spring-loaded, poisoned spine is hidden near the keyhole of a lock. Disabling or breaking the trap does not disable or break the lock.",
         "url": "/Hazards.aspx?ID=477"
     },
     {
@@ -131,7 +131,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Enchantment, Magical, Mental, Trap, Visual",
-        "summary": "This mirror reflects the viewer's deepest desires.",
+        "description": "This mirror reflects the viewer's deepest desires.",
         "url": "/Hazards.aspx?ID=630"
     },
     {
@@ -140,7 +140,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "The anger trapped within a structure shatters a window, showering glass in adjacent spaces.",
+        "description": "The anger trapped within a structure shatters a window, showering glass in adjacent spaces.",
         "url": "/Hazards.aspx?ID=137"
     },
     {
@@ -149,7 +149,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.",
+        "description": "Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.",
         "url": "/Hazards.aspx?ID=481"
     },
     {
@@ -158,7 +158,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "A large pitcher plant occupying a 5-foot space sits seemingly dormant with its dull petals open.",
+        "description": "A large pitcher plant occupying a 5-foot space sits seemingly dormant with its dull petals open.",
         "url": "/Hazards.aspx?ID=306"
     },
     {
@@ -167,7 +167,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A scruffy stuffed bear animates, biting whoever disturbs it.",
+        "description": "A scruffy stuffed bear animates, biting whoever disturbs it.",
         "url": "/Hazards.aspx?ID=138"
     },
     {
@@ -176,7 +176,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental, Fungus",
-        "summary": "This grotesque fungus releases poisonous spores when a creature comes near.",
+        "description": "This grotesque fungus releases poisonous spores when a creature comes near.",
         "url": "/Hazards.aspx?ID=478"
     },
     {
@@ -185,7 +185,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.",
+        "description": "This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.",
         "url": "/Hazards.aspx?ID=631"
     },
     {
@@ -194,7 +194,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A wall socket loaded with a spear connects to a floor tile in one 5-foot square.",
+        "description": "A wall socket loaded with a spear connects to a floor tile in one 5-foot square.",
         "url": "/Hazards.aspx?ID=483"
     },
     {
@@ -203,7 +203,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A mischievous spirit pushes a bookshelf over onto a creature.",
+        "description": "A mischievous spirit pushes a bookshelf over onto a creature.",
         "url": "/Hazards.aspx?ID=139"
     },
     {
@@ -212,7 +212,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "Discreet webbing at throat level snags a creature that walks into it.",
+        "description": "Discreet webbing at throat level snags a creature that walks into it.",
         "url": "/Hazards.aspx?ID=31"
     },
     {
@@ -221,7 +221,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "The wall bulges out in the shape of a howling humanoid face as it twists and forms tendrils reaching for nearby creatures. This haunt is formed when \u2026",
+        "description": "The wall bulges out in the shape of a howling humanoid face as it twists and forms tendrils reaching for nearby creatures. This haunt is formed when \u2026",
         "url": "/Hazards.aspx?ID=151"
     },
     {
@@ -230,7 +230,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "This 20-foot-by-20-foot patch of ground is cobwebbed with cracks and fissures that crumble when a creature steps on it.",
+        "description": "This 20-foot-by-20-foot patch of ground is cobwebbed with cracks and fissures that crumble when a creature steps on it.",
         "url": "/Hazards.aspx?ID=304"
     },
     {
@@ -239,7 +239,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Electricity, Magical, Trap",
-        "summary": "An invisible rune imprinted on a door latch releases a powerful electric discharge.",
+        "description": "An invisible rune imprinted on a door latch releases a powerful electric discharge.",
         "url": "/Hazards.aspx?ID=468"
     },
     {
@@ -248,7 +248,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Illusion, Magical, Trap",
-        "summary": "The floor in this chamber is an illusion, which conceals a 40-foot drop to the true floor below. Additionally, the area beneath the floor is \u2026",
+        "description": "The floor in this chamber is an illusion, which conceals a 40-foot drop to the true floor below. Additionally, the area beneath the floor is \u2026",
         "url": "/Hazards.aspx?ID=632"
     },
     {
@@ -257,7 +257,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A spirit appears and arrests the creature by clamping manacles around their wrists. Disable DC 18  Athletics  to seize the manacles from the spirit, \u2026",
+        "description": "A spirit appears and arrests the creature by clamping manacles around their wrists. Disable DC 18  Athletics  to seize the manacles from the spirit, \u2026",
         "url": "/Hazards.aspx?ID=140"
     },
     {
@@ -266,7 +266,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "The footing on this sloped ground appears to be stable at first glance, but the tiny rocks that cover it are loosely packed and prone to slipping.",
+        "description": "The footing on this sloped ground appears to be stable at first glance, but the tiny rocks that cover it are loosely packed and prone to slipping.",
         "url": "/Hazards.aspx?ID=36"
     },
     {
@@ -275,7 +275,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "An invisible force bats creatures aside, hurling them into a nearby wall.",
+        "description": "An invisible force bats creatures aside, hurling them into a nearby wall.",
         "url": "/Hazards.aspx?ID=141"
     },
     {
@@ -284,7 +284,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A web tripwire lets loose a bundle of boulders that fall on all targets within a 10-foot square.",
+        "description": "A web tripwire lets loose a bundle of boulders that fall on all targets within a 10-foot square.",
         "url": "/Hazards.aspx?ID=30"
     },
     {
@@ -293,7 +293,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Mechanical, Trap",
-        "summary": "A trapdoor covers a 10-foot-square pit that's 30 feet deep and has 5 feet of water at the bottom. Four water spouts in the walls connect to hidden \u2026",
+        "description": "A trapdoor covers a 10-foot-square pit that's 30 feet deep and has 5 feet of water at the bottom. Four water spouts in the walls connect to hidden \u2026",
         "url": "/Hazards.aspx?ID=489"
     },
     {
@@ -302,7 +302,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Complex, Environmental",
-        "summary": "A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.",
+        "description": "A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.",
         "url": "/Hazards.aspx?ID=493"
     },
     {
@@ -311,7 +311,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "As a creature touches a hand-written letter, they witness the letter's author scribe it in the past; each pen stroke across the page carves the \u2026",
+        "description": "As a creature touches a hand-written letter, they witness the letter's author scribe it in the past; each pen stroke across the page carves the \u2026",
         "url": "/Hazards.aspx?ID=142"
     },
     {
@@ -320,7 +320,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.",
+        "description": "Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.",
         "url": "/Hazards.aspx?ID=480"
     },
     {
@@ -329,7 +329,7 @@
         "hazard_type": "Trap",
         "rarity": "Uncommon",
         "trait": "Mechanical, Steam, Trap, Uncommon",
-        "summary": "Large pressurized pipes connected to a trip wire are rigged to release a blast of steam on trespassers.",
+        "description": "Large pressurized pipes connected to a trip wire are rigged to release a blast of steam on trespassers.",
         "url": "/Hazards.aspx?ID=95"
     },
     {
@@ -338,7 +338,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, \u2026",
+        "description": "On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, \u2026",
         "url": "/Hazards.aspx?ID=485"
     },
     {
@@ -347,7 +347,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "When a living creature crosses the midpoint of the trapped tunnel, necromantic magic partially animates the corpses buried in the walls and ceiling.",
+        "description": "When a living creature crosses the midpoint of the trapped tunnel, necromantic magic partially animates the corpses buried in the walls and ceiling.",
         "url": "/Hazards.aspx?ID=50"
     },
     {
@@ -356,7 +356,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A phantom conductor appears with a flourish, causing spectral instruments with razor-like strings to appear in the hands of those present. As the \u2026",
+        "description": "A phantom conductor appears with a flourish, causing spectral instruments with razor-like strings to appear in the hands of those present. As the \u2026",
         "url": "/Hazards.aspx?ID=152"
     },
     {
@@ -365,7 +365,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Mechanical, Trap",
-        "summary": "A metal pole with three razor-sharp spinning blades is hidden in the floor, connected to trigger plates in up to eight floor tiles and a hidden \u2026",
+        "description": "A metal pole with three razor-sharp spinning blades is hidden in the floor, connected to trigger plates in up to eight floor tiles and a hidden \u2026",
         "url": "/Hazards.aspx?ID=494"
     },
     {
@@ -374,7 +374,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A massive ectoplasmic hand forms around a creature and squeezes it.",
+        "description": "A massive ectoplasmic hand forms around a creature and squeezes it.",
         "url": "/Hazards.aspx?ID=143"
     },
     {
@@ -383,7 +383,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A chair on concealed tracks surges forward, knocking a creature into the chair's seat and trapping them in place with clamping armrests.",
+        "description": "A chair on concealed tracks surges forward, knocking a creature into the chair's seat and trapping them in place with clamping armrests.",
         "url": "/Hazards.aspx?ID=633"
     },
     {
@@ -392,7 +392,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Fire, Magical, Trap",
-        "summary": "An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.",
+        "description": "An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.",
         "url": "/Hazards.aspx?ID=469"
     },
     {
@@ -401,7 +401,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "The reflection in the mirror subtly twists and distorts, its expression taking on an unnerving sneer of malice.",
+        "description": "The reflection in the mirror subtly twists and distorts, its expression taking on an unnerving sneer of malice.",
         "url": "/Hazards.aspx?ID=484"
     },
     {
@@ -410,7 +410,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "Hands of the buried dead rise from the ground, grabbing and tearing at creatures in the area to drag them underground.",
+        "description": "Hands of the buried dead rise from the ground, grabbing and tearing at creatures in the area to drag them underground.",
         "url": "/Hazards.aspx?ID=153"
     },
     {
@@ -419,7 +419,7 @@
         "hazard_type": "",
         "rarity": "Rare",
         "trait": "Complex, Kaiju, Magical, Mythic, Primal, Rare",
-        "summary": "Primal magic becomes unpredictable near areas where  Agyra  lairs, sometimes to hazardous effect.",
+        "description": "Primal magic becomes unpredictable near areas where  Agyra  lairs, sometimes to hazardous effect.",
         "url": "/Hazards.aspx?ID=461"
     },
     {
@@ -428,7 +428,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Conjuration, Magical, Teleportation, Trap",
-        "summary": "Each time a creature enters the room, it slips through the floor, tumbles through an interdimensional void, and falls back into the room through the \u2026",
+        "description": "Each time a creature enters the room, it slips through the floor, tumbles through an interdimensional void, and falls back into the room through the \u2026",
         "url": "/Hazards.aspx?ID=634"
     },
     {
@@ -437,7 +437,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A choir of lost souls rises out of the floor, singing an eerie chant that terrifies its listeners and buffets their bodies with walls of sound.",
+        "description": "A choir of lost souls rises out of the floor, singing an eerie chant that terrifies its listeners and buffets their bodies with walls of sound.",
         "url": "/Hazards.aspx?ID=470"
     },
     {
@@ -446,7 +446,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "A tube of hallucinogenic powder armed with a miniature explosive is connected to a doorknob or similar latch.",
+        "description": "A tube of hallucinogenic powder armed with a miniature explosive is connected to a doorknob or similar latch.",
         "url": "/Hazards.aspx?ID=471"
     },
     {
@@ -455,7 +455,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "Two opposing mirrors spawn illusory duplicates of creatures in the hall in an unending tide.",
+        "description": "Two opposing mirrors spawn illusory duplicates of creatures in the hall in an unending tide.",
         "url": "/Hazards.aspx?ID=638"
     },
     {
@@ -464,7 +464,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Mechanical, Trap",
-        "summary": "An ornate wheel set into a wall\u2014divided into six segments with colored runes on each\u2014is controlled by a magical sensor that detects any creature \u2026",
+        "description": "An ornate wheel set into a wall\u2014divided into six segments with colored runes on each\u2014is controlled by a magical sensor that detects any creature \u2026",
         "url": "/Hazards.aspx?ID=496"
     },
     {
@@ -473,7 +473,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "A curse is imbued on an entryway's threshold.",
+        "description": "A curse is imbued on an entryway's threshold.",
         "url": "/Hazards.aspx?ID=475"
     },
     {
@@ -482,7 +482,7 @@
         "hazard_type": "",
         "rarity": "Common",
         "trait": "",
-        "summary": "A sportlebore hides amid victuals on a plate of food or within a pack of trail rations.",
+        "description": "A sportlebore hides amid victuals on a plate of food or within a pack of trail rations.",
         "url": "/Hazards.aspx?ID=625"
     },
     {
@@ -491,7 +491,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "Influenced by the guilt and regrets of the dead, creatures are wrapped in weighted chains that embody their own sins.",
+        "description": "Influenced by the guilt and regrets of the dead, creatures are wrapped in weighted chains that embody their own sins.",
         "url": "/Hazards.aspx?ID=144"
     },
     {
@@ -500,7 +500,7 @@
         "hazard_type": "",
         "rarity": "Rare",
         "trait": "Kaiju, Mythic, Primal, Rare",
-        "summary": "Hurricane-force winds rip through the area as  Agyra  flies past.",
+        "description": "Hurricane-force winds rip through the area as  Agyra  flies past.",
         "url": "/Hazards.aspx?ID=462"
     },
     {
@@ -509,7 +509,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A raging spectral inferno arises out of thin air, strengthening all  undead  creatures within its area. This haunt most often arises from the charred \u2026",
+        "description": "A raging spectral inferno arises out of thin air, strengthening all  undead  creatures within its area. This haunt most often arises from the charred \u2026",
         "url": "/Hazards.aspx?ID=490"
     },
     {
@@ -518,7 +518,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Complex, Environmental, Magical",
-        "summary": "This 15-foot-wide patch of destabilized sand attempts to submerge creatures who wield magic. A desert tree with dense bright green foliage, pale pink \u2026",
+        "description": "This 15-foot-wide patch of destabilized sand attempts to submerge creatures who wield magic. A desert tree with dense bright green foliage, pale pink \u2026",
         "url": "/Hazards.aspx?ID=305"
     },
     {
@@ -527,7 +527,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A spirit musician rises out of an instrument and plays a frantic, bone-shaking melody.",
+        "description": "A spirit musician rises out of an instrument and plays a frantic, bone-shaking melody.",
         "url": "/Hazards.aspx?ID=145"
     },
     {
@@ -536,7 +536,7 @@
         "hazard_type": "Trap",
         "rarity": "Rare",
         "trait": "Electricity, Mechanical, Rare, Trap",
-        "summary": "A stretch of fence is electrified by a hidden Stasian coil.",
+        "description": "A stretch of fence is electrified by a hidden Stasian coil.",
         "url": "/Hazards.aspx?ID=96"
     },
     {
@@ -545,7 +545,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental, Fungus",
-        "summary": "Poisonous mold spores assault nearby creatures.",
+        "description": "Poisonous mold spores assault nearby creatures.",
         "url": "/Hazards.aspx?ID=10"
     },
     {
@@ -554,7 +554,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "Allies appear to shed their disguises and reveal themselves to be malevolent monsters.",
+        "description": "Allies appear to shed their disguises and reveal themselves to be malevolent monsters.",
         "url": "/Hazards.aspx?ID=487"
     },
     {
@@ -563,7 +563,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "A hall's four walls become fluid and elastic when a creature reaches the hall's midpoint.",
+        "description": "A hall's four walls become fluid and elastic when a creature reaches the hall's midpoint.",
         "url": "/Hazards.aspx?ID=639"
     },
     {
@@ -572,7 +572,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Mechanical, Trap",
-        "summary": "Countless holes to launch poison darts from line a long hallway with a hidden control panel on the far end.",
+        "description": "Countless holes to launch poison darts from line a long hallway with a hidden control panel on the far end.",
         "url": "/Hazards.aspx?ID=492"
     },
     {
@@ -581,7 +581,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Mechanical, Trap",
-        "summary": "An iron trapdoor covers an infinitely deep 10-footsquare pit.",
+        "description": "An iron trapdoor covers an infinitely deep 10-footsquare pit.",
         "url": "/Hazards.aspx?ID=467"
     },
     {
@@ -590,7 +590,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Environmental",
-        "summary": "A caustic green film clings to the ceiling above, watching for prey to pass beneath it.",
+        "description": "A caustic green film clings to the ceiling above, watching for prey to pass beneath it.",
         "url": "/Hazards.aspx?ID=40"
     },
     {
@@ -599,7 +599,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "Magic runes carved into a doorframe connect a door to the Plane of Air when opened, blowing creatures down the connecting hall.",
+        "description": "Magic runes carved into a doorframe connect a door to the Plane of Air when opened, blowing creatures down the connecting hall.",
         "url": "/Hazards.aspx?ID=640"
     },
     {
@@ -608,7 +608,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A cyclone of angry spirits surges around the area.",
+        "description": "A cyclone of angry spirits surges around the area.",
         "url": "/Hazards.aspx?ID=154"
     },
     {
@@ -617,7 +617,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A wailing spirit appears and gouges their own eyes. As they do, blood seeps from the eyes of those who witness the act, obscuring their vision.",
+        "description": "A wailing spirit appears and gouges their own eyes. As they do, blood seeps from the eyes of those who witness the act, obscuring their vision.",
         "url": "/Hazards.aspx?ID=146"
     },
     {
@@ -626,7 +626,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "An object haunted by the echoes of a vicious mind attempts to kill someone who comes near.",
+        "description": "An object haunted by the echoes of a vicious mind attempts to kill someone who comes near.",
         "url": "/Hazards.aspx?ID=466"
     },
     {
@@ -635,7 +635,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Mechanical, Trap",
-        "summary": "Four gated channels carved into stone allow lava to flow into a 15-foot-tall room; the floor can withdraw to allow the hardened lava to fall into a \u2026",
+        "description": "Four gated channels carved into stone allow lava to flow into a 15-foot-tall room; the floor can withdraw to allow the hardened lava to fall into a \u2026",
         "url": "/Hazards.aspx?ID=26"
     },
     {
@@ -644,7 +644,7 @@
         "hazard_type": "Environmental",
         "rarity": "Common",
         "trait": "Complex, Environmental",
-        "summary": "Whether made up of water rushing through the streets that sweeps up dangerous debris along the way or a less natural substance bursting free of its \u2026",
+        "description": "Whether made up of water rushing through the streets that sweeps up dangerous debris along the way or a less natural substance bursting free of its \u2026",
         "url": "/Hazards.aspx?ID=46"
     },
     {
@@ -653,7 +653,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Mechanical, Trap",
-        "summary": "An enormous hammer at an edifice's entrance swings down in an attempt to damage a creature entering an area, push it back, and prevent it from going \u2026",
+        "description": "An enormous hammer at an edifice's entrance swings down in an attempt to damage a creature entering an area, push it back, and prevent it from going \u2026",
         "url": "/Hazards.aspx?ID=472"
     },
     {
@@ -662,7 +662,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A robe-clad spirit rises out of the floor, pointing an accusing finger.",
+        "description": "A robe-clad spirit rises out of the floor, pointing an accusing finger.",
         "url": "/Hazards.aspx?ID=41"
     },
     {
@@ -671,7 +671,7 @@
         "hazard_type": "",
         "rarity": "Rare",
         "trait": "Complex, Kaiju, Mythic, Primal, Rare",
-        "summary": "Electricity suffuses an area where  Agyra  has used her lightning breath multiple times.",
+        "description": "Electricity suffuses an area where  Agyra  has used her lightning breath multiple times.",
         "url": "/Hazards.aspx?ID=460"
     },
     {
@@ -680,7 +680,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A skeletally thin spirit appears, weeping as it shoves earth and stones down its throat in an effort to stave off hunger.",
+        "description": "A skeletally thin spirit appears, weeping as it shoves earth and stones down its throat in an effort to stave off hunger.",
         "url": "/Hazards.aspx?ID=147"
     },
     {
@@ -689,7 +689,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "A Druidic glyph attempts to transform a trespasser into an animal.",
+        "description": "A Druidic glyph attempts to transform a trespasser into an animal.",
         "url": "/Hazards.aspx?ID=479"
     },
     {
@@ -698,7 +698,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A whirling tornado of spectrally propelled glass and steel slices whatever it touches to ribbons.",
+        "description": "A whirling tornado of spectrally propelled glass and steel slices whatever it touches to ribbons.",
         "url": "/Hazards.aspx?ID=491"
     },
     {
@@ -707,7 +707,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Mechanical, Trap",
-        "summary": "Three innocuous decorations instilled with telekinetic magic pull objects and pieces of the room itself into spinning clouds of debris that attack \u2026",
+        "description": "Three innocuous decorations instilled with telekinetic magic pull objects and pieces of the room itself into spinning clouds of debris that attack \u2026",
         "url": "/Hazards.aspx?ID=27"
     },
     {
@@ -716,7 +716,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "The pool sucks in creatures that fall into it, making them sink into its endless depths.",
+        "description": "The pool sucks in creatures that fall into it, making them sink into its endless depths.",
         "url": "/Hazards.aspx?ID=643"
     },
     {
@@ -725,7 +725,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Complex, Environmental, Mythic, Rare",
-        "summary": "An overwhelming trumpeting sound vibrates and suffuses the area, causing everything to slow.",
+        "description": "An overwhelming trumpeting sound vibrates and suffuses the area, causing everything to slow.",
         "url": "/Hazards.aspx?ID=463"
     },
     {
@@ -734,7 +734,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "A rift attempts to draw creatures into another plane (the GM chooses the specific plane).",
+        "description": "A rift attempts to draw creatures into another plane (the GM chooses the specific plane).",
         "url": "/Hazards.aspx?ID=476"
     },
     {
@@ -743,7 +743,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "Three phantom hounds chase down intruders, damaging any they pass through.",
+        "description": "Three phantom hounds chase down intruders, damaging any they pass through.",
         "url": "/Hazards.aspx?ID=193"
     },
     {
@@ -752,7 +752,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Transmutation, Trap",
-        "summary": "Fun-house mirrors distort a viewer's reflection, painfully reshaping their body to match what appears in the reflected images.",
+        "description": "Fun-house mirrors distort a viewer's reflection, painfully reshaping their body to match what appears in the reflected images.",
         "url": "/Hazards.aspx?ID=635"
     },
     {
@@ -761,7 +761,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Environmental, Kaiju, Rare",
-        "summary": "Ebeshra slithers across the ground, causing the earth to tremble as though from a powerful earthquake.",
+        "description": "Ebeshra slithers across the ground, causing the earth to tremble as though from a powerful earthquake.",
         "url": "/Hazards.aspx?ID=110"
     },
     {
@@ -770,7 +770,7 @@
         "hazard_type": "",
         "rarity": "Rare",
         "trait": "Complex, Magical, Rare, Unholy",
-        "summary": "A low howl rises from the ground, gathering strength as scraps of ancient armor, bone fragments, and clumps of earth rise into the air. Crimson vapor \u2026",
+        "description": "A low howl rises from the ground, gathering strength as scraps of ancient armor, bone fragments, and clumps of earth rise into the air. Crimson vapor \u2026",
         "url": "/Hazards.aspx?ID=464"
     },
     {
@@ -779,7 +779,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A magic mirror replaces characters with malicious mirror duplicates from another dimension.\r\n",
+        "description": "A magic mirror replaces characters with malicious mirror duplicates from another dimension.\r\n",
         "url": "/Hazards.aspx?ID=641"
     },
     {
@@ -788,7 +788,7 @@
         "hazard_type": "Haunt",
         "rarity": "Uncommon",
         "trait": "Clockwork, Complex, Haunt, Mechanical, Uncommon",
-        "summary": "A host of violent spirits possess three clockwork mannequins, and each lashes out at any creatures that dare walk near.",
+        "description": "A host of violent spirits possess three clockwork mannequins, and each lashes out at any creatures that dare walk near.",
         "url": "/Hazards.aspx?ID=97"
     },
     {
@@ -797,7 +797,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "Four vengeful spirits grab interlopers and toss them off the edge of a nearby 120-foot-tall cliff.",
+        "description": "Four vengeful spirits grab interlopers and toss them off the edge of a nearby 120-foot-tall cliff.",
         "url": "/Hazards.aspx?ID=42"
     },
     {
@@ -806,7 +806,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Complex, Environmental, Kaiju, Rare",
-        "summary": "Ebeshra brushes against a structure, possibly causing it to collapse.",
+        "description": "Ebeshra brushes against a structure, possibly causing it to collapse.",
         "url": "/Hazards.aspx?ID=107"
     },
     {
@@ -815,7 +815,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "Four massive skulls of aurochs, enormous wild cattle, rise into the air, each trailing its ghostly body behind it. ",
+        "description": "Four massive skulls of aurochs, enormous wild cattle, rise into the air, each trailing its ghostly body behind it. ",
         "url": "/Hazards.aspx?ID=155"
     },
     {
@@ -824,7 +824,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A pack of cannibalistic spirits swarm through the area, devouring living creatures.",
+        "description": "A pack of cannibalistic spirits swarm through the area, devouring living creatures.",
         "url": "/Hazards.aspx?ID=148"
     },
     {
@@ -833,7 +833,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "An eerie orchestra compels all who hear it to dance until they collapse from exhaustion.",
+        "description": "An eerie orchestra compels all who hear it to dance until they collapse from exhaustion.",
         "url": "/Hazards.aspx?ID=488"
     },
     {
@@ -842,7 +842,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "Warding magic attempts to trap intruders or would-be thieves in a disrupted time flow.",
+        "description": "Warding magic attempts to trap intruders or would-be thieves in a disrupted time flow.",
         "url": "/Hazards.aspx?ID=16"
     },
     {
@@ -851,7 +851,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "These desperate spirits are the echoes of people who committed great atrocities in the name of an evil god. Now, they are left with only the \u2026",
+        "description": "These desperate spirits are the echoes of people who committed great atrocities in the name of an evil god. Now, they are left with only the \u2026",
         "url": "/Hazards.aspx?ID=43"
     },
     {
@@ -860,7 +860,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "An arcane sigil forces creatures to confront their greatest fear.",
+        "description": "An arcane sigil forces creatures to confront their greatest fear.",
         "url": "/Hazards.aspx?ID=636"
     },
     {
@@ -869,7 +869,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A spirit steps out of a covered mirror, pulling off and becoming shrouded in the cloth, which reveals the mirror. The shrouded figure attacks the \u2026",
+        "description": "A spirit steps out of a covered mirror, pulling off and becoming shrouded in the cloth, which reveals the mirror. The shrouded figure attacks the \u2026",
         "url": "/Hazards.aspx?ID=642"
     },
     {
@@ -878,7 +878,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A wave of spirits fly through the area, passing right through the living.",
+        "description": "A wave of spirits fly through the area, passing right through the living.",
         "url": "/Hazards.aspx?ID=149"
     },
     {
@@ -887,7 +887,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Divine, Electricity, Environmental, Evocation, Kaiju, Rare",
-        "summary": "Ebeshra aligns its crystalline form to produce a blast of lightning that charges the surrounding area with electrical energy.",
+        "description": "Ebeshra aligns its crystalline form to produce a blast of lightning that charges the surrounding area with electrical energy.",
         "url": "/Hazards.aspx?ID=111"
     },
     {
@@ -896,7 +896,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Complex, Magical, Trap",
-        "summary": "A magically contagious wail of the banshee spell is trapped in the larynx of an invisible, mummified elf.",
+        "description": "A magically contagious wail of the banshee spell is trapped in the larynx of an invisible, mummified elf.",
         "url": "/Hazards.aspx?ID=29"
     },
     {
@@ -905,7 +905,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Mechanical, Trap",
-        "summary": "A wickedly sharp saw blade descends and travels along grooves in a complex path throughout the room, attempting to decapitate everyone within.",
+        "description": "A wickedly sharp saw blade descends and travels along grooves in a complex path throughout the room, attempting to decapitate everyone within.",
         "url": "/Hazards.aspx?ID=486"
     },
     {
@@ -914,7 +914,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Complex, Haunt",
-        "summary": "A formless spirit drains life from the living, becoming progressively visible as its victims weaken.",
+        "description": "A formless spirit drains life from the living, becoming progressively visible as its victims weaken.",
         "url": "/Hazards.aspx?ID=156"
     },
     {
@@ -923,7 +923,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Abjuration, Divine, Environmental, Kaiju, Rare",
-        "summary": "Ebeshra fires a crystal at a creature to pin them onto the  Material Plane .",
+        "description": "Ebeshra fires a crystal at a creature to pin them onto the  Material Plane .",
         "url": "/Hazards.aspx?ID=108"
     },
     {
@@ -932,7 +932,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "A tombstone bears the name of those who look upon it, causing their hearts to seize.",
+        "description": "A tombstone bears the name of those who look upon it, causing their hearts to seize.",
         "url": "/Hazards.aspx?ID=150"
     },
     {
@@ -941,7 +941,7 @@
         "hazard_type": "Haunt",
         "rarity": "Common",
         "trait": "Haunt",
-        "summary": "Spirits trapped inside a haunted window harm those who touch the window.",
+        "description": "Spirits trapped inside a haunted window harm those who touch the window.",
         "url": "/Hazards.aspx?ID=637"
     },
     {
@@ -950,7 +950,7 @@
         "hazard_type": "Trap",
         "rarity": "Common",
         "trait": "Magical, Trap",
-        "summary": "Powerful warding magic tied to an object or location tries to regress the ages of a creature and its allies.",
+        "description": "Powerful warding magic tied to an object or location tries to regress the ages of a creature and its allies.",
         "url": "/Hazards.aspx?ID=18"
     },
     {
@@ -959,7 +959,7 @@
         "hazard_type": "Environmental",
         "rarity": "Rare",
         "trait": "Complex, Conjuration, Divine, Environmental, Kaiju, Rare, Teleportation",
-        "summary": "Ebeshra opens a massive rift in the  Material Plane  that pulls nearby creatures into another plane entirely. The rift is typically to a random plane \u2026",
+        "description": "Ebeshra opens a massive rift in the  Material Plane  that pulls nearby creatures into another plane entirely. The rift is typically to a random plane \u2026",
         "url": "/Hazards.aspx?ID=109"
     },
     {
@@ -968,7 +968,7 @@
         "hazard_type": "Trap",
         "rarity": "Rare",
         "trait": "Magical, Rare, Trap",
-        "summary": "A roiling red orb, forged from a drop of the god  Rovagug 's blood, rains fire from the sky when a specified condition is met.",
+        "description": "A roiling red orb, forged from a drop of the god  Rovagug 's blood, rains fire from the sky when a specified condition is met.",
         "url": "/Hazards.aspx?ID=465"
     }
 ]

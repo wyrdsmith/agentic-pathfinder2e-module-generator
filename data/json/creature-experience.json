@@ -1,46 +1,46 @@
 [
     {
-        "level": -4,
+        "level_difference": -4,
         "xp": 10,
         "role": "Low-threat lackey or hazard"
     },
     {
-        "level": -3,
+        "level_difference": -3,
         "xp": 15,
         "role": "Low- or moderate-threat lackey or hazard"
     },
     {
-        "level": -2,
+        "level_difference": -2,
         "xp": 20,
         "role": "Any lackey or standard creature or hazard"
     },
     {
-        "level": -1,
+        "level_difference": -1,
         "xp": 30,
         "role": "Any standard creature or hazard"
     },
     {
-        "level": 0,
+        "level_difference": 0,
         "xp": 40,
         "role": "Any standard creature or low-threat boss or hazard"
     },
     {
-        "level": 1,
+        "level_difference": 1,
         "xp": 60,
         "role": "Low- or moderate-threat boss or hazard"
     },
     {
-        "level": 2,
+        "level_difference": 2,
         "xp": 80,
         "role": "Moderate- or severe-threat boss or hazard"
     },
     {
-        "level": 3,
+        "level_difference": 3,
         "xp": 120,
         "role": "Severe- or extreme-threat boss or hazard"
     },
     {
-        "level": 4,
+        "level_difference": 4,
         "xp": 160,
         "role": "Extreme-threat solo boss or hazard"
     }

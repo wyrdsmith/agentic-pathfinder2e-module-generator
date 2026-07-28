@@ -1,26 +1,26 @@
 [
     {
-        "name": "Trivial",
+        "threat_level": "Trivial",
         "experience": 40,
         "adjustment": 10
     },
     {
-        "name": "Low",
+        "threat_level": "Low",
         "experience": 60,
         "adjustment": 20
     },
     {
-        "name": "Moderate",
+        "threat_level": "Moderate",
         "experience": 80,
         "adjustment": 20
     },
     {
-        "name": "Severe",
+        "threat_level": "Severe",
         "experience": 120,
         "adjustment": 30
     },
     {
-        "name": "Extreme",
+        "threat_level": "Extreme",
         "experience": 160,
         "adjustment": 40
     }
