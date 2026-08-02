@@ -1,14 +1,14 @@
 [
     {
         "name": "Common",
-        "probability": 0.6
+        "probability": 0
     },
     {
         "name": "Uncommon",
-        "probability": 0.3
+        "probability": 0.6
     },
     {
         "name": "Rare",
-        "probability": 0.1
+        "probability": 0.9
     }
 ]

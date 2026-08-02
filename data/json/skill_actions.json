@@ -1,0 +1,485 @@
+[
+    {
+        "skill": "Acrobatics",
+        "name": "Balance",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Traverse a narrow surface or avoid falling."
+    },
+    {
+        "skill": "Acrobatics",
+        "name": "Tumble Through",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Evade an enemy by tumbling through their space or any space they threaten."
+    },
+    {
+        "skill": "Acrobatics",
+        "name": "Maneuver in Flight",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Attempting a difficult maneuver while flying."
+    },
+    {
+        "skill": "Acrobatics",
+        "name": "Squeeze",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Contorting to squeeze through a space so small one can barely fit through."
+    },
+    {
+        "skill": "Arcana",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall Knowledge about arcane theories; magic traditions; creatures of arcane significance (like constructs, beasts, and elementals); and the Astral Plane, Elemental Planes, and the Netherworld."
+    },
+    {
+        "skill": "Arcana",
+        "name": "Borrow an Arcane Spell",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Prepare a spell from another spellcaster's spellbook or collection of spells."
+    },
+    {
+        "skill": "Arcana",
+        "name": "Decipher Writing",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Decipher a script about arcane theories or spells."
+    },
+    {
+        "skill": "Arcana",
+        "name": "Identify Magic",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Identify a spell from the arcane tradition."
+    },
+    {
+        "skill": "Arcana",
+        "name": "Learn a Spell",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Learn a new spell from the arcane tradition."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Climb",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Climb up, down or across an incline, wall or other obstacle."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Force Open",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Forcefully open a door, window, container or heavy gate using a tool or one's body."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Grapple",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Grab hold of a creature."
+    },
+    {
+        "skill": "Athletics",
+        "name": "High Jump",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Jump vertically as high as possible after a short run up."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Long Jump",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Jump horizontally as far as possible after a short run."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Reposition",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Bodily move another creature or object around."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Shove",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Push a creature away."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Swim",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Swim through a body of water."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Trip",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Knock a creature prone."
+    },
+    {
+        "skill": "Athletics",
+        "name": "Disarm",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Knock a weapon from a creature's grasp."
+    },
+    {
+        "skill": "Crafting",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall Knowledge about alchemical reactions, the value of items, engineering, unusual materials, and alchemical or mechanical creatures, such as constructs."
+    },
+    {
+        "skill": "Crafting",
+        "name": "Repair",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Fix a broken item."
+    },
+    {
+        "skill": "Crafting",
+        "name": "Craft",
+        "mode": "Downtime",
+        "minimum_training": "Trained",
+        "description": "Craft an item."
+    },
+    {
+        "skill": "Crafting",
+        "name": "Earn Income",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Earn income by crafting or repairing items and goods for the market."
+    },
+    {
+        "skill": "Crafting",
+        "name": "Identify Alchemy",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Identify alchemical items and reagents."
+    },
+    {
+        "skill": "Deception",
+        "name": "Create a Diversion",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Distract a creature and draw its attention elsewhere."
+    },
+    {
+        "skill": "Deception",
+        "name": "Feint",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Perform a feint in combat to leave an opponent off-guard."
+    },
+    {
+        "skill": "Deception",
+        "name": "Impersonate",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Create a disguise to pass as someone else."
+    },
+    {
+        "skill": "Deception",
+        "name": "Lie",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Tell a lie to deceive someone."
+    },
+    {
+        "skill": "Diplomacy",
+        "name": "Gather Information",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Canvass local markets, taverns, and gathering places in an attempt to learn about a creature, individual or topic."
+    },
+    {
+        "skill": "Diplomacy",
+        "name": "Make an Impression",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Seek to make a good impression on someone to make them temporarily agreeable."
+    },
+    {
+        "skill": "Diplomacy",
+        "name": "Request",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Make a request of a creature."
+    },
+    {
+        "skill": "Intimidation",
+        "name": "Coerce",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Threaten a creature into doing what you want."
+    },
+    {
+        "skill": "Intimidation",
+        "name": "Demoralize",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Shake an enemy's resolve and frighten them."
+    },
+    {
+        "skill": "Lore",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Use knowledge of a specific topic to recall lore."
+    },
+    {
+        "skill": "Lore",
+        "name": "Earn Income",
+        "mode": "Downtime",
+        "minimum_training": "Trained",
+        "description": "Earn income by using knowledge of a specific topic to practice a trade."
+    },
+    {
+        "skill": "Medicine",
+        "name": "Administer First Aid",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Administer first aid to a creature that is dying or bleeding."
+    },
+    {
+        "skill": "Medicine",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall knowledge about diseases, injuries, poisons, and other ailments."
+    },
+    {
+        "skill": "Medicine",
+        "name": "Treat Disease",
+        "mode": "Downtime",
+        "minimum_training": "Trained",
+        "description": "Care for and attempt to cure a diseased creature."
+    },
+    {
+        "skill": "Medicine",
+        "name": "Treat Poison",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Care for and attempt to cure a poisoned creature."
+    },
+    {
+        "skill": "Medicine",
+        "name": "Treat Wounds",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Care for and heal a wounded creature."
+    },
+    {
+        "skill": "Nature",
+        "name": "Command an Animal",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Issue a command to an animal and have it obey."
+    },
+    {
+        "skill": "Nature",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall knowledge about fauna, flora, geography, weather, the environment, creatures of natural origin (like animals, beasts, fey, and plants), the First World, and the Elemental Planes."
+    },
+    {
+        "skill": "Nature",
+        "name": "Identify Magic",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Identify a spell from the primal tradition."
+    },
+    {
+        "skill": "Nature",
+        "name": "Learn a Spell",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Learn a new spell from the primal tradition."
+    },
+    {
+        "skill": "Occultism",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall knowledge about ancient mysteries; obscure philosophies; creatures of occult significance (like aberrations, spirits, and oozes); and esoteric planes like the Astral Plane, Creation's Forge, the Ethereal Plane, the Netherworld, and the Void."
+    },
+    {
+        "skill": "Occultism",
+        "name": "Decipher Writing",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Decipher Writing on occult topics, including complex metaphysical systems, syncretic principles, obscure philosophies, and incoherent ramblings."
+    },
+    {
+        "skill": "Occultism",
+        "name": "Identify Magic",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Identify a spell from the occult tradition."
+    },
+    {
+        "skill": "Occultism",
+        "name": "Learn a Spell",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Learn a new spell from the occult tradition."
+    },
+    {
+        "skill": "Performance",
+        "name": "Perform",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Make a brief performance such as one song, a quick dance, or a few jokes."
+    },
+    {
+        "skill": "Performance",
+        "name": "Earn Income",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Stage a performance to earn money."
+    },
+    {
+        "skill": "Religion",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall knowledge about divine agents, the finer points of theology, obscure myths regarding a faith, and creatures of religious significance (like celestials, fiends, and undead), Creation's Forge, the Void, and the Outer Sphere."
+    },
+    {
+        "skill": "Religion",
+        "name": "Decipher Writing",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Decipher Writing of a religious nature, including allegories, homilies, and proverbs."
+    },
+    {
+        "skill": "Religion",
+        "name": "Identify Magic",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Identify a spell from the divine tradition."
+    },
+    {
+        "skill": "Religion",
+        "name": "Learn a Spell",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Learn a new spell from the divine tradition."
+    },
+    {
+        "skill": "Society",
+        "name": "Recall Knowledge",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Recall knowledge about local history, important personalities, legal institutions, societal structure, and humanoid cultures. The GM might allow Society to apply to other creatures that are major elements of society in your region, such as the draconic nobility in a kingdom of humans ruled by dragons."
+    },
+    {
+        "skill": "Society",
+        "name": "Subsist",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Subsist in a settlement by finding shelter, scrounging, or begging for food."
+    },
+    {
+        "skill": "Society",
+        "name": "Create Forgery",
+        "mode": "Downtime",
+        "minimum_training": "Trained",
+        "description": "Create a forgery of a document or object."
+    },
+    {
+        "skill": "Society",
+        "name": "Decipher Writing",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Decipher Writing that's a coded message, text written in an incomplete or archaic form, or in some cases, text in a language you don't know."
+    },
+    {
+        "skill": "Stealth",
+        "name": "Conceal an Object",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Hide a small object to avoid discovery when searched."
+    },
+    {
+        "skill": "Stealth",
+        "name": "Hide",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Hide behind cover or blend deeper into concealment."
+    },
+    {
+        "skill": "Stealth",
+        "name": "Sneak",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Slowly move silently or stay hidden while moving."
+    },
+    {
+        "skill": "Survival",
+        "name": "Sense Direction",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Use knowledge of the natural world and survival experience to navigate."
+    },
+    {
+        "skill": "Survival",
+        "name": "Subsist",
+        "mode": "Exploration",
+        "minimum_training": "Untrained",
+        "description": "Subsist in the wild by foraging for food and building shelter."
+    },
+    {
+        "skill": "Survival",
+        "name": "Cover Tracks",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Hide any trace of passage while on the move."
+    },
+    {
+        "skill": "Survival",
+        "name": "Track",
+        "mode": "Exploration",
+        "minimum_training": "Trained",
+        "description": "Follow tracks left by a creature or vehicle."
+    },
+    {
+        "skill": "Thievery",
+        "name": "Palm an Object",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Secretly pick up a small, unattended object."
+    },
+    {
+        "skill": "Thievery",
+        "name": "Steal",
+        "mode": "Any",
+        "minimum_training": "Untrained",
+        "description": "Secretly steal a small object from a creature."
+    },
+    {
+        "skill": "Thievery",
+        "name": "Disable a Device",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Disarm a trap or disable a complex device."
+    },
+    {
+        "skill": "Thievery",
+        "name": "Pick a Lock",
+        "mode": "Any",
+        "minimum_training": "Trained",
+        "description": "Open a lock without a key."
+    }
+]

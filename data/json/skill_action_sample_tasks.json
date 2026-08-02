@@ -1,0 +1,950 @@
+[
+  {
+    "description": "Walking through tangled roots or on uneven cobblestones.",
+    "training": "Untrained",
+    "skill": "Acrobatics",
+    "action": "Balance"
+  },
+  {
+    "description": "Walking across a wooden beam.",
+    "training": "Trained",
+    "skill": "Acrobatics",
+    "action": "Balance"
+  },
+  {
+    "description": "Walking across deep, loose gravel.",
+    "training": "Expert",
+    "skill": "Acrobatics",
+    "action": "Balance"
+  },
+  {
+    "description": "Walking across a tight rope or over a smooth sheet of ice.",
+    "training": "Master",
+    "skill": "Acrobatics",
+    "action": "Balance"
+  },
+  {
+    "description": "Walking along a razor's edge or running across chunks of flooring falling in midair.",
+    "training": "Legendary",
+    "skill": "Acrobatics",
+    "action": "Balance"
+  },
+  {
+    "description": "Tumbling around an enemy to get past them without being hit.",
+    "training": "Untrained",
+    "skill": "Acrobatics",
+    "action": "Tumble Through"
+  },
+  {
+    "description": "Making a steep ascent or descent.",
+    "training": "Trained",
+    "skill": "Acrobatics",
+    "action": "Maneuver in Flight"
+  },
+  {
+    "description": "Flying against the wind or through turbulent air.",
+    "training": "Expert",
+    "skill": "Acrobatics",
+    "action": "Maneuver in Flight"
+  },
+  {
+    "description": "Reversing direction and flying backwards.",
+    "training": "Master",
+    "skill": "Acrobatics",
+    "action": "Maneuver in Flight"
+  },
+  {
+    "description": "Flying through gale force winds.",
+    "training": "Legendary",
+    "skill": "Acrobatics",
+    "action": "Maneuver in Flight"
+  },
+  {
+    "description": "Squeezing through a space barely fitting the character's shoulders.",
+    "training": "Trained",
+    "skill": "Acrobatics",
+    "action": "Squeeze"
+  },
+  {
+    "description": "Squeezing through a space barely fitting the character's head.",
+    "training": "Master",
+    "skill": "Acrobatics",
+    "action": "Squeeze"
+  },
+  {
+    "description": "Recalling the name of an important spellcaster or common magical creature.",
+    "training": "Untrained",
+    "skill": "Arcana",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling something about a common or uncommon magical tradition or creature.",
+    "training": "Trained",
+    "skill": "Arcana",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling specific details about a common or uncommon magical tradition or creature.",
+    "training": "Expert",
+    "skill": "Arcana",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details about a commmon, uncommon or rare magical tradition or creature.",
+    "training": "Master",
+    "skill": "Arcana",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about any magical tradition or creature.",
+    "training": "Legendary",
+    "skill": "Arcana",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Preparing a spell from another spellcaster's spellbook or collection of spells.",
+    "training": "Trained",
+    "skill": "Arcana",
+    "action": "Borrow an Arcane Spell"
+  },
+  {
+    "description": "Deciphering an entry-level philosophical treatise on magic.",
+    "training": "Trained",
+    "skill": "Arcana",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering a complex spell or ritual text.",
+    "training": "Expert",
+    "skill": "Arcana",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering advanced research notes on a complex magical topic.",
+    "training": "Master",
+    "skill": "Arcana",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering ancient runes or magical script that hasn't been seen for eons.",
+    "training": "Legendary",
+    "skill": "Arcana",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Identifying a spell cast by a wizard.",
+    "training": "Trained",
+    "skill": "Arcana",
+    "action": "Identify Magic"
+  },
+  {
+    "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+    "training": "Trained",
+    "skill": "Arcana",
+    "action": "Learn a Spell"
+  },
+  {
+    "description": "Climbing a ladder, steep slope or low-branched tree.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Climb"
+  },
+  {
+    "description": "Climbing up a ship's rigging, a hanging rope or a typical tree.",
+    "training": "Trained",
+    "skill": "Athletics",
+    "action": "Climb"
+  },
+  {
+    "description": "Climbing a wall with small handholds and footholds.",
+    "training": "Expert",
+    "skill": "Athletics",
+    "action": "Climb"
+  },
+  {
+    "description": "Climbing across a ceiling with handholds and footholds or up a rock wall.",
+    "training": "Master",
+    "skill": "Athletics",
+    "action": "Climb"
+  },
+  {
+    "description": "Climbing up a smooth vertical surface such as a glass wall or a sheer ice wall.",
+    "training": "Legendary",
+    "skill": "Athletics",
+    "action": "Climb"
+  },
+  {
+    "description": "Tearing through fabric or breaking flimsy glass.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Force Open"
+  },
+  {
+    "description": "Breaking ice or sturdy glass.",
+    "training": "Trained",
+    "skill": "Athletics",
+    "action": "Force Open"
+  },
+  {
+    "description": "Forcing open a flimsy wooden door or wooden portcullis.",
+    "training": "Expert",
+    "skill": "Athletics",
+    "action": "Force Open"
+  },
+  {
+    "description": "Forcing open a sturdy wooden door, iron portcullis or metal bars.",
+    "training": "Master",
+    "skill": "Athletics",
+    "action": "Force Open"
+  },
+  {
+    "description": "Forcing open a heavy stone or iron door.",
+    "training": "Legendary",
+    "skill": "Athletics",
+    "action": "Force Open"
+  },
+  {
+    "description": "Grabbing a creature and restraining them.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Grapple"
+  },
+  {
+    "description": "Leaping up to grab the top of a wall or ledge.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "High Jump"
+  },
+  {
+    "description": "Leaping across a chasm or gap.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Long Jump"
+  },
+  {
+    "description": "Dragging a creature to the side.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Reposition"
+  },
+  {
+    "description": "Shoving a creature away.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Shove"
+  },
+  {
+    "description": "Swimming in a lake or still water.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Swim"
+  },
+  {
+    "description": "Swimming through flowing water, like a river.",
+    "training": "Trained",
+    "skill": "Athletics",
+    "action": "Swim"
+  },
+  {
+    "description": "Swimming through a swiftly flowing river or strong current.",
+    "training": "Expert",
+    "skill": "Athletics",
+    "action": "Swim"
+  },
+  {
+    "description": "Swimming through a stormy sea.",
+    "training": "Master",
+    "skill": "Athletics",
+    "action": "Swim"
+  },
+  {
+    "description": "Swimming through a maelstrom or up a waterfall.",
+    "training": "Legendary",
+    "skill": "Athletics",
+    "action": "Swim"
+  },
+  {
+    "description": "Tripping a creature by kicking its legs out from under it.",
+    "training": "Untrained",
+    "skill": "Athletics",
+    "action": "Trip"
+  },
+  {
+    "description": "Disarming a creature of its weapon.",
+    "training": "Trained",
+    "skill": "Athletics",
+    "action": "Disarm"
+  },
+  {
+    "description": "Recalling the name of a common item or construct.",
+    "training": "Untrained",
+    "skill": "Crafting",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling something about a common or uncommon item or construct.",
+    "training": "Trained",
+    "skill": "Crafting",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling specific details about a common or uncommon item or construct.",
+    "training": "Expert",
+    "skill": "Crafting",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details about a commmon, uncommon or rare item or construct.",
+    "training": "Master",
+    "skill": "Crafting",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about any item or construct.",
+    "training": "Legendary",
+    "skill": "Crafting",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Repairing a cracked wooden shield.",
+    "training": "Untrained",
+    "skill": "Crafting",
+    "action": "Repair"
+  },
+  {
+    "description": "Forging a weapon.",
+    "training": "Trained",
+    "skill": "Crafting",
+    "action": "Craft"
+  },
+  {
+    "description": "Crafting a chair to sell.",
+    "training": "Trained",
+    "skill": "Crafting",
+    "action": "Earn Income"
+  },
+  {
+    "description": "Identifying an elixir or alchemical bomb.",
+    "training": "Trained",
+    "skill": "Crafting",
+    "action": "Identify Alchemy"
+  },
+  {
+    "description": "Throwing a rock to distract a guard.",
+    "training": "Untrained",
+    "skill": "Deception",
+    "action": "Create a Diversion"
+  },
+  {
+    "description": "Feinting in combat to leave an opponent off-guard.",
+    "training": "Trained",
+    "skill": "Deception",
+    "action": "Feint"
+  },
+  {
+    "description": "Disguising as a guard to gain access to a restricted area.",
+    "training": "Untrained",
+    "skill": "Deception",
+    "action": "Impersonate"
+  },
+  {
+    "description": "Telling a lie to deceive someone.",
+    "training": "Untrained",
+    "skill": "Deception",
+    "action": "Lie"
+  },
+  {
+    "description": "Learning the general talk of the town.",
+    "training": "Untrained",
+    "skill": "Diplomacy",
+    "action": "Gather Information"
+  },
+  {
+    "description": "Learning a common rumor.",
+    "training": "Trained",
+    "skill": "Diplomacy",
+    "action": "Gather Information"
+  },
+  {
+    "description": "Learning an obscure rumor or poorly guarded secret.",
+    "training": "Expert",
+    "skill": "Diplomacy",
+    "action": "Gather Information"
+  },
+  {
+    "description": "Learning well-guarded or esoteric information.",
+    "training": "Master",
+    "skill": "Diplomacy",
+    "action": "Gather Information"
+  },
+  {
+    "description": "Learning information known only to an incredibly select few or only to rare and extraordinary beings.",
+    "training": "Legendary",
+    "skill": "Diplomacy",
+    "action": "Gather Information"
+  },
+  {
+    "description": "Flattering a noble to gain favor.",
+    "training": "Untrained",
+    "skill": "Diplomacy",
+    "action": "Make an Impression"
+  },
+  {
+    "description": "Asking a shopkeeper to lower the price of an item.",
+    "training": "Untrained",
+    "skill": "Diplomacy",
+    "action": "Request"
+  },
+  {
+    "description": "Threatening a guard to gain passage.",
+    "training": "Untrained",
+    "skill": "Intimidation",
+    "action": "Coerce"
+  },
+  {
+    "description": "Scaring a goblin into attacking hesitantly.",
+    "training": "Untrained",
+    "skill": "Intimidation",
+    "action": "Demoralize"
+  },
+  {
+    "description": "Recalling a well-known fact about a topic.",
+    "training": "Untrained",
+    "skill": "Lore",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a commonly-known fact about a topic.",
+    "training": "Trained",
+    "skill": "Lore",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling an uncommonly-known fact about a topic.",
+    "training": "Expert",
+    "skill": "Lore",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a rarely-known fact about a topic.",
+    "training": "Master",
+    "skill": "Lore",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a secret or forgotten fact about a topic.",
+    "training": "Legendary",
+    "skill": "Lore",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Earning a wage as a professional.",
+    "training": "Trained",
+    "skill": "Lore",
+    "action": "Earn Income"
+  },
+  {
+    "description": "Staunching a wound to stop the bleeding.",
+    "training": "Untrained",
+    "skill": "Medicine",
+    "action": "Administer First Aid"
+  },
+  {
+    "description": "Stabilizing a dying creature.",
+    "training": "Trained",
+    "skill": "Medicine",
+    "action": "Administer First Aid"
+  },
+  {
+    "description": "Recalling the name of a common disease or poison.",
+    "training": "Untrained",
+    "skill": "Medicine",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a specific detail about a common or uncommon disease or poison.",
+    "training": "Trained",
+    "skill": "Medicine",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling details of a common or uncommon disease or poison.",
+    "training": "Expert",
+    "skill": "Medicine",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details of common, uncommon or rare disease or poison.",
+    "training": "Master",
+    "skill": "Medicine",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about even the rarest disease or poison.",
+    "training": "Legendary",
+    "skill": "Medicine",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Providing bed rest and care for a sick creature.",
+    "training": "Trained",
+    "skill": "Medicine",
+    "action": "Treat Disease"
+  },
+  {
+    "description": "Treating the symptoms of a poisoned creature.",
+    "training": "Trained",
+    "skill": "Medicine",
+    "action": "Treat Poison"
+  },
+  {
+    "description": "Suturing and bandaging a wounded creature.",
+    "training": "Trained",
+    "skill": "Medicine",
+    "action": "Treat Wounds"
+  },
+  {
+    "description": "Getting a dog to fetch a stick.",
+    "training": "Untrained",
+    "skill": "Nature",
+    "action": "Command an Animal"
+  },
+  {
+    "description": "Recalling the name of a common animal, plant, or a well-known fact about nature.",
+    "training": "Untrained",
+    "skill": "Nature",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a specific detail about a common or uncommon animal, plant, or natural phenomena.",
+    "training": "Trained",
+    "skill": "Nature",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling details of a common or uncommon animal, plant, or natural phenomena.",
+    "training": "Expert",
+    "skill": "Nature",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details of common, uncommon or rare animal, plant, or natural phenomena.",
+    "training": "Master",
+    "skill": "Nature",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about even the rarest animal, plant, or natural phenomena.",
+    "training": "Legendary",
+    "skill": "Nature",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Identifying a spell cast by a druid.",
+    "training": "Trained",
+    "skill": "Nature",
+    "action": "Identify Magic"
+  },
+  {
+    "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+    "training": "Trained",
+    "skill": "Nature",
+    "action": "Learn a Spell"
+  },
+  {
+    "description": "Recalling the name of a common occult mystery, philosophy, creature, or plane.",
+    "training": "Untrained",
+    "skill": "Occultism",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a specific detail about a common or uncommon occult mystery, philosophy, creature, or plane.",
+    "training": "Trained",
+    "skill": "Occultism",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling details of a common or uncommon occult mystery, philosophy, creature, or plane.",
+    "training": "Expert",
+    "skill": "Occultism",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details of common, uncommon or rare occult mystery, philosophy, creature, or plane.",
+    "training": "Master",
+    "skill": "Occultism",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about even the rarest occult mystery, philosophy, creature, or plane.",
+    "training": "Legendary",
+    "skill": "Occultism",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Deciphering writings on common or well-known occult topics.",
+    "training": "Trained",
+    "skill": "Occultism",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on uncommon or advanced occult topics.",
+    "training": "Expert",
+    "skill": "Occultism",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on rare or extremely complex occult topics.",
+    "training": "Master",
+    "skill": "Occultism",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on occult topics in incomprehensible languages or symbols.",
+    "training": "Legendary",
+    "skill": "Occultism",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Identifying a spell cast by a witch.",
+    "training": "Trained",
+    "skill": "Occultism",
+    "action": "Identify Magic"
+  },
+  {
+    "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+    "training": "Trained",
+    "skill": "Occultism",
+    "action": "Learn a Spell"
+  },
+  {
+    "description": "Impressing an audience of commoners with a brief performance.",
+    "training": "Untrained",
+    "skill": "Performance",
+    "action": "Perform"
+  },
+  {
+    "description": "Impressing an audience of artisans with a brief performance.",
+    "training": "Trained",
+    "skill": "Performance",
+    "action": "Perform"
+  },
+  {
+    "description": "Impressing an audience of merchants or minor nobles with a brief performance.",
+    "training": "Expert",
+    "skill": "Performance",
+    "action": "Perform"
+  },
+  {
+    "description": "Impressing an audience of high nobles or minor royalty with a brief performance.",
+    "training": "Master",
+    "skill": "Performance",
+    "action": "Perform"
+  },
+  {
+    "description": "Impressing an audience of powerful, otherworldly beings or major royalty with a brief performance.",
+    "training": "Legendary",
+    "skill": "Performance",
+    "action": "Perform"
+  },
+  {
+    "description": "Earning money from a performance in a town square.",
+    "training": "Trained",
+    "skill": "Performance",
+    "action": "Earn Income"
+  },
+  {
+    "description": "Recalling the name of a common celestial, fiend or undead.",
+    "training": "Untrained",
+    "skill": "Religion",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a specific detail about a common or uncommon celestial, fiend or undead.",
+    "training": "Trained",
+    "skill": "Religion",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling details of a common or uncommon celestial, fiend or undead.",
+    "training": "Expert",
+    "skill": "Religion",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details of common, uncommon or rare celestial, fiend or undead.",
+    "training": "Master",
+    "skill": "Religion",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about even the rarest celestial, fiend or undead.",
+    "training": "Legendary",
+    "skill": "Religion",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Deciphering writings on common or well-known religious topics.",
+    "training": "Trained",
+    "skill": "Religion",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on uncommon or advanced religious topics.",
+    "training": "Expert",
+    "skill": "Religion",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on rare or extremely complex religious topics.",
+    "training": "Master",
+    "skill": "Religion",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings on religious topics in incomprehensible languages or symbols.",
+    "training": "Legendary",
+    "skill": "Religion",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Identifying a spell cast by a cleric.",
+    "training": "Trained",
+    "skill": "Religion",
+    "action": "Identify Magic"
+  },
+  {
+    "description": "Learning a new spell from another spellcaster's spellbook or collection of spells.",
+    "training": "Trained",
+    "skill": "Religion",
+    "action": "Learn a Spell"
+  },
+  {
+    "description": "Recalling the name of a common humanoid group or organization.",
+    "training": "Untrained",
+    "skill": "Society",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling a specific detail about a common or uncommon humanoid group or organization.",
+    "training": "Trained",
+    "skill": "Society",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling details of a common or uncommon humanoid group or organization.",
+    "training": "Expert",
+    "skill": "Society",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure details of common, uncommon or rare humanoid group or organization.",
+    "training": "Master",
+    "skill": "Society",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Recalling obscure, secret or forgotten details about even the rarest humanoid group or organization.",
+    "training": "Legendary",
+    "skill": "Society",
+    "action": "Recall Knowledge"
+  },
+  {
+    "description": "Surviving in a large city with plentiful resources.",
+    "training": "Untrained",
+    "skill": "Society",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in a village.",
+    "training": "Trained",
+    "skill": "Society",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in an insular hamlet.",
+    "training": "Expert",
+    "skill": "Society",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in a city under siege.",
+    "training": "Master",
+    "skill": "Society",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in a city of undead.",
+    "training": "Legendary",
+    "skill": "Society",
+    "action": "Subsist"
+  },
+  {
+    "description": "Forging an invitation to get into a party.",
+    "training": "Trained",
+    "skill": "Society",
+    "action": "Create Forgery"
+  },
+  {
+    "description": "Deciphering writings in common cypher or language.",
+    "training": "Trained",
+    "skill": "Society",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings in uncommon language or advanced cypher.",
+    "training": "Expert",
+    "skill": "Society",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings in rare cyphers or archaic languages.",
+    "training": "Master",
+    "skill": "Society",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Deciphering writings in secret cyphers or forgotten languages.",
+    "training": "Legendary",
+    "skill": "Society",
+    "action": "Decipher Writing"
+  },
+  {
+    "description": "Hiding a dagger up a sleeve.",
+    "training": "Untrained",
+    "skill": "Stealth",
+    "action": "Conceal an Object"
+  },
+  {
+    "description": "Hiding behind a pillar in an empty room.",
+    "training": "Untrained",
+    "skill": "Stealth",
+    "action": "Hide"
+  },
+  {
+    "description": "Moving silently across creaky floorboards to avoid waking a guard.",
+    "training": "Untrained",
+    "skill": "Stealth",
+    "action": "Sneak"
+  },
+  {
+    "description": "Determining the cardinal directions using the sun.",
+    "training": "Untrained",
+    "skill": "Survival",
+    "action": "Sense Direction"
+  },
+  {
+    "description": "Finding an overgrown path in a forest.",
+    "training": "Trained",
+    "skill": "Survival",
+    "action": "Sense Direction"
+  },
+  {
+    "description": "Navigating a hedge maze.",
+    "training": "Expert",
+    "skill": "Survival",
+    "action": "Sense Direction"
+  },
+  {
+    "description": "Navigating a byzantine labyrinth or a relatively featureless desert.",
+    "training": "Master",
+    "skill": "Survival",
+    "action": "Sense Direction"
+  },
+  {
+    "description": "Navigating an ever-changing dream realm.",
+    "training": "Legendary",
+    "skill": "Survival",
+    "action": "Sense Direction"
+  },
+  {
+    "description": "Surviving in a lush forest with calm weather.",
+    "training": "Untrained",
+    "skill": "Survival",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving on a hillside.",
+    "training": "Trained",
+    "skill": "Survival",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in the mountains.",
+    "training": "Expert",
+    "skill": "Survival",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in a desert.",
+    "training": "Master",
+    "skill": "Survival",
+    "action": "Subsist"
+  },
+  {
+    "description": "Surviving in a barren wasteland.",
+    "training": "Legendary",
+    "skill": "Survival",
+    "action": "Subsist"
+  },
+  {
+    "description": "Dusting away footprints in a forest.",
+    "training": "Trained",
+    "skill": "Survival",
+    "action": "Cover Tracks"
+  },
+  {
+    "description": "Following the path of a large army following a road.",
+    "training": "Untrained",
+    "skill": "Survival",
+    "action": "Track"
+  },
+  {
+    "description": "Following the relatively fresh track of a rampaging bear through the plains.",
+    "training": "Trained",
+    "skill": "Survival",
+    "action": "Track"
+  },
+  {
+    "description": "Following a nimble panther's tracks through a jungle or tracks obscured by rainfall.",
+    "training": "Expert",
+    "skill": "Survival",
+    "action": "Track"
+  },
+  {
+    "description": "Following tracks obscured by winter snow, track of a mouse or smaller creature, or tracks left on surfaces that can't hold prints like bare rock.",
+    "training": "Master",
+    "skill": "Survival",
+    "action": "Track"
+  },
+  {
+    "description": "Following old tracks through a windy desert's sands or tracks after a major blizzard or hurricane.",
+    "training": "Legendary",
+    "skill": "Survival",
+    "action": "Track"
+  },
+  {
+    "description": "Palming a coin from a table.",
+    "training": "Untrained",
+    "skill": "Thievery",
+    "action": "Palm an Object"
+  },
+  {
+    "description": "Stealing a coin purse from a person in a crowd.",
+    "training": "Untrained",
+    "skill": "Thievery",
+    "action": "Steal"
+  },
+  {
+    "description": "Disarming a simple tripwire trap.",
+    "training": "Trained",
+    "skill": "Thievery",
+    "action": "Disable a Device"
+  },
+  {
+    "description": "Picking the lock on a simple chest.",
+    "training": "Trained",
+    "skill": "Thievery",
+    "action": "Pick a Lock"
+  }
+]

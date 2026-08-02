@@ -182,5 +182,6 @@ Quest Data generated should be in the format of a python object. Steps are not n
 1. Take the quest object generated and break it into acts so the agents only have to worry about refining and expanding on one act at a time.
 2. The generation of the final adventure module output will follow a linear workflow beginning with a writer agent that will take the summaries, introductions, resolutions and information about each scene to produce a readable, consistent narrative for each act.
 3. An editor agent will take the output of the writer agent and produce a edited version of the narrative for each act, focusing on grammar, structure and readability.
-4. A final reviewer agent will take the output of the writer agent and the quest object and make sure that the act narratives are consistent with the quest object, specifically in regards to numerical values such as creature stats, and will correct them if necessary.
-5. Take all the final act narratives and produce a full adventure module.
+4. A reviewer agent will take the output of the editor agent and the quest object and make sure that the act narratives are consistent with the quest object, specifically in regards to numerical values such as creature stats, and will correct them if necessary.
+5. Going scene by scene, a rules agent will insert stat blocks for NPCs, creatures, hazards and other gameplay elements into the narrative at the end of each scene, insuring they match the quest object, scene and act summaries.
+6. Finally, a publisher agent will arrange all the generated components into a complete adventure module, including any necessary descriptions, statistics, rules, locations, NPCs, creatures, hazards and other information, into a markdown file for easy reading.

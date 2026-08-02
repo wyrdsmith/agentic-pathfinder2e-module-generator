@@ -115,6 +115,21 @@ def populate_database(file_paths):
     conn.close()
     print("Database population complete.")
 
+def get_json_file_paths():
+    """Returns a list of JSON file paths in the data/json directory."""
+    return [os.path.join(DB_DIR, 'json', filename) for filename in os.listdir(os.path.join(DB_DIR, 'json')) if filename.endswith('.json')]
+
+def create_table(table_name, col_names):
+    """Creates a table with the given name and column names."""
+    conn = get_connection()
+    cursor = conn.cursor()
+    col_defs = [f"{col} TEXT" for col in col_names]
+    create_stmt = f"CREATE TABLE {table_name} (id INTEGER PRIMARY KEY AUTOINCREMENT, {', '.join(col_defs)})"
+    cursor.execute(create_stmt)
+    conn.commit()
+    conn.close()
+    print(f"Created table '{table_name}'.")
+
 if __name__ == '__main__':
     print("db-manager loaded.")
     print("Available functions:")
