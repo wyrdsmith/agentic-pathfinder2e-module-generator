@@ -14,7 +14,7 @@ All data is stored initially in JSON format. This is for ease of initial develop
 #### Source
 Based on exported data found at https://2e.aonprd.com/Search.aspx?include-types=ancestry&display=table&columns=rarity+url+summary
 #### Notes
-This list includes all available entries under "Ancestries" and no restrictions were applied. For the purposes of module generation, only a few columns are used. Summary was renamed to Description.
+This list includes all available entries under "Ancestries" and no restrictions were applied. Summary was renamed to Description.
 
 ### Classes `data/classes.json`
 #### Source

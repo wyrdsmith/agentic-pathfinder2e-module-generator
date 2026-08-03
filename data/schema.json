@@ -1,0 +1,153 @@
+{
+    "ancestries": [
+        "id",
+        "name",
+        "rarity",
+        "url",
+        "description"
+    ],
+    "classes": [
+        "id",
+        "name",
+        "rarity",
+        "url",
+        "description"
+    ],
+    "creature_experience": [
+        "id",
+        "level_difference",
+        "xp",
+        "role"
+    ],
+    "creature_stats": [
+        "id",
+        "level",
+        "skill",
+        "ac",
+        "high",
+        "medium",
+        "low",
+        "hp",
+        "strike_attack",
+        "strike_damage",
+        "spell_dc",
+        "spell_attack"
+    ],
+    "creatures": [
+        "id",
+        "name",
+        "rarity",
+        "level",
+        "url",
+        "description",
+        "traits"
+    ],
+    "difficulties": [
+        "id",
+        "level",
+        "difficulty"
+    ],
+    "encounter_experience": [
+        "id",
+        "threat_level",
+        "experience",
+        "adjustment"
+    ],
+    "hazard_stats": [
+        "id",
+        "level",
+        "stealth_dc",
+        "disable_dc",
+        "ac",
+        "high_save",
+        "low_save",
+        "hardness",
+        "hp",
+        "broken_threshold",
+        "attack",
+        "damage",
+        "area_dc",
+        "single_dc"
+    ],
+    "hazards": [
+        "id",
+        "name",
+        "level",
+        "hazard_type",
+        "rarity",
+        "trait",
+        "description",
+        "url"
+    ],
+    "item_categories": [
+        "id",
+        "name",
+        "description"
+    ],
+    "items": [
+        "id",
+        "name",
+        "rarity",
+        "trait",
+        "item_category",
+        "item_subcategory",
+        "level",
+        "price",
+        "description",
+        "url"
+    ],
+    "rarities": [
+        "id",
+        "name",
+        "probability"
+    ],
+    "skill_action_sample_tasks": [
+        "id",
+        "description",
+        "training",
+        "skill",
+        "action"
+    ],
+    "skill_actions": [
+        "id",
+        "skill",
+        "name",
+        "mode",
+        "minimum_training",
+        "description"
+    ],
+    "skills": [
+        "id",
+        "name",
+        "url",
+        "description"
+    ],
+    "threat_levels": [
+        "id",
+        "name",
+        "level_adjustment"
+    ],
+    "trainings": [
+        "id",
+        "training",
+        "difficulty",
+        "description",
+        "level"
+    ],
+    "treasure_encounter": [
+        "id",
+        "level",
+        "threat_level",
+        "treasure"
+    ],
+    "treasure_level": [
+        "id",
+        "level",
+        "total",
+        "extra"
+    ],
+    "plot_hooks": [
+        "id",
+        "plot_hook"
+    ]
+}
