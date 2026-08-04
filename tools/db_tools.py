@@ -52,9 +52,9 @@ def check_database():
             print(f"Actual: {actual_columns}")
             return False
             
-    # 3. Check for data (except plot_hooks)
+    # 3. Check for data (except quest_concepts)
     for table in actual_tables:
-        if table == 'plot_hooks':
+        if table == 'quest_concepts':
             continue
             
         cursor.execute(f"SELECT COUNT(*) FROM {table}")
@@ -67,23 +67,23 @@ def check_database():
     print("Database verification passed successfully.")
     return True
 
-def get_plot_hooks():
-    """Returns a list of previously generated plot hooks from the plot_hooks table. Takes no arguments."""
+def get_quest_concepts():
+    """Returns a list of previously generated quest concepts from the quest_concepts table. Takes no arguments."""
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT plot_hook FROM plot_hooks")
+    cursor.execute("SELECT name, theme, setting, plot_hook FROM quest_concepts")
     rows = cursor.fetchall()
     conn.close()
     if not rows:
-        return "There are no previously generated plot hooks."
+        return "There are no previously generated quest concepts."
     else:
-        return "Previously generated plot hooks:\n\n---\n\n" + "\n---\n".join([row[0] for row in rows])
+        return "Previously generated quest concepts:\n\n---\n\n" + "\n---\n".join(["Name: " + row[0] + "\nTheme: " + row[1] + "\nSetting: " + row[2] + "\nPlot Hook: " + row[3] for row in rows])
 
-def add_plot_hook(plot_hook):
-    """Adds a generated plot hook to the plot_hooks table. Takes plot_hook as an argument."""
+def add_quest_concept(name, theme, setting, plot_hook):
+    """Adds a generated quest concept to the quest_concepts table. Takes quest_concept as an argument."""
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("INSERT INTO plot_hooks (plot_hook) VALUES (?)", (plot_hook,))
+    cursor.execute("INSERT INTO quest_concepts (name, theme, setting, plot_hook) VALUES (?, ?, ?, ?)", (name, theme, setting, plot_hook))
     conn.commit()
     conn.close()
-    return "Added plot hook to table."
+    return "Added quest concept to table."

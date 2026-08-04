@@ -263,6 +263,15 @@ def reset_table(table_name):
     # Recreate table using the existing function
     create_table(table_name, columns_to_recreate)
 
+def drop_table(table_name):
+    """Drops the specified table."""
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute(f"DROP TABLE IF EXISTS {table_name}")
+    conn.commit()
+    conn.close()
+    print(f"Dropped table '{table_name}'.")
+
 if __name__ == '__main__':
     print("db_manager loaded.")
     print("Available functions:")
@@ -272,3 +281,4 @@ if __name__ == '__main__':
     print("  - update_table(table_name, filepath) # e.g. update_table('threat_levels', '../data/json/threat-levels.json')")
     print("  - create_table(table_name, columns) # e.g. create_table('plot_hooks', [('plot_hook', 'TEXT')])")
     print("  - reset_table(table_name) # e.g. reset_table('plot_hooks')")
+    print("  - drop_table(table_name) # e.g. drop_table('plot_hooks')")

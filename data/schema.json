@@ -146,8 +146,11 @@
         "total",
         "extra"
     ],
-    "plot_hooks": [
+    "quest_concepts": [
         "id",
+        "name",
+        "theme",
+        "setting",
         "plot_hook"
     ]
 }

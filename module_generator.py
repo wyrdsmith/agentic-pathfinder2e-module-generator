@@ -1,40 +1,37 @@
-from pydantic_ai import Agent, RunContext
-from pydantic_ai.models.ollama import OllamaModel
-from pydantic_ai.providers.ollama import OllamaProvider
-from pydantic_ai.output import NativeOutput
-from models.quest_concept import QuestConcept
-from models.act_concept import ActList
 from models.quest import Quest
 from models.act import Act
-from tools.db_tools import check_database, get_plot_hooks, add_plot_hook
+from models.scene import Scene
+from tools.db_tools import check_database, add_quest_concept
+from encounter_balancer import distribute_encounter_budgets
+from agents.quest_concept_agent import get_quest_concept_creation_agent, get_quest_concept_extraction_agent
+from agents.quest_summary_agent import get_quest_summary_agent
+from agents.acts_agent import get_acts_creation_agent, get_acts_extraction_agent
+from agents.scenes_agent import get_scenes_creation_agent, get_scenes_extraction_agent
 
 def generate_quest_concept(current_quest: Quest):
     # Instantiate the Agent
-    model = OllamaModel(
-        'gemma4:12b',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
-    )
-    concept_agent = Agent(
-        model,
-        output_type = NativeOutput(QuestConcept),
-        system_prompt = (
-            "You are a creative Pathfinder 2e Game Master. Design a unique quest concept for the party. "
-            "Use your tools to read past plot hooks to ensure you don't repeat them."
-        )
-    )
-
-    # Register our database tools
-    concept_agent.tool_plain(get_plot_hooks)
+    quest_concept_creation_agent = get_quest_concept_creation_agent()
 
     print(f"Generating quest concept for {current_quest.player_count} players at level {current_quest.party_level}...")
     
-    # Run the agent
+    # Run the creation agent
     prompt = f"Create a new quest concept for a party of {current_quest.player_count} characters at level {current_quest.party_level}."
-    result = concept_agent.run_sync(prompt)
-    concept = result.output
+    result = quest_concept_creation_agent.run_sync(prompt)
+    raw_concept = result.output
     
-    # Map the generated concept back to our main quest object
     print('Quest Concept Generated...')
+    
+    # Run the extraction agent
+    print('Extracting Quest Concept Data...')
+    
+    quest_concept_extraction_agent = get_quest_concept_extraction_agent()
+    prompt = f"Extract the quest name, theme, setting, and plot hook from the following quest concept: {raw_concept}"
+    result = quest_concept_extraction_agent.run_sync(prompt)
+    concept = result.output
+
+    print('Quest Concept Extracted...')
+
+    # Map the generated concept back to our main quest object
     current_quest.name = concept.name
     print(f'Quest Name: {current_quest.name}')
     current_quest.theme = concept.theme
@@ -43,29 +40,39 @@ def generate_quest_concept(current_quest: Quest):
     print(f'Quest Setting: {current_quest.setting}')
     current_quest.plot_hook = concept.plot_hook
     print(f'Quest Plot Hook: {current_quest.plot_hook}')
-    current_quest.summary = concept.summary
-    print(f'Quest Summary: {current_quest.summary}')
     
     # Save the new plot hook to the database so we don't repeat it next time
-    add_plot_hook(current_quest.plot_hook)
+    add_quest_concept(current_quest.name, current_quest.theme, current_quest.setting, current_quest.plot_hook)
+    
+    return current_quest
+
+def generate_quest_summary(current_quest: Quest):
+    # Instantiate the Agent
+    quest_summary_agent = get_quest_summary_agent()
+    
+    print(f"Generating quest summary for {current_quest.name}...")
+    
+    # Run the creation agent
+    prompt = (
+        f"Quest Name: {current_quest.name}\n"
+        f"Theme: {current_quest.theme}\n"
+        f"Setting: {current_quest.setting}\n"
+        f"Plot Hook: {current_quest.plot_hook}\n\n"
+        "Generate the quest summary."
+    )
+    result = quest_summary_agent.run_sync(prompt)
+    summary = result.output
+    
+    # Map the generated summary back to our main quest object
+    print('Quest Summary Generated...')
+    current_quest.summary = summary
+    print(f'Quest Summary: {current_quest.summary}')
     
     return current_quest
 
 def generate_acts(current_quest: Quest):
     # Instantiate the Agent for generating acts
-    model = OllamaModel(
-        'gemma4:12b',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
-    )
-    acts_agent = Agent(
-        model,
-        output_type = NativeOutput(ActList),
-        system_prompt = (
-            "You are an expert Pathfinder 2e Game Master. "
-            "Based on the provided quest concept and summary, expand the quest summary into 3 distinct acts following the three act story structure. "
-            "Do not generate scenes or encounters yet, just provide a detailed summary of what happens in each of the 3 acts."
-        )
-    )
+    acts_creation_agent = get_acts_creation_agent()
     
     print(f"Generating 3 acts for '{current_quest.name}'...")
     
@@ -77,19 +84,80 @@ def generate_acts(current_quest: Quest):
         f"Summary: {current_quest.summary}\n\n"
         "Generate the 3 acts for this quest."
     )
-    result = acts_agent.run_sync(prompt)
+    result = acts_creation_agent.run_sync(prompt)
+    raw_acts = result.output
+
+    print('Quest Acts Generated...')
+
+    # Run the extraction agent
+    print('Extracting Quest Acts...')
+    acts_extraction_agent = get_acts_extraction_agent()
+    prompt = f"Extract the summary for each of the three acts from the following quest act summaries:\n\n{raw_acts}"
+    result = acts_extraction_agent.run_sync(prompt)
+    acts = result.output
+
+    print('Quest Acts Extracted...')
     
     # Map the generated acts to our main quest object
     print('Acts Generated...')
-    for act_concept in result.output.acts:
+    act_number = 1
+    for act_concept in acts.acts:
         new_act = Act(
-            act_number=act_concept.act_number,
-            summary=act_concept.summary
+            act_number = act_number,
+            summary = act_concept.summary
         )
         current_quest.acts.append(new_act)
         print(f"Act {new_act.act_number} Summary: {new_act.summary}")
+        act_number += 1
         
     return current_quest
+
+def generate_scenes_for_act(current_quest: Quest, current_act: Act):
+    # Instantiate the Agent for generating scenes
+    scenes_creation_agent = get_scenes_creation_agent()
+    
+    print(f"Generating scenes for Act {current_act.act_number}...")
+    
+    prompt = (
+        f"Quest Name: {current_quest.name}\n"
+        f"Theme: {current_quest.theme}\n"
+        f"Setting: {current_quest.setting}\n"
+        f"Overall Quest Summary: {current_quest.summary}\n\n"
+        f"Act {current_act.act_number} Summary: {current_act.summary}\n\n"
+        f"Generate the scenes for Act {current_act.act_number}."
+    )
+    result = scenes_creation_agent.run_sync(prompt)
+    raw_scenes = result.output
+
+    print('Quest Scenes Generated...')
+
+    # Run the extraction agent
+    print('Extracting Quest Scenes...')
+    scenes_extraction_agent = get_scenes_extraction_agent()
+    prompt = f"Extract the summary, location, encounter type, and rest opportunity for each of the scenes from the following quest scene summaries:\n\n{raw_scenes}"
+    result = scenes_extraction_agent.run_sync(prompt)
+    scenes = result.output
+
+    print('Quest Scenes Extracted...')
+    
+    # Map the generated scenes to the current act
+    print(f'Scenes for Act {current_act.act_number} Generated...')
+    scene_number = 1
+    for scene_concept in scenes.scenes:
+        new_scene = Scene(
+            scene_number = scene_number,
+            summary = scene_concept.summary,
+            location = scene_concept.location,
+            encounter_type = scene_concept.encounter_type,
+            rest_opportunity = scene_concept.rest_opportunity
+        )
+        current_act.scenes.append(new_scene)
+        print(f"  - Scene {new_scene.scene_number} ({new_scene.encounter_type}): {new_scene.summary}")
+        print(f"  - - Location: {new_scene.location}")
+        print(f"  - - Rest Opportunity: {new_scene.rest_opportunity}")
+        scene_number += 1
+        
+    return current_act
 
 def main():
     # Verify DB first
@@ -102,9 +170,29 @@ def main():
 
     # Generate the quest concept
     current_quest = generate_quest_concept(current_quest)
+
+    # Generate the quest summary
+    current_quest = generate_quest_summary(current_quest)
     
     # Generate the acts
     current_quest = generate_acts(current_quest)
+    # Verify three acts were generated, if not, regenerate acts
+    while len(current_quest.acts) != 3:
+        print("Incorrect number of acts generated, regenerating...")
+        current_quest.acts = []
+        current_quest = generate_acts(current_quest)
+
+    # Generate scenes for each act
+    for act in current_quest.acts:
+        act = generate_scenes_for_act(current_quest, act)
+        # Verify scenes were generated, if not, regenerate scenes for this act
+        while len(act.scenes) < 5 or len(act.scenes) > 9:
+            print("Incorrect number of scenes generated, regenerating...")
+            act.scenes = []
+            act = generate_scenes_for_act(current_quest, act)
+
+    # Distribute the mathematical Encounter Budgets (Phase 1 of Encounter Generation)
+    current_quest = distribute_encounter_budgets(current_quest)
 
 if __name__ == "__main__":
     main()
