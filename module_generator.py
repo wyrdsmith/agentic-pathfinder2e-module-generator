@@ -2,7 +2,7 @@ from models.quest import Quest
 from models.act import Act
 from models.scene import Scene
 from tools.db_tools import check_database, add_quest_concept
-from encounter_balancer import distribute_encounter_budgets
+from tools.quest_tools import adjust_encounter_threat_levels, distribute_experience_budgets, distribute_reward_budgets
 from agents.quest_concept_agent import get_quest_concept_creation_agent, get_quest_concept_extraction_agent
 from agents.quest_summary_agent import get_quest_summary_agent
 from agents.acts_agent import get_acts_creation_agent, get_acts_extraction_agent
@@ -97,6 +97,14 @@ def generate_acts(current_quest: Quest):
     acts = result.output
 
     print('Quest Acts Extracted...')
+
+    # Verify three acts were generated, if not, regenerate acts
+    while len(acts.acts) != 3:
+        print("Incorrect number of acts generated, regenerating...")
+        acts.acts = []
+        raw_acts = acts_creation_agent.run_sync(prompt)
+        result = acts_extraction_agent.run_sync(prompt)
+        acts = result.output
     
     # Map the generated acts to our main quest object
     print('Acts Generated...')
@@ -139,6 +147,14 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
     scenes = result.output
 
     print('Quest Scenes Extracted...')
+
+    # Verify scenes were generated, if not, regenerate scenes for this act
+    while len(scenes.scenes) < 4 or len(scenes.scenes) > 9:
+        print("Incorrect number of scenes generated, regenerating...")
+        scenes.scenes = []
+        raw_scenes = scenes_creation_agent.run_sync(prompt)
+        result = scenes_extraction_agent.run_sync(prompt)
+        scenes = result.output
     
     # Map the generated scenes to the current act
     print(f'Scenes for Act {current_act.act_number} Generated...')
@@ -176,23 +192,19 @@ def main():
     
     # Generate the acts
     current_quest = generate_acts(current_quest)
-    # Verify three acts were generated, if not, regenerate acts
-    while len(current_quest.acts) != 3:
-        print("Incorrect number of acts generated, regenerating...")
-        current_quest.acts = []
-        current_quest = generate_acts(current_quest)
-
+    
     # Generate scenes for each act
     for act in current_quest.acts:
         act = generate_scenes_for_act(current_quest, act)
-        # Verify scenes were generated, if not, regenerate scenes for this act
-        while len(act.scenes) < 5 or len(act.scenes) > 9:
-            print("Incorrect number of scenes generated, regenerating...")
-            act.scenes = []
-            act = generate_scenes_for_act(current_quest, act)
 
-    # Distribute the mathematical Encounter Budgets (Phase 1 of Encounter Generation)
-    current_quest = distribute_encounter_budgets(current_quest)
+    # Adjust the encounter threat levels
+    current_quest = adjust_encounter_threat_levels(current_quest)
+
+    # Distribute the encounter budgets
+    current_quest = distribute_experience_budgets(current_quest)
+
+    # Distribute the reward budgets
+    current_quest = distribute_reward_budgets(current_quest)
 
 if __name__ == "__main__":
     main()
