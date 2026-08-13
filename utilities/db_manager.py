@@ -3,6 +3,7 @@ import sqlite3
 import os
 import json
 import re
+import csv
 
 # Define the path to the database file in the data directory relative to this script
 DB_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
@@ -22,6 +23,34 @@ def test_connection():
     cursor = conn.cursor()
     conn.close()
     print("Database connection successful.")
+
+def generate_schema():
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    tables = cursor.fetchall()
+    
+    schema = {}
+    for table_tuple in tables:
+        table_name = table_tuple[0]
+        # Skip internal SQLite tables
+        if table_name.startswith('sqlite_'):
+            continue
+            
+        cursor.execute(f"PRAGMA table_info({table_name})")
+        columns_info = cursor.fetchall()
+        
+        # PRAGMA table_info returns tuples where index 1 is the column name
+        column_names = [col[1] for col in columns_info]
+        schema[table_name] = column_names
+        
+    conn.close()
+    
+    with open(SCHEMA_PATH, 'w', encoding='utf-8') as f:
+        json.dump(schema, f, indent=4)
+        
+    print(f"Database schema successfully written to {SCHEMA_PATH}")
 
 def check_database():
     """
@@ -203,9 +232,68 @@ def populate_database(file_paths):
     conn.close()
     print("Database population complete.")
 
+def populate_database_names(category: str = None):
+    """Populates the database with names from the data/csv/<category> directory."""
+    if not category:
+        print("Please include a category to populate the database.")
+        return
+    
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    table_name = to_snake_case(category)
+    category_type = table_name.split('_')[0].lower() # So if table_name is ancestry_names, category_type is ancestry
+        
+    # Check if table exists
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?", (table_name,))
+    if cursor.fetchone():
+        cursor.execute(f"DROP TABLE IF EXISTS {table_name}")
+    
+    # Use table_name instead of category to ensure it's properly formatted
+    create_table(table_name, [("name", "TEXT"), (category_type, "TEXT")]) 
+
+    file_paths = get_csv_file_paths(category)
+    
+    for file_path in file_paths:
+        if not os.path.exists(file_path):
+            print(f"File not found: {file_path}")
+            continue
+            
+        file_name = os.path.basename(file_path).replace('.csv', '')
+        file_name_parts = file_name.split('_')
+        if len(file_name_parts) > 2:
+            type_name = '_'.join(file_name_parts[:-1])
+        else:
+            type_name = file_name_parts[0]
+        
+        with open(file_path, 'r', encoding='utf-8') as f:
+            # csv.reader returns a list of strings for each row
+            reader = csv.reader(f)
+            records = []
+            for row in reader:
+                for name in row:
+                    if name.strip(): # Avoid empty strings
+                        records.append((type_name, name.strip()))
+            
+            if records:
+                # Use executemany for much better performance
+                cursor.executemany(f"INSERT INTO {table_name} ({category_type}, name) VALUES (?, ?)", records)
+                print(f"Inserted {len(records)} names from {os.path.basename(file_path)} into '{table_name}'.")
+    
+    conn.commit()
+    conn.close()
+    print(f"Database name population complete for category '{category}'.")
+        
 def get_json_file_paths():
     """Returns a list of JSON file paths in the data/json directory."""
     return [os.path.join(DB_DIR, 'json', filename) for filename in os.listdir(os.path.join(DB_DIR, 'json')) if filename.endswith('.json')]
+
+def get_csv_file_paths(category: str = None):
+    """Returns a list of CSV file paths in the data/csv directory."""
+    if category:
+        return [os.path.join(DB_DIR, 'csv', category, filename) for filename in os.listdir(os.path.join(DB_DIR, 'csv', category)) if filename.endswith('.csv')]
+    else:
+        return [os.path.join(DB_DIR, 'csv', filename) for filename in os.listdir(os.path.join(DB_DIR, 'csv')) if filename.endswith('.csv')]
 
 def create_table(table_name, columns):
     """Creates a table with the given name and column definitions.
@@ -272,13 +360,35 @@ def drop_table(table_name):
     conn.close()
     print(f"Dropped table '{table_name}'.")
 
+def initialize_database():
+    """Initializes the database by dropping all tables and recreating them from data sources."""
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute(f"SELECT name FROM sqlite_master WHERE type='table'")
+    tables = cursor.fetchall()
+    for table in tables:
+        cursor.execute(f"DROP TABLE IF EXISTS {table[0]}")
+    # Populate the database with Pathfinder Rules
+    populate_database(get_json_file_paths())
+    # Populate the database with Pathfinder Names
+    populate_database_names("ancestry_names")
+    # Create quest concepts table
+    create_table("quest_concepts", [("name", "TEXT"), ("theme", "TEXT"), ("setting", "TEXT"), ("plot_hook", "TEXT")])
+    conn.commit()
+    conn.close()
+    print("Database initialized.")
+
 if __name__ == '__main__':
     print("db_manager loaded.")
     print("Available functions:")
     print("  - test_connection()")
     print("  - check_database()")
+    print("  - initialize_database() # Wipes database and recreates it from data sources")
+    print("  - get_json_file_paths() # Returns a list of JSON file paths from data/json")
+    print("  - get_csv_file_paths(category) # Returns a list of CSV file paths from data/csv/<category>")
     print("  - populate_database(file_paths)  # e.g. populate_database(['../data/json/ancestries.json'])")
     print("  - update_table(table_name, filepath) # e.g. update_table('threat_levels', '../data/json/threat-levels.json')")
     print("  - create_table(table_name, columns) # e.g. create_table('plot_hooks', [('plot_hook', 'TEXT')])")
     print("  - reset_table(table_name) # e.g. reset_table('plot_hooks')")
     print("  - drop_table(table_name) # e.g. drop_table('plot_hooks')")
+    print("  - populate_database_names(table_name) # e.g. populate_database_names('ancestry_names') Table name is a directory under data/csv")

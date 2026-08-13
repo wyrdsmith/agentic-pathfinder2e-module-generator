@@ -2,9 +2,12 @@ from typing import List
 import random
 from models.quest import Quest
 from models.encounter import Encounter
-from tools.encounter_tools import ENCOUNTER_TYPES, get_threat_levels, get_encounter_experience, get_encounter_experience_budget, get_encounter_reward_budget
+from tools.encounter_tools import ENCOUNTER_TYPES, get_threat_levels, get_encounter_experience, get_encounter_experience_budget, get_encounter_reward_budget, get_encounter_level
+from tools.db_tools import get_connection
+from pydantic_ai import RunContext
 
 def adjust_encounter_threat_levels(quest: Quest) -> Quest:
+    """Updates threat levels of encounters in a quest to meet a minimum 1000 XP value."""
     # We only assign XP to scenes that have a formal encounter type
     valid_encounter_types = ENCOUNTER_TYPES
 
@@ -78,10 +81,11 @@ def adjust_encounter_threat_levels(quest: Quest) -> Quest:
     return quest
 
 def distribute_experience_budgets(quest: Quest) -> Quest:
+    """Distributes experience budgets to encounters in a quest."""
     for act in quest.acts:
         for scene in act.scenes:
             if scene.encounter:
-                scene.encounter.xp_budget = get_encounter_experiencebudget(scene.encounter.threat_level, quest.player_count)
+                scene.encounter.xp_budget = get_encounter_experience_budget(scene.encounter.threat_level, quest.player_count)
 
     print(f"Encounter Experience Budgeting Complete...")
     for act in quest.acts:
@@ -92,10 +96,11 @@ def distribute_experience_budgets(quest: Quest) -> Quest:
     return quest
 
 def distribute_reward_budgets(quest: Quest) -> Quest:
+    """Distributes reward budgets to encounters in a quest."""
     # Determine Target Reward Budget
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute(f"SELECT total, extra FROM treasure_level WHERE level = '{quest.party_level}'")
+    cursor.execute(f"SELECT total, extra FROM treasure_level WHERE level = ?", (quest.party_level,))
     treasure_level = cursor.fetchall()[0]
     target_reward_budget = treasure_level[0] + (treasure_level[1] * (4 - quest.player_count))
     conn.close()
@@ -114,6 +119,86 @@ def distribute_reward_budgets(quest: Quest) -> Quest:
     for act in quest.acts:
         for scene in act.scenes:
             if scene.encounter:
-                print(f"  - Act {act.act_number} Scene {scene.scene_number}: Level {scene.encounter.encounter_level} ({scene.encounter.threat_level}) {scene.encounter.reward_budget} Reward Budget")
+                print(f"  - Act {act.act_number} Scene {scene.scene_number}: Level {scene.encounter.level} ({scene.encounter.threat_level}) {scene.encounter.reward_budget}gp Reward Budget")
                 
     return quest
+
+def get_quest_summary(ctx: RunContext[Quest]) -> str:
+    """Returns the summary of the quest."""
+    return ctx.quest.summary
+
+def get_npcs_for_scene(ctx: RunContext[Quest], act_number: int, scene_number: int) -> List[NPC]:
+    """Returns a list of NPCs that appear in a scene of an act of the quest based on the provided act and scene numbers."""
+    act = ctx.quest.acts[act_number - 1]
+    scene = act.scenes[scene_number - 1]
+    npcs = []
+    for npc in ctx.quest.npcs:
+        for scene_role in npc.scene_roles:
+            if scene_role.act == act_number and scene_role.scene == scene_number:
+                npcs.append(npc)
+    return npcs
+
+def get_list_of_acts(ctx: RunContext[Quest]) -> str:
+    """Returns a list of all act numbers in the quest."""
+    acts = []
+    for act in ctx.quest.acts:
+        acts.append(f"Act {act.act_number}")
+    return "\n".join(acts)
+
+def get_list_of_scenes(ctx: RunContext[Quest], act_number: int) -> str:
+    """Returns a list of all scene numbers in an act of the quest based on the provided act number."""
+    act = ctx.quest.acts[act_number - 1]
+    scenes = []
+    for scene in act.scenes:
+        scenes.append(f"Scene {scene.scene_number}")
+    return "\n".join(scenes)
+
+def get_act_summary(ctx: RunContext[Quest], act_number: int) -> str:
+    """Returns a summary of an act in the quest based on the provided act number."""
+    act = ctx.quest.acts[act_number - 1]
+    return f"Act {act_number} summary: {act.summary}"
+
+def get_current_act_summary(ctx: RunContext[Quest], current_act_number: int) -> str:
+    """Returns a summary of the current act in the quest based on the provided act number."""
+    act = ctx.quest.acts[current_act_number - 1]
+    return f"Act {current_act_number} summary: {act.summary}"
+
+def get_next_act_summary(ctx: RunContext[Quest], current_act_number: int) -> str:
+    """Returns a summary of the next act in the quest based on the provided act number."""
+    next_act_number = current_act_number + 1
+    if (next_act_number > 3):
+        return "There is no next act. The current act is the final act. The quest concludes after this act."
+    act = ctx.quest.acts[next_act_number - 1]
+    return f"Act {next_act_number} summary: {act.summary}"
+
+def get_previous_act_summary(ctx: RunContext[Quest], current_act_number: int) -> str:
+    """Returns a summary of the previous act in the quest."""
+    previous_act_number = current_act_number - 1
+    if (previous_act_number < 1):
+        return "There is no previous act. The current act is the first act."
+    act = ctx.quest.acts[previous_act_number - 1]
+    return f"Act {previous_act_number} summary: {act.summary}"
+
+def get_scene_summary(ctx: RunContext[Quest], act_number: int, scene_number: int) -> str:
+    """Returns a summary of a specific scene in a specific act of the quest."""
+    act = ctx.quest.acts[act_number - 1]
+    scene = act.scenes[scene_number - 1]
+    return f"Act {act_number} Scene {scene_number} summary: {scene.summary}"
+
+def get_next_scene_summary(ctx: RunContext[Quest], current_act_number: int, current_scene_number: int) -> str:
+    """Returns a summary of the next scene after the current scene in the current act of the quest."""
+    next_scene_number = current_scene_number + 1
+    if (next_scene_number >= len(ctx.quest.acts[current_act_number - 1].scenes)):
+        return "There is no next scene. The current scene is the final scene in this act."
+    act = ctx.quest.acts[current_act_number - 1]
+    scene = act.scenes[next_scene_number - 1]
+    return f"Act {current_act_number} Scene {next_scene_number} summary: {scene.summary}"
+
+def get_previous_scene_summary(ctx: RunContext[Quest], current_act_number: int, current_scene_number: int) -> str:
+    """Returns a summary of the previous scene before the current scene in the current act of the quest."""
+    previous_scene_number = current_scene_number - 1
+    if (previous_scene_number < 1):
+        return "There is no previous scene. The current scene is the first scene in this act."
+    act = ctx.quest.acts[current_act_number - 1]
+    scene = act.scenes[previous_scene_number - 1]
+    return f"Act {current_act_number} Scene {previous_scene_number} summary: {scene.summary}"

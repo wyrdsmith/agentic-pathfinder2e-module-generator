@@ -27,7 +27,7 @@ def get_acts_creation_agent():
             "Do not describe any NPCs, locations, monsters or items in detail. Keep them vague and open to interpretation such that they can be expanded upon later."
             "For example, if the quest is about fighting off enemies in a forest, do not describe the enemies as goblins, only enemies or monsters. "
             "Or, as another example, if there is a key npc, do not describe them as a human or give them a name, only describe them as a person or NPC or by their profession or purpose. "
-            "Each act's summary should long enough and detailed enough to be used to create 5 to 9 scenes for each act later on."
+            "Each act's summary should long enough and detailed enough to be used to create 4 to 9 scenes for each act later on."
         )
     )
     
@@ -44,7 +44,7 @@ def get_acts_extraction_agent():
         output_type = NativeOutput(ActList),
         system_prompt = (
             "You are an expert Data Extraction Agent. "
-            "Your only purpose is to extract the summary of each act. "
+            "You will be provided the summaries for three acts in a story. Your only purpose is to extract the summary of each act. "
             "Do not add any additional information or simplify/summarize any part of the summaries, just extract the data and return it."
         )
     )

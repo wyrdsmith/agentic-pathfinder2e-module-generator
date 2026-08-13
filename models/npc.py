@@ -32,7 +32,8 @@ class Penalty(BaseModel):
     penalty: str = Field(default="", description="Description of the penalty")
 
 class SceneRole(BaseModel):
-    scene: str = Field(default="", description="Scene number")
+    act: Optional[int] = Field(default=None, description="Act number")
+    scene: Optional[int] = Field(default=None, description="Scene number")
     role: str = Field(default="", description="Role the NPC plays in the scene")
 
 class InfluenceData(BaseModel):
@@ -46,7 +47,7 @@ class InfluenceData(BaseModel):
 class NPC(BaseModel):
     name: str = Field(default="", description="Name of the NPC")
     ancestry: str = Field(default="", description="Ancestry of the NPC")
-    class_profession: str = Field(default="", description="Class or profession of the NPC")
+    class_name: str = Field(default="", description="Class of the NPC")
     appearance: str = Field(default="", description="Description of the NPC's appearance")
     personality: str = Field(default="", description="Description of the NPC's personality")
     behavior: str = Field(default="", description="Description of how the NPC behaves")
@@ -54,4 +55,4 @@ class NPC(BaseModel):
     stats: Optional[Stats] = Field(default=None, description="Stats object of values pulled from creature-stats table")
     influence_data: Optional[InfluenceData] = Field(default=None, description="InfluenceData object of values as defined by InfluenceData class")
     quest_role: str = Field(default="", description="The role the NPC plays in the quest")
-    scene_roles: List[SceneRole] = Field(default_factory=list, description="List of roles the NPC plays in each scene")
+    scene_roles: List[SceneRole] = Field(default_factory=list, description="List of roles the NPC plays in each scene")

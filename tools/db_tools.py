@@ -1,6 +1,8 @@
 import sqlite3
 import os
 import json
+import random
+from typing import List
 
 DB_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
 DB_PATH = os.path.join(DB_DIR, 'database.db')
@@ -12,7 +14,7 @@ def get_connection():
     os.makedirs(DB_DIR, exist_ok=True)
     return sqlite3.connect(DB_PATH)
 
-def check_database():
+def check_database() -> bool:
     """
     Checks that the database schema matches the expected schema in schema.json,
     and verifies that all tables (except plot_hooks) contain data.
@@ -67,23 +69,40 @@ def check_database():
     print("Database verification passed successfully.")
     return True
 
-def get_quest_concepts():
+def get_quest_concepts() -> str:
     """Returns a list of previously generated quest concepts from the quest_concepts table. Takes no arguments."""
+    print("Quest concepts queried by agent.")
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT name, theme, setting, plot_hook FROM quest_concepts")
+    # Returns the last 5 quest concepts
+    cursor.execute("SELECT name, theme, setting, plot_hook FROM quest_concepts ORDER BY id DESC LIMIT 5")
     rows = cursor.fetchall()
     conn.close()
     if not rows:
         return "There are no previously generated quest concepts."
     else:
-        return "Previously generated quest concepts:\n\n---\n\n" + "\n---\n".join(["Name: " + row[0] + "\nTheme: " + row[1] + "\nSetting: " + row[2] + "\nPlot Hook: " + row[3] for row in rows])
+        return "Previously generated quest concepts:\n---\n" + "\n---\n".join(["Name: " + row[0] + "\nTheme: " + row[1] + "\nSetting: " + row[2] + "\nPlot Hook: " + row[3] for row in rows])
 
-def add_quest_concept(name, theme, setting, plot_hook):
-    """Adds a generated quest concept to the quest_concepts table. Takes quest_concept as an argument."""
+def add_quest_concept(name: str, theme: str, setting: str, plot_hook: str) -> bool:
+    """Adds a generated quest concept to the quest_concepts table. Takes quest_concept components as arguments."""
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute("INSERT INTO quest_concepts (name, theme, setting, plot_hook) VALUES (?, ?, ?, ?)", (name, theme, setting, plot_hook))
     conn.commit()
     conn.close()
-    return "Added quest concept to table."
+    return True
+
+def get_available_rarities() -> List[str]:
+    """Returns a list of available rarities for determining which options are available in the database tables that utilize rarities. Takes no arguments."""
+    # Determine which rarities are available based on probability
+    rarity_index = random.random()
+    conn = get_connection()
+    cursor = conn.cursor()
+    # Get all rarities where the probability is less than or equal to the random number
+    cursor.execute("SELECT name FROM rarities where probability <= ?", (rarity_index,))
+    rows = cursor.fetchall()
+    conn.close()
+    if not rows:
+        return ["Common"]
+    else:
+        return [row[0] for row in rows]

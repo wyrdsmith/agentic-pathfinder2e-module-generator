@@ -123,3 +123,9 @@ This table provides the treasure value for an encounter for a given level and th
 Based on the Party Treasure by Level table found at https://2e.aonprd.com/Rules.aspx?ID=2656
 #### Notes
 This table lists the total treasure a party is expected to obtain each level. This data is used to review total treasure found in the adventure module to ensure it meets expected levels.
+
+# Name Seeds Data for Markov Chain Name Generation
+All name seeds were produced by Gemini 3.1 Pro by providing sample names taken from the ancestry details page on Archives of Nethys, any naming conventions provided by Pathfinder, and my own observations of the names. The focus of the name generation was on syllable and interesting name quirks appropriate to each ancestry.
+
+## Data Format
+The seed data follows the naming convention of `<ancestry>_names.csv` where each csv file is just a comma separated list of names. These names should provide a good baseline for name generation for each ancestry and should provide a good variety of names for use in adventure modules. Some ancestries have more defined names, such as `[adjective]+[noun]`. In these instances a name is randomly selected from the database rather than generated via markov chain.

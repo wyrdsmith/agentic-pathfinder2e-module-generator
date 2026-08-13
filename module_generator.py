@@ -1,14 +1,25 @@
+from rich.console import Console
 from models.quest import Quest
 from models.act import Act
 from models.scene import Scene
+from models.npc import NPC
 from tools.db_tools import check_database, add_quest_concept
 from tools.quest_tools import adjust_encounter_threat_levels, distribute_experience_budgets, distribute_reward_budgets
 from agents.quest_concept_agent import get_quest_concept_creation_agent, get_quest_concept_extraction_agent
 from agents.quest_summary_agent import get_quest_summary_agent
 from agents.acts_agent import get_acts_creation_agent, get_acts_extraction_agent
 from agents.scenes_agent import get_scenes_creation_agent, get_scenes_extraction_agent
+from agents.npcs_agent import get_npcs_creation_agent, get_npcs_extraction_agent
+
+console = Console()
 
 def generate_quest_concept(current_quest: Quest):
+    """
+    Generates a quest concept including title, theme, setting, and plot hook.
+    Creative agent generates the concept, extraction agent converts it to a pydantic model.
+    Saves the generated quest concept to the database to prevent repetition.
+    Returns the updated Quest object
+    """
     # Instantiate the Agent
     quest_concept_creation_agent = get_quest_concept_creation_agent()
 
@@ -16,7 +27,8 @@ def generate_quest_concept(current_quest: Quest):
     
     # Run the creation agent
     prompt = f"Create a new quest concept for a party of {current_quest.player_count} characters at level {current_quest.party_level}."
-    result = quest_concept_creation_agent.run_sync(prompt)
+    with console.status("[bold cyan]AI Agent is currently thinking...", spinner="dots"):
+        result = quest_concept_creation_agent.run_sync(prompt)
     raw_concept = result.output
     
     print('Quest Concept Generated...')
@@ -26,7 +38,8 @@ def generate_quest_concept(current_quest: Quest):
     
     quest_concept_extraction_agent = get_quest_concept_extraction_agent()
     prompt = f"Extract the quest name, theme, setting, and plot hook from the following quest concept: {raw_concept}"
-    result = quest_concept_extraction_agent.run_sync(prompt)
+    with console.status("[bold yellow]AI Agent is currently extracting data...", spinner="dots"):
+        result = quest_concept_extraction_agent.run_sync(prompt)
     concept = result.output
 
     print('Quest Concept Extracted...')
@@ -47,6 +60,12 @@ def generate_quest_concept(current_quest: Quest):
     return current_quest
 
 def generate_quest_summary(current_quest: Quest):
+    """
+    Generates a quest summary including theme, setting, and plot hook.
+    Creative agent generates the summary, extraction agent converts it to a pydantic model.
+
+    Returns the updated Quest object
+    """
     # Instantiate the Agent
     quest_summary_agent = get_quest_summary_agent()
     
@@ -60,7 +79,8 @@ def generate_quest_summary(current_quest: Quest):
         f"Plot Hook: {current_quest.plot_hook}\n\n"
         "Generate the quest summary."
     )
-    result = quest_summary_agent.run_sync(prompt)
+    with console.status("[bold cyan]AI Agent is currently thinking...", spinner="dots"):
+        result = quest_summary_agent.run_sync(prompt)
     summary = result.output
     
     # Map the generated summary back to our main quest object
@@ -84,7 +104,8 @@ def generate_acts(current_quest: Quest):
         f"Summary: {current_quest.summary}\n\n"
         "Generate the 3 acts for this quest."
     )
-    result = acts_creation_agent.run_sync(prompt)
+    with console.status("[bold cyan]AI Agent is currently thinking...", spinner="dots"):
+        result = acts_creation_agent.run_sync(prompt)
     raw_acts = result.output
 
     print('Quest Acts Generated...')
@@ -93,7 +114,8 @@ def generate_acts(current_quest: Quest):
     print('Extracting Quest Acts...')
     acts_extraction_agent = get_acts_extraction_agent()
     prompt = f"Extract the summary for each of the three acts from the following quest act summaries:\n\n{raw_acts}"
-    result = acts_extraction_agent.run_sync(prompt)
+    with console.status("[bold yellow]AI Agent is currently extracting data...", spinner="dots"):
+        result = acts_extraction_agent.run_sync(prompt)
     acts = result.output
 
     print('Quest Acts Extracted...')
@@ -134,7 +156,8 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
         f"Act {current_act.act_number} Summary: {current_act.summary}\n\n"
         f"Generate the scenes for Act {current_act.act_number}."
     )
-    result = scenes_creation_agent.run_sync(prompt)
+    with console.status("[bold cyan]AI Agent is currently thinking...", spinner="dots"):
+        result = scenes_creation_agent.run_sync(prompt)
     raw_scenes = result.output
 
     print('Quest Scenes Generated...')
@@ -143,7 +166,8 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
     print('Extracting Quest Scenes...')
     scenes_extraction_agent = get_scenes_extraction_agent()
     prompt = f"Extract the summary, location, encounter type, and rest opportunity for each of the scenes from the following quest scene summaries:\n\n{raw_scenes}"
-    result = scenes_extraction_agent.run_sync(prompt)
+    with console.status("[bold yellow]AI Agent is currently extracting data...", spinner="dots"):
+        result = scenes_extraction_agent.run_sync(prompt)
     scenes = result.output
 
     print('Quest Scenes Extracted...')
@@ -175,6 +199,65 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
         
     return current_act
 
+def generate_global_npc_list(quest: Quest) -> Quest:
+    # Instantiate the agent for NPC creation
+    npc_creation_agent = get_npcs_creation_agent()
+    
+    print(f"Generating global cast for '{quest.name}'...")
+
+    # Generate the prompt for the npc_creation_agent
+    prompt_string = f"Quest Summary: {quest.summary}\n\n"
+
+    # Add act and scene summaries
+    for act in quest.acts:
+        prompt_string += f"Act {act.act_number} Summary: {act.summary}\n"
+        for scene in act.scenes:
+            prompt_string += f"  - Scene {scene.scene_number} ({scene.encounter_type}): {scene.summary}\n"
+        prompt_string += "\n"
+
+    prompt_string += "Generate the list of NPCs for this quest."
+    
+    # Run the creation agent
+    prompt = (prompt_string)
+    with console.status("[bold cyan]AI Agent is currently thinking...", spinner="dots"):
+        result = npc_creation_agent.run_sync(prompt, deps=quest)
+    raw_npc_concepts = result.output
+
+    print('Global NPC List Generated...')
+    print(raw_npc_concepts)
+    # Run the extraction agent
+    print('Extracting Global NPC List...')
+    npc_extraction_agent = get_npcs_extraction_agent()
+    prompt = f"Extract the NPC concepts from the following list of NPC concepts:\n\n{raw_npc_concepts}"
+    with console.status("[bold yellow]AI Agent is currently extracting data...", spinner="dots"):
+        result = npc_extraction_agent.run_sync(prompt)
+    npc_concepts_list = result.output
+
+    print('Global NPC List Extracted...')
+
+    # Map the generated NPC concepts to our main quest object
+    print('Global NPC List:')
+    for npc_concept in npc_concepts_list.npc_concepts:
+        new_npc = NPC(
+            name = npc_concept.name,
+            ancestry = npc_concept.ancestry,
+            class_name = npc_concept.class_name,
+            quest_role = npc_concept.quest_role,
+            scene_roles = npc_concept.scene_roles
+        )
+        current_quest.npcs.append(new_npc)
+        print(f"  - NPC: {new_npc.name}, {new_npc.ancestry}, {new_npc.class_name}")
+        print(f"  - - Role: {new_npc.quest_role}")
+        print(f"  - - Scene Roles:")
+        for scene_role in new_npc.scene_roles:
+            print(f"  - - - Act: {scene_role.act_number}, Scene {scene_role.scene_number}: {scene_role.role}")
+    
+    return quest
+
+def generate_scene_details(quest: Quest) -> Quest:
+
+    return quest
+
 def main():
     # Verify DB first
     if not check_database():
@@ -200,11 +283,14 @@ def main():
     # Adjust the encounter threat levels
     current_quest = adjust_encounter_threat_levels(current_quest)
 
-    # Distribute the encounter budgets
+    # Distribute the encounter experience budgets
     current_quest = distribute_experience_budgets(current_quest)
 
     # Distribute the reward budgets
     current_quest = distribute_reward_budgets(current_quest)
+
+    # Generate global list of NPCs for the quest
+    current_quest = generate_global_npc_list(current_quest)
 
 if __name__ == "__main__":
     main()

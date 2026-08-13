@@ -1,6 +1,8 @@
 import random
 from collections import defaultdict
-from tools.db_tools import get_database_connection
+from pydantic_ai import RunContext
+from tools.db_tools import get_connection
+from models.quest import Quest
 
 class MarkovNameGenerator:
     def __init__(self, order=3):
@@ -63,17 +65,26 @@ class MarkovNameGenerator:
         return f"A name could not be produced. Come up with a unique name fit for a {ancestry}."
 
 def get_ancestry_name_seeds(ancestry: str) -> list[str]:
-    conn = get_database_connection()
+    """Get the name seeds for a given ancestry."""
+    conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute(f"SELECT name FROM {ancestry}_names")
+    cursor.execute(f"SELECT name FROM ancestry_names WHERE ancestry = ?", (ancestry,))
     names = cursor.fetchall()
     conn.close()
     return [name[0] for name in names]
 
-def get_npc_name(ancestry: str) -> str:
+def get_npc_name(ctx: RunContext[Quest], ancestry: str) -> str:
     """
-    Generates a culturally appropriate name for a given ancestry.
+    Generates a culturally appropriate name for a given ancestry. Ancestry argument is the name of an ancestry, e.g. Dwarf, Elf, etc.
     """
-    name_engine = MarkovNameGenerator(order=3)
-    name_engine.train(ancestry, get_ancestry_name_seeds(ancestry))
-    return name_engine.generate(ancestry)
+    ancestries_with_selected_names = ["awakened_animal", "kashirishi", "kholo", "leshy", "poppet", "surki"]
+    if ancestry.lower().replace(" ", "_") in ancestries_with_selected_names:
+        names = get_ancestry_name_seeds(ancestry.lower().replace(" ", "_"))
+        return random.choice(names)
+    else:
+        name_engine = MarkovNameGenerator(order=3)
+        name_seeds = get_ancestry_name_seeds(ancestry.lower().replace(" ", "_"))
+        if not name_seeds or len(name_seeds) < 5:
+            return f"A name could not be produced. Come up with a unique name fit for a {ancestry}."
+        name_engine.train(ancestry.lower().replace(" ", "_"), name_seeds)
+        return name_engine.generate(ancestry.lower().replace(" ", "_"))

@@ -6,9 +6,3 @@ class Rewards(BaseModel):
     description: str = Field(default="", description="Detailed description of items and currency awarded")
     boons: List[str] = Field(default_factory=list, description="List of boons awarded (strings)")
     key_items: List[str] = Field(default_factory=list, description="List of key items awarded (strings)")
-    
-    def add_boon(self, boon: str):
-        self.boons.append(boon)
-
-    def add_key_item(self, key_item: str):
-        self.key_items.append(key_item)

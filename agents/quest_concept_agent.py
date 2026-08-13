@@ -20,7 +20,8 @@ def get_quest_concept_creation_agent():
             "Do not name or describe any NPCs, locations, or monsters in detail. Keep them vague and open to interpretation such that they can be expanded upon later. "
             "For example, if the quest is about fighting off enemies in a forest, do not describe the enemies as goblins, only enemies or monsters. "
             "Or, as another example, if there is a key npc, do not describe them as a human or give them a name, only describe them as a person or NPC or by their profession or purpose. "
-            "Use your tools to read past quest concepts to ensure you don't repeat them or create a new quest concept that's too similar."
+            "Use your tool, get_quest_concepts, to read past quest concepts to ensure you don't repeat them or create a new quest concept that's too similar. "
+            "You only need to run this tool once to get a complete list of all previous quest concepts."
         )
     )
 

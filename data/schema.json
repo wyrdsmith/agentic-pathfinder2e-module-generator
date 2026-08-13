@@ -152,5 +152,10 @@
         "theme",
         "setting",
         "plot_hook"
+    ],
+    "ancestry_names": [
+        "id",
+        "name",
+        "ancestry"
     ]
 }
