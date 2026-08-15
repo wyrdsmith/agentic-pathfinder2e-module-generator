@@ -15,7 +15,7 @@ class NPCConcept(BaseModel):
     ancestry: str = Field(default="", description="Ancestry of the NPC")
     class_name: str = Field(default="", description="Class of the NPC")
     quest_role: str = Field(default="", description="The role the NPC plays in the quest")
-    scene_roles: NPCSceneRolesList = Field(default_factory=list, description="List of NPCSceneRole objects.")
+    scene_roles: str = Field(default_factory=list, description="A description of the scene roles the NPC plays, includes the act number and scene number.")
 
 class NPCConceptList(BaseModel):
     npc_concepts: List[NPCConcept] = Field(default_factory=list, description="List of NPC concepts")

@@ -2,13 +2,21 @@ from __future__ import annotations
 from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
 
+class Skill(BaseModel):
+    name: str = Field(default="", description="Name of the skill")
+    modifier: int = Field(default=0, description="The skill modifier")
+
+class Save(BaseModel):
+    name: str = Field(default="", description="Name of the save")
+    modifier: int = Field(default=0, description="The save modifier")
+
 class Stats(BaseModel):
     level: int = Field(default=0, description="Level of the NPC")
     hp: int = Field(default=0, description="Hit points of the NPC")
     ac: int = Field(default=0, description="Armor class of the NPC")
     perception: int = Field(default=0, description="Perception of the NPC")
-    skills: Dict[str, int] = Field(default_factory=dict, description="Dictionary of skills of the NPC")
-    saves: Dict[str, int] = Field(default_factory=dict, description="Dictionary of saves of the NPC")
+    skills: List[Skill] = Field(default_factory=list, description="List of skills of the NPC")
+    saves: List[Save] = Field(default_factory=list, description="List of saves of the NPC")
     strike: int = Field(default=0, description="Strike bonus of the NPC")
     damage: str = Field(default="", description="Strike damage of the NPC")
     spellAttack: int = Field(default=0, description="Spell attack bonus of the NPC")
@@ -32,16 +40,16 @@ class Penalty(BaseModel):
     penalty: str = Field(default="", description="Description of the penalty")
 
 class SceneRole(BaseModel):
-    act: Optional[int] = Field(default=None, description="Act number")
-    scene: Optional[int] = Field(default=None, description="Scene number")
+    act_number: Optional[int] = Field(default=None, description="Act number the npc appears in")
+    scene_number: Optional[int] = Field(default=None, description="Scene number the npc appears in")
     role: str = Field(default="", description="Role the NPC plays in the scene")
 
-class InfluenceData(BaseModel):
+class InfluenceInfo(BaseModel):
     discoveries: List[Discovery] = Field(default_factory=list, description="List of Discovery objects for the NPC's discoveries")
     influences: List[Influence] = Field(default_factory=list, description="List of Influence objects for the NPC's influences")
     thresholds: Optional[Thresholds] = Field(default=None, description="Thresholds object for the NPC's thresholds")
-    resistances: str = Field(default="", description="List of resistances to influence for the NPC")
-    weaknesses: str = Field(default="", description="List of weaknesses to influence for the NPC")
+    resistances: str = Field(default="", description="A string list of resistances to influence for the NPC")
+    weaknesses: str = Field(default="", description="A string list of weaknesses to influence for the NPC")
     penalty: Optional[Penalty] = Field(default=None, description="Penalty object for the NPC")
 
 class NPC(BaseModel):
@@ -53,6 +61,6 @@ class NPC(BaseModel):
     behavior: str = Field(default="", description="Description of how the NPC behaves")
     attitude: str = Field(default="", description="NPC's attitude or disposition towards the player characters")
     stats: Optional[Stats] = Field(default=None, description="Stats object of values pulled from creature-stats table")
-    influence_data: Optional[InfluenceData] = Field(default=None, description="InfluenceData object of values as defined by InfluenceData class")
+    influence_info: Optional[InfluenceInfo] = Field(default=None, description="InfluenceInfo object of values as defined by InfluenceInfo class")
     quest_role: str = Field(default="", description="The role the NPC plays in the quest")
-    scene_roles: List[SceneRole] = Field(default_factory=list, description="List of roles the NPC plays in each scene")
+    scene_roles: List[SceneRole] = Field(default_factory=list, description="List of SceneRole objects of values as defined by SceneRole class")

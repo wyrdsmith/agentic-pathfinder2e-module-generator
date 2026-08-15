@@ -42,7 +42,7 @@ def get_combat_encounter_creation_agent():
     
     return encounter_agent
 
-def get_combatencounter_extraction_agent():
+def get_combat_encounter_extraction_agent():
     model = OllamaModel(
         'qwen2.5-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')

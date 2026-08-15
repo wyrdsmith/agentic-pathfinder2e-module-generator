@@ -1,4 +1,5 @@
 from pydantic_ai import Agent
+import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 
@@ -10,15 +11,22 @@ def get_quest_summary_agent():
 
     quest_summary_agent = Agent(
         model,
-        system_prompt = (
-            "You are a creative writer and Pathfinder 2e Game Master. "
-            "Write a summary based on the given quest concept describing how the player characters are introduced to the story and "
-            "how they come to be involved in the quest. "
-            "The summary should also, in a brief manner, describe the main goal or conflict of the quest and its resolution. "
-            "Do not name or describe in detail any NPCs, locations, or monsters, they should be vague such that they can be expanded upon later. "
-            "For example, if the quest is about fighting off enemies in a forest, do not describe the enemies as goblins, only enemies or monsters. "
-            "Or, as another example, if there is a key npc, do not describe them as a human or give them a name, only describe them as a person or NPC or by their profession or purpose."
-        )
+        system_prompt = textwrap.dedent("""
+            # Role
+            You are a highly creative writer and Pathfinder 2e Game Master.
+
+            # Task
+            Write a brief narrative summary based on the given quest concept.
+            The summary must describe:
+            1. How the player characters are introduced to the story and involved in the quest.
+            2. The main goal or conflict of the quest.
+            3. The eventual resolution.
+
+            # Constraints
+            - DO NOT name or describe specific NPCs, locations, or monsters in detail. Keep them completely vague so downstream agents can expand on them.
+            - Example 1: Do NOT describe enemies as "Goblins", use "monsters" or "local threat".
+            - Example 2: Do NOT name a key NPC "King Arthur" or describe their race, use "local leader" or "the employer".
+        """)
     )
     
     return quest_summary_agent

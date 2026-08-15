@@ -1,8 +1,11 @@
 from pydantic_ai import Agent, RunContext
+import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
 from models.scene_concept import SceneList
+from models.quest import Quest
+from tools.quest_tools import get_next_act_summary
 
 def get_scenes_creation_agent():
     model = OllamaModel(
@@ -12,32 +15,30 @@ def get_scenes_creation_agent():
 
     scenes_agent = Agent(
         model,
-        system_prompt = (
-            "You are a creative writer and a Pathfinder 2e Game Master. "
-            "Based on the provided quest context and the specific act summary, generate a series of 4 to 9 narrative scenes for this act. "
-            "The scenes should be detailed enough to give the reader a clear understanding of the events that take place in the act covering plot points, enemies, and NPCs encountered. "
-            "Each scene should consist of: "
-            "a summary of the events in the scene, "
-            "a description of the location where the scene takes place, "
-            "the type of encounter that takes place in the scene, "
-            "and the type of rest opportunity available after the scene. "
-            "The type of encounter can be combat, social, skill challenge, or hazard: "
-            "a combat encounter is one in which the players face enemies in combat; "
-            "a social encounter is one in which the players engage in roleplay with npcs; "
-            "a skill challenge is one in which the players use their skills to overcome a series of obstacles or challenges; "
-            "a hazard encounter is one in which the players face a hazard, such as a trap or a natural disaster. "
-            "When choosing the type of encounter for each scene, keep in mind that combat and social encounters are the most common, while skill challenges and hazard encounters are rarer. "
-            "Scenes should end with an opportunity for the player characters to have a short rest (10 minutes) or a long rest (8 hours), especially after combat or hazard encounters. "
-            "Alternatively, the scene may not provide a rest opportunity if it makes sense for the narrative. "
-            "You must create from 4 to 9 scenes using the minimum number of scenes needed to tell the story of this act appropriately. "
-            "Do not name or describe any NPCs, locations, or monsters in detail. Keep them vague and open to interpretation such that they can be expanded upon later. "
-            "For example, if the quest is about fighting off enemies in a forest, do not describe the enemies as goblins, only enemies or monsters. "
-            "Or, as another example, if there is a key npc, do not describe them as a human or give them a name, only describe them as a person or NPC or by their profession or purpose. "
-            "Multiple scenes may take place in the same location, so describe the location the same way in each scene description if it's the same location. "
-            "The list of scenes should be able to be read in order to tell the story of this act in a narrative fashion, with each scene flowing into the next with no gaps in the narrative. "
-            "The location of the scene, the type of encounter in the scene, and the rest opportunity for each scene should be easily identifiable."
-        )
+        deps_type = Quest,
+        system_prompt = textwrap.dedent("""
+            # Role
+            You are a highly creative writer and Pathfinder 2e Game Master.
+
+            # Task
+            Generate a continuous narrative series of scenes for the provided act summary. 
+            The scenes must flow sequentially into each other to tell the story of the act.
+
+            # Scene Requirements
+            Create exactly 4 to 9 scenes using the minimum number needed. Each scene MUST clearly label:
+            1. Summary of events.
+            2. Location (must be consistent across scenes if it is the same place).
+            3. Encounter Type (combat, social, skill challenge, or hazard). Keep in mind combat/social are most common.
+            4. Rest Opportunity ("short rest", "long rest", or "no rest opportunity"). Provide rest especially after combat/hazard, unless narrative dictates otherwise.
+
+            # Constraints
+            - DO NOT name or describe specific NPCs, locations, or monsters in detail. Keep them vague.
+            - Example: Do NOT describe enemies as "Goblins", use "monsters". Do NOT name a key NPC, use "local leader".
+            - Use the `get_next_act_summary` tool if you need context on how this act should end to transition into the next.
+        """)
     )
+
+    scenes_agent.tool(get_next_act_summary)
     
     return scenes_agent
 
@@ -50,11 +51,17 @@ def get_scenes_extraction_agent():
     scenes_agent = Agent(
         model,
         output_type = NativeOutput(SceneList),
-        system_prompt = (
-            "You are an expert Data Extraction Agent. "
-            "Your only purpose is to extract the summary of each scene along with the scene's location, encounter type, and the type of rest opportunity for each scene. "
-            "Do not add any additional information or simplify/summarize any part of the summaries, just extract the data and return it."
-        )
+        system_prompt = textwrap.dedent("""
+            # Role
+            You are an expert Data Extraction Agent.
+
+            # Task
+            Extract the summary, location, encounter type, and rest opportunity for each scene.
+
+            # Constraints
+            - DO NOT add, infer, or simplify any information.
+            - Do not provide explanations or commentary.
+        """)
     )
     
     return scenes_agent

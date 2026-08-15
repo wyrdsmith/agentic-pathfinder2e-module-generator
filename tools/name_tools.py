@@ -3,6 +3,7 @@ from collections import defaultdict
 from pydantic_ai import RunContext
 from tools.db_tools import get_connection
 from models.quest import Quest
+from tools.log_tools import *
 
 class MarkovNameGenerator:
     def __init__(self, order=3):
@@ -65,7 +66,15 @@ class MarkovNameGenerator:
         return f"A name could not be produced. Come up with a unique name fit for a {ancestry}."
 
 def get_ancestry_name_seeds(ancestry: str) -> list[str]:
-    """Get the name seeds for a given ancestry."""
+    """
+    Get the name seeds for a given ancestry.
+    
+    Args:
+        ancestry: The ancestry to get the name seeds for.
+    
+    Returns:
+        list[str]: A list of name seeds for the given ancestry.
+    """
     conn = get_connection()
     cursor = conn.cursor()
     cursor.execute(f"SELECT name FROM ancestry_names WHERE ancestry = ?", (ancestry,))
@@ -76,7 +85,15 @@ def get_ancestry_name_seeds(ancestry: str) -> list[str]:
 def get_npc_name(ctx: RunContext[Quest], ancestry: str) -> str:
     """
     Generates a culturally appropriate name for a given ancestry. Ancestry argument is the name of an ancestry, e.g. Dwarf, Elf, etc.
+
+    Args:
+        ctx: The runtime context containing the quest data.
+        ancestry: The ancestry to generate a name for.
+    
+    Returns:
+        str: A culturally appropriate name for the given ancestry.
     """
+    log_write("AI Agent is generating a name for an NPC...")
     ancestries_with_selected_names = ["awakened_animal", "kashirishi", "kholo", "leshy", "poppet", "surki"]
     if ancestry.lower().replace(" ", "_") in ancestries_with_selected_names:
         names = get_ancestry_name_seeds(ancestry.lower().replace(" ", "_"))
