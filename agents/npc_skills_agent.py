@@ -1,11 +1,9 @@
-from pydantic_ai import Agent, RunContext
+from pydantic_ai import Agent
 import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
 from typing import List
-from models.quest import Quest
-from tools.npc_tools import get_skills_with_descriptions
 
 def get_npc_skills_creation_agent():
     model = OllamaModel(
@@ -32,7 +30,5 @@ def get_npc_skills_creation_agent():
             - Do not provide explanations or other text.
         """)
     )
-    
-    npcs_agent.tool_plain(get_skills_with_descriptions)
     
     return npcs_agent

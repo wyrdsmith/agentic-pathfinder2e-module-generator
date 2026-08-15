@@ -94,7 +94,6 @@ def get_quest_concepts() -> str:
     Returns:
         str: A list of previously generated quest concepts.
     """
-    log_write("AI Agent is retrieving quest concepts from database...")
     conn = get_connection()
     cursor = conn.cursor()
     # Returns the last 5 quest concepts

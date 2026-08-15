@@ -4,8 +4,6 @@ from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
 from models.scene_concept import SceneList
-from models.quest import Quest
-from tools.quest_tools import get_next_act_summary
 
 def get_scenes_creation_agent():
     model = OllamaModel(
@@ -15,7 +13,6 @@ def get_scenes_creation_agent():
 
     scenes_agent = Agent(
         model,
-        deps_type = Quest,
         system_prompt = textwrap.dedent("""
             # Role
             You are a highly creative writer and Pathfinder 2e Game Master.
@@ -34,11 +31,8 @@ def get_scenes_creation_agent():
             # Constraints
             - DO NOT name or describe specific NPCs, locations, or monsters in detail. Keep them vague.
             - Example: Do NOT describe enemies as "Goblins", use "monsters". Do NOT name a key NPC, use "local leader".
-            - Use the `get_next_act_summary` tool if you need context on how this act should end to transition into the next.
         """)
     )
-
-    scenes_agent.tool(get_next_act_summary)
     
     return scenes_agent
 

@@ -14,7 +14,6 @@ def get_possible_item_rewards(ctx: RunContext[Quest], encounter_reward_budget: i
     Returns:
         str: A list of possible item rewards for the given quest.
     """
-    log_write(f"AI Agent is getting possible item rewards for reward budget: {encounter_reward_budget}...")
     current_quest = ctx.deps
 
     if encounter_reward_budget == 0:

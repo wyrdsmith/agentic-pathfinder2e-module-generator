@@ -16,7 +16,6 @@ def get_ancestries_with_descriptions() -> str:
     Returns:
         str: A list of ancestries with their descriptions.
     """
-    log_write("AI Agent is getting ancestries from database...")
     rarities = get_available_rarities()
     query_string = "SELECT name, description FROM ancestries WHERE rarity IN ({})".format(",".join([f"'{rarity}'" for rarity in rarities]))
     conn = get_connection()
@@ -38,7 +37,6 @@ def get_classes_with_descriptions():
     Returns:
         str: A list of classes with their descriptions.
     """
-    log_write("AI Agent is getting classes from database...")
     rarities = get_available_rarities()
     query_string = "SELECT name, description FROM classes WHERE rarity IN ({})".format(",".join([f"'{rarity}'" for rarity in rarities]))
     conn = get_connection()
@@ -50,7 +48,7 @@ def get_classes_with_descriptions():
     classes_string = "\n\n".join(classes)
     return classes_string
 
-def get_ancestry_description(ctx: RunContext[Quest], ancestry: str) -> str:
+def get_ancestry_description(ancestry: str) -> str:
     """
     Returns the description of an ancestry.
     
@@ -61,7 +59,6 @@ def get_ancestry_description(ctx: RunContext[Quest], ancestry: str) -> str:
     Returns:
         str: The description of the ancestry.
     """
-    log_write(f"AI Agent is getting ancestry description for {ancestry} from database...")
     query_string = "SELECT description FROM ancestries WHERE name = '{}'".format(ancestry)
     conn = get_connection()
     cursor = conn.cursor()
@@ -70,7 +67,7 @@ def get_ancestry_description(ctx: RunContext[Quest], ancestry: str) -> str:
     conn.close()
     return ancestry_description[0] if ancestry_description else "No description was provided in the database."
 
-def get_class_description(ctx: RunContext[Quest], class_name: str) -> str:
+def get_class_description(class_name: str) -> str:
     """
     Returns the description of a class.
     
@@ -81,7 +78,6 @@ def get_class_description(ctx: RunContext[Quest], class_name: str) -> str:
     Returns:
         str: The description of the class.
     """
-    log_write(f"AI Agent is getting class description for {class_name} from database...")
     query_string = "SELECT description FROM classes WHERE name = '{}'".format(class_name)
     conn = get_connection()
     cursor = conn.cursor()
@@ -100,7 +96,6 @@ def get_skills_with_descriptions() -> str:
     Returns:
         str: A list of skills with their descriptions.
     """
-    log_write("AI Agent is getting skills from database...")
     query_string = "SELECT name, description FROM skills"
     conn = get_connection()
     cursor = conn.cursor()

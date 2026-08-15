@@ -158,7 +158,6 @@ def get_quest_theme(ctx: RunContext[Quest]) -> str:
     Returns:
         str: The theme of the quest.
     """
-    log_write("AI Agent is getting quest theme...")
     current_quest = ctx.deps
     return current_quest.theme
 
@@ -172,7 +171,6 @@ def get_quest_setting(ctx: RunContext[Quest]) -> str:
     Returns:
         str: The setting of the quest.
     """
-    log_write("AI Agent is getting quest setting...")
     current_quest = ctx.deps
     return current_quest.setting
 
@@ -186,7 +184,6 @@ def get_quest_summary(ctx: RunContext[Quest]) -> str:
     Returns:
         str: The summary of the quest.
     """
-    log_write("AI Agent is getting quest summary...")
     current_quest = ctx.deps
     return current_quest.summary
 
@@ -202,7 +199,6 @@ def get_npcs_for_scene(ctx: RunContext[Quest], act_number: int, scene_number: in
     Returns:
         List[NPC]: A list of NPCs that appear in the specified scene of an act of the quest.
     """
-    log_write(f"AI Agent is getting NPCs for Act {act_number}, Scene {scene_number}...")
     current_quest = ctx.deps
     act = current_quest.acts[act_number - 1]
     scene = act.scenes[scene_number - 1]
@@ -223,7 +219,6 @@ def get_list_of_acts(ctx: RunContext[Quest]) -> str:
     Returns:
         str: A list of all act numbers in the quest.
     """
-    log_write("AI Agent is getting list of acts...")
     current_quest = ctx.deps
     acts = []
     for act in current_quest.acts:
@@ -241,7 +236,6 @@ def get_list_of_scenes(ctx: RunContext[Quest], act_number: int) -> str:
     Returns:
         str: A list of all scene numbers in the specified act of the quest.
     """
-    log_write(f"AI Agent is getting scenes for Act {act_number}...")
     current_quest = ctx.deps
     act = current_quest.acts[act_number - 1]
     scenes = []
@@ -260,7 +254,6 @@ def get_act_summary(ctx: RunContext[Quest], act_number: int) -> str:
     Returns:
         str: The summary of the specified act in the quest.
     """
-    log_write(f"AI Agent is getting summary for Act {act_number}...")
     current_quest = ctx.deps
     act = current_quest.acts[act_number - 1]
     return f"Act {act_number} summary: {act.summary}"
@@ -315,7 +308,6 @@ def get_scene_summary(ctx: RunContext[Quest], act_number: int, scene_number: int
     Returns:
         str: The summary of the specified scene in the specified act of the quest.
     """
-    log_write(f"AI Agent is getting summary for Act {act_number}, Scene {scene_number}...")
     current_quest = ctx.deps
     act = current_quest.acts[act_number - 1]
     scene = act.scenes[scene_number - 1]
@@ -335,7 +327,6 @@ def get_next_scene_summary(ctx: RunContext[Quest], current_act_number: int, curr
     """
     current_quest = ctx.deps
     next_scene_number = current_scene_number + 1
-    log_write(f"AI Agent is getting summary for Act {current_act_number}, Scene {next_scene_number}...")
     if (next_scene_number >= len(current_quest.acts[current_act_number - 1].scenes)):
         return "There is no next scene. The current scene is the final scene in this act."
     act = current_quest.acts[current_act_number - 1]
@@ -356,7 +347,6 @@ def get_previous_scene_summary(ctx: RunContext[Quest], current_act_number: int, 
     """
     current_quest = ctx.deps
     previous_scene_number = current_scene_number - 1
-    log_write(f"AI Agent is getting summary for Act {current_act_number}, Scene {previous_scene_number}...")
     if (previous_scene_number < 1):
         return "There is no previous scene. The current scene is the first scene in this act."
     act = current_quest.acts[current_act_number - 1]

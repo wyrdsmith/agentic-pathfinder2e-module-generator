@@ -6,6 +6,7 @@ from models.npc import NPC, SceneRole, Skill
 from tools.log_tools import *
 from tools.db_tools import check_database, add_quest_concept, get_quest_concepts
 from tools.quest_tools import adjust_encounter_threat_levels, distribute_experience_budgets, distribute_reward_budgets
+from tools.npc_tools import get_npc_base_stats, get_npc_saves, get_ancestry_description, get_class_description, get_ancestries_with_descriptions, get_classes_with_descriptions, get_skills_with_descriptions
 from agents.quest_concept_agent import get_quest_concept_creation_agent, get_quest_concept_extraction_agent
 from agents.quest_summary_agent import get_quest_summary_agent
 from agents.acts_agent import get_acts_creation_agent, get_acts_extraction_agent
@@ -14,9 +15,6 @@ from agents.npcs_agent import get_npcs_creation_agent, get_npcs_extraction_agent
 from agents.npc_details_agent import get_npc_details_creation_agent, get_npc_details_extraction_agent
 from agents.npc_skills_agent import get_npc_skills_creation_agent
 from agents.npc_saves_agent import get_npc_saves_creation_agent
-from tools.npc_tools import get_npc_base_stats, get_npc_saves
-
-
 
 def generate_quest_concept(current_quest: Quest):
     """
@@ -35,10 +33,11 @@ def generate_quest_concept(current_quest: Quest):
 
     # Run the creation agent
     past_concepts = get_quest_concepts()
-    prompt = (
-        f"Create a new quest concept for a party of {current_quest.player_count} characters at level {current_quest.party_level}.\n\n"
-        f"Context regarding past quests you have run (DO NOT REPEAT THESE):\n{past_concepts}"
-    )
+    prompt = f"Create a new quest concept for a party of {current_quest.player_count} characters at level {current_quest.party_level}.\n\n"
+    prompt += f"Context regarding past quests you have run (DO NOT REPEAT THESE):\n"
+    if past_concepts:
+        prompt += f"{past_concepts}\n\n"
+    
     with console.status(f"[bold cyan]AI Agent is generating quest concept for {current_quest.player_count} players at level {current_quest.party_level}...[/bold cyan]", spinner="dots"):
         result = quest_concept_creation_agent.run_sync(prompt)
     raw_concept = result.output
@@ -85,13 +84,13 @@ def generate_quest_summary(current_quest: Quest):
     quest_summary_agent = get_quest_summary_agent()
     
     # Run the creation agent
-    prompt = (
-        f"Quest Name: {current_quest.name}\n"
-        f"Theme: {current_quest.theme}\n"
-        f"Setting: {current_quest.setting}\n"
-        f"Plot Hook: {current_quest.plot_hook}\n\n"
-        "Generate the quest summary."
-    )
+    prompt = "# Quest Information:\n"
+    prompt += f"Name: {current_quest.name}\n"
+    prompt += f"Theme: {current_quest.theme}\n"
+    prompt += f"Setting: {current_quest.setting}\n"
+    prompt += f"Plot Hook: {current_quest.plot_hook}\n\n"
+    prompt += "Generate the quest summary."
+    
     with console.status("[bold cyan]AI Agent is generating quest summary...[/bold cyan]", spinner="dots"):
         result = quest_summary_agent.run_sync(prompt)
     summary = result.output
@@ -108,14 +107,14 @@ def generate_acts(current_quest: Quest):
     # Instantiate the Agent for generating acts
     acts_creation_agent = get_acts_creation_agent()
     
-    prompt = (
-        f"Quest Name: {current_quest.name}\n"
-        f"Theme: {current_quest.theme}\n"
-        f"Setting: {current_quest.setting}\n"
-        f"Plot Hook: {current_quest.plot_hook}\n"
-        f"Summary: {current_quest.summary}\n\n"
-        "Generate the 3 acts for this quest."
-    )
+    prompt = "# Quest Information:\n"
+    prompt += f"Name: {current_quest.name}\n"
+    prompt += f"Theme: {current_quest.theme}\n"
+    prompt += f"Setting: {current_quest.setting}\n"
+    prompt += f"Plot Hook: {current_quest.plot_hook}\n"
+    prompt += f"Summary: {current_quest.summary}\n\n"
+    prompt += "Generate the 3 acts for this quest."
+    
     with console.status("[bold cyan]AI Agent is generating acts for the quest...[/bold cyan]", spinner="dots"):
         result = acts_creation_agent.run_sync(prompt)
     raw_acts = result.output
@@ -172,14 +171,26 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
     # Instantiate the Agent for generating scenes
     scenes_creation_agent = get_scenes_creation_agent()
     
-    prompt = (
-        f"Quest Name: {current_quest.name}\n"
-        f"Theme: {current_quest.theme}\n"
-        f"Setting: {current_quest.setting}\n"
-        f"Overall Quest Summary: {current_quest.summary}\n\n"
-        f"Act {current_act.act_number} Summary: {current_act.summary}\n\n"
-        f"Generate the scenes for Act {current_act.act_number}."
-    )
+    prompt = "# Quest Information:\n"
+    prompt += f"Quest Name: {current_quest.name}\n"
+    prompt += f"Theme: {current_quest.theme}\n"
+    prompt += f"Setting: {current_quest.setting}\n"
+    prompt += f"Overall Quest Summary: {current_quest.summary}\n\n"
+    prompt += "# Current Act Scenes Should be Created For:\n"
+    prompt += f"Act {current_act.act_number} Summary: {current_act.summary}\n\n"
+    
+    # If not the first act, add the previous act summary
+    if current_act.act_number > 1:
+        prompt += "# Previous Act in Quest:\n"
+        prompt += f"Act {current_act.act_number - 1} Summary: {current_quest.acts[current_act.act_number - 1].summary}\n\n"
+    
+    # If not the last act, add the next act summary
+    if current_act.act_number < len(current_quest.acts):
+        prompt += "# Next Act in Quest:\n"
+        prompt += f"Act {current_act.act_number + 1} Summary: {current_quest.acts[current_act.act_number].summary}\n\n"
+    
+    prompt += f"Generate the scenes for Act {current_act.act_number}."
+
     with console.status(f"[bold cyan]AI Agent is generating scenes for Act {current_act.act_number}...[/bold cyan]", spinner="dots"):
         result = scenes_creation_agent.run_sync(prompt, deps=current_quest)
     raw_scenes = result.output
@@ -242,19 +253,29 @@ def generate_quest_npc_list(current_quest: Quest) -> Quest:
     npc_creation_agent = get_npcs_creation_agent()
     
     # Generate the prompt for the npc_creation_agent
-    prompt_string = f"Quest Summary: {current_quest.summary}\n\n"
+    prompt = "#Quest Information:\n"
+    prompt += f"Quest Theme: {current_quest.theme}\n"
+    prompt += f"Quest Setting: {current_quest.setting}\n"
+    prompt += f"Quest Summary: {current_quest.summary}\n\n"
 
     # Add act and scene summaries
     for act in current_quest.acts:
-        prompt_string += f"Act {act.act_number} Summary: {act.summary}\n"
+        prompt += f"Act {act.act_number} Summary: {act.summary}\n"
         for scene in act.scenes:
-            prompt_string += f"  - Scene {scene.scene_number} ({scene.encounter_type}): {scene.summary}\n"
-        prompt_string += "\n"
+            prompt += f"  - Scene {scene.scene_number} ({scene.encounter_type}): {scene.summary}\n"
+        prompt += "\n"
 
-    prompt_string += "Generate the list of NPCs for this quest."
+    prompt += "# Available Ancestries:\n"
+    prompt += get_ancestries_with_descriptions()
+    prompt += "\n"
+
+    prompt += "# Available Classes:\n"
+    prompt += get_classes_with_descriptions()
+    prompt += "\n"
+
+    prompt += "Generate the list of NPCs for this quest."
     
     # Run the creation agent
-    prompt = (prompt_string)
     with console.status("[bold cyan]AI Agent is generating the NPCs for the quest...[/bold cyan]", spinner="dots"):
         result = npc_creation_agent.run_sync(prompt, deps=current_quest)
     raw_npc_concepts = result.output
@@ -323,13 +344,20 @@ def generate_npc_details(current_quest: Quest) -> Quest:
     
     # Iterate through each npc and send the NPC info to the creation agent then extract the data
     for npc in current_quest.npcs:
-        prompt = f"NPC Name: {npc.name}\n"
+        prompt = "#Quest Information:\n"
+        prompt += f"Quest Theme: {current_quest.theme}\n"
+        prompt += f"Quest Setting: {current_quest.setting}\n"
+        prompt += f"Quest Summary: {current_quest.summary}\n\n"
+        prompt += "#NPC Concept:\n"
+        prompt += f"NPC Name: {npc.name}\n"
         prompt += f"NPC Ancestry: {npc.ancestry}\n"
+        prompt += f" - Ancestry Description: {get_ancestry_description(npc.ancestry)}\n"
         prompt += f"NPC Class: {npc.class_name}\n"
-        prompt += f"NPC Quest Role: {npc.quest_role}\n"
+        prompt += f" - Class Description: {get_class_description(npc.class_name)}\n"
+        prompt += f"NPC Quest Role: {npc.quest_role}\n\n"
         prompt += "Generate the details for the NPC in this quest."
         with console.status(f"[bold cyan]AI Agent is generating details for {npc.name}...[/bold cyan]", spinner="dots"):
-            result = npc_details_creation_agent.run_sync(prompt, deps=current_quest)
+            result = npc_details_creation_agent.run_sync(prompt)
         raw_npc_details = result.output
 
         log_success(f"NPC Details Generated for {npc.name}...")
@@ -383,10 +411,16 @@ def generate_npc_stats(current_quest: Quest) -> Quest:
         log_success(f"NPC Base Stats Generated for {npc.name}...")
 
         # Run the skill selection agent
-        prompt = f"NPC Name: {npc.name}\n"
+        prompt = "#Quest Information:\n"
+        prompt += f"Quest Summary: {current_quest.summary}\n\n"
+        prompt += "# NPC Information:\n"
+        prompt += f"NPC Name: {npc.name}\n"
         prompt += f"NPC Ancestry: {npc.ancestry}\n"
         prompt += f"NPC Class: {npc.class_name}\n"
-        prompt += f"NPC Quest Role: {npc.quest_role}\n"
+        prompt += f" - Class Description: {get_class_description(npc.class_name)}\n"
+        prompt += f"NPC Quest Role: {npc.quest_role}\n\n"
+        prompt += "# Available Skills:\n"
+        prompt += f"{get_skills_with_descriptions()}\n\n"
         prompt += "Select the appropriate skills for this NPC based on their class and quest role"
         with console.status(f"[bold cyan]AI Agent is selecting appropriate skills for {npc.name}...[/bold cyan]", spinner="dots"):
             result = npc_skills_agent.run_sync(prompt)
@@ -402,9 +436,11 @@ def generate_npc_stats(current_quest: Quest) -> Quest:
         log_success(f"NPC Skills Selected for {npc.name}...")
 
         # Run the saves ordering agent
-        prompt = f"NPC Name: {npc.name}\n"
+        prompt = "#NPC Information:"
+        prompt += f"NPC Name: {npc.name}\n"
         prompt += f"NPC Class: {npc.class_name}\n"
-        prompt += f"NPC Quest Role: {npc.quest_role}\n"
+        prompt += f" - Class Description: {get_class_description(npc.class_name)}\n"
+        prompt += f"NPC Quest Role: {npc.quest_role}\n\n"
         prompt += "Order the NPC's saves from best to worst based on their class and quest role"
         with console.status(f"[bold cyan]AI Agent is ordering saves for {npc.name}...[/bold cyan]", spinner="dots"):
             result = npc_saves_agent.run_sync(prompt)

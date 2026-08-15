@@ -5,7 +5,6 @@ from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
 from models.npc_concept import NPCConceptList, NPCSceneRolesList
 from models.quest import Quest
-from tools.npc_tools import get_ancestries_with_descriptions, get_classes_with_descriptions
 from tools.name_tools import get_npc_name
 
 def get_npcs_creation_agent():
@@ -28,11 +27,10 @@ def get_npcs_creation_agent():
 
             # Workflow Requirements
             1. Analyze the provided quest, act, and scene summaries.
-            2. Use the `get_ancestries_with_descriptions` and `get_classes_with_descriptions` tools to review options.
-            3. For each NPC, select an ancestry and a class.
-            4. You MUST use the `get_npc_name` tool to generate the NPC's name.
-            5. Define the NPC's role in the overall quest.
-            6. For each scene the NPC appears in, describe their role in that scene. The description MUST begin with the act and scene number (e.g., "Act One, Scene One: ...").
+            2. For each NPC, select an ancestry and a class.
+            3. You MUST use the `get_npc_name` tool to generate the NPC's name.
+            4. Define the NPC's role in the overall quest.
+            5. For each scene the NPC appears in, describe their role in that scene. Each description MUST begin with the act and scene number (e.g., "Act One, Scene One: ...").
 
             # Output Requirements
             Each NPC in your final list must clearly label:
@@ -43,14 +41,14 @@ def get_npcs_creation_agent():
             - Scene Roles
 
             # Constraints
-            - Do not include any information other than the list of NPC concepts.
+            - Do NOT include any information other than the list of NPC concepts.
+            - Do NOT invent any ancestries; use only the ones in the list provided.
+            - Do NOT invent any classes; use only the ones in the list provided.
         """)
     )
 
     # Register our tools
-    npcs_agent.tool_plain(get_ancestries_with_descriptions)
     npcs_agent.tool(get_npc_name)
-    npcs_agent.tool_plain(get_classes_with_descriptions)
     
     return npcs_agent
 

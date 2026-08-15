@@ -4,8 +4,6 @@ from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
 from typing import List
-from models.quest import Quest
-from tools.npc_tools import get_class_description
 
 def get_npc_saves_creation_agent():
     model = OllamaModel(
@@ -37,7 +35,5 @@ def get_npc_saves_creation_agent():
             - Use the `get_class_description` tool if you need more information about the NPC's class.
         """)
     )
-    
-    npcs_agent.tool(get_class_description)
     
     return npcs_agent
