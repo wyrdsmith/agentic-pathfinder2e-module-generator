@@ -3,10 +3,12 @@ from models.quest import Quest
 from models.act import Act
 from models.scene import Scene
 from models.npc import NPC, SceneRole, Skill
+from models.enemy import Enemy
 from tools.log_tools import *
 from tools.db_tools import check_database, add_quest_concept, get_quest_concepts
 from tools.quest_tools import adjust_encounter_threat_levels, distribute_experience_budgets, distribute_reward_budgets
 from tools.npc_tools import get_npc_base_stats, get_npc_saves, get_ancestry_description, get_class_description, get_ancestries_with_descriptions, get_classes_with_descriptions, get_skills_with_descriptions
+from tools.encounter_tools import get_possible_enemies, get_enemy_data
 from agents.quest_concept_agent import get_quest_concept_creation_agent, get_quest_concept_extraction_agent
 from agents.quest_summary_agent import get_quest_summary_agent
 from agents.acts_agent import get_acts_creation_agent, get_acts_extraction_agent
@@ -15,6 +17,7 @@ from agents.npcs_agent import get_npcs_creation_agent, get_npcs_extraction_agent
 from agents.npc_details_agent import get_npc_details_creation_agent, get_npc_details_extraction_agent
 from agents.npc_skills_agent import get_npc_skills_creation_agent
 from agents.npc_saves_agent import get_npc_saves_creation_agent
+from agents.encounter_combat_enemies_agent import get_encounter_enemy_agent
 
 def generate_quest_concept(current_quest: Quest):
     """
@@ -28,6 +31,8 @@ def generate_quest_concept(current_quest: Quest):
     Returns:
         Quest: The updated Quest object.
     """
+    log_status("Generating quest concept...")
+
     # Instantiate the Agent
     quest_concept_creation_agent = get_quest_concept_creation_agent()
 
@@ -80,6 +85,8 @@ def generate_quest_summary(current_quest: Quest):
     Returns:
         Quest: The updated Quest object.
     """
+    log_status("Generating quest summary...")
+
     # Instantiate the Agent
     quest_summary_agent = get_quest_summary_agent()
     
@@ -104,6 +111,18 @@ def generate_quest_summary(current_quest: Quest):
     return current_quest
 
 def generate_acts(current_quest: Quest):
+    """
+    Generates acts for the quest.
+    Creative agent generates the acts, extraction agent converts it to a pydantic model.
+
+    Args:
+        current_quest: The Quest object to generate acts for.
+    
+    Returns:
+        Quest: The updated Quest object.
+    """
+    log_status("Generating acts for quest...")
+    
     # Instantiate the Agent for generating acts
     acts_creation_agent = get_acts_creation_agent()
     
@@ -168,6 +187,8 @@ def generate_scenes_for_act(current_quest: Quest, current_act: Act):
     Returns:
         Quest: The updated Quest object.
     """
+    log_status(f"Generating scenes for Act {current_act.act_number}...")
+
     # Instantiate the Agent for generating scenes
     scenes_creation_agent = get_scenes_creation_agent()
     
@@ -249,6 +270,8 @@ def generate_quest_npc_list(current_quest: Quest) -> Quest:
     Returns:
         Quest: The updated Quest object.
     """
+    log_status("Generating NPC list for quest...")
+
     # Instantiate the agent for NPC creation
     npc_creation_agent = get_npcs_creation_agent()
     
@@ -339,6 +362,8 @@ def generate_npc_details(current_quest: Quest) -> Quest:
     Returns:
         Quest: The updated Quest object.
     """
+    log_status("Generating NPC details for quest...")
+
     # Instantiate the agent for NPC details creation
     npc_details_creation_agent = get_npc_details_creation_agent()
     
@@ -399,6 +424,8 @@ def generate_npc_stats(current_quest: Quest) -> Quest:
     Returns:
         Quest: The updated Quest object.
     """
+    log_status("Generating NPC stats for quest...")
+
     # Instantiate the agent for NPC skills creation
     npc_skills_agent = get_npc_skills_creation_agent()
     npc_saves_agent = get_npc_saves_creation_agent()
@@ -475,6 +502,69 @@ def generate_npc_stats(current_quest: Quest) -> Quest:
     
     return current_quest
 
+def generate_encounter_enemies(current_quest: Quest):
+    log_status("Generating encounter enemies for quest...")
+    
+    # Instantiate the Agent
+    encounter_enemies_agent = get_encounter_enemy_agent()
+
+    log_write("Selected Combat Encounter Enemies:")
+    # Iterate through each encounter
+    for act in current_quest.acts:
+        for scene in act.scenes:
+            if scene.encounter_type == "combat" and scene.encounter.encounter_type == "combat":
+                # Get a list of enemies that fall under the encounter experience budget and where the encounter
+                # budget is cleanly divisible by the xp_value of the enemy. This cheats the enemy selection by
+                # letting the agent select the most fitting enemy, rather than selecting multiple enemies that fit a budget.
+                # We can then use the xp_value to determine the number of enemies in the encounter.
+                possible_enemies = get_possible_enemies(current_quest.party_level, scene.encounter.xp_budget)
+                
+                prompt = "# Quest Information:\n"
+                prompt += f"Quest Theme: {current_quest.theme}\n"
+                prompt += f"Quest Setting: {current_quest.setting}\n"
+                prompt += f"Quest Summary: {current_quest.summary}\n\n"
+                prompt += "# Act Information:\n"
+                prompt += f"Act Summary: {act.summary}\n\n"
+                prompt += "# Scene Information:\n"
+                prompt += f"Scene Summary: {scene.summary}\n"
+                prompt += f"Scene Location: {scene.location}\n\n"
+                prompt += "# Available Enemies:\n"
+                for enemy in possible_enemies:
+                    prompt += f"Name: {enemy.name}\n"
+                    prompt += f"- Description: {enemy.description}\n"
+                prompt += "# Task:\n\n"
+                prompt += "Select the most appropriate enemy for the scene."
+                
+                with console.status(f"[bold cyan]AI Agent is selecting appropriate enemy for Act {act.act_number}, Scene {scene.scene_number}...[/bold cyan]", spinner="dots"):
+                    result = encounter_enemies_agent.run_sync(prompt)
+                enemy_name = result.output
+                
+                selected_enemy = next((enemy for enemy in possible_enemies if enemy.name == enemy_name), None)
+
+                if selected_enemy is None:
+                    log_error(f"Enemy name provided by agent ({enemy_name}) did not match any of the available enemies. Trying again...")
+                    prompt += "Remember that you must select an enemy from the available enemies list and output the exact name of the enemy. Do not output the count of enemies or any other information."
+    
+                while selected_enemy is None:
+                    with console.status(f"[bold cyan]AI Agent is re-selecting appropriate enemy for Act {act.act_number}, Scene {scene.scene_number}...[/bold cyan]", spinner="dots"):
+                        result = encounter_enemies_agent.run_sync(prompt)
+                    enemy_name = result.output
+                    
+                    selected_enemy = next((enemy for enemy in possible_enemies if enemy.name == enemy_name), None)
+
+                enemy_count = scene.encounter.xp_budget // selected_enemy.xp_value
+                for _ in range(max(enemy_count, 1)):
+                    scene.encounter.enemies.append(selected_enemy)
+
+                # Log chosen enemies for encounter
+                log_write(f" - Act {act.act_number}, Scene {scene.scene_number} - {selected_enemy.name} ({selected_enemy.xp_value} XP) x {enemy_count}")
+            else:
+                pass
+
+    log_success("Quest encounter enemies selected...")
+    
+    return current_quest
+
 def generate_npc_influence_info(current_quest: Quest) -> Quest:
     
     return current_quest
@@ -510,46 +600,54 @@ def main():
         log_error("Database verification failed... Exiting.")
         return
 
-    log_success("Beginning adventure module generation...")
+    log_status("Beginning adventure module generation...")
 
     # Set up initial quest object
-    current_quest = Quest(player_count=4, party_level=1)
+    #current_quest = Quest(player_count=4, party_level=1)
 
     # Generate the quest concept
-    current_quest = generate_quest_concept(current_quest)
+    #current_quest = generate_quest_concept(current_quest)
 
     # Generate the quest summary
-    current_quest = generate_quest_summary(current_quest)
+    #current_quest = generate_quest_summary(current_quest)
     
     # Generate the acts
-    current_quest = generate_acts(current_quest)
+    #current_quest = generate_acts(current_quest)
     
     # Generate scenes for each act
-    for act in current_quest.acts:
-        act = generate_scenes_for_act(current_quest, act)
+    #for act in current_quest.acts:
+    #    act = generate_scenes_for_act(current_quest, act)
 
     # Adjust the encounter threat levels
-    current_quest = adjust_encounter_threat_levels(current_quest)
+    #current_quest = adjust_encounter_threat_levels(current_quest)
 
     # Distribute the encounter experience budgets
-    current_quest = distribute_experience_budgets(current_quest)
+    #current_quest = distribute_experience_budgets(current_quest)
 
     # Distribute the reward budgets
-    current_quest = distribute_reward_budgets(current_quest)
+    #current_quest = distribute_reward_budgets(current_quest)
 
     # Generate list of NPCs for the quest
-    current_quest = generate_quest_npc_list(current_quest)
+    #current_quest = generate_quest_npc_list(current_quest)
 
     # Generate NPC details: appearance, personality, behavior, and attitude
-    current_quest = generate_npc_details(current_quest)
+    #current_quest = generate_npc_details(current_quest)
     
     # Generate NPC stats
-    current_quest = generate_npc_stats(current_quest)
+    #current_quest = generate_npc_stats(current_quest)
+
+    log_status("Loading existing quest from file...")
+    with open("output/The_Halted_Rhythm.json", "r") as f:
+        current_quest = Quest.model_validate_json(f.read())
+    log_success("Quest loaded successfully...")
+
+    # Generate encounter enemies
+    current_quest = generate_encounter_enemies(current_quest)
 
     # Generate NPC influence information
     # current_quest = generate_npc_influence_info(current_quest)
     
-    write_quest_to_file(current_quest)
+    #write_quest_to_file(current_quest)
 
     end_time = time.time()
     elapsed = end_time - start_time

@@ -3,6 +3,9 @@ from models.quest import Quest
 from pydantic_ai import RunContext
 from typing import List
 from tools.log_tools import *
+from tools.db_tools import get_available_rarities
+from models.encounter import Enemy
+import random
 
 ENCOUNTER_TYPES = [
     "combat",
@@ -101,54 +104,80 @@ def get_encounter_reward_budget(threat_level: str, encounter_level: int) -> int:
     conn.close()
     return int(encounter_reward_budget[0][0])
 
-def get_possible_enemies(ctx: RunContext[Quest], act_number: int, scene_number: int) -> str:
+def get_possible_enemies(party_level: int, encounter_experience_budget: int) -> List[Enemy]:
     """
-    Get the possible enemies for the encounter in a given act_number and scene_number.
+    Get a list of 50 possible enemies for a given party level and encounter experience budget.
+    Intended to allow LLM to select the most appropriate enemy from a restricted pool of enemies.
     
     Args:
-        ctx: The RunContext that contains the quest data.
-        act_number: The act number of the encounter.
-        scene_number: The scene number of the encounter.
+        party_level: The level of the party.
+        encounter_experience_budget: The experience budget for the encounter.
     
     Returns:
-        str: The possible enemies for the encounter.
+        List[Enemy]: A list of possible enemies for the encounter.
     """
-    log_write("AI Agent is getting possible enemies for the encounter...")
-    
-    current_quest = ctx.deps
-    party_level = current_quest.party_level
-    encounter = current_quest.acts[act_number-1].scenes[scene_number-1].encounter
-    encounter_experience_budget = encounter.xp_budget
-
     min_level = party_level - 4
     max_level = party_level + 4
     if min_level < -1:
         min_level = -1
+    rarities = get_available_rarities()
+
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute(f"SELECT level, name, description FROM creatures WHERE level BETWEEN ? AND ? ORDER BY level DESC", (min_level, max_level))
-    encounter_enemies = cursor.fetchall()
+    cursor.execute(f"SELECT level, name, description, url FROM creatures WHERE level BETWEEN ? AND ? AND rarity IN ({','.join(['?']*len(rarities))}) ORDER BY level DESC", (min_level, max_level, *rarities))
+    raw_level_appropriate_enemies = cursor.fetchall()
     
-    enemies_list = []
+    level_appropriate_enemies = []
     # Loop through the possible enemies and add them to the list along with xp cost
-    for enemy in encounter_enemies:
+    for enemy in raw_level_appropriate_enemies:
         level_difference = enemy[0] - party_level
         cursor.execute(f"SELECT xp FROM creature_experience WHERE level_difference = ?", (level_difference,))
-        xp = cursor.fetchall()
-        enemies_list.append((enemy[0], enemy[1], enemy[2], xp[0][0]))
+        xp = cursor.fetchone()
+        level_appropriate_enemies.append(Enemy(
+            name=enemy[1],
+            level=enemy[0],
+            description=enemy[2],
+            url=enemy[3],
+            xp_value=xp[0]
+        ))
     conn.close()
 
     # Remove enemies whose experience cost are greater than the encounter budget
-    for enemy in enemies_list:
-        if enemy[3] > encounter_experience_budget:
-            enemies_list.remove(enemy)
+    for enemy in level_appropriate_enemies:
+        if enemy.xp_value > encounter_experience_budget:
+            level_appropriate_enemies.remove(enemy)
 
-    enemies_string = "Possible enemies for this encounter:\n\n"
-    for enemy in enemies_list:
-        # 0 Level, 1 Name, 2 Description, 3 XP Cost
-        enemies_string += f"Name: {enemy[1]}\n"
-        enemies_string += f"- Level: {enemy[0]}\n"
-        enemies_string += f"- Description: {enemy[2]}\n"
-        enemies_string += f"- Experience Cost: {enemy[3]}\n\n"
+    # Cheat enemy selection by only providing enemies for which the budget is cleanly divisible by enemy's xp cost
+    possible_enemies = []
+    for enemy in level_appropriate_enemies:
+        if encounter_experience_budget % enemy.xp_value == 0:
+            possible_enemies.append(enemy)
 
-    return enemies_string
+    # Choose 50 random enemies from the list of possible enemies
+    if len(possible_enemies) > 50:
+        possible_enemies = random.sample(possible_enemies, 50)
+
+    return possible_enemies
+
+def get_enemy_data(enemy_name: str) -> Enemy:
+    """
+    Get the data for a specific enemy.
+    
+    Args:
+        enemy_name: The name of the enemy.
+    
+    Returns:
+        Enemy: The data for the enemy.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute(f"SELECT name, level FROM creatures WHERE name = ?", (enemy_name,))
+    enemy_data = cursor.fetchall()
+    conn.close()
+    if len(enemy_data) == 0:
+        log_error(f"Enemy not found in database: {enemy_name}")
+        return None
+    return Enemy(
+        name=enemy_data[0][0],
+        level=enemy_data[0][1]
+    )

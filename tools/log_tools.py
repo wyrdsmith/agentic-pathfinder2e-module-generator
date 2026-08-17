@@ -22,3 +22,7 @@ def log_warning(message: str):
 def log_error(message: str):
     console.print(f"[bold red]{message}[/bold red]")
     log_write("[ERROR] " + message)
+
+def log_status(message: str):
+    console.print(f"[bold cyan]{message}[/bold cyan]")
+    log_write("[STATUS] " + message)
