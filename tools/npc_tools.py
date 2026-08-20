@@ -167,3 +167,63 @@ def get_npc_saves(npc_saves: List[str], npc_level: int) -> List[Tuple[str, int]]
     ]
     
     return saves
+
+def get_npcs_for_scene(act_number: int, scene_number: int, current_quest: Quest) -> List[NPC]:
+    npcs = []
+    
+    for npc in current_quest.npcs:
+        if npc.scene_roles is not None and len(npc.scene_roles) > 0:
+            for role in npc.scene_roles:
+                if role.act_number == act_number and role.scene_number == scene_number:
+                    npcs.append(npc)
+    
+    return npcs
+
+def get_scene_role_for_npc(act_number: int, scene_number: int, npc_name: str, current_quest: Quest) -> Optional[str]:
+    """
+    Returns the role of an NPC in a scene.
+    
+    Args:
+        act_number: The act number of the scene.
+        scene_number: The scene number of the scene.
+        npc_name: The name of the NPC.
+        current_quest: The quest the NPC is in.
+    
+    Returns:
+        str: The role of the NPC in the scene.
+    """
+    for npc in current_quest.npcs:
+        if npc.name == npc_name:
+            for role in npc.scene_roles:
+                if role.act_number == act_number and role.scene_number == scene_number:
+                    return role.role
+    
+    return None
+
+def get_npc_influence_dc(npc_level: int, difficulty: str) -> int:
+    """
+    Returns the difficulty class for an NPC discovery or influence based on the NPC's level and the difficulty of the discovery or influence.
+    
+    Args:
+        npc_level: The level of the NPC.
+        difficulty: The difficulty of the discovery or influence (easy, moderate, or hard).
+    
+    Returns:
+        int: The difficulty class for the discovery or influence.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+    query_string = "SELECT difficulty FROM difficulties WHERE level = ?"
+    cursor.execute(query_string, (npc_level,))
+    dc = cursor.fetchone()
+    conn.close()
+
+    modifier = 0
+    if difficulty == "easy":
+        modifier = -2
+    elif difficulty == "moderate":
+        modifier = 0
+    else:
+        modifier = 2
+    
+    return dc[0] + modifier

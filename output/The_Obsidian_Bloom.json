@@ -1,0 +1,1551 @@
+{
+  "name": "The Obsidian Bloom",
+  "theme": "Resonance & Corruption",
+  "setting": "A forgotten, subterranean research facility—a vast chamber complex carved deep beneath a range of jagged peaks.",
+  "plot_hook": "The party is approached by a representative of a secretive order known as ‘The Harmonists.’ They task the party with investigating a distress signal emanating from an abandoned research facility – Project Nightingale – rumored to have been shut down decades ago due to 'unforeseen complications.' Local legend speaks of experiments attempting to manipulate ambient energy, but those efforts were deemed too volatile and dangerous.",
+  "summary": "**The Obsidian Bloom**\n\n**Introduction**\nWhile traveling through a remote region known for its jagged peaks, the party is approached by a representative of a clandestine order. This messenger carries a cryptic warning and a desperate request: an ancient subterranean research facility, long abandoned due to catastrophic failures in experimental energy manipulation, has begun emitting a haunting distress signal. The party is commissioned to venture into the depths of this forgotten complex to determine the source of the pulse and ensure it does not pose a threat to the surface world.\n\n**The Conflict**\nAs the party descends into the facility, they find an environment warped by \"Resonance\"—a volatile, lingering energy that has begun to manifest as a creeping physical corruption. The ruins are haunted by echoes of the past, where failed experiments have mutated the very architecture and atmosphere. The core conflict involves navigating these unstable zones while facing manifestations of corrupted energy and territorial hostiles who have been driven into a state of feral madness by the leaking resonance. The party must navigate the deteriorating infrastructure to reach the heart of the facility, where the source of the \"bloom\" is gestating.\n\n**Resolution**\nUpon reaching the central hub, the party discovers that the source of the signal is an uncontrolled energy core attempting to stabilize itself against a growing surge of corruption. The players must find a way to neutralize the instability—either by performing a complex ritual to harmonize the resonance or by physically dismantling and sealing the core. Success halts the growth of the corruption, silencing the distress signal and ensuring the subterranean secrets remains buried once more. Failure to manage the energy’s volatility allows the \"bloom\" to expand further, creating a permanent zone of instability beneath the peaks.",
+  "acts": [
+    {
+      "act_number": 1,
+      "summary": "The narrative begins in the shadow of a remote mountain range, where the air is thin and the terrain is jagged with stone. The party is intercepted by a representative of an enigmatic and secretive organization. This envoy provides a grim briefing regarding a clandestine research facility nestled deep beneath these peaks. The facility was abandoned decades ago following a catastrophic failure during experiments involving high-frequency energy manipulation. Recently, the site has begun emitting a haunting, rhythmic pulse—a ",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "skill challenge",
+          "summary": "The party navigates the treacherous, wind-whipped terrain of a remote mountain range. They must overcome environmental obstacles—falling debris, thinning air, and unstable ledges—before they are approached by a mysterious figure emerging from the crags to deliver their mission.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "The Jagged Heights",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Shifting Stonefall",
+                "description": "The mountainside ahead is scarred with deep fissures and loose shale. A sudden, localized tremor sends a cascade of stone and rock tumbling down the slope.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The flow of debris slows abruptly, revealing a relatively clear path forward, though the air remains thick with dust.",
+                "failure_resolution": "The party is caught in the initial surge of falling rock, scattering them across the exposed terrain – several players are knocked prone and disoriented.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Razor Wind Channel",
+                "description": "A narrow pass opens up before the party, dominated by a consistent, forceful wind that whips around exposed ridges. The ground is covered in slick moss and loose gravel.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party successfully navigates through the windswept channel, using cover to minimize exposure and maintaining their footing with steady steps.",
+                "failure_resolution": "The strong gusts of wind throw players off balance; those caught without purchase are dragged towards the edge of a steep drop-off.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "The Whispering Chasm",
+                "description": "A deep chasm opens up in the path, its walls slick with moisture and echoing with an unsettling, low hum. Mist hangs thick in the air within the chasm’s depths.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "An alternate route appears – a narrow, exposed ledge carved into the rock face, offering passage across the divide.",
+                "failure_resolution": "The mist within the chasm subtly disorients those who venture too close to the edge - their perception of distance becomes skewed and the party is nearly swept off the mountain side",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Brittle Ledge",
+                "description": "A particularly narrow ledge stretches across a significant gap, seemingly offering the only way forward. The rock is layered and worn down, slick with moisture.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "With careful movement and support for one another, the party cautiously makes their way across this perilously thin path.",
+                "failure_resolution": "The fragile stone beneath their feet yields unexpectedly, causing several players to stumble and risk falling into a dizzying drop below.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Frozen Wind Cave",
+                "description": "The party stumbles upon an opening that leads into a small, ice-covered cave. The air within is intensely cold and still.",
+                "skills": [
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "The team finds temporary respite from the harsh winds inside the frozen cavern; however, they quickly move through to continue their progress in search of their mission figure.",
+                "failure_resolution": "Exposure to the extreme cold rapidly drains the group’s warmth, causing discomfort and slowing their movements significantly.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Debris Field",
+                "description": "A recent avalanche has left a large field of tangled rocks and ice blocking the path. The area is strewn with sharp debris - branches, shattered stone, and frozen mud.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party carefully picks their way through the debris, clearing pathways by maneuvering carefully or finding pockets of clearer ground to traverse.",
+                "failure_resolution": "The falling debris stuns several members with impact, disorienting them and forcing a temporary halt to progress – a large boulder shifts as they pass giving everyone footing issues.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Echoing Void",
+                "description": "The narrow passage opens into a small alcove where the walls seem unnaturally smooth and sound reverberates strangely, creating an unsettling echo that makes it difficult to hear clearly.",
+                "skills": [
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "The party successfully negotiates through the alcove while maintaining composure and understanding they need to communicate clearly given the unusual acoustics.",
+                "failure_resolution": "The echoes distort players' perceptions, causing them to misinterpret distances and directions—they become lost and disoriented within the confined space.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Mist-Shrouded Peak",
+                "description": "The path begins to ascend a steep section of rock that is now blanketed in thick, swirling mist. Visibility drops dramatically.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "With careful observation and the use of any available tools (ropes, climbing equipment), the party slowly makes their way up the misty slope, relying on feel and intuition.",
+                "failure_resolution": "The swirling mist obscures the path ahead, causing confusion and panic. Players struggle to maintain their bearings and risk becoming hopelessly lost.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "social",
+          "summary": "The party meets with a representative of a secretive organization. In this exchange, the envoy explains the history of the nearby research facility and warns them about the 'Resonance'—the unstable energy causing mutations and physical rot in the area below.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Hidden Pass",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "social",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [
+              {
+                "npc_name": "Katha",
+                "discoveries": [
+                  {
+                    "skill": "Perception",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 13
+                  }
+                ],
+                "influences": [
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Deception",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 11
+                  }
+                ],
+                "thresholds": {
+                  "four": "Katha shares specific details about a safer path through the mountain's foothills, allowing the party to bypass several minor hazards near the entrance.",
+                  "six": "Katha provides detailed information on how to recognize and mitigate early signs of physical rot, giving the party an advantage in navigating sections where the Resonance is active.",
+                  "eight": "Katha reveals a clandestine map or set of instructions that identifies 'blind spots' within the facility's defenses, providing the party with a way to bypass major obstacles or reach a sanctuary during a crisis."
+                },
+                "resistances": "katha is resistant to appeals based on personal sentiment or demands for favors that stray from the professional scope of her briefing.",
+                "weaknesses": "she is more likely to be influenced by logical analysis and the presentation of concrete evidence regarding the dangers of the resonance.",
+                "penalty": {
+                  "description": "she perceives any attempt to uncover the internal operations or specific identities within her clandestine order as a violation of her oath.",
+                  "penalty": "Reduce the number of rounds the party has to influence Katha by 1."
+                }
+              }
+            ],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "hazard",
+          "summary": "Following the envoy's directions, the party tracks the source of the rhythmic pulse to a concealed entrance built into the mountain’s base. They must navigate hazardous terrain and ancient mechanical defenses designed to keep people out/in that have been warped by the growing corruption.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "The Vault Entryway",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "hazard",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Disembodied Voices",
+              "level": 0,
+              "hazard_type": "Haunt",
+              "description": "Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.",
+              "url": "/Hazards.aspx?ID=135"
+            },
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "combat",
+          "summary": "As the party crosses the threshold into the primary structure, they encounter the first tangible evidence of the 'Bloom.' They are forced to defend themselves against a group of twisted creatures that have been driven mad by the local energy fluctuations. This conflict serves as the final barrier before the facility's interior reaches its true depth.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "The Entry Vestibule",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "combat",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 2,
+                "name": "Nagaji Soldier",
+                "description": "Most nagaji warriors are connected to a temple, either a national religious network or a single holy site depending on where they reside.",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=4486"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": null
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "summary": "Deep within the facility, the party must navigate a labyrinth of corridors and vast chambers where the ",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "hazard",
+          "summary": "The party enters the primary maze of the facility where the atmospheric pressure changes and the air hums with a low-frequency vibration. They must navigate a series of corridors where the 'Resonance' causes physical reality to warp, and shimmering barriers of energy periodically obstruct their path.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Corridors of Distortion",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "hazard",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Disorienting Illusions",
+              "level": 1,
+              "hazard_type": "Trap",
+              "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, …",
+              "url": "/Hazards.aspx?ID=629"
+            },
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "combat",
+          "summary": "In a sprawling laboratory wing, the party is ambushed by creatures that have been twisted and mutated by years of prolonged exposure to energy leaks. These hostiles are aggressive and territorial, defending what remains of the dilapidated high-tech equipment.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Laboratory Wing",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 1,
+                "name": "Young Monitor Lizard",
+                "description": "Nethys Note: No description has been provided for this creature.",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=3999"
+              },
+              {
+                "level": 1,
+                "name": "Young Monitor Lizard",
+                "description": "Nethys Note: No description has been provided for this creature.",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=3999"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "skill challenge",
+          "summary": "The primary way forward is blocked by a collapsed section of the facility. The party must use their skills to navigate crumbling architecture, bypass malfunctioning security systems, and stabilize unstable ground as they cross toward the inner sanctum.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Maintenance Tunnels",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Shifting Debris Field",
+                "description": "The immediate area ahead is choked with loose concrete, twisted metal, and fractured piping – a chaotic jumble of debris that obscures the path forward. The floor beneath feels unstable.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "With careful maneuvering, the party clears a relatively uninterrupted passage, revealing a narrow corridor leading onward. Dust settles, revealing a cleaner route, but with a subtle sense of disturbance in the air.",
+                "failure_resolution": "The debris shifts violently as the party attempts to force their way through, sending a cascade of rubble crashing down around them. Progress is halted and they must spend time carefully removing smaller pieces before continuing.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Pressure Drop",
+                "description": "A sudden drop in air pressure fills a large chamber, accompanied by the hissing of escaping gas. The walls appear to be decaying rapidly as if permeated by moisture.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "Recognizing the problem, the party quickly finds an access panel and manually seals the breach, restoring normal atmospheric conditions. A faint scent of ozone lingers in the air.",
+                "failure_resolution": "The pressure continues to fall, causing disorientation and a feeling of constriction as the party struggles for breath; heavy condensation gathers rapidly threatening structural instability around them.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "The Rushing Current",
+                "description": "A subterranean channel has formed due to the collapse, carrying a strong current of murky water that flows swiftly through a partially submerged corridor. The walls are slick with moisture and algae.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "Using improvised materials or existing structures, the party manages to construct a temporary bridge or narrow pathway across the current, allowing them to reach the other side safely.",
+                "failure_resolution": "The party is swept downstream, losing footing and potentially damaging equipment and sustained by the force of the water.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Faulty Auto-Lock System",
+                "description": "A heavy blast door blocks their path, bristling with damaged security sensors. Flickering lights indicate that some of the automated systems are still partially active.",
+                "skills": [
+                  {
+                    "skill": "Thievery",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party manages to bypass or disable the sensors, either by rerouting power, using salvaged components, or exploiting a flaw in the system – unlocking the door quietly.",
+                "failure_resolution": "A surge from the damaged system activates multiple redundant defensive measures, triggering a volley of flashing lights and ear-splitting alarms, temporarily blinding them while they attempt to fix the problem.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Unstable Ground",
+                "description": "The floor ahead is riddled with cracks and fissures that widen intermittently. The air vibrates faintly with settling stone.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "Carefully assessing the situation, the party identifies a stable path through the unstable ground, meticulously placing supports or using their movement to minimize disturbance—allowing them to cross safely.",
+                "failure_resolution": "The ground gives way beneath the party's feet as they attempt to move across; one or more members tumble into a deep pit, potentially sustaining injuries and delaying progress.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Collapsed Archway",
+                "description": "A massive archway has crumbled inward, forming an impassable barrier of fallen masonry. Part of the ceiling above is collapsing, threatening further destruction.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "The party manages to find a way around the collapsed arch or discovers a hidden passage that bypasses it on the other side—revealing a smoother path forward.",
+                "failure_resolution": "The falling debris seals off their current route completely; they must now attempt to clear the rubble themselves, and potentially face the danger of further collapse.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "social",
+          "summary": "The party enters a zone where the 'Resonance' has crystallized into audible memories. They encounter lingering fragments of consciousness from past researchers. The party must interact with these fractured echoes to decipher safe paths and understand the escalation of the 'bloom'.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Archive Hall",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "social",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [
+              {
+                "npc_name": "Kyriel",
+                "discoveries": [
+                  {
+                    "skill": "Perception",
+                    "dc": 14
+                  },
+                  {
+                    "skill": "Arcana",
+                    "dc": 14
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 12
+                  }
+                ],
+                "influences": [
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 14
+                  },
+                  {
+                    "skill": "Arcana",
+                    "dc": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 12
+                  }
+                ],
+                "thresholds": {
+                  "four": "Kyriel shares knowledge of a nearby environmental hazard and a small shortcut through an adjacent alcove, allowing the party to navigate the immediate corridor with ease.",
+                  "six": "Kyriel provides detailed information on the 'bloom's' growth patterns in this sector, identifying a specific weakness or passage that allows the party to bypass a major obstacle.",
+                  "eight": "Kyriel reveals a hidden layout of the facility’s structural secrets, granting the party access to a secret path that bypasses an entire dangerous zone or provides direct access to a critical objective."
+                },
+                "resistances": "Kyriel is resistant to appeals based on personal emotion or the promise of material rewards, as they are a detached consciousness focused entirely on preserved data.",
+                "weaknesses": "Kyriel is highly receptive to technical inquiries regarding the biological growth of the bloom and specific details concerning the corridor's geometry.",
+                "penalty": {
+                  "description": "Any attempt to force Kyriel to abandon their duties or to question the integrity of the research records will be met with immediate, cold hostility.",
+                  "penalty": "Reduce the number of rounds the party has to influence Kyriel by 1."
+                }
+              }
+            ],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "combat",
+          "summary": "As the party nears the heart of the facility, they find a heavily fortified gate. They are confronted by wave after wave of frantic, feral defenders that have been driven into a frenzy by the nearby energy source, serving as a final gauntlet before the central hub.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Gate Complex",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 3,
+                "name": "Zombie Owlbear",
+                "description": "Zombie owlbears combine an  owlbear's  ferocity with mindless undead hatred. Once it draws near, it often stands up, unleashing a guttural, wet roar,",
+                "xp_value": 80,
+                "url": "/Monsters.aspx?ID=1920"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "summary": "The party finally breaches the central hub, a massive, cavernous chamber where the source of the distress signal resides. At the center lies a gargantuan core, pulsing with a blindingly bright light that seems to vibrate in every bone of their bodies. This is ",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "hazard",
+          "summary": "Having reached the inner sanctum of the central hub, the party must navigate a crumbling walkway leading directly toward the massive core. As they approach, the 'Resonance' becomes deafening, causing structural debris to fall and the air to shimmer with distorted energy. They face several automated defense mechanisms triggered by their proximity to the high-value zone.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Inner Sanctum",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "hazard",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Toppling Furniture",
+              "level": 2,
+              "hazard_type": "Haunt",
+              "description": "A mischievous spirit pushes a bookshelf over onto a creature.",
+              "url": "/Hazards.aspx?ID=139"
+            },
+            "reward_budget": 26,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "combat",
+          "summary": "The path is blocked by a desperate, mutated force attempting to stop any intruders from reaching or interfering with the core. These hostiles are visibly warped by the resonance, acting as frenzied guardians of the 'bloom.' They will defend their position at all costs.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Inner Sanctum",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "combat",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 2,
+                "name": "Living Boulder",
+                "description": "Living boulders roll and glide through the  Plane of Earth , gathering gemstones and metal shards until their surfaces resemble a ship's hull covered",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=4382"
+              },
+              {
+                "level": 2,
+                "name": "Living Boulder",
+                "description": "Living boulders roll and glide through the  Plane of Earth , gathering gemstones and metal shards until their surfaces resemble a ship's hull covered",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=4382"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 26,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "skill challenge",
+          "summary": "To reach the core's primary interface, the party must cross a zone where the resonance is severely destabilized. The environment fluctuates wildly—gravity may shift slightly, or shadows might detach from their owners. The party must succeed in various checks to navigate the physical and mental distortions caused by the nearby energy source without being overwhelmed by the 'Resonance.'",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Core Perimeter",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Shifting Sands",
+                "description": "The ground beneath your feet becomes unstable, swirling with loose earth and grit. Patches rise and fall erratically, creating treacherous footing and threatening to pull you downwards into a deepening pit.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "With coordinated effort and steady steps, the party manages to maintain their balance and traverse the fluctuating terrain, emerging on relatively stable ground further ahead.",
+                "failure_resolution": "Several party members stumble and lose their footing, sinking slightly into the shifting sands. The group struggles to regain their composure amidst the chaos.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Fortitude",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Echoing Shadows",
+                "description": "Suddenly, shadows begin to detach themselves from their sources – a flickering torch casts a phantom duplicate of itself; your own shadow stretches unnaturally long and thin before collapsing back with surprising force. A sense of unease settles over you as the familiar becomes alien.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 13
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The players focus on grounding themselves in the present, consciously reaffirming their connection to reality, and successfully minimizing the unsettling influence of the shifting shadows.",
+                "failure_resolution": "Several party members are momentarily disoriented by the bizarre distortions, experiencing a fleeting sense of panic or confusion as if lost within the shifting darkness.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Gravitational Flux",
+                "description": "The very nature of gravity seems to fluctuate around you. For brief moments, your weight shifts dramatically—perhaps feeling heavier than lead or noticeably lighter, threatening to send you tumbling into unpredictable angles.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "By anticipating the changes and adjusting their movements instinctively, the group manages to maintain a degree of stability as they navigate through the area experiencing fluctuating gravity.",
+                "failure_resolution": "Several party members are thrown off balance, resulting in minor collisions or near-falls that disrupt their positioning and potentially damage fragile equipment.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Fortitude",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Murmuring Void",
+                "description": "A low, almost subsonic hum fills the air—a void of sound seems to press against your minds, bringing with it fleeting fragments of images and emotions – a forgotten face, a moment of intense grief, a sensation of vast emptiness.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The party utilizes techniques or mental disciplines to block out the intrusive sounds and visions, grounding themselves in the present and resisting the disruptive influence.",
+                "failure_resolution": "Party members experience increasing disorientation—brief moments of thoughtlessness, confusion about their surroundings, or a profound sense of vulnerability.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Temporal Distortion Pocket",
+                "description": "The air around you seems to shimmer and distort, revealing fleeting glimpses of the past - perhaps a flash of someone briefly standing where you are, or the faintest traces of earlier events playing out in miniature.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  }
+                ],
+                "success_resolution": "By acknowledging and observing these temporal anomalies with a calm and analytical approach, the party can use this as a brief moment to assess their surroundings and strategy.",
+                "failure_resolution": "The unsettling experience overwhelms several party members—causing them to freeze in confusion or even experience brief moments of disorientation as the past and present blur into an incomprehensible mess.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Dissipated Light",
+                "description": "The ambient light begins to flicker erratically, dimming and intensifying in unpredictable bursts. Your vision warps and blurs, making it difficult to distinguish objects and distances.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The party works together to utilize any available sources of illumination—a lantern or glowing item—to anchor themselves within the increasingly disorienting environment.",
+                "failure_resolution": "Visibility is severely reduced, causing panic and confusion among the group as they struggle to maintain their bearings and coordinate their actions.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "combat",
+          "summary": "Upon reaching the base of the core, the peak of the resonance manifests physically. Malicious entities composed of hardened energy and distorted matter emerge from the very ground. This is a final stand against the literal manifestations of the bloom's corruption before the party can reach the controls to initiate the shutdown.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Heart of the Bloom",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "combat",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 2,
+                "name": "Torcheater",
+                "description": "When bright lights or large fires illuminate terrible crimes, the perpetrators' shadows can animate and take on a life of their own. However, such an",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=3953"
+              },
+              {
+                "level": 2,
+                "name": "Torcheater",
+                "description": "When bright lights or large fires illuminate terrible crimes, the perpetrators' shadows can animate and take on a life of their own. However, such an",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=3953"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 26,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "skill challenge",
+          "summary": "The party reaches the control console at the base of the core. They must perform a series of rapid technical and magical actions to either harmonize the resonance into a stable state or physically dismantle the containment seals. Success will silence the alarm; failure will cause a localized surge that potentially leaves a permanent scar on the land above.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "long rest",
+          "location": "Heart of the Bloom",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "The Shifting Conduit",
+                "description": "The main conduit feeding power to the core pulses with an erratic, iridescent light. Cables snake across the floor, sparking intermittently, and distortions ripple outwards from its central point.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The pulsing stabilizes, the erratic sparks cease, and a palpable sense of order settles over the console – the resonance begins to respond to external input.",
+                "failure_resolution": "The conduit flares violently, showering the surrounding area with static energy that briefly bleaches the color from the stone.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Feedback Cascade",
+                "description": "As a party member attempts to interact with the console, a chorus of discordant tones erupts – a feedback cascade filling the chamber, intensifying with each adjustment. Visual echoes of previously attempted actions flicker around the room.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The cascade abruptly cuts off, replaced by a low hum resonating through the core—the system shows signs of becoming more receptive to commands.",
+                "failure_resolution": "The feedback intensifies rapidly, creating blinding flashes and forcing all in the chamber to momentarily lose their balance and coordination.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Resonance Echoes",
+                "description": "The room begins to vibrate with a lingering energy - fractured images of events leading to the core’s instability briefly manifest as shimmering projections around them, growing more intense with each passing moment.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The projections fade away piece by piece, resolving into static—a deeper understanding of the source of the unstable resonance begins to emerge.",
+                "failure_resolution": "The projections solidify, becoming momentarily tangible phantoms that create minor disruptions in the party’s movements and perception.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Temporal Distortion",
+                "description": "A visible wave of shimmering heat radiates outward, causing brief distortions around the console – objects briefly phase in and out of existence, colors shift unnaturally, and sounds are delayed or echoed strangely.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The distortion stabilizes, returning to normal—the flow of energy through the console seems smoother and less chaotic.",
+                "failure_resolution": "The temporal distortions intensify, causing disorientation, blurred vision, and momentary confusion amongst the party – lost time becomes a significant concern.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "The Stabilizing Field",
+                "description": "A powerful, shimmering field of energy begins to coalesce around the console, aggressively pushing back against any attempts to manipulate it causing physical strain.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The field gently yields as manipulations stabilize – all within reach can interact with the console without resistance or discomfort.",
+                "failure_resolution": "The field becomes more aggressive increasing in intensity causing injuries and hindering progress.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Fortitude",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Cascade Overload",
+                "description": "With repeated attempts, the core’s energy begins to build exponentially – a deep rumbling echoes throughout the chamber as the console threatens potential catastrophic failure.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The cascade dissipates completely, and the room becomes eerily silent—the resonance is finally stabilized.",
+                "failure_resolution": "A blinding surge of energy erupts from the console, bathing the area in incandescent light – cracks begin to form in the stone above as the land destabilizes violently.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Fortitude",
+                  "area_dc": 17
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Katha",
+      "ancestry": "Human",
+      "class_name": "Investigator",
+      "appearance": "Katha possesses a sharp, striking appearance that commands immediate attention. She wears high-collared traveling robes of charcoal silk reinforced with dark leathered trim, designed for both protection and formality. Her hair is kept in a practical, tightly woven braid, and she bears several pieces of understated jewelry—small silver rings on her fingers that glint when she gestures. Her most striking feature is her eyes; they are observant and steady, framed by fine lines that suggest years spent studying dense texts and complex mysteries under dim light.",
+      "personality": "",
+      "behavior": "",
+      "attitude": "",
+      "stats": {
+        "level": -1,
+        "hp": 9,
+        "ac": 15,
+        "perception": 5,
+        "skills": [
+          {
+            "name": "Arcana",
+            "modifier": 5
+          },
+          {
+            "name": "Diplomacy",
+            "modifier": 5
+          },
+          {
+            "name": "Lore",
+            "modifier": 5
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 8
+          },
+          {
+            "name": "Reflex",
+            "modifier": 5
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 2
+          }
+        ],
+        "strike": 8,
+        "damage": "1d4+1",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "A high-ranking envoy from a clandestine order who provides the party with intelligence and warnings regarding the Resonance before they depart for the mountain range.",
+      "scene_roles": [
+        {
+          "act_number": 1,
+          "scene_number": 2,
+          "role": "Katha meets the party to describe the history of the facility, warn them about the physical rot caused by the 'Resonance', and provide the necessary directions to the entrance."
+        }
+      ]
+    },
+    {
+      "name": "Kyriel",
+      "ancestry": "Elf",
+      "class_name": "Wizard",
+      "appearance": "",
+      "personality": "",
+      "behavior": "",
+      "attitude": "",
+      "stats": {
+        "level": 0,
+        "hp": 18,
+        "ac": 16,
+        "perception": 6,
+        "skills": [
+          {
+            "name": "Arcana",
+            "modifier": 6
+          },
+          {
+            "name": "Lore",
+            "modifier": 6
+          },
+          {
+            "name": "Occultism",
+            "modifier": 6
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 9
+          },
+          {
+            "name": "Reflex",
+            "modifier": 6
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 3
+          }
+        ],
+        "strike": 8,
+        "damage": "1d6+2",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "A hauntingly stable 'echo' of a former researcher whose consciousness was preserved as crystallized memory within the facility's structure.",
+      "scene_roles": [
+        {
+          "act_number": 2,
+          "scene_number": 4,
+          "role": "Kyriel appears as a flickering image in the distorted corridor to provide the party with essential information regarding the progression of the 'bloom' and safe navigation paths."
+        }
+      ]
+    }
+  ],
+  "player_count": 4,
+  "party_level": 1,
+  "xp_value": 1000
+}

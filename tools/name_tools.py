@@ -93,7 +93,6 @@ def get_npc_name(ctx: RunContext[Quest], ancestry: str) -> str:
     Returns:
         str: A culturally appropriate name for the given ancestry.
     """
-    log_write("AI Agent is generating a name for an NPC...")
     ancestries_with_selected_names = ["awakened_animal", "kashirishi", "kholo", "leshy", "poppet", "surki"]
     if ancestry.lower().replace(" ", "_") in ancestries_with_selected_names:
         names = get_ancestry_name_seeds(ancestry.lower().replace(" ", "_"))

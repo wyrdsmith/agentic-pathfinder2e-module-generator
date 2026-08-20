@@ -1,13 +1,15 @@
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
+from pydantic_ai.settings import ModelSettings
 from pydantic_ai.output import NativeOutput
-from models.act_concept import ActList
+from models.act_concept import ActConcept
+from typing import List
 import textwrap
 
 def get_acts_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -41,12 +43,13 @@ def get_acts_creation_agent():
 def get_acts_extraction_agent():
     model = OllamaModel(
         'qwen2.5-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.0)
     )
 
     quest_concept_agent = Agent(
         model,
-        output_type = NativeOutput(ActList),
+        output_type = NativeOutput(List[ActConcept]),
         system_prompt = textwrap.dedent("""
             # Role
             You are an expert Data Extraction Agent.

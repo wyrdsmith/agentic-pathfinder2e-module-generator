@@ -3,12 +3,14 @@ import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
+from pydantic_ai.settings import ModelSettings
 from typing import List
 
 def get_npc_skills_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        'gemma3-quest',
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.5)
     )
 
     npcs_agent = Agent(
@@ -24,8 +26,10 @@ def get_npc_skills_creation_agent():
             # Output Requirements
             Supply ONLY a list of the selected skill names.
 
+            # Output Format
+            Return the skills as a list of strings.
+
             # Constraints
-            - You MUST use the `get_skills_with_descriptions` tool to see all available skills and their descriptions.
             - Do not invent skills that are not on the provided list.
             - Do not provide explanations or other text.
         """)

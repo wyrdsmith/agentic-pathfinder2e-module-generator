@@ -5,7 +5,7 @@ from pydantic_ai.providers.ollama import OllamaProvider
 
 def get_quest_summary_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 

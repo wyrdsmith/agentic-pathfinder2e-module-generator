@@ -26,3 +26,6 @@ def log_error(message: str):
 def log_status(message: str):
     console.print(f"[bold cyan]{message}[/bold cyan]")
     log_write("[STATUS] " + message)
+
+def log_output(message: str):
+    log_write("[OUTPUT] " + message)

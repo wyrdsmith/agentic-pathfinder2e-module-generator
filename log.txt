@@ -1,14 +1,641 @@
-2026-08-16 23:03:27 - [SUCCESS] Database verification passed successfully.
-2026-08-16 23:03:27 - [SUCCESS] Beginning adventure module generation...
-2026-08-16 23:03:27 - [SUCCESS] Loading existing quest from file...
-2026-08-16 23:03:27 - [SUCCESS] Quest loaded successfully...
-2026-08-16 23:03:27 - [STATUS] Generating encounter enemies for quest...
-2026-08-16 23:08:39 - Act 1, Scene 4 - Warg (60 XP) x 1
-2026-08-16 23:10:36 - Act 2, Scene 1 - Fiddling Bones (80 XP) x 1
-2026-08-16 23:11:58 - Act 2, Scene 3 - Ancestral Echo (40 XP) x 2
-2026-08-16 23:16:04 - Act 2, Scene 4 - Root Leshy Groundskeeper (20 XP) x 4
-2026-08-16 23:22:50 - Act 3, Scene 2 - Soulbound Mauler (120 XP) x 1
-2026-08-16 23:26:49 - Act 3, Scene 4 - Skeletal Soldier (40 XP) x 3
-2026-08-16 23:30:10 - Act 3, Scene 5 - Quarry Construct (60 XP) x 2
-2026-08-16 23:30:10 - [SUCCESS] Encounter enemies selected...
-2026-08-16 23:30:10 - [SUCCESS] Module generation complete in 26m 42s
+2026-08-19 19:14:25 - [SUCCESS] Database verification passed successfully.
+2026-08-19 19:14:25 - [STATUS] Beginning quest generation...
+2026-08-19 19:14:25 - [STATUS] Generating quest concept...
+2026-08-19 19:14:44 - [SUCCESS] Quest Concept Generated...
+2026-08-19 19:14:44 - [OUTPUT] Quest Concept:
+2026-08-19 19:14:44 - [OUTPUT]  - Name: The Obsidian Bloom
+2026-08-19 19:14:44 - [OUTPUT]  - Theme: Resonance & Corruption
+2026-08-19 19:14:44 - [OUTPUT]  - Setting: A forgotten, subterranean research facility—a vast chamber complex carved deep beneath a range of jagged peaks.
+2026-08-19 19:14:44 - [OUTPUT]  - Plot Hook: The party is approached by a representative of a secretive order known as ‘The Harmonists.’ They task the party with investigating a distress signal emanating from an abandoned research facility – Project Nightingale – rumored to have been shut down decades ago due to 'unforeseen complications.' Local legend speaks of experiments attempting to manipulate ambient energy, but those efforts were deemed too volatile and dangerous.
+2026-08-19 19:14:44 - [SUCCESS] Quest concept added successfully...
+2026-08-19 19:14:44 - [STATUS] Generating quest summary...
+2026-08-19 19:16:12 - [SUCCESS] Quest Summary Generated...
+2026-08-19 19:16:12 - [OUTPUT] Quest Summary: **The Obsidian Bloom**
+
+**Introduction**
+While traveling through a remote region known for its jagged peaks, the party is approached by a representative of a clandestine order. This messenger carries a cryptic warning and a desperate request: an ancient subterranean research facility, long abandoned due to catastrophic failures in experimental energy manipulation, has begun emitting a haunting distress signal. The party is commissioned to venture into the depths of this forgotten complex to determine the source of the pulse and ensure it does not pose a threat to the surface world.
+
+**The Conflict**
+As the party descends into the facility, they find an environment warped by "Resonance"—a volatile, lingering energy that has begun to manifest as a creeping physical corruption. The ruins are haunted by echoes of the past, where failed experiments have mutated the very architecture and atmosphere. The core conflict involves navigating these unstable zones while facing manifestations of corrupted energy and territorial hostiles who have been driven into a state of feral madness by the leaking resonance. The party must navigate the deteriorating infrastructure to reach the heart of the facility, where the source of the "bloom" is gestating.
+
+**Resolution**
+Upon reaching the central hub, the party discovers that the source of the signal is an uncontrolled energy core attempting to stabilize itself against a growing surge of corruption. The players must find a way to neutralize the instability—either by performing a complex ritual to harmonize the resonance or by physically dismantling and sealing the core. Success halts the growth of the corruption, silencing the distress signal and ensuring the subterranean secrets remains buried once more. Failure to manage the energy’s volatility allows the "bloom" to expand further, creating a permanent zone of instability beneath the peaks.
+2026-08-19 19:16:12 - [STATUS] Generating acts for quest...
+2026-08-19 19:19:10 - [SUCCESS] Quest Acts Generated...
+2026-08-19 19:19:10 - [OUTPUT] Quest Acts:
+2026-08-19 19:19:10 - [OUTPUT]  - Act 1: The narrative begins in the shadow of a remote mountain range, where the air is thin and the terrain is jagged with stone. The party is intercepted by a representative of an enigmatic and secretive organization. This envoy provides a grim briefing regarding a clandestine research facility nestled deep beneath these peaks. The facility was abandoned decades ago following a catastrophic failure during experiments involving high-frequency energy manipulation. Recently, the site has begun emitting a haunting, rhythmic pulse—a 
+2026-08-19 19:19:10 - [OUTPUT]  - Act 2: Deep within the facility, the party must navigate a labyrinth of corridors and vast chambers where the 
+2026-08-19 19:19:10 - [OUTPUT]  - Act 3: The party finally breaches the central hub, a massive, cavernous chamber where the source of the distress signal resides. At the center lies a gargantuan core, pulsing with a blindingly bright light that seems to vibrate in every bone of their bodies. This is 
+2026-08-19 19:19:10 - [STATUS] Generating scenes for quest acts...
+2026-08-19 19:22:42 - [SUCCESS] Scenes Generated for Act 1...
+2026-08-19 19:22:42 - [OUTPUT] Scenes for Act 1:
+2026-08-19 19:22:42 - [OUTPUT]  - Scene 1 (skill challenge): The party navigates the treacherous, wind-whipped terrain of a remote mountain range. They must overcome environmental obstacles—falling debris, thinning air, and unstable ledges—before they are approached by a mysterious figure emerging from the crags to deliver their mission.
+2026-08-19 19:22:42 - [OUTPUT]  - - Location: The Jagged Heights
+2026-08-19 19:22:42 - [OUTPUT]  - - Rest Opportunity: no rest opportunity
+2026-08-19 19:22:42 - [OUTPUT]  - Scene 2 (social): The party meets with a representative of a secretive organization. In this exchange, the envoy explains the history of the nearby research facility and warns them about the 'Resonance'—the unstable energy causing mutations and physical rot in the area below.
+2026-08-19 19:22:42 - [OUTPUT]  - - Location: Hidden Pass
+2026-08-19 19:22:42 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:22:42 - [OUTPUT]  - Scene 3 (hazard): Following the envoy's directions, the party tracks the source of the rhythmic pulse to a concealed entrance built into the mountain’s base. They must navigate hazardous terrain and ancient mechanical defenses designed to keep people out/in that have been warped by the growing corruption.
+2026-08-19 19:22:42 - [OUTPUT]  - - Location: The Vault Entryway
+2026-08-19 19:22:42 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:22:42 - [OUTPUT]  - Scene 4 (combat): As the party crosses the threshold into the primary structure, they encounter the first tangible evidence of the 'Bloom.' They are forced to defend themselves against a group of twisted creatures that have been driven mad by the local energy fluctuations. This conflict serves as the final barrier before the facility's interior reaches its true depth.
+2026-08-19 19:22:42 - [OUTPUT]  - - Location: The Entry Vestibule
+2026-08-19 19:22:42 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:27:04 - [SUCCESS] Scenes Generated for Act 2...
+2026-08-19 19:27:04 - [OUTPUT] Scenes for Act 2:
+2026-08-19 19:27:04 - [OUTPUT]  - Scene 1 (hazard): The party enters the primary maze of the facility where the atmospheric pressure changes and the air hums with a low-frequency vibration. They must navigate a series of corridors where the 'Resonance' causes physical reality to warp, and shimmering barriers of energy periodically obstruct their path.
+2026-08-19 19:27:04 - [OUTPUT]  - - Location: Corridors of Distortion
+2026-08-19 19:27:04 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:27:04 - [OUTPUT]  - Scene 2 (combat): In a sprawling laboratory wing, the party is ambushed by creatures that have been twisted and mutated by years of prolonged exposure to energy leaks. These hostiles are aggressive and territorial, defending what remains of the dilapidated high-tech equipment.
+2026-08-19 19:27:04 - [OUTPUT]  - - Location: Laboratory Wing
+2026-08-19 19:27:04 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:27:04 - [OUTPUT]  - Scene 3 (skill challenge): The primary way forward is blocked by a collapsed section of the facility. The party must use their skills to navigate crumbling architecture, bypass malfunctioning security systems, and stabilize unstable ground as they cross toward the inner sanctum.
+2026-08-19 19:27:04 - [OUTPUT]  - - Location: Maintenance Tunnels
+2026-08-19 19:27:04 - [OUTPUT]  - - Rest Opportunity: no rest opportunity
+2026-08-19 19:27:04 - [OUTPUT]  - Scene 4 (social): The party enters a zone where the 'Resonance' has crystallized into audible memories. They encounter lingering fragments of consciousness from past researchers. The party must interact with these fractured echoes to decipher safe paths and understand the escalation of the 'bloom'.
+2026-08-19 19:27:04 - [OUTPUT]  - - Location: Archive Hall
+2026-08-19 19:27:04 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:27:04 - [OUTPUT]  - Scene 5 (combat): As the party nears the heart of the facility, they find a heavily fortified gate. They are confronted by wave after wave of frantic, feral defenders that have been driven into a frenzy by the nearby energy source, serving as a final gauntlet before the central hub.
+2026-08-19 19:27:04 - [OUTPUT]  - - Location: Gate Complex
+2026-08-19 19:27:04 - [OUTPUT]  - - Rest Opportunity: no rest opportunity
+2026-08-19 19:31:11 - [SUCCESS] Scenes Generated for Act 3...
+2026-08-19 19:31:11 - [OUTPUT] Scenes for Act 3:
+2026-08-19 19:31:11 - [OUTPUT]  - Scene 1 (hazard): Having reached the inner sanctum of the central hub, the party must navigate a crumbling walkway leading directly toward the massive core. As they approach, the 'Resonance' becomes deafening, causing structural debris to fall and the air to shimmer with distorted energy. They face several automated defense mechanisms triggered by their proximity to the high-value zone.
+2026-08-19 19:31:11 - [OUTPUT]  - - Location: Inner Sanctum
+2026-08-19 19:31:11 - [OUTPUT]  - - Rest Opportunity: no rest opportunity
+2026-08-19 19:31:11 - [OUTPUT]  - Scene 2 (combat): The path is blocked by a desperate, mutated force attempting to stop any intruders from reaching or interfering with the core. These hostiles are visibly warped by the resonance, acting as frenzied guardians of the 'bloom.' They will defend their position at all costs.
+2026-08-19 19:31:11 - [OUTPUT]  - - Location: Inner Sanctum
+2026-08-19 19:31:11 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:31:11 - [OUTPUT]  - Scene 3 (skill challenge): To reach the core's primary interface, the party must cross a zone where the resonance is severely destabilized. The environment fluctuates wildly—gravity may shift slightly, or shadows might detach from their owners. The party must succeed in various checks to navigate the physical and mental distortions caused by the nearby energy source without being overwhelmed by the 'Resonance.'
+2026-08-19 19:31:11 - [OUTPUT]  - - Location: Core Perimeter
+2026-08-19 19:31:11 - [OUTPUT]  - - Rest Opportunity: no rest opportunity
+2026-08-19 19:31:11 - [OUTPUT]  - Scene 4 (combat): Upon reaching the base of the core, the peak of the resonance manifests physically. Malicious entities composed of hardened energy and distorted matter emerge from the very ground. This is a final stand against the literal manifestations of the bloom's corruption before the party can reach the controls to initiate the shutdown.
+2026-08-19 19:31:11 - [OUTPUT]  - - Location: Heart of the Bloom
+2026-08-19 19:31:11 - [OUTPUT]  - - Rest Opportunity: short rest
+2026-08-19 19:31:11 - [OUTPUT]  - Scene 5 (skill challenge): The party reaches the control console at the base of the core. They must perform a series of rapid technical and magical actions to either harmonize the resonance into a stable state or physically dismantle the containment seals. Success will silence the alarm; failure will cause a localized surge that potentially leaves a permanent scar on the land above.
+2026-08-19 19:31:11 - [OUTPUT]  - - Location: Heart of the Bloom
+2026-08-19 19:31:11 - [OUTPUT]  - - Rest Opportunity: long rest
+2026-08-19 19:31:12 - [SUCCESS] Encounter Threat Level Adjustment Complete... Total XP: 1080
+2026-08-19 19:31:12 -   - Act 1 Scene 1: Trivial (40 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 2: Trivial (40 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 3: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 4: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 1: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 2: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 3: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 4: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 5: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 1: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 2: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 3: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 4: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 5: Moderate (80 XP)
+2026-08-19 19:31:12 - [SUCCESS] Encounter Experience Budgeting Complete...
+2026-08-19 19:31:12 -   - Act 1 Scene 1: Trivial (40 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 2: Trivial (40 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 3: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 1 Scene 4: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 1: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 2: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 3: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 4: Low (60 XP)
+2026-08-19 19:31:12 -   - Act 2 Scene 5: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 1: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 2: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 3: Moderate (80 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 4: Severe (120 XP)
+2026-08-19 19:31:12 -   - Act 3 Scene 5: Moderate (80 XP)
+2026-08-19 19:31:12 - [SUCCESS] Encounter Reward Budgeting Complete... (Total Budget: 220 gp / Target Budget: 175 gp)
+2026-08-19 19:31:12 -   - Act 1 Scene 1: Level 0 (Trivial) 0gp Reward Budget
+2026-08-19 19:31:12 -   - Act 1 Scene 2: Level 0 (Trivial) 0gp Reward Budget
+2026-08-19 19:31:12 -   - Act 1 Scene 3: Level 0 (Low) 13gp Reward Budget
+2026-08-19 19:31:12 -   - Act 1 Scene 4: Level 0 (Low) 13gp Reward Budget
+2026-08-19 19:31:12 -   - Act 2 Scene 1: Level 1 (Moderate) 18gp Reward Budget
+2026-08-19 19:31:12 -   - Act 2 Scene 2: Level 1 (Moderate) 18gp Reward Budget
+2026-08-19 19:31:12 -   - Act 2 Scene 3: Level 0 (Low) 13gp Reward Budget
+2026-08-19 19:31:12 -   - Act 2 Scene 4: Level 0 (Low) 13gp Reward Budget
+2026-08-19 19:31:12 -   - Act 2 Scene 5: Level 1 (Moderate) 18gp Reward Budget
+2026-08-19 19:31:12 -   - Act 3 Scene 1: Level 2 (Severe) 26gp Reward Budget
+2026-08-19 19:31:12 -   - Act 3 Scene 2: Level 2 (Severe) 26gp Reward Budget
+2026-08-19 19:31:12 -   - Act 3 Scene 3: Level 1 (Moderate) 18gp Reward Budget
+2026-08-19 19:31:12 -   - Act 3 Scene 4: Level 2 (Severe) 26gp Reward Budget
+2026-08-19 19:31:12 -   - Act 3 Scene 5: Level 1 (Moderate) 18gp Reward Budget
+2026-08-19 19:31:12 - [STATUS] Generating NPC list for quest...
+2026-08-19 19:35:42 - [SUCCESS] NPC concepts Generated...
+2026-08-19 19:35:42 - [OUTPUT] NPCs:
+2026-08-19 19:35:44 - [OUTPUT]   - NPC: Katha, Human, Investigator
+2026-08-19 19:35:44 - [OUTPUT]   - - Role: A high-ranking envoy from a clandestine order who provides the party with intelligence and warnings regarding the Resonance before they depart for the mountain range.
+2026-08-19 19:35:44 - [OUTPUT]   - - Scene Roles:
+2026-08-19 19:35:44 - [OUTPUT]   - - - Act: 1, Scene 2: Katha meets the party to describe the history of the facility, warn them about the physical rot caused by the 'Resonance', and provide the necessary directions to the entrance.
+2026-08-19 19:35:45 - [OUTPUT]   - NPC: Kyriel, Elf, Wizard
+2026-08-19 19:35:45 - [OUTPUT]   - - Role: A hauntingly stable 'echo' of a former researcher whose consciousness was preserved as crystallized memory within the facility's structure.
+2026-08-19 19:35:45 - [OUTPUT]   - - Scene Roles:
+2026-08-19 19:35:45 - [OUTPUT]   - - - Act: 2, Scene 4: Kyriel appears as a flickering image in the distorted corridor to provide the party with essential information regarding the progression of the 'bloom' and safe navigation paths.
+2026-08-19 19:35:45 - [SUCCESS] NPCs generated...
+2026-08-19 19:35:45 - [STATUS] Generating NPC details for quest...
+2026-08-19 19:35:45 - [OUTPUT] NPC Details:
+2026-08-19 19:35:45 - [OUTPUT]   - NPC: Katha
+2026-08-19 19:38:00 - [OUTPUT]   - - Appearance: Katha possesses a sharp, striking appearance that commands immediate attention. She wears high-collared traveling robes of charcoal silk reinforced with dark leathered trim, designed for both protection and formality. Her hair is kept in a practical, tightly woven braid, and she bears several pieces of understated jewelry—small silver rings on her fingers that glint when she gestures. Her most striking feature is her eyes; they are observant and steady, framed by fine lines that suggest years spent studying dense texts and complex mysteries under dim light.
+2026-08-19 19:38:00 - [OUTPUT]   - - Personality: 
+2026-08-19 19:38:00 - [OUTPUT]   - - Behavior: 
+2026-08-19 19:38:00 - [OUTPUT]   - - Attitude: 
+2026-08-19 19:38:00 - [OUTPUT]   - NPC: Kyriel
+2026-08-19 19:40:16 - [OUTPUT]   - - Appearance: 
+2026-08-19 19:40:16 - [OUTPUT]   - - Personality: 
+2026-08-19 19:40:16 - [OUTPUT]   - - Behavior: 
+2026-08-19 19:40:16 - [OUTPUT]   - - Attitude: 
+2026-08-19 19:40:16 - [SUCCESS] NPC details generated...
+2026-08-19 19:40:16 - [STATUS] Generating NPC stats...
+2026-08-19 19:40:16 - [OUTPUT] NPC Stats:
+2026-08-19 19:40:16 - [OUTPUT]   - NPC: Katha
+2026-08-19 19:40:16 - [OUTPUT]   - - Stats:
+2026-08-19 19:40:16 - [OUTPUT]   - - - Level: -1
+2026-08-19 19:40:16 - [OUTPUT]   - - - Perception: 5
+2026-08-19 19:40:16 - [OUTPUT]   - - - AC: 15
+2026-08-19 19:40:16 - [OUTPUT]   - - - HP: 9
+2026-08-19 19:40:16 - [OUTPUT]   - - - Strike: 8
+2026-08-19 19:40:16 - [OUTPUT]   - - - Damage: 1d4+1
+2026-08-19 19:40:16 - [OUTPUT]   - - - Spell Attack: 8
+2026-08-19 19:40:16 - [OUTPUT]   - - - Spell DC: 16
+2026-08-19 19:40:23 - [OUTPUT]   - - Skills:
+2026-08-19 19:40:23 - [OUTPUT]   - - - Arcana: 5
+2026-08-19 19:40:23 - [OUTPUT]   - - - Diplomacy: 5
+2026-08-19 19:40:23 - [OUTPUT]   - - - Lore: 5
+2026-08-19 19:40:25 - [OUTPUT]   - - - Saves:
+2026-08-19 19:40:25 - [OUTPUT]   - - - - Will: 8
+2026-08-19 19:40:25 - [OUTPUT]   - - - - Reflex: 5
+2026-08-19 19:40:25 - [OUTPUT]   - - - - Fortitude: 2
+2026-08-19 19:40:25 - [OUTPUT]   - NPC: Kyriel
+2026-08-19 19:40:25 - [OUTPUT]   - - Stats:
+2026-08-19 19:40:25 - [OUTPUT]   - - - Level: 0
+2026-08-19 19:40:25 - [OUTPUT]   - - - Perception: 6
+2026-08-19 19:40:25 - [OUTPUT]   - - - AC: 16
+2026-08-19 19:40:25 - [OUTPUT]   - - - HP: 18
+2026-08-19 19:40:25 - [OUTPUT]   - - - Strike: 8
+2026-08-19 19:40:25 - [OUTPUT]   - - - Damage: 1d6+2
+2026-08-19 19:40:25 - [OUTPUT]   - - - Spell Attack: 8
+2026-08-19 19:40:25 - [OUTPUT]   - - - Spell DC: 16
+2026-08-19 19:40:26 - [OUTPUT]   - - Skills:
+2026-08-19 19:40:26 - [OUTPUT]   - - - Arcana: 6
+2026-08-19 19:40:26 - [OUTPUT]   - - - Lore: 6
+2026-08-19 19:40:26 - [OUTPUT]   - - - Occultism: 6
+2026-08-19 19:40:27 - [OUTPUT]   - - - Saves:
+2026-08-19 19:40:27 - [OUTPUT]   - - - - Will: 9
+2026-08-19 19:40:27 - [OUTPUT]   - - - - Reflex: 6
+2026-08-19 19:40:27 - [OUTPUT]   - - - - Fortitude: 3
+2026-08-19 19:40:27 - [SUCCESS] Quest NPC stats generated...
+2026-08-19 19:40:27 - [STATUS] Generating encounter enemies for quest...
+2026-08-19 19:40:27 - [OUTPUT] Selected Combat Encounter Enemies:
+2026-08-19 19:40:28 - [ERROR] Enemy name provided by agent (Nagaji Soldier
+) did not match any of the available enemies. Trying again...
+2026-08-19 19:40:29 - [OUTPUT]  - Act 1, Scene 4 - Nagaji Soldier (60 XP) x 1
+2026-08-19 19:40:30 - [OUTPUT]  - Act 2, Scene 2 - Young Monitor Lizard (40 XP) x 2
+2026-08-19 19:40:32 - [OUTPUT]  - Act 2, Scene 5 - Zombie Owlbear (80 XP) x 1
+2026-08-19 19:40:33 - [ERROR] Enemy name provided by agent (Living Boulder
+) did not match any of the available enemies. Trying again...
+2026-08-19 19:40:33 - [OUTPUT]  - Act 3, Scene 2 - Living Boulder (60 XP) x 2
+2026-08-19 19:40:35 - [OUTPUT]  - Act 3, Scene 4 - Torcheater (60 XP) x 2
+2026-08-19 19:40:35 - [SUCCESS] Quest combat encounter enemies selected...
+2026-08-19 19:40:35 - [STATUS] Generating encounter hazards for quest...
+2026-08-19 19:40:35 - [OUTPUT] Quest Hazard Encounters:
+2026-08-19 19:40:36 - [OUTPUT]  - Act 1, Scene 3 - Disembodied Voices (Level 0)
+2026-08-19 19:40:37 - [OUTPUT]  - Act 2, Scene 1 - Disorienting Illusions (Level 1)
+2026-08-19 19:40:38 - [ERROR] Hazard name provided by agent (Toppling Furniture
+) did not match any of the available hazards. Trying again...
+2026-08-19 19:40:38 - [OUTPUT]  - Act 3, Scene 1 - Toppling Furniture (Level 2)
+2026-08-19 19:40:38 - [SUCCESS] Quest hazard encounters generated...
+2026-08-19 19:40:38 - [STATUS] Generating NPC influence info for quest...
+2026-08-19 19:40:38 - [OUTPUT] Quest NPC Influence Info:
+2026-08-19 19:40:38 - [OUTPUT]  - Act 1 Scene 2
+2026-08-19 19:40:38 - [OUTPUT]  - - NPC Name: Katha
+2026-08-19 19:44:42 - [OUTPUT]  - - - Resistances: katha is resistant to appeals based on personal sentiment or demands for favors that stray from the professional scope of her briefing.
+2026-08-19 19:44:42 - [OUTPUT]  - - - Weaknesses: she is more likely to be influenced by logical analysis and the presentation of concrete evidence regarding the dangers of the resonance.
+2026-08-19 19:44:42 - [OUTPUT]  - - - Penalty: she perceives any attempt to uncover the internal operations or specific identities within her clandestine order as a violation of her oath.
+2026-08-19 19:44:56 - [OUTPUT]  - - - Discoveries:
+2026-08-19 19:44:56 - [OUTPUT]  - - - - Skill: Perception - DC: 13
+2026-08-19 19:44:56 - [OUTPUT]  - - - - Skill: Diplomacy - DC: 13
+2026-08-19 19:44:56 - [OUTPUT]  - - - - Skill: Lore - DC: 13
+2026-08-19 19:45:08 - [OUTPUT]  - - - Influences:
+2026-08-19 19:45:08 - [OUTPUT]  - - - - Skill: Diplomacy - DC: 13
+2026-08-19 19:45:08 - [OUTPUT]  - - - - Skill: Deception - DC: 13
+2026-08-19 19:45:08 - [OUTPUT]  - - - - Skill: Lore - DC: 11
+2026-08-19 19:47:39 - [OUTPUT]  - - - Thresholds:
+2026-08-19 19:47:39 - [OUTPUT]  - - - - 4 Successes: Katha shares specific details about a safer path through the mountain's foothills, allowing the party to bypass several minor hazards near the entrance.
+2026-08-19 19:47:39 - [OUTPUT]  - - - - 6 Successes: Katha provides detailed information on how to recognize and mitigate early signs of physical rot, giving the party an advantage in navigating sections where the Resonance is active.
+2026-08-19 19:47:39 - [OUTPUT]  - - - - 8 Successes: Katha reveals a clandestine map or set of instructions that identifies 'blind spots' within the facility's defenses, providing the party with a way to bypass major obstacles or reach a sanctuary during a crisis.
+2026-08-19 19:47:39 - [OUTPUT]  - Act 2 Scene 4
+2026-08-19 19:47:39 - [OUTPUT]  - - NPC Name: Kyriel
+2026-08-19 19:49:22 - [OUTPUT]  - - - Resistances: Kyriel is resistant to appeals based on personal emotion or the promise of material rewards, as they are a detached consciousness focused entirely on preserved data.
+2026-08-19 19:49:22 - [OUTPUT]  - - - Weaknesses: Kyriel is highly receptive to technical inquiries regarding the biological growth of the bloom and specific details concerning the corridor's geometry.
+2026-08-19 19:49:22 - [OUTPUT]  - - - Penalty: Any attempt to force Kyriel to abandon their duties or to question the integrity of the research records will be met with immediate, cold hostility.
+2026-08-19 19:49:36 - [OUTPUT]  - - - Discoveries:
+2026-08-19 19:49:36 - [OUTPUT]  - - - - Skill: Perception - DC: 14
+2026-08-19 19:49:36 - [OUTPUT]  - - - - Skill: Arcana - DC: 14
+2026-08-19 19:49:36 - [OUTPUT]  - - - - Skill: Diplomacy - DC: 14
+2026-08-19 19:49:36 - [OUTPUT]  - - - - Skill: Lore - DC: 12
+2026-08-19 19:49:47 - [OUTPUT]  - - - Influences:
+2026-08-19 19:49:47 - [OUTPUT]  - - - - Skill: Diplomacy - DC: 14
+2026-08-19 19:49:47 - [OUTPUT]  - - - - Skill: Arcana - DC: 14
+2026-08-19 19:49:47 - [OUTPUT]  - - - - Skill: Lore - DC: 12
+2026-08-19 19:51:43 - [OUTPUT]  - - - Thresholds:
+2026-08-19 19:51:43 - [OUTPUT]  - - - - 4 Successes: Kyriel shares knowledge of a nearby environmental hazard and a small shortcut through an adjacent alcove, allowing the party to navigate the immediate corridor with ease.
+2026-08-19 19:51:43 - [OUTPUT]  - - - - 6 Successes: Kyriel provides detailed information on the 'bloom's' growth patterns in this sector, identifying a specific weakness or passage that allows the party to bypass a major obstacle.
+2026-08-19 19:51:43 - [OUTPUT]  - - - - 8 Successes: Kyriel reveals a hidden layout of the facility’s structural secrets, granting the party access to a secret path that bypasses an entire dangerous zone or provides direct access to a critical objective.
+2026-08-19 19:51:43 - [SUCCESS] Quest NPC influence info generated...
+2026-08-19 19:51:43 - [STATUS] Generating obstacles for quest...
+2026-08-19 19:51:43 - [OUTPUT] Quest Obstacles:
+2026-08-19 19:51:43 - [OUTPUT]  - Act 1, Scene 1:
+2026-08-19 19:52:20 - [OUTPUT]  - - Shifting Stonefall: The mountainside ahead is scarred with deep fissures and loose shale. A sudden, localized tremor sends a cascade of stone and rock tumbling down the slope.
+2026-08-19 19:52:20 - [OUTPUT]  - - - Success: The flow of debris slows abruptly, revealing a relatively clear path forward, though the air remains thick with dust.
+2026-08-19 19:52:20 - [OUTPUT]  - - - Failure: The party is caught in the initial surge of falling rock, scattering them across the exposed terrain – several players are knocked prone and disoriented.
+2026-08-19 19:52:27 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:27 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:27 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:52:27 - [OUTPUT]  - - - - Survival: DC 14
+2026-08-19 19:52:27 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:27 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:27 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:52:28 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:28 - [OUTPUT]  - - Razor Wind Channel: A narrow pass opens up before the party, dominated by a consistent, forceful wind that whips around exposed ridges. The ground is covered in slick moss and loose gravel.
+2026-08-19 19:52:28 - [OUTPUT]  - - - Success: The party successfully navigates through the windswept channel, using cover to minimize exposure and maintaining their footing with steady steps.
+2026-08-19 19:52:28 - [OUTPUT]  - - - Failure: The strong gusts of wind throw players off balance; those caught without purchase are dragged towards the edge of a steep drop-off.
+2026-08-19 19:52:30 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:30 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:52:30 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:30 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:30 - [OUTPUT]  - - - - Survival: DC 14
+2026-08-19 19:52:30 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:30 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:52:31 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:31 - [OUTPUT]  - - The Whispering Chasm: A deep chasm opens up in the path, its walls slick with moisture and echoing with an unsettling, low hum. Mist hangs thick in the air within the chasm’s depths.
+2026-08-19 19:52:31 - [OUTPUT]  - - - Success: An alternate route appears – a narrow, exposed ledge carved into the rock face, offering passage across the divide.
+2026-08-19 19:52:31 - [OUTPUT]  - - - Failure: The mist within the chasm subtly disorients those who venture too close to the edge - their perception of distance becomes skewed and the party is nearly swept off the mountain side
+2026-08-19 19:52:33 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:33 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:52:33 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:33 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:33 - [OUTPUT]  - - - - Nature: DC 16
+2026-08-19 19:52:33 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:33 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:52:34 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:34 - [OUTPUT]  - - Brittle Ledge: A particularly narrow ledge stretches across a significant gap, seemingly offering the only way forward. The rock is layered and worn down, slick with moisture.
+2026-08-19 19:52:34 - [OUTPUT]  - - - Success: With careful movement and support for one another, the party cautiously makes their way across this perilously thin path.
+2026-08-19 19:52:34 - [OUTPUT]  - - - Failure: The fragile stone beneath their feet yields unexpectedly, causing several players to stumble and risk falling into a dizzying drop below.
+2026-08-19 19:52:36 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:36 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:52:36 - [OUTPUT]  - - - - Athletics: DC 16
+2026-08-19 19:52:36 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:36 - [OUTPUT]  - - - - Survival: DC 14
+2026-08-19 19:52:36 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:36 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:52:37 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:37 - [OUTPUT]  - - Frozen Wind Cave: The party stumbles upon an opening that leads into a small, ice-covered cave. The air within is intensely cold and still.
+2026-08-19 19:52:37 - [OUTPUT]  - - - Success: The team finds temporary respite from the harsh winds inside the frozen cavern; however, they quickly move through to continue their progress in search of their mission figure.
+2026-08-19 19:52:37 - [OUTPUT]  - - - Failure: Exposure to the extreme cold rapidly drains the group’s warmth, causing discomfort and slowing their movements significantly.
+2026-08-19 19:52:39 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:39 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:39 - [OUTPUT]  - - - - Survival: DC 14
+2026-08-19 19:52:39 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:39 - [OUTPUT]  - - - - Lore: DC 12
+2026-08-19 19:52:39 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:39 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:52:40 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:40 - [OUTPUT]  - - Debris Field: A recent avalanche has left a large field of tangled rocks and ice blocking the path. The area is strewn with sharp debris - branches, shattered stone, and frozen mud.
+2026-08-19 19:52:40 - [OUTPUT]  - - - Success: The party carefully picks their way through the debris, clearing pathways by maneuvering carefully or finding pockets of clearer ground to traverse.
+2026-08-19 19:52:40 - [OUTPUT]  - - - Failure: The falling debris stuns several members with impact, disorienting them and forcing a temporary halt to progress – a large boulder shifts as they pass giving everyone footing issues.
+2026-08-19 19:52:42 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:42 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:42 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:42 - [OUTPUT]  - - - - Survival: DC 14
+2026-08-19 19:52:42 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:52:42 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:42 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:52:43 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:43 - [OUTPUT]  - - Echoing Void: The narrow passage opens into a small alcove where the walls seem unnaturally smooth and sound reverberates strangely, creating an unsettling echo that makes it difficult to hear clearly.
+2026-08-19 19:52:43 - [OUTPUT]  - - - Success: The party successfully negotiates through the alcove while maintaining composure and understanding they need to communicate clearly given the unusual acoustics.
+2026-08-19 19:52:43 - [OUTPUT]  - - - Failure: The echoes distort players' perceptions, causing them to misinterpret distances and directions—they become lost and disoriented within the confined space.
+2026-08-19 19:52:45 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:45 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:45 - [OUTPUT]  - - - - Arcana: DC 16
+2026-08-19 19:52:45 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:45 - [OUTPUT]  - - - - Lore: DC 12
+2026-08-19 19:52:45 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:45 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:52:46 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:46 - [OUTPUT]  - - Mist-Shrouded Peak: The path begins to ascend a steep section of rock that is now blanketed in thick, swirling mist. Visibility drops dramatically.
+2026-08-19 19:52:46 - [OUTPUT]  - - - Success: With careful observation and the use of any available tools (ropes, climbing equipment), the party slowly makes their way up the misty slope, relying on feel and intuition.
+2026-08-19 19:52:46 - [OUTPUT]  - - - Failure: The swirling mist obscures the path ahead, causing confusion and panic. Players struggle to maintain their bearings and risk becoming hopelessly lost.
+2026-08-19 19:52:48 - [OUTPUT]  - - - Skills:
+2026-08-19 19:52:48 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:52:48 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:52:48 - [OUTPUT]  - - - - Survival: DC 16
+2026-08-19 19:52:48 - [OUTPUT]  - - - - Lore: DC 12
+2026-08-19 19:52:48 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:52:48 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:52:49 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:52:49 - [OUTPUT]  - Act 2, Scene 3:
+2026-08-19 19:53:16 - [OUTPUT]  - - Shifting Debris Field: The immediate area ahead is choked with loose concrete, twisted metal, and fractured piping – a chaotic jumble of debris that obscures the path forward. The floor beneath feels unstable.
+2026-08-19 19:53:16 - [OUTPUT]  - - - Success: With careful maneuvering, the party clears a relatively uninterrupted passage, revealing a narrow corridor leading onward. Dust settles, revealing a cleaner route, but with a subtle sense of disturbance in the air.
+2026-08-19 19:53:16 - [OUTPUT]  - - - Failure: The debris shifts violently as the party attempts to force their way through, sending a cascade of rubble crashing down around them. Progress is halted and they must spend time carefully removing smaller pieces before continuing.
+2026-08-19 19:53:22 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:22 - [OUTPUT]  - - - - Acrobatics: DC 14
+2026-08-19 19:53:22 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:53:22 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:22 - [OUTPUT]  - - - - Lore: DC 12
+2026-08-19 19:53:22 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:22 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:53:24 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:24 - [OUTPUT]  - - Pressure Drop: A sudden drop in air pressure fills a large chamber, accompanied by the hissing of escaping gas. The walls appear to be decaying rapidly as if permeated by moisture.
+2026-08-19 19:53:24 - [OUTPUT]  - - - Success: Recognizing the problem, the party quickly finds an access panel and manually seals the breach, restoring normal atmospheric conditions. A faint scent of ozone lingers in the air.
+2026-08-19 19:53:24 - [OUTPUT]  - - - Failure: The pressure continues to fall, causing disorientation and a feeling of constriction as the party struggles for breath; heavy condensation gathers rapidly threatening structural instability around them.
+2026-08-19 19:53:25 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:25 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:53:25 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:25 - [OUTPUT]  - - - - Crafting: DC 16
+2026-08-19 19:53:25 - [OUTPUT]  - - - - Nature: DC 14
+2026-08-19 19:53:25 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:25 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:53:26 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:26 - [OUTPUT]  - - The Rushing Current: A subterranean channel has formed due to the collapse, carrying a strong current of murky water that flows swiftly through a partially submerged corridor. The walls are slick with moisture and algae.
+2026-08-19 19:53:26 - [OUTPUT]  - - - Success: Using improvised materials or existing structures, the party manages to construct a temporary bridge or narrow pathway across the current, allowing them to reach the other side safely.
+2026-08-19 19:53:26 - [OUTPUT]  - - - Failure: The party is swept downstream, losing footing and potentially damaging equipment and sustained by the force of the water.
+2026-08-19 19:53:28 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:28 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:53:28 - [OUTPUT]  - - - - Crafting: DC 14
+2026-08-19 19:53:28 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:28 - [OUTPUT]  - - - - Survival: DC 16
+2026-08-19 19:53:28 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:28 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:53:29 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:29 - [OUTPUT]  - - Faulty Auto-Lock System: A heavy blast door blocks their path, bristling with damaged security sensors. Flickering lights indicate that some of the automated systems are still partially active.
+2026-08-19 19:53:29 - [OUTPUT]  - - - Success: The party manages to bypass or disable the sensors, either by rerouting power, using salvaged components, or exploiting a flaw in the system – unlocking the door quietly.
+2026-08-19 19:53:29 - [OUTPUT]  - - - Failure: A surge from the damaged system activates multiple redundant defensive measures, triggering a volley of flashing lights and ear-splitting alarms, temporarily blinding them while they attempt to fix the problem.
+2026-08-19 19:53:31 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:31 - [OUTPUT]  - - - - Thievery: DC 14
+2026-08-19 19:53:31 - [OUTPUT]  - - - - Arcana: DC 16
+2026-08-19 19:53:31 - [OUTPUT]  - - - - Crafting: DC 14
+2026-08-19 19:53:31 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:31 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:31 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:53:32 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:32 - [OUTPUT]  - - Unstable Ground: The floor ahead is riddled with cracks and fissures that widen intermittently. The air vibrates faintly with settling stone.
+2026-08-19 19:53:32 - [OUTPUT]  - - - Success: Carefully assessing the situation, the party identifies a stable path through the unstable ground, meticulously placing supports or using their movement to minimize disturbance—allowing them to cross safely.
+2026-08-19 19:53:32 - [OUTPUT]  - - - Failure: The ground gives way beneath the party's feet as they attempt to move across; one or more members tumble into a deep pit, potentially sustaining injuries and delaying progress.
+2026-08-19 19:53:34 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:34 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:53:34 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:34 - [OUTPUT]  - - - - Nature: DC 14
+2026-08-19 19:53:34 - [OUTPUT]  - - - - Crafting: DC 16
+2026-08-19 19:53:34 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:34 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:53:35 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:35 - [OUTPUT]  - - Collapsed Archway: A massive archway has crumbled inward, forming an impassable barrier of fallen masonry. Part of the ceiling above is collapsing, threatening further destruction.
+2026-08-19 19:53:35 - [OUTPUT]  - - - Success: The party manages to find a way around the collapsed arch or discovers a hidden passage that bypasses it on the other side—revealing a smoother path forward.
+2026-08-19 19:53:35 - [OUTPUT]  - - - Failure: The falling debris seals off their current route completely; they must now attempt to clear the rubble themselves, and potentially face the danger of further collapse.
+2026-08-19 19:53:37 - [OUTPUT]  - - - Skills:
+2026-08-19 19:53:37 - [OUTPUT]  - - - - Athletics: DC 14
+2026-08-19 19:53:37 - [OUTPUT]  - - - - Stealth: DC 14
+2026-08-19 19:53:37 - [OUTPUT]  - - - - Lore: DC 14
+2026-08-19 19:53:37 - [OUTPUT]  - - - - Crafting: DC 16
+2026-08-19 19:53:37 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:53:37 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Hazard Level: 0
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Attack: 11
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Damage: 2d6+3
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:53:38 - [OUTPUT]  - - - - Save DC: 16
+2026-08-19 19:53:38 - [OUTPUT]  - Act 3, Scene 3:
+2026-08-19 19:54:05 - [OUTPUT]  - - Shifting Sands: The ground beneath your feet becomes unstable, swirling with loose earth and grit. Patches rise and fall erratically, creating treacherous footing and threatening to pull you downwards into a deepening pit.
+2026-08-19 19:54:05 - [OUTPUT]  - - - Success: With coordinated effort and steady steps, the party manages to maintain their balance and traverse the fluctuating terrain, emerging on relatively stable ground further ahead.
+2026-08-19 19:54:05 - [OUTPUT]  - - - Failure: Several party members stumble and lose their footing, sinking slightly into the shifting sands. The group struggles to regain their composure amidst the chaos.
+2026-08-19 19:54:12 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:12 - [OUTPUT]  - - - - Acrobatics: DC 15
+2026-08-19 19:54:12 - [OUTPUT]  - - - - Athletics: DC 17
+2026-08-19 19:54:12 - [OUTPUT]  - - - - Stealth: DC 15
+2026-08-19 19:54:12 - [OUTPUT]  - - - - Survival: DC 15
+2026-08-19 19:54:12 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:12 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:54:13 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:13 - [OUTPUT]  - - Echoing Shadows: Suddenly, shadows begin to detach themselves from their sources – a flickering torch casts a phantom duplicate of itself; your own shadow stretches unnaturally long and thin before collapsing back with surprising force. A sense of unease settles over you as the familiar becomes alien.
+2026-08-19 19:54:13 - [OUTPUT]  - - - Success: The players focus on grounding themselves in the present, consciously reaffirming their connection to reality, and successfully minimizing the unsettling influence of the shifting shadows.
+2026-08-19 19:54:13 - [OUTPUT]  - - - Failure: Several party members are momentarily disoriented by the bizarre distortions, experiencing a fleeting sense of panic or confusion as if lost within the shifting darkness.
+2026-08-19 19:54:15 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:15 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:54:15 - [OUTPUT]  - - - - Stealth: DC 15
+2026-08-19 19:54:15 - [OUTPUT]  - - - - Lore: DC 13
+2026-08-19 19:54:15 - [OUTPUT]  - - - - Survival: DC 15
+2026-08-19 19:54:15 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:15 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:54:16 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:16 - [OUTPUT]  - - Gravitational Flux: The very nature of gravity seems to fluctuate around you. For brief moments, your weight shifts dramatically—perhaps feeling heavier than lead or noticeably lighter, threatening to send you tumbling into unpredictable angles.
+2026-08-19 19:54:16 - [OUTPUT]  - - - Success: By anticipating the changes and adjusting their movements instinctively, the group manages to maintain a degree of stability as they navigate through the area experiencing fluctuating gravity.
+2026-08-19 19:54:16 - [OUTPUT]  - - - Failure: Several party members are thrown off balance, resulting in minor collisions or near-falls that disrupt their positioning and potentially damage fragile equipment.
+2026-08-19 19:54:18 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:18 - [OUTPUT]  - - - - Acrobatics: DC 15
+2026-08-19 19:54:18 - [OUTPUT]  - - - - Athletics: DC 15
+2026-08-19 19:54:18 - [OUTPUT]  - - - - Stealth: DC 17
+2026-08-19 19:54:18 - [OUTPUT]  - - - - Survival: DC 15
+2026-08-19 19:54:18 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:18 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:54:19 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:19 - [OUTPUT]  - - Murmuring Void: A low, almost subsonic hum fills the air—a void of sound seems to press against your minds, bringing with it fleeting fragments of images and emotions – a forgotten face, a moment of intense grief, a sensation of vast emptiness.
+2026-08-19 19:54:19 - [OUTPUT]  - - - Success: The party utilizes techniques or mental disciplines to block out the intrusive sounds and visions, grounding themselves in the present and resisting the disruptive influence.
+2026-08-19 19:54:19 - [OUTPUT]  - - - Failure: Party members experience increasing disorientation—brief moments of thoughtlessness, confusion about their surroundings, or a profound sense of vulnerability.
+2026-08-19 19:54:20 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:20 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:54:20 - [OUTPUT]  - - - - Nature: DC 15
+2026-08-19 19:54:20 - [OUTPUT]  - - - - Survival: DC 15
+2026-08-19 19:54:20 - [OUTPUT]  - - - - Lore: DC 13
+2026-08-19 19:54:20 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:20 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:54:21 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:21 - [OUTPUT]  - - Temporal Distortion Pocket: The air around you seems to shimmer and distort, revealing fleeting glimpses of the past - perhaps a flash of someone briefly standing where you are, or the faintest traces of earlier events playing out in miniature.
+2026-08-19 19:54:21 - [OUTPUT]  - - - Success: By acknowledging and observing these temporal anomalies with a calm and analytical approach, the party can use this as a brief moment to assess their surroundings and strategy.
+2026-08-19 19:54:21 - [OUTPUT]  - - - Failure: The unsettling experience overwhelms several party members—causing them to freeze in confusion or even experience brief moments of disorientation as the past and present blur into an incomprehensible mess.
+2026-08-19 19:54:23 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:23 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:54:23 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:54:23 - [OUTPUT]  - - - - Nature: DC 15
+2026-08-19 19:54:23 - [OUTPUT]  - - - - Occultism: DC 17
+2026-08-19 19:54:23 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:23 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:54:24 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:24 - [OUTPUT]  - - Dissipated Light: The ambient light begins to flicker erratically, dimming and intensifying in unpredictable bursts. Your vision warps and blurs, making it difficult to distinguish objects and distances.
+2026-08-19 19:54:24 - [OUTPUT]  - - - Success: The party works together to utilize any available sources of illumination—a lantern or glowing item—to anchor themselves within the increasingly disorienting environment.
+2026-08-19 19:54:24 - [OUTPUT]  - - - Failure: Visibility is severely reduced, causing panic and confusion among the group as they struggle to maintain their bearings and coordinate their actions.
+2026-08-19 19:54:26 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:26 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:54:26 - [OUTPUT]  - - - - Nature: DC 15
+2026-08-19 19:54:26 - [OUTPUT]  - - - - Stealth: DC 17
+2026-08-19 19:54:26 - [OUTPUT]  - - - - Athletics: DC 13
+2026-08-19 19:54:26 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:54:26 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Save Type: Will
+2026-08-19 19:54:27 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:54:27 - [OUTPUT]  - Act 3, Scene 5:
+2026-08-19 19:54:52 - [OUTPUT]  - - The Shifting Conduit: The main conduit feeding power to the core pulses with an erratic, iridescent light. Cables snake across the floor, sparking intermittently, and distortions ripple outwards from its central point.
+2026-08-19 19:54:52 - [OUTPUT]  - - - Success: The pulsing stabilizes, the erratic sparks cease, and a palpable sense of order settles over the console – the resonance begins to respond to external input.
+2026-08-19 19:54:52 - [OUTPUT]  - - - Failure: The conduit flares violently, showering the surrounding area with static energy that briefly bleaches the color from the stone.
+2026-08-19 19:54:59 - [OUTPUT]  - - - Skills:
+2026-08-19 19:54:59 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:54:59 - [OUTPUT]  - - - - Crafting: DC 17
+2026-08-19 19:54:59 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:54:59 - [OUTPUT]  - - - - Athletics: DC 13
+2026-08-19 19:54:59 - [OUTPUT]  - - - Is Hazard: False
+2026-08-19 19:54:59 - [OUTPUT]  - - Feedback Cascade: As a party member attempts to interact with the console, a chorus of discordant tones erupts – a feedback cascade filling the chamber, intensifying with each adjustment. Visual echoes of previously attempted actions flicker around the room.
+2026-08-19 19:54:59 - [OUTPUT]  - - - Success: The cascade abruptly cuts off, replaced by a low hum resonating through the core—the system shows signs of becoming more receptive to commands.
+2026-08-19 19:54:59 - [OUTPUT]  - - - Failure: The feedback intensifies rapidly, creating blinding flashes and forcing all in the chamber to momentarily lose their balance and coordination.
+2026-08-19 19:55:01 - [OUTPUT]  - - - Skills:
+2026-08-19 19:55:01 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:55:01 - [OUTPUT]  - - - - Crafting: DC 15
+2026-08-19 19:55:01 - [OUTPUT]  - - - - Stealth: DC 17
+2026-08-19 19:55:01 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:55:01 - [OUTPUT]  - - - Is Hazard: False
+2026-08-19 19:55:01 - [OUTPUT]  - - Resonance Echoes: The room begins to vibrate with a lingering energy - fractured images of events leading to the core’s instability briefly manifest as shimmering projections around them, growing more intense with each passing moment.
+2026-08-19 19:55:01 - [OUTPUT]  - - - Success: The projections fade away piece by piece, resolving into static—a deeper understanding of the source of the unstable resonance begins to emerge.
+2026-08-19 19:55:01 - [OUTPUT]  - - - Failure: The projections solidify, becoming momentarily tangible phantoms that create minor disruptions in the party’s movements and perception.
+2026-08-19 19:55:03 - [OUTPUT]  - - - Skills:
+2026-08-19 19:55:03 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:55:03 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:55:03 - [OUTPUT]  - - - - Stealth: DC 15
+2026-08-19 19:55:03 - [OUTPUT]  - - - - Nature: DC 13
+2026-08-19 19:55:03 - [OUTPUT]  - - - Is Hazard: False
+2026-08-19 19:55:03 - [OUTPUT]  - - Temporal Distortion: A visible wave of shimmering heat radiates outward, causing brief distortions around the console – objects briefly phase in and out of existence, colors shift unnaturally, and sounds are delayed or echoed strangely.
+2026-08-19 19:55:03 - [OUTPUT]  - - - Success: The distortion stabilizes, returning to normal—the flow of energy through the console seems smoother and less chaotic.
+2026-08-19 19:55:03 - [OUTPUT]  - - - Failure: The temporal distortions intensify, causing disorientation, blurred vision, and momentary confusion amongst the party – lost time becomes a significant concern.
+2026-08-19 19:55:05 - [OUTPUT]  - - - Skills:
+2026-08-19 19:55:05 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:55:05 - [OUTPUT]  - - - - Occultism: DC 17
+2026-08-19 19:55:05 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:55:05 - [OUTPUT]  - - - - Crafting: DC 13
+2026-08-19 19:55:05 - [OUTPUT]  - - - Is Hazard: False
+2026-08-19 19:55:05 - [OUTPUT]  - - The Stabilizing Field: A powerful, shimmering field of energy begins to coalesce around the console, aggressively pushing back against any attempts to manipulate it causing physical strain.
+2026-08-19 19:55:05 - [OUTPUT]  - - - Success: The field gently yields as manipulations stabilize – all within reach can interact with the console without resistance or discomfort.
+2026-08-19 19:55:05 - [OUTPUT]  - - - Failure: The field becomes more aggressive increasing in intensity causing injuries and hindering progress.
+2026-08-19 19:55:07 - [OUTPUT]  - - - Skills:
+2026-08-19 19:55:07 - [OUTPUT]  - - - - Athletics: DC 15
+2026-08-19 19:55:07 - [OUTPUT]  - - - - Stealth: DC 15
+2026-08-19 19:55:07 - [OUTPUT]  - - - - Arcana: DC 17
+2026-08-19 19:55:07 - [OUTPUT]  - - - - Crafting: DC 15
+2026-08-19 19:55:07 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:55:07 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:55:08 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:55:08 - [OUTPUT]  - - Cascade Overload: With repeated attempts, the core’s energy begins to build exponentially – a deep rumbling echoes throughout the chamber as the console threatens potential catastrophic failure.
+2026-08-19 19:55:08 - [OUTPUT]  - - - Success: The cascade dissipates completely, and the room becomes eerily silent—the resonance is finally stabilized.
+2026-08-19 19:55:08 - [OUTPUT]  - - - Failure: A blinding surge of energy erupts from the console, bathing the area in incandescent light – cracks begin to form in the stone above as the land destabilizes violently.
+2026-08-19 19:55:10 - [OUTPUT]  - - - Skills:
+2026-08-19 19:55:10 - [OUTPUT]  - - - - Arcana: DC 15
+2026-08-19 19:55:10 - [OUTPUT]  - - - - Athletics: DC 17
+2026-08-19 19:55:10 - [OUTPUT]  - - - - Stealth: DC 15
+2026-08-19 19:55:10 - [OUTPUT]  - - - - Lore: DC 15
+2026-08-19 19:55:10 - [OUTPUT]  - - - Is Hazard: True
+2026-08-19 19:55:10 - [OUTPUT]  - - - Hazard Stats:
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Hazard Level: 1
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Hazard Type: area
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Attack: 13
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Damage: 2d6+5
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Save Type: Fortitude
+2026-08-19 19:55:11 - [OUTPUT]  - - - - Save DC: 17
+2026-08-19 19:55:11 - [SUCCESS] Quest obstacles generated...
+2026-08-19 19:55:11 - [SUCCESS] Quest 'The Obsidian Bloom' written to file: output/The_Obsidian_Bloom.json
+2026-08-19 19:55:11 - [SUCCESS] Module generation complete in 40m 45s

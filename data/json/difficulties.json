@@ -1,5 +1,9 @@
 [
     {
+        "level": -1,
+        "difficulty": 13
+    },
+    {
         "level": 0,
         "difficulty": 14
     },

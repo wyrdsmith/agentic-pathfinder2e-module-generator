@@ -2,12 +2,13 @@ from pydantic_ai import Agent
 import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
+from pydantic_ai.settings import ModelSettings
 from pydantic_ai.output import NativeOutput
 from models.npc_details import NPCDetails
 
 def get_npc_details_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -38,7 +39,8 @@ def get_npc_details_creation_agent():
 def get_npc_details_extraction_agent():
     model = OllamaModel(
         'qwen2.5-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.0)
     )
 
     npcs_agent = Agent(

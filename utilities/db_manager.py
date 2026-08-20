@@ -364,10 +364,18 @@ def initialize_database():
     """Initializes the database by dropping all tables and recreating them from data sources."""
     conn = get_connection()
     cursor = conn.cursor()
-    cursor.execute(f"SELECT name FROM sqlite_master WHERE type='table'")
+    
+    # Temporarily disable foreign keys to avoid drop order/dependency issues
+    cursor.execute("PRAGMA foreign_keys = OFF;")
+    
+    # Filter out internal sqlite tables like sqlite_sequence
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'")
     tables = cursor.fetchall()
     for table in tables:
         cursor.execute(f"DROP TABLE IF EXISTS {table[0]}")
+        
+    # Re-enable foreign keys
+    cursor.execute("PRAGMA foreign_keys = ON;")
     # Populate the database with Pathfinder Rules
     populate_database(get_json_file_paths())
     # Populate the database with Pathfinder Names

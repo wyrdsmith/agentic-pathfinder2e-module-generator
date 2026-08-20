@@ -1,0 +1,741 @@
+{
+  "name": "The Unstable Anchor",
+  "theme": "Gravitational Flux",
+  "setting": "A vast cavern system beneath a jagged ridge.",
+  "plot_hook": "Local laborers have reported that certain corridors within an underground mining complex are undergoing distinct “weight losses,” where rocks, equipment, and debris occasionally lose their mass and drift into the ceiling or float wildly in the air at unpredictable intervals. The party is hired by a local guild to enter the affected tunnels to locate the source of this instability—an malfunctioning anchoring point or a malfunctioning energy leak—and perform a grounding ritual. Success will stabilize the gravity of the mine, ensuring safe passage for workers and structural stability for the underground complex.",
+  "summary": "The party is approached by a local organization that seeks specialists capable of navigating hazardous environments. The organization describes a critical issue within an underground industrial complex: localized anomalies are causing physical reality to warp, specifically affecting weight and gravity. As the situation threatens both construction projects and worker safety, the party is hired as investigators and stabilizers to enter the unstable zones and contain the phenomenon.\n\nOnce inside the complex, the characters must navigate through corridors where gravity becomes unpredictable. They face a variety of environmental hazards, contending with drifting debris and varying levels of weightlessness that complicate movement and combat. Their primary objective is to trace these fluctuations back to their source—a malfunctioning anchor point or an uncontrolled surge of energy—while managing any nearby threats drawn to the instability.\n\nUpon reaching the epicenter, the party must perform a grounding ritual to tether the fluctuating forces to the physical realm. Successful completion of this ritual neutralizes the gravitational flux, restoring standard physics to the complex and ensuring the long-term safety of the site's inhabitants and infrastructure.",
+  "acts": [
+    {
+      "act_number": 1,
+      "summary": "The journey begins as the group descends beneath a jagged ridge into the maw of the industrial site. Initially, the environment feels familiar—a labyrinth of carved stone and heavy machinery—but as they move deeper, the atmosphere changes. The air grows heavy with the scent of deep earth and ancient minerals. They soon reach the first 'fracture zone,' where the transition begins. Here, the first signs of instability manifest: floating dust motes that seem to dance in patterns beyond the wind's control and sections of the ceiling that appear to be drifting upward.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "skill challenge",
+          "summary": "The party reaches the towering, jagged ridge and locates the access point to the industrial complex. They must maneuver through a series of heavy blast doors and grinding machinery that serve as the gateway from the surface world.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Great Ridge Entrance",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "social",
+          "summary": "Once inside, the party moves through a sprawling industrial sector. The machinery here is massive and dormant, but it remains in solid condition. They navigate through docking bays and storage areas where they may find remnants of past work—scrawls on walls or discarded equipment—hing at the scale of operations before the 'instability' began.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Industrial Outskirts",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "social",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [
+              {
+                "npc_name": "Helg",
+                "discoveries": [
+                  {
+                    "skill": "Perception",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Society",
+                    "dc": 11
+                  }
+                ],
+                "influences": [
+                  {
+                    "skill": "Arcana",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 11
+                  },
+                  {
+                    "skill": "Society",
+                    "dc": 15
+                  }
+                ],
+                "thresholds": {
+                  "four": "Helg provides an updated tactical map highlighting the primary safe path through the nearest high-risk zone, allowing the party to bypass minor environmental hazards with ease.",
+                  "six": "Helg shares specific technical data regarding local gravitational flux patterns, providing the party with warning signs of incoming hazards and a method to stabilize their footing in unstable areas.",
+                  "eight": "Helg provides an authorized 'Priority Access' pass from his organization, granting the party access to restricted supplies and high-level emergency extraction coordinates hidden within the facility's infrastructure."
+                },
+                "resistances": "Helg is resistant to appeals based on emotional pleas or claims of relying on luck during the mission.",
+                "weaknesses": "Helg is more easily influenced by arguments showcasing technical expertise and meticulous attention to detail regarding safety protocols.",
+                "penalty": {
+                  "description": "Proposing shortcuts that bypass established safety procedures results in a penalty because Helg considers such recklessness an unacceptable risk.",
+                  "penalty": "Reduce the number of rounds the party has to influence Helg by 1."
+                }
+              }
+            ],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "hazard",
+          "summary": "The air becomes thicker and smells of metallic oxides. The party enters a corridor where the first signs of physical degradation appear. Ground beneath their feet feels inconsistent, and the characters begin to notice 'floaters'—light debris and dust motes that move in erratic, non-linear patterns despite the lack of wind.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Transition Corridor",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "hazard",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Hidden Pit",
+              "level": 0,
+              "hazard_type": "Trap",
+              "description": "A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep.",
+              "url": "/Hazards.aspx?ID=474"
+            },
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "hazard",
+          "summary": "The party enters a large vaulted chamber that marks the primary 'fracture zone.' Here, the instability is more pronounced; large pieces of debris from the ceiling are caught in semi-stable state, drifting toward one side of the room, and sections of the walls seem to pulse with an unseen force. Navigating this area requires careful movement as gravity begins to become unpredictable for those moving through the center.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "The First Fracture Zone",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "hazard",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Confounding Portal",
+              "level": 0,
+              "hazard_type": "Trap",
+              "description": "Tiny runes carved around a doorframe or on a hall's walls surreptitiously confound creatures into circling the room or hallway they attempted to exit …",
+              "url": "/Hazards.aspx?ID=628"
+            },
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "combat",
+          "summary": "The instability in the fracture zone has attracted local fauna and pests that have been drawn to the strange energy. As the party navigates the heaviest part of the transition, they are ambushed by a group of monsters seeking to claim the 'easy' footing provided by the fluctuating gravity. The fight is complicated by chunks of debris that might drift or fall during the exchange.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Breach Point",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "combat",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 2,
+                "name": "Cave Fisher",
+                "description": "Cave fishers lurk in dark corners near the ceilings of caves and underground structures, lying in wait for prey to approach. When it does, the cave",
+                "xp_value": 60,
+                "url": "/Monsters.aspx?ID=580"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": null
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "summary": "The trek toward the center of the fluctuation is plagued by escalating anomalies. They may find sections where gravity rotates at odd angles, making movement a feat of agility and coordination. The sense of isolation grows as they move further from the surface world's influence. Each subsequent chamber reveals more significant 'tears' in the physical law of the site. They face patrols of hostile creatures that have adapted—or are drawn—to these chaotic zones, forcing them to fight in environments where their very footing is unreliable.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "combat",
+          "summary": "As the group moves deeper into the industrial complex, the first major signs of reality warping become undeniable. The floor tiles begin to tilt at impossible angles, and chunks of masonry float in mid-air. They are ambushed by a group of hostile creatures that have claimed these shifting corridors as their territory. The combat is complicated by the gravity; debris may drift into the path of travel or press down on the characters with sudden weight.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Lower Industrial Tunnels",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 1,
+                "name": "Skinskitter",
+                "description": "These elusive oddments resemble discarded hides of butchered animals and fleshwarping experiments, floating like so much meaty detritus in the bloody",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=2408"
+              },
+              {
+                "level": 1,
+                "name": "Skinskitter",
+                "description": "These elusive oddments resemble discarded hides of butchered animals and fleshwarping experiments, floating like so much meaty detritus in the bloody",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=2408"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "skill challenge",
+          "summary": "The party navigates a large, hollowed-out manufacturing bay where gravity has stabilized at a sharp diagonal angle. To reach the next passage, they must navigate a field of heavy machinery and structural beams that are constantly shifting due to localized 'tears.' They must use their athleticism and perception to move through the debris while avoiding falling objects and unstable ground.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "The Tilted Foundry",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "combat",
+          "summary": "The party enters a zone where the 'tears' in reality are more pronounced, causing pockets of intense gravity. They encounter a patrol of creatures that seem physically altered to navigate these distortions—they move with unnatural grace across walls and ceilings. The fight takes place in an area where the ground occasionally becomes weightless or incredibly heavy, requiring constant awareness of their footing.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "The Rifted Corridor",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 3,
+                "name": "Grothlut",
+                "description": "Sluglike abominations, grothluts are grotesque dregs of the fleshwarping process. While their head and torso are vaguely humanoid, their arms are",
+                "xp_value": 80,
+                "url": "/Monsters.aspx?ID=2997"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "combat",
+          "summary": "The atmosphere grows thin and oppressive as the party reaches the final transition zone before the epicenter. They must navigate through a series of interlocking chambers where gravity flickers rapidly, creating a disorienting sensory experience. They are forced to hold their ground against a desperate wave of creatures drawn by the pulsating energy of the core, serving as a final gauntlet before they reach the heart of the fluctuation.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "The Threshold Chambers",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 3,
+                "name": "String Slime",
+                "description": "Found underground or in dungeons, these quivering, slug-like ropes of slime continuously scour their domain for food. In addition to their shape,",
+                "xp_value": 80,
+                "url": "/Monsters.aspx?ID=3126"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "summary": "The final act takes place within the heart of the complex, where the source of the gravitational flux is located. This central chamber is a sight of terrifying beauty and danger; here, gravity behaves like a living thing, pulsing and rippling in waves that can toss even heavy objects into the air or pin characters to the ground with extreme pressure. The party must navigate this chaotic arena to reach the primary apparatus while fending off any final, desperate guardians or manifestations born from the warped reality.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "hazard",
+          "summary": "As the party enters the heart of the facility, the environment shifts dramatically. Gravity becomes visibly unstable; loose debris, heavy machinery components, and dust hang suspended in the air, and the very ground begins to hum with a resonant frequency. The characters must navigate this shifting threshold while resisting the initial pull of the gravity well.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Inner Sanctum Threshold",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "hazard",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Shrinking Hall",
+              "level": 2,
+              "hazard_type": "Trap",
+              "description": "This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.",
+              "url": "/Hazards.aspx?ID=631"
+            },
+            "reward_budget": 26,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "skill challenge",
+          "summary": "Within the larger expanse of the central chamber, the party must cross a wide area filled with floating obstacles. The gravitational pulses are frequent here; at certain intervals, gravity reverses or intensifies, making it difficult to move forward toward the primary apparatus. They must navigate this spatial maze while managing their footing on drifting platforms.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Central Chamber (Outer Ring)",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "combat",
+          "summary": "As the party approaches the inner sanctum, they are confronted by a group of twisted entities—beings and constructs that have been warped and mutated by the persistent gravitational flux. These guardians defend the path to the core, their movements erratic as they leap through the air and utilize the unstable weightlessness of the room to their advantage.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "short rest",
+          "location": "Central Chamber (Inner Ring)",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "combat",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 1,
+                "name": "Talos Gadgeteer",
+                "description": "The geniekin called taloses descend primarily from  zuhra  genies,  metal elementals , and other denizens of the  Plane of Metal . Many taloses mold",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=2658"
+              },
+              {
+                "level": 1,
+                "name": "Talos Gadgeteer",
+                "description": "The geniekin called taloses descend primarily from  zuhra  genies,  metal elementals , and other denizens of the  Plane of Metal . Many taloses mold",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=2658"
+              },
+              {
+                "level": 1,
+                "name": "Talos Gadgeteer",
+                "description": "The geniekin called taloses descend primarily from  zuhra  genies,  metal elementals , and other denizens of the  Plane of Metal . Many taloses mold",
+                "xp_value": 40,
+                "url": "/Monsters.aspx?ID=2658"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 26,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "skill challenge",
+          "summary": "Upon reaching the massive, vibrating apparatus at the center of the chamber, the party finds it protected by a shimmering field of distorted space. They must interact with various control panels and physical components to weaken the barrier. This requires them to work quickly as the intense vibrations threaten their grip on tools and their sense of balance.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Apparatus Hub",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": null
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "hazard",
+          "summary": "With the barrier down, the core of the machine is exposed, pulsing with raw, erratic energy. The party must perform a complex anchoring ritual to ground the fluctuating forces into the physical realm. During this process, they must hold their positions and defend one another against localized spikes of gravitational pressure that threaten to crush or hurl them away from the central mechanism.",
+          "introduction": "",
+          "description": "",
+          "resolution": "",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Core Pillar",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "hazard",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "",
+            "resolution": "",
+            "description": "",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Shrinking Hall",
+              "level": 2,
+              "hazard_type": "Trap",
+              "description": "This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.",
+              "url": "/Hazards.aspx?ID=631"
+            },
+            "reward_budget": 26,
+            "rewards": null
+          }
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Helg",
+      "ancestry": "Dwarf",
+      "class_name": "Investigator",
+      "appearance": "Helg is a stout dwarf with a formidable build and a thick beard braided with small copper rings and gears to keep it from snagging on equipment. They wear sturdy leather protective gear over high-quality fabrics, suggesting someone who spends time in industrial zones but maintains a professional stature. A specialized magnifying monocle hangs from a cord around their neck, and they are almost always seen carrying several rolled scrolls and maps strapped to a heavy belt.",
+      "personality": "Helg is methodical, precise, and intensely serious. They possess the signature dwarven determination to see a task through, tempered by an investigator’s analytical mind. They don't believe in luck; they believe in preparation. While not overtly warm, Helg shows their devotion through their meticulous attention to detail, ensuring every possible danger is accounted for before anyone steps into the cavern.",
+      "behavior": "During briefings, Helg behaves like a tactician highlighting key points on a map, often tapping the 'hazard zones' with a heavy pointer or mallet-like tool. They speak in a low, steady voice and have little patience for frivolous talk, preferring to get straight to safety protocols. They tend to circle back to critical warnings until they are certain the players have understood the gravity—both literally and figuratively—of the situation.",
+      "attitude": "Helg views the party as highly capable specialists who are essential to the operation's success. Because of the high mortality rate associated with the gravitational flux, they treat the adventurers with a professional respect that borders on guarded trust. They aren't just looking for 'guards,' but rather for competent professionals who can be relied upon to execute complex protocols under extreme pressure.",
+      "stats": {
+        "level": -1,
+        "hp": 9,
+        "ac": 15,
+        "perception": 5,
+        "skills": [
+          {
+            "name": "Arcana",
+            "modifier": 5
+          },
+          {
+            "name": "Lore",
+            "modifier": 5
+          },
+          {
+            "name": "Society",
+            "modifier": 5
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 8
+          },
+          {
+            "name": "Reflex",
+            "modifier": 5
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 2
+          }
+        ],
+        "strike": 8,
+        "damage": "1d4+1",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "The primary handler for the sponsoring organization who provides initial maps, safety protocols, and logistical briefings before the party enters the facility.",
+      "scene_roles": [
+        {
+          "act_number": 1,
+          "scene_number": 2,
+          "role": "Acts as the primary point of contact to brief the party on the layout of the sector, identifying high-risk zones and safe checkpoints."
+        }
+      ]
+    },
+    {
+      "name": "Orbloq",
+      "ancestry": "Gnome",
+      "class_name": "Alchemist",
+      "appearance": "Orbloq is a stout gnome with hair the color of oxidized copper, styled in unruly tufts that appear perpetually windblown. They wear heavy, oil-stained leather overalls and a tattered apron over thick trousers, stained with various shades of multi-colored alchemical residue. A belt at their waist holds an array of glass vials, pressurized canisters, and pouches of reagents. They wear heavy-rimmed goggles pushed up onto their forehead, which are scratched by flying debris during the initial survey.",
+      "personality": "A jittery perfectionist who manages extreme anxiety through an obsession with order and scientific procedure. They possess a brilliant but frantic mind, prone to rambling about chemical stability and 'gravity harmonics' whenever they reach a state of high stress. Their personality is a blend of nervous energy and intense academic focus; despite their frayed nerves, they remain remarkably sharp when it comes to the technical nuances of alchemy.",
+      "behavior": "Moves with quick, twitchy gestures, often checking the seals on their equipment as if expecting them to fail at any moment. When gravity fluctuates, they are seen reflexively bracing themselves against walls or clutching a specialized 'stabilityer' (a home-brewed alchemical stabilizer). They have a habit of talking to their chemistry beakers and tools, muttering apologies to them when things become volatile, and frequently hums a frantic rhythmic tune to maintain focus.",
+      "attitude": "Views the party with desperate relief and clinical appreciation. While they are friendly enough, there is an undertone of urgency in their interactions; they see the players as 'professional stabilizers' who can handle the heavy lifting while they provide necessary data. They treat the players like a lifeline, often pleading for them to move quickly against environmental hazards so that he doesn't have to lose his remaining supplies or research.",
+      "stats": {
+        "level": 0,
+        "hp": 18,
+        "ac": 16,
+        "perception": 6,
+        "skills": [
+          {
+            "name": "Crafting",
+            "modifier": 6
+          },
+          {
+            "name": "Arcana",
+            "modifier": 6
+          },
+          {
+            "name": "Lore",
+            "modifier": 6
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 9
+          },
+          {
+            "name": "Reflex",
+            "modifier": 6
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 3
+          }
+        ],
+        "strike": 8,
+        "damage": "1d6+2",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "A stranded technician who survived an initial investigation and remains in a semi-stable outpost within the facility's core.",
+      "scene_roles": [
+        {
+          "act_number": 1,
+          "scene_number": 3,
+          "role": "Provides information regarding the specific chemical markers of the gravity fluctuations."
+        },
+        {
+          "act_number": 2,
+          "scene_number": 2,
+          "role": "Guides the party through the manufacturing bay by identifying which pieces of machinery are currently stable for traversal."
+        }
+      ]
+    },
+    {
+      "name": "Marthur",
+      "ancestry": "Human",
+      "class_name": "Wizard",
+      "appearance": "A crisp, flickering arcane projection of a lean man with sharp facial features and intense eyes framed by wire-rimmed spectacles. His robes are adorned with intricate geometric patterns that pulse with soft blue light whenever he processes complex data.",
+      "personality": "Intensely focused and analytical. Values precision over ambiguity or improvisation. Becomes increasingly pragmatic under pressure, stripping away flowery language in favor of raw instructions.",
+      "behavior": "Speaks with a clipped, professional cadence, often pausing briefly as if inputting commands into a mental interface or consulting external data. Provides steady but urgent directions during the ritual, treating it like a high-stakes engineering problem.",
+      "attitude": "Professional respect mixed with distance. Views players as highly capable field specialists whose physical skills are essential for the task. Appreciates their role in protecting the site but sees them mainly as necessary components to execute his calculations.",
+      "stats": {
+        "level": 2,
+        "hp": 38,
+        "ac": 18,
+        "perception": 8,
+        "skills": [
+          {
+            "name": "Arcana",
+            "modifier": 8
+          },
+          {
+            "name": "Lore",
+            "modifier": 8
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 11
+          },
+          {
+            "name": "Reflex",
+            "modifier": 8
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 5
+          }
+        ],
+        "strike": 11,
+        "damage": "1d10+4",
+        "spellAttack": 10,
+        "spellDC": 18
+      },
+      "quest_role": "A senior systems analyst communicating from an external relay; they provide high-level technical Guidance during the final ritual.",
+      "scene_roles": [
+        {
+          "act_number": 3,
+          "scene_number": 4,
+          "role": "Provides precise instructions on identifying and manipulating the correct control panels to weaken the barrier."
+        },
+        {
+          "act_number": 3,
+          "scene_number": 5,
+          "role": "Provides constant communication with the party to help gauge the success of the anchoring ritual amidst shifting pressures."
+        }
+      ]
+    }
+  ],
+  "player_count": 4,
+  "party_level": 1,
+  "xp_value": 1000
+}

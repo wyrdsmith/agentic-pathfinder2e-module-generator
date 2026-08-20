@@ -44,7 +44,7 @@ No creatures with a unique rarity are included.
 #### Source
 Based on the Level-Based DCs table found at https://2e.aonprd.com/Rules.aspx?ID=2629
 #### Notes
-This table is used to set appropriate DCs for skill checks, saves and most other encounter DCs for a given encounter level.
+This table is used to set appropriate DCs for skill checks, saves and most other encounter DCs for a given encounter level. A difficulty for level -1 was added manually and the difficulty set to 13.
 
 ### Encounter Experience `data/encounter_experience.json`
 #### Source

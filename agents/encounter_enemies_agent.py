@@ -2,11 +2,13 @@ from pydantic_ai import Agent
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 import textwrap
+from pydantic_ai.settings import ModelSettings
 
 def get_encounter_enemy_agent():
     model = OllamaModel(
-        'gemma-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        'gemma3-quest',
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.5)
     )
 
     encounter_agent = Agent(

@@ -2,12 +2,14 @@ from pydantic_ai import Agent, RunContext
 import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
+from pydantic_ai.settings import ModelSettings
 from pydantic_ai.output import NativeOutput
-from models.scene_concept import SceneList
+from models.scene_concept import SceneConcept
+from typing import List
 
 def get_scenes_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -39,18 +41,26 @@ def get_scenes_creation_agent():
 def get_scenes_extraction_agent():
     model = OllamaModel(
         'qwen2.5-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.0)
     )
 
     scenes_agent = Agent(
         model,
-        output_type = NativeOutput(SceneList),
+        output_type = NativeOutput(List[SceneConcept]),
         system_prompt = textwrap.dedent("""
             # Role
             You are an expert Data Extraction Agent.
 
             # Task
-            Extract the summary, location, encounter type, and rest opportunity for each scene.
+            Given a list of scenes, extract the summary, location, encounter type, and rest opportunity for each scene.
+
+            # Output Format
+            Return the scenes as a list of objects with the following properties:
+            - summary: string
+            - location: string
+            - encounter_type: string
+            - rest_opportunity: string
 
             # Constraints
             - DO NOT add, infer, or simplify any information.

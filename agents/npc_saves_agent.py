@@ -3,12 +3,14 @@ import textwrap
 from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.output import NativeOutput
+from pydantic_ai.settings import ModelSettings
 from typing import List
 
 def get_npc_saves_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
-        provider = OllamaProvider(base_url='http://localhost:11434/v1')
+        'gemma3-quest',
+        provider = OllamaProvider(base_url='http://localhost:11434/v1'),
+        settings = ModelSettings(temperature=0.5)
     )
 
     npcs_agent = Agent(
@@ -29,6 +31,9 @@ def get_npc_saves_creation_agent():
             - Example (Wizard): Will, Reflex, Fortitude
             - Example (Fighter): Fortitude, Reflex, Will
             - Example (Rogue): Reflex, Fortitude, Will
+
+            # Output Format
+            Return the order of save names as a list of strings.
 
             # Constraints
             - Do not provide explanations or other text, only the list of save names.

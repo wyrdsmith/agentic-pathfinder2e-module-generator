@@ -28,7 +28,7 @@ ENCOUNTER_AGENTS = {
 
 def get_combat_encounter_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -62,7 +62,7 @@ def get_combat_encounter_extraction_agent():
 
 def get_social_encounter_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -96,7 +96,7 @@ def get_social_encounter_extraction_agent():
 
 def get_skill_challenge_encounter_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -130,7 +130,7 @@ def get_skill_challenge_encounter_extraction_agent():
 
 def get_hazard_encounter_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 

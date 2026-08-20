@@ -8,7 +8,7 @@ from tools.quest_tools import get_quest_summary, get_act_summary, get_previous_s
 
 def get_scene_details_creation_agent():
     model = OllamaModel(
-        'gemma-quest',
+        'gemma4-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 

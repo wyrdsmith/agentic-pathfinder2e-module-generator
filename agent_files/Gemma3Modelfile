@@ -1,0 +1,4 @@
+FROM gemma3:4b
+
+# Increase the context window to 8192 tokens (or higher, e.g., 16384 if your RAM allows)
+PARAMETER num_ctx 16384
