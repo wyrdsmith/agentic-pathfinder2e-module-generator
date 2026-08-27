@@ -1,6 +1,6 @@
 import json;
 
-data = json.load(open('../data/items.json', encoding='utf-8'));
+data = json.load(open('../data/json/items.json', encoding='utf-8'));
 
 for item in data:
     rawPrice = item['price'];
@@ -12,7 +12,7 @@ for item in data:
         item['price'] = -1
         continue
     
-    if not rawPrice or rawPrice == "":
+    if rawPrice == "":
         item['price'] = 0
         continue
 
@@ -24,11 +24,11 @@ for item in data:
     baseValue = parts[0];
     currency = parts[1];
 
-    if (not baseValue or baseValue == ""):
+    if (baseValue == ""):
         item['price'] = 0
         continue
 
-    if (not currency or currency != "cp" or currency != "sp" or currency != "gp" or currency != "pp"):
+    if (currency not in ["cp", "sp", "gp", "pp"]):
         item['price'] = 0
         continue
 
@@ -50,4 +50,4 @@ for item in data:
     else:
         item['price'] = int(baseValue);
 
-json.dump(data,open('../data/items.json','w',encoding='utf-8'),indent=2);
+json.dump(data,open('../data/json/items.json','w',encoding='utf-8'),indent=2);

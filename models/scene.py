@@ -11,7 +11,7 @@ class Scene(BaseModel):
     description: str = Field(default="", description="A detailed description of the events of the scene")
     resolution: str = Field(default="", description="The result of the scene after the encounter")
     rest_opportunity: Literal["short rest", "long rest", "no rest opportunity"] = Field(default="no rest opportunity", description="An opportunity for a rest in the scene")
-    location: Optional[str] = Field(default=None, description="The location of the scene")
+    location: Optional[str] = Field(default=None, description="The a detailed description of the location of the scene")
     encounter: Optional[Encounter] = Field(default=None, description="An encounter that takes place in the scene")
 
         

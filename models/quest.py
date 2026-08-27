@@ -13,6 +13,5 @@ class Quest(BaseModel):
     npcs: List[NPC] = Field(default_factory=list, description="A list of npcs in the quest")
     player_count: int = Field(default=4, description="The number of players in the quest")
     party_level: int = Field(default=1, description="The level of the party in the quest")
-    xp_value: int = Field(default=1000, description="The xp value of the quest")
 
         

@@ -8,7 +8,7 @@ from pydantic_ai.settings import ModelSettings
 
 def get_npc_thresholds_creation_agent():
     model = OllamaModel(
-        'gemma4-quest',
+        'gemma3-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 
@@ -33,6 +33,7 @@ def get_npc_thresholds_creation_agent():
             - Do not change anything else about the NPC.
             - Do not include any other information in your response.
             - ONLY list the thresholds and boons.
+            - Boons MUST be narrative in nature and should NOT provide specific mechanics, stat bonuses, or game rules.
         """)
     )
 

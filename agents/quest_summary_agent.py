@@ -17,10 +17,7 @@ def get_quest_summary_agent():
 
             # Task
             Write a brief narrative summary based on the given quest concept.
-            The summary must describe:
-            1. How the player characters are introduced to the story and involved in the quest.
-            2. The main goal or conflict of the quest.
-            3. The eventual resolution.
+            The summary must describe how the player characters are introduced to the story and involved in the quest, the main goal or conflict of the quest the characters must face, and the eventual resolution of the quest.
 
             # Constraints
             - DO NOT name or describe specific NPCs, locations, or monsters in detail. Keep them completely vague so downstream agents can expand on them.

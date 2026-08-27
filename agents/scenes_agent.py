@@ -25,10 +25,10 @@ def get_scenes_creation_agent():
 
             # Scene Requirements
             Create exactly 4 to 9 scenes using the minimum number needed. Each scene MUST clearly label:
-            1. Summary of events.
-            2. Location (must be consistent across scenes if it is the same place).
-            3. Encounter Type (combat, social, skill challenge, or hazard). Keep in mind combat/social are most common.
-            4. Rest Opportunity ("short rest", "long rest", or "no rest opportunity"). Provide rest especially after combat/hazard, unless narrative dictates otherwise.
+            1. Summary of events: A detailed description of the events that take place in this scene.
+            2. Location: A detailed description of the location where this scene takes place. The location should be consistent across scenes if it is the same place.
+            3. Encounter Type: (combat, social, skill challenge, or hazard). Keep in mind combat/social are most common.
+            4. Rest Opportunity: ("short rest", "long rest", or "no rest opportunity"). Provide rest especially after combat/hazard scenes.
 
             # Constraints
             - DO NOT name or describe specific NPCs, locations, or monsters in detail. Keep them vague.

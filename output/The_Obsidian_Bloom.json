@@ -1,18 +1,18 @@
 {
   "name": "The Obsidian Bloom",
   "theme": "Resonance & Corruption",
-  "setting": "A forgotten, subterranean research facility—a vast chamber complex carved deep beneath a range of jagged peaks.",
-  "plot_hook": "The party is approached by a representative of a secretive order known as ‘The Harmonists.’ They task the party with investigating a distress signal emanating from an abandoned research facility – Project Nightingale – rumored to have been shut down decades ago due to 'unforeseen complications.' Local legend speaks of experiments attempting to manipulate ambient energy, but those efforts were deemed too volatile and dangerous.",
-  "summary": "**The Obsidian Bloom**\n\n**Introduction**\nWhile traveling through a remote region known for its jagged peaks, the party is approached by a representative of a clandestine order. This messenger carries a cryptic warning and a desperate request: an ancient subterranean research facility, long abandoned due to catastrophic failures in experimental energy manipulation, has begun emitting a haunting distress signal. The party is commissioned to venture into the depths of this forgotten complex to determine the source of the pulse and ensure it does not pose a threat to the surface world.\n\n**The Conflict**\nAs the party descends into the facility, they find an environment warped by \"Resonance\"—a volatile, lingering energy that has begun to manifest as a creeping physical corruption. The ruins are haunted by echoes of the past, where failed experiments have mutated the very architecture and atmosphere. The core conflict involves navigating these unstable zones while facing manifestations of corrupted energy and territorial hostiles who have been driven into a state of feral madness by the leaking resonance. The party must navigate the deteriorating infrastructure to reach the heart of the facility, where the source of the \"bloom\" is gestating.\n\n**Resolution**\nUpon reaching the central hub, the party discovers that the source of the signal is an uncontrolled energy core attempting to stabilize itself against a growing surge of corruption. The players must find a way to neutralize the instability—either by performing a complex ritual to harmonize the resonance or by physically dismantling and sealing the core. Success halts the growth of the corruption, silencing the distress signal and ensuring the subterranean secrets remains buried once more. Failure to manage the energy’s volatility allows the \"bloom\" to expand further, creating a permanent zone of instability beneath the peaks.",
+  "setting": "A forgotten, subterranean research facilityï¿½a vast chamber complex carved deep beneath a range of jagged peaks.",
+  "plot_hook": "The party is approached by a representative of a secretive order known as ï¿½The Harmonists.ï¿½ They task the party with investigating a distress signal emanating from an abandoned research facility ï¿½ Project Nightingale ï¿½ rumored to have been shut down decades ago due to 'unforeseen complications.' Local legend speaks of experiments attempting to manipulate ambient energy, but those efforts were deemed too volatile and dangerous.",
+  "summary": "**The Obsidian Bloom**\n\n**Introduction**\nWhile traveling through a remote region known for its jagged peaks, the party is approached by a representative of a clandestine order. This messenger carries a cryptic warning and a desperate request: an ancient subterranean research facility, long abandoned due to catastrophic failures in experimental energy manipulation, has begun emitting a haunting distress signal. The party is commissioned to venture into the depths of this forgotten complex to determine the source of the pulse and ensure it does not pose a threat to the surface world.\n\n**The Conflict**\nAs the party descends into the facility, they find an environment warped by \"Resonance\"ï¿½a volatile, lingering energy that has begun to manifest as a creeping physical corruption. The ruins are haunted by echoes of the past, where failed experiments have mutated the very architecture and atmosphere. The core conflict involves navigating these unstable zones while facing manifestations of corrupted energy and territorial hostiles who have been driven into a state of feral madness by the leaking resonance. The party must navigate the deteriorating infrastructure to reach the heart of the facility, where the source of the \"bloom\" is gestating.\n\n**Resolution**\nUpon reaching the central hub, the party discovers that the source of the signal is an uncontrolled energy core attempting to stabilize itself against a growing surge of corruption. The players must find a way to neutralize the instabilityï¿½either by performing a complex ritual to harmonize the resonance or by physically dismantling and sealing the core. Success halts the growth of the corruption, silencing the distress signal and ensuring the subterranean secrets remains buried once more. Failure to manage the energyï¿½s volatility allows the \"bloom\" to expand further, creating a permanent zone of instability beneath the peaks.",
   "acts": [
     {
       "act_number": 1,
-      "summary": "The narrative begins in the shadow of a remote mountain range, where the air is thin and the terrain is jagged with stone. The party is intercepted by a representative of an enigmatic and secretive organization. This envoy provides a grim briefing regarding a clandestine research facility nestled deep beneath these peaks. The facility was abandoned decades ago following a catastrophic failure during experiments involving high-frequency energy manipulation. Recently, the site has begun emitting a haunting, rhythmic pulse—a ",
+      "summary": "The narrative begins in the shadow of a remote mountain range, where the air is thin and the terrain is jagged with stone. The party is intercepted by a representative of an enigmatic and secretive organization. This envoy provides a grim briefing regarding a clandestine research facility nestled deep beneath these peaks. The facility was abandoned decades ago following a catastrophic failure during experiments involving high-frequency energy manipulation. Recently, the site has begun emitting a haunting, rhythmic pulseï¿½a ",
       "scenes": [
         {
           "scene_number": 1,
           "encounter_type": "skill challenge",
-          "summary": "The party navigates the treacherous, wind-whipped terrain of a remote mountain range. They must overcome environmental obstacles—falling debris, thinning air, and unstable ledges—before they are approached by a mysterious figure emerging from the crags to deliver their mission.",
+          "summary": "The party navigates the treacherous, wind-whipped terrain of a remote mountain range. They must overcome environmental obstaclesï¿½falling debris, thinning air, and unstable ledgesï¿½before they are approached by a mysterious figure emerging from the crags to deliver their mission.",
           "introduction": "",
           "description": "",
           "resolution": "",
@@ -55,7 +55,7 @@
                   }
                 ],
                 "success_resolution": "The flow of debris slows abruptly, revealing a relatively clear path forward, though the air remains thick with dust.",
-                "failure_resolution": "The party is caught in the initial surge of falling rock, scattering them across the exposed terrain – several players are knocked prone and disoriented.",
+                "failure_resolution": "The party is caught in the initial surge of falling rock, scattering them across the exposed terrain ï¿½ several players are knocked prone and disoriented.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 0,
@@ -101,7 +101,7 @@
               },
               {
                 "name": "The Whispering Chasm",
-                "description": "A deep chasm opens up in the path, its walls slick with moisture and echoing with an unsettling, low hum. Mist hangs thick in the air within the chasm’s depths.",
+                "description": "A deep chasm opens up in the path, its walls slick with moisture and echoing with an unsettling, low hum. Mist hangs thick in the air within the chasmï¿½s depths.",
                 "skills": [
                   {
                     "skill": "Acrobatics",
@@ -120,7 +120,7 @@
                     "difficulty": 16
                   }
                 ],
-                "success_resolution": "An alternate route appears – a narrow, exposed ledge carved into the rock face, offering passage across the divide.",
+                "success_resolution": "An alternate route appears ï¿½ a narrow, exposed ledge carved into the rock face, offering passage across the divide.",
                 "failure_resolution": "The mist within the chasm subtly disorients those who venture too close to the edge - their perception of distance becomes skewed and the party is nearly swept off the mountain side",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -187,7 +187,7 @@
                   }
                 ],
                 "success_resolution": "The team finds temporary respite from the harsh winds inside the frozen cavern; however, they quickly move through to continue their progress in search of their mission figure.",
-                "failure_resolution": "Exposure to the extreme cold rapidly drains the group’s warmth, causing discomfort and slowing their movements significantly.",
+                "failure_resolution": "Exposure to the extreme cold rapidly drains the groupï¿½s warmth, causing discomfort and slowing their movements significantly.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 0,
@@ -220,7 +220,7 @@
                   }
                 ],
                 "success_resolution": "The party carefully picks their way through the debris, clearing pathways by maneuvering carefully or finding pockets of clearer ground to traverse.",
-                "failure_resolution": "The falling debris stuns several members with impact, disorienting them and forcing a temporary halt to progress – a large boulder shifts as they pass giving everyone footing issues.",
+                "failure_resolution": "The falling debris stuns several members with impact, disorienting them and forcing a temporary halt to progress ï¿½ a large boulder shifts as they pass giving everyone footing issues.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 0,
@@ -253,7 +253,7 @@
                   }
                 ],
                 "success_resolution": "The party successfully negotiates through the alcove while maintaining composure and understanding they need to communicate clearly given the unusual acoustics.",
-                "failure_resolution": "The echoes distort players' perceptions, causing them to misinterpret distances and directions—they become lost and disoriented within the confined space.",
+                "failure_resolution": "The echoes distort players' perceptions, causing them to misinterpret distances and directionsï¿½they become lost and disoriented within the confined space.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 0,
@@ -300,13 +300,13 @@
             ],
             "hazard": null,
             "reward_budget": 0,
-            "rewards": null
+            "rewards": []
           }
         },
         {
           "scene_number": 2,
           "encounter_type": "social",
-          "summary": "The party meets with a representative of a secretive organization. In this exchange, the envoy explains the history of the nearby research facility and warns them about the 'Resonance'—the unstable energy causing mutations and physical rot in the area below.",
+          "summary": "The party meets with a representative of a secretive organization. In this exchange, the envoy explains the history of the nearby research facility and warns them about the 'Resonance'ï¿½the unstable energy causing mutations and physical rot in the area below.",
           "introduction": "",
           "description": "",
           "resolution": "",
@@ -372,13 +372,13 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 0,
-            "rewards": null
+            "rewards": []
           }
         },
         {
           "scene_number": 3,
           "encounter_type": "hazard",
-          "summary": "Following the envoy's directions, the party tracks the source of the rhythmic pulse to a concealed entrance built into the mountain’s base. They must navigate hazardous terrain and ancient mechanical defenses designed to keep people out/in that have been warped by the growing corruption.",
+          "summary": "Following the envoy's directions, the party tracks the source of the rhythmic pulse to a concealed entrance built into the mountainï¿½s base. They must navigate hazardous terrain and ancient mechanical defenses designed to keep people out/in that have been warped by the growing corruption.",
           "introduction": "",
           "description": "",
           "resolution": "",
@@ -407,7 +407,7 @@
               "url": "/Hazards.aspx?ID=135"
             },
             "reward_budget": 13,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -444,7 +444,7 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 13,
-            "rewards": null
+            "rewards": []
           }
         }
       ]
@@ -481,11 +481,11 @@
               "name": "Disorienting Illusions",
               "level": 1,
               "hazard_type": "Trap",
-              "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, …",
+              "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, ï¿½",
               "url": "/Hazards.aspx?ID=629"
             },
             "reward_budget": 18,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -529,7 +529,7 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 18,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -558,7 +558,7 @@
             "obstacles": [
               {
                 "name": "Shifting Debris Field",
-                "description": "The immediate area ahead is choked with loose concrete, twisted metal, and fractured piping – a chaotic jumble of debris that obscures the path forward. The floor beneath feels unstable.",
+                "description": "The immediate area ahead is choked with loose concrete, twisted metal, and fractured piping ï¿½ a chaotic jumble of debris that obscures the path forward. The floor beneath feels unstable.",
                 "skills": [
                   {
                     "skill": "Acrobatics",
@@ -676,7 +676,7 @@
                     "difficulty": 14
                   }
                 ],
-                "success_resolution": "The party manages to bypass or disable the sensors, either by rerouting power, using salvaged components, or exploiting a flaw in the system – unlocking the door quietly.",
+                "success_resolution": "The party manages to bypass or disable the sensors, either by rerouting power, using salvaged components, or exploiting a flaw in the system ï¿½ unlocking the door quietly.",
                 "failure_resolution": "A surge from the damaged system activates multiple redundant defensive measures, triggering a volley of flashing lights and ear-splitting alarms, temporarily blinding them while they attempt to fix the problem.",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -709,7 +709,7 @@
                     "difficulty": 16
                   }
                 ],
-                "success_resolution": "Carefully assessing the situation, the party identifies a stable path through the unstable ground, meticulously placing supports or using their movement to minimize disturbance—allowing them to cross safely.",
+                "success_resolution": "Carefully assessing the situation, the party identifies a stable path through the unstable ground, meticulously placing supports or using their movement to minimize disturbanceï¿½allowing them to cross safely.",
                 "failure_resolution": "The ground gives way beneath the party's feet as they attempt to move across; one or more members tumble into a deep pit, potentially sustaining injuries and delaying progress.",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -742,7 +742,7 @@
                     "difficulty": 16
                   }
                 ],
-                "success_resolution": "The party manages to find a way around the collapsed arch or discovers a hidden passage that bypasses it on the other side—revealing a smoother path forward.",
+                "success_resolution": "The party manages to find a way around the collapsed arch or discovers a hidden passage that bypasses it on the other sideï¿½revealing a smoother path forward.",
                 "failure_resolution": "The falling debris seals off their current route completely; they must now attempt to clear the rubble themselves, and potentially face the danger of further collapse.",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -757,7 +757,7 @@
             ],
             "hazard": null,
             "reward_budget": 13,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -820,7 +820,7 @@
                 "thresholds": {
                   "four": "Kyriel shares knowledge of a nearby environmental hazard and a small shortcut through an adjacent alcove, allowing the party to navigate the immediate corridor with ease.",
                   "six": "Kyriel provides detailed information on the 'bloom's' growth patterns in this sector, identifying a specific weakness or passage that allows the party to bypass a major obstacle.",
-                  "eight": "Kyriel reveals a hidden layout of the facility’s structural secrets, granting the party access to a secret path that bypasses an entire dangerous zone or provides direct access to a critical objective."
+                  "eight": "Kyriel reveals a hidden layout of the facilityï¿½s structural secrets, granting the party access to a secret path that bypasses an entire dangerous zone or provides direct access to a critical objective."
                 },
                 "resistances": "Kyriel is resistant to appeals based on personal emotion or the promise of material rewards, as they are a detached consciousness focused entirely on preserved data.",
                 "weaknesses": "Kyriel is highly receptive to technical inquiries regarding the biological growth of the bloom and specific details concerning the corridor's geometry.",
@@ -833,7 +833,7 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 13,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -870,7 +870,7 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 18,
-            "rewards": null
+            "rewards": []
           }
         }
       ]
@@ -911,7 +911,7 @@
               "url": "/Hazards.aspx?ID=139"
             },
             "reward_budget": 26,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -955,13 +955,13 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 26,
-            "rewards": null
+            "rewards": []
           }
         },
         {
           "scene_number": 3,
           "encounter_type": "skill challenge",
-          "summary": "To reach the core's primary interface, the party must cross a zone where the resonance is severely destabilized. The environment fluctuates wildly—gravity may shift slightly, or shadows might detach from their owners. The party must succeed in various checks to navigate the physical and mental distortions caused by the nearby energy source without being overwhelmed by the 'Resonance.'",
+          "summary": "To reach the core's primary interface, the party must cross a zone where the resonance is severely destabilized. The environment fluctuates wildlyï¿½gravity may shift slightly, or shadows might detach from their owners. The party must succeed in various checks to navigate the physical and mental distortions caused by the nearby energy source without being overwhelmed by the 'Resonance.'",
           "introduction": "",
           "description": "",
           "resolution": "",
@@ -1017,7 +1017,7 @@
               },
               {
                 "name": "Echoing Shadows",
-                "description": "Suddenly, shadows begin to detach themselves from their sources – a flickering torch casts a phantom duplicate of itself; your own shadow stretches unnaturally long and thin before collapsing back with surprising force. A sense of unease settles over you as the familiar becomes alien.",
+                "description": "Suddenly, shadows begin to detach themselves from their sources ï¿½ a flickering torch casts a phantom duplicate of itself; your own shadow stretches unnaturally long and thin before collapsing back with surprising force. A sense of unease settles over you as the familiar becomes alien.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1050,7 +1050,7 @@
               },
               {
                 "name": "Gravitational Flux",
-                "description": "The very nature of gravity seems to fluctuate around you. For brief moments, your weight shifts dramatically—perhaps feeling heavier than lead or noticeably lighter, threatening to send you tumbling into unpredictable angles.",
+                "description": "The very nature of gravity seems to fluctuate around you. For brief moments, your weight shifts dramaticallyï¿½perhaps feeling heavier than lead or noticeably lighter, threatening to send you tumbling into unpredictable angles.",
                 "skills": [
                   {
                     "skill": "Acrobatics",
@@ -1083,7 +1083,7 @@
               },
               {
                 "name": "Murmuring Void",
-                "description": "A low, almost subsonic hum fills the air—a void of sound seems to press against your minds, bringing with it fleeting fragments of images and emotions – a forgotten face, a moment of intense grief, a sensation of vast emptiness.",
+                "description": "A low, almost subsonic hum fills the airï¿½a void of sound seems to press against your minds, bringing with it fleeting fragments of images and emotions ï¿½ a forgotten face, a moment of intense grief, a sensation of vast emptiness.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1103,7 +1103,7 @@
                   }
                 ],
                 "success_resolution": "The party utilizes techniques or mental disciplines to block out the intrusive sounds and visions, grounding themselves in the present and resisting the disruptive influence.",
-                "failure_resolution": "Party members experience increasing disorientation—brief moments of thoughtlessness, confusion about their surroundings, or a profound sense of vulnerability.",
+                "failure_resolution": "Party members experience increasing disorientationï¿½brief moments of thoughtlessness, confusion about their surroundings, or a profound sense of vulnerability.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 1,
@@ -1136,7 +1136,7 @@
                   }
                 ],
                 "success_resolution": "By acknowledging and observing these temporal anomalies with a calm and analytical approach, the party can use this as a brief moment to assess their surroundings and strategy.",
-                "failure_resolution": "The unsettling experience overwhelms several party members—causing them to freeze in confusion or even experience brief moments of disorientation as the past and present blur into an incomprehensible mess.",
+                "failure_resolution": "The unsettling experience overwhelms several party membersï¿½causing them to freeze in confusion or even experience brief moments of disorientation as the past and present blur into an incomprehensible mess.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 1,
@@ -1168,7 +1168,7 @@
                     "difficulty": 13
                   }
                 ],
-                "success_resolution": "The party works together to utilize any available sources of illumination—a lantern or glowing item—to anchor themselves within the increasingly disorienting environment.",
+                "success_resolution": "The party works together to utilize any available sources of illuminationï¿½a lantern or glowing itemï¿½to anchor themselves within the increasingly disorienting environment.",
                 "failure_resolution": "Visibility is severely reduced, causing panic and confusion among the group as they struggle to maintain their bearings and coordinate their actions.",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -1183,7 +1183,7 @@
             ],
             "hazard": null,
             "reward_budget": 18,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -1227,7 +1227,7 @@
             "obstacles": [],
             "hazard": null,
             "reward_budget": 26,
-            "rewards": null
+            "rewards": []
           }
         },
         {
@@ -1275,14 +1275,14 @@
                     "difficulty": 13
                   }
                 ],
-                "success_resolution": "The pulsing stabilizes, the erratic sparks cease, and a palpable sense of order settles over the console – the resonance begins to respond to external input.",
+                "success_resolution": "The pulsing stabilizes, the erratic sparks cease, and a palpable sense of order settles over the console ï¿½ the resonance begins to respond to external input.",
                 "failure_resolution": "The conduit flares violently, showering the surrounding area with static energy that briefly bleaches the color from the stone.",
                 "is_hazard": false,
                 "hazard_stats": null
               },
               {
                 "name": "Feedback Cascade",
-                "description": "As a party member attempts to interact with the console, a chorus of discordant tones erupts – a feedback cascade filling the chamber, intensifying with each adjustment. Visual echoes of previously attempted actions flicker around the room.",
+                "description": "As a party member attempts to interact with the console, a chorus of discordant tones erupts ï¿½ a feedback cascade filling the chamber, intensifying with each adjustment. Visual echoes of previously attempted actions flicker around the room.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1301,14 +1301,14 @@
                     "difficulty": 15
                   }
                 ],
-                "success_resolution": "The cascade abruptly cuts off, replaced by a low hum resonating through the core—the system shows signs of becoming more receptive to commands.",
+                "success_resolution": "The cascade abruptly cuts off, replaced by a low hum resonating through the coreï¿½the system shows signs of becoming more receptive to commands.",
                 "failure_resolution": "The feedback intensifies rapidly, creating blinding flashes and forcing all in the chamber to momentarily lose their balance and coordination.",
                 "is_hazard": false,
                 "hazard_stats": null
               },
               {
                 "name": "Resonance Echoes",
-                "description": "The room begins to vibrate with a lingering energy - fractured images of events leading to the core’s instability briefly manifest as shimmering projections around them, growing more intense with each passing moment.",
+                "description": "The room begins to vibrate with a lingering energy - fractured images of events leading to the coreï¿½s instability briefly manifest as shimmering projections around them, growing more intense with each passing moment.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1327,14 +1327,14 @@
                     "difficulty": 13
                   }
                 ],
-                "success_resolution": "The projections fade away piece by piece, resolving into static—a deeper understanding of the source of the unstable resonance begins to emerge.",
-                "failure_resolution": "The projections solidify, becoming momentarily tangible phantoms that create minor disruptions in the party’s movements and perception.",
+                "success_resolution": "The projections fade away piece by piece, resolving into staticï¿½a deeper understanding of the source of the unstable resonance begins to emerge.",
+                "failure_resolution": "The projections solidify, becoming momentarily tangible phantoms that create minor disruptions in the partyï¿½s movements and perception.",
                 "is_hazard": false,
                 "hazard_stats": null
               },
               {
                 "name": "Temporal Distortion",
-                "description": "A visible wave of shimmering heat radiates outward, causing brief distortions around the console – objects briefly phase in and out of existence, colors shift unnaturally, and sounds are delayed or echoed strangely.",
+                "description": "A visible wave of shimmering heat radiates outward, causing brief distortions around the console ï¿½ objects briefly phase in and out of existence, colors shift unnaturally, and sounds are delayed or echoed strangely.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1353,8 +1353,8 @@
                     "difficulty": 13
                   }
                 ],
-                "success_resolution": "The distortion stabilizes, returning to normal—the flow of energy through the console seems smoother and less chaotic.",
-                "failure_resolution": "The temporal distortions intensify, causing disorientation, blurred vision, and momentary confusion amongst the party – lost time becomes a significant concern.",
+                "success_resolution": "The distortion stabilizes, returning to normalï¿½the flow of energy through the console seems smoother and less chaotic.",
+                "failure_resolution": "The temporal distortions intensify, causing disorientation, blurred vision, and momentary confusion amongst the party ï¿½ lost time becomes a significant concern.",
                 "is_hazard": false,
                 "hazard_stats": null
               },
@@ -1379,7 +1379,7 @@
                     "difficulty": 15
                   }
                 ],
-                "success_resolution": "The field gently yields as manipulations stabilize – all within reach can interact with the console without resistance or discomfort.",
+                "success_resolution": "The field gently yields as manipulations stabilize ï¿½ all within reach can interact with the console without resistance or discomfort.",
                 "failure_resolution": "The field becomes more aggressive increasing in intensity causing injuries and hindering progress.",
                 "is_hazard": true,
                 "hazard_stats": {
@@ -1393,7 +1393,7 @@
               },
               {
                 "name": "Cascade Overload",
-                "description": "With repeated attempts, the core’s energy begins to build exponentially – a deep rumbling echoes throughout the chamber as the console threatens potential catastrophic failure.",
+                "description": "With repeated attempts, the coreï¿½s energy begins to build exponentially ï¿½ a deep rumbling echoes throughout the chamber as the console threatens potential catastrophic failure.",
                 "skills": [
                   {
                     "skill": "Arcana",
@@ -1412,8 +1412,8 @@
                     "difficulty": 15
                   }
                 ],
-                "success_resolution": "The cascade dissipates completely, and the room becomes eerily silent—the resonance is finally stabilized.",
-                "failure_resolution": "A blinding surge of energy erupts from the console, bathing the area in incandescent light – cracks begin to form in the stone above as the land destabilizes violently.",
+                "success_resolution": "The cascade dissipates completely, and the room becomes eerily silentï¿½the resonance is finally stabilized.",
+                "failure_resolution": "A blinding surge of energy erupts from the console, bathing the area in incandescent light ï¿½ cracks begin to form in the stone above as the land destabilizes violently.",
                 "is_hazard": true,
                 "hazard_stats": {
                   "level": 1,
@@ -1427,7 +1427,7 @@
             ],
             "hazard": null,
             "reward_budget": 18,
-            "rewards": null
+            "rewards": []
           }
         }
       ]
@@ -1438,7 +1438,7 @@
       "name": "Katha",
       "ancestry": "Human",
       "class_name": "Investigator",
-      "appearance": "Katha possesses a sharp, striking appearance that commands immediate attention. She wears high-collared traveling robes of charcoal silk reinforced with dark leathered trim, designed for both protection and formality. Her hair is kept in a practical, tightly woven braid, and she bears several pieces of understated jewelry—small silver rings on her fingers that glint when she gestures. Her most striking feature is her eyes; they are observant and steady, framed by fine lines that suggest years spent studying dense texts and complex mysteries under dim light.",
+      "appearance": "Katha possesses a sharp, striking appearance that commands immediate attention. She wears high-collared traveling robes of charcoal silk reinforced with dark leathered trim, designed for both protection and formality. Her hair is kept in a practical, tightly woven braid, and she bears several pieces of understated jewelryï¿½small silver rings on her fingers that glint when she gestures. Her most striking feature is her eyes; they are observant and steady, framed by fine lines that suggest years spent studying dense texts and complex mysteries under dim light.",
       "personality": "",
       "behavior": "",
       "attitude": "",

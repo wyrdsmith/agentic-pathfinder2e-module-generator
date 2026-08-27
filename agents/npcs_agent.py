@@ -4,7 +4,7 @@ from pydantic_ai.models.ollama import OllamaModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from pydantic_ai.settings import ModelSettings
 from pydantic_ai.output import NativeOutput
-from models.npc_concept import NPCConceptList, NPCSceneRole
+from models.npc_concept import NPCConcept, NPCSceneRole
 from models.quest import Quest
 from tools.name_tools import get_npc_name
 from typing import List
@@ -68,7 +68,7 @@ def get_npcs_extraction_agent():
 
     npcs_agent = Agent(
         model,
-        output_type = NativeOutput(NPCConceptList),
+        output_type = NativeOutput(List[NPCConcept]),
         system_prompt = textwrap.dedent("""
             # Role
             You are an expert Data Extraction Agent.

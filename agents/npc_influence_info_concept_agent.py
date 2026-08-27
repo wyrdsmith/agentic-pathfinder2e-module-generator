@@ -8,7 +8,7 @@ from models.npc_influence_concept import NPCInfluenceInfoConcept
 
 def get_npc_influence_info_concept_creation_agent():
     model = OllamaModel(
-        'gemma4-quest',
+        'gemma3-quest',
         provider = OllamaProvider(base_url='http://localhost:11434/v1')
     )
 

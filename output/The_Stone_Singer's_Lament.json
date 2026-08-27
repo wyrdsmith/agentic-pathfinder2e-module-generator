@@ -1,0 +1,1749 @@
+{
+  "name": "The Stone Singer's Lament",
+  "theme": "Resonance & Loss",
+  "setting": "A ruined temple complex, carved into a massive, obsidian-rich plateau high in the Silent Peaks.",
+  "plot_hook": "The party stumbles upon a remote village plagued by an increasing sense of despair and disorientation. Locals describe experiencing vivid 'memories' not their own - flashes of sorrowful music, images of weeping figures, and a deep feeling of loss. A weathered elder, Elias Thorne, approaches the party cautiously, revealing that his grandfather was one of the last scholars investigating the ruins of the Temple of the Stone Singer – a structure believed to have been used to amplify and channel emotional resonance for religious ceremonies. He believes the temple is 'singing' – projecting a residual echo of immense grief tied to a cataclysmic event centuries ago. Thorne offers 75 copper pieces and a hand-carved stone whistle (said to mitigate unsettling echoes) if the party can enter the temple, identify the source of this ‘lament’, and attempt to appease or neutralize its effect—potentially by discovering the underlying trauma that fuels the resonance and bringing closure to its lingering echo.",
+  "summary": "**Introduction**\nThe party arrives at a secluded settlement where the local people are plagued by distressing psychological phenomena—vivid hallucinations of memories that do not belong to them, accompanied by haunting melodies and an overwhelming sense of despair. A local elder approach the travelers, offering them a reward and a specialized artifact to help investigate a nearby ruined complex in the highlands. The elder explains that the ancient site has begun \"singing,\" leaking a powerful resonance of past sorrow into the surrounding lands, and seeks someone capable of venturing inside to silence it.\n\n**Conflict**\nThe party must journey to the ruinous structure located on high ground. As they enter the complex, they find that the architecture is designed to amplify emotional energy; consequently, they are plagued by intense psychic feedback and environmental hazards caused by a lingering, agonizing lament. The deeper they go, the more intense the echoes become, manifesting as overwhelming sensations of grief and spectral-like visions of past tragedies. They must navigate these haunting echoes and overcome the physical manifestations of this resonance to reach the source of the disturbance at the heart of the site.\n\n**Resolution**\nAt the center of the ruins, the party confronts the core of the resonance—a fractured memory of a historical catastrophe that continues to loop as a sonic and emotional wave. By identifying the specific trauma fueling the energy and performing a ritual or action to provide closure to the lingering spirit/echo, the party stabilizes the site. The \"singing\" ceases, the psychic weight lifts from the surrounding lands, and the local inhabitants are finally granted peace from the haunting visions.",
+  "acts": [
+    {
+      "act_number": 1,
+      "summary": "The party arrives at a remote settlement where locals suffer from 'shadow memories' and haunting melodic echoes. An elder provides them with an artifact to protect against psychic disturbances as they navigate treacherous terrain towards ancient ruins that amplify emotional resonance.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "social",
+          "summary": "The party arrives at a remote settlement nestled in the foothills. They immediately notice a pervasive, unsettling atmosphere where residents appear dazed, clutching their heads or staring blankly into the distance as if reliving phantom memories. A melancholic melody seems to vibrate through the very air. A local leader approaches the party, visibly distressed by the ",
+          "introduction": "The winding mountain paths eventually give way to a rugged foothill pass where a small, secluded settlement clings to the rocky earth. As you approach the cluster of stone and timber dwellings, the atmosphere shifts palpably; the air feels thick with a heavy, stagnant weight. A haunting, melancholic melody seems to vibrate through the very air, manifesting as a low hum that resonates in your chest. The villagers are not engaged in daily chores; instead, many wander aimlessly or stand rooted to the spot, their faces etched with a vacant, distant look. Some clutch their heads in silent agony, while others stare into the horizon as if haunted by ghosts only they can see.",
+          "description": "As the party enters the settlement's perimeter, Gabridget—a local leader whose appearance is marked by profound fatigue and distress—approaches them. She is visibly shaken, her voice strained as she explains the plight of her people. She describes the 'shadow memories' that have gripped the settlement, a phenomenon where individuals become trapped in visions of the past or distorted mental echoes. During this interaction, Gabridget focuses on the severity of the situation and the unsettling auditory melody accompanying the inhabitants' condition, seeking any insight or assistance the travelers can provide to break the cycle of haunted recollections.",
+          "resolution": "The weight of the situation remains heavy as the local leader’s words sink in, leaving a lingering sense of urgency for what lies ahead. The haunting melody continues to hum faintly in the distance as you turn your gaze toward the rising peaks beyond the settlement. The time for searching has passed; now is the time for traveling. You begin the trek toward the high mountains, leaving the haunted valley behind as you move deeper into the wilderness of the highlands.",
+          "rest_opportunity": "short rest",
+          "location": "Remote Mountain Settlement",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "social",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "The winding mountain paths eventually give way to a rugged foothill pass where a small, secluded settlement clings to the rocky earth. As you approach the cluster of stone and timber dwellings, the atmosphere shifts palpably; the air feels thick with a heavy, stagnant weight. A haunting, melancholic melody seems to vibrate through the very air, manifesting as a low hum that resonates in your chest. The villagers are not engaged in daily chores; instead, many wander aimlessly or stand rooted to the spot, their faces etched with a vacant, distant look. Some clutch their heads in silent agony, while others stare into the horizon as if haunted by ghosts only they can see.",
+            "resolution": "The weight of the situation remains heavy as the local leader’s words sink in, leaving a lingering sense of urgency for what lies ahead. The haunting melody continues to hum faintly in the distance as you turn your gaze toward the rising peaks beyond the settlement. The time for searching has passed; now is the time for traveling. You begin the trek toward the high mountains, leaving the haunted valley behind as you move deeper into the wilderness of the highlands.",
+            "description": "As the party enters the settlement’s perimeter, Gabridget—a local leader whose appearance is marked by profound fatigue and distress—approaches them. She is visibly shaken, her voice strained as she explains the plight of her people. She describes the 'shadow memories' that have gripped the settlement, a phenomenon where individuals become trapped in visions of the past or distorted mental echoes. During this interaction, Gabridget focuses on the severity of the situation and the unsettling auditory melody accompanying the inhabitants’ condition, seeking any insight or assistance the travelers can provide to break the cycle of haunted recollections. She gestures towards several villagers frozen in various states of distress – one weeping silently, another staring at nothing with an open mouth, a third attempting to shield their eyes from some unseen horror. The air hangs thick with the smell of damp earth and something vaguely metallic, almost like old blood.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [
+              {
+                "npc_name": "Gabridget",
+                "discoveries": [
+                  {
+                    "skill": "Perception",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Religion",
+                    "dc": 13
+                  }
+                ],
+                "influences": [
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Religion",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 11
+                  }
+                ],
+                "thresholds": {
+                  "four": "Gabridget provides the party with a pack of specialized herbal tonics and consecrated oils intended to soothe the physical symptoms and mental strain caused by 'shadow memories.'",
+                  "six": "Gabridget grants the party access to detailed maps of the surrounding area, highlighting safe paths that bypass the most unstable points of the 'singing,' along with a set of vials containing concentrated holy water.",
+                  "eight": "Gabridget bestows a powerful ritual blessing upon the party, granting them a significant aura of protection against the 'song' for several days, and permits them to take a high-value sacred relic from her collection to use as a holy focus during their journey."
+                },
+                "resistances": "emotional histrionics or any conversation that ignores the grave, desperate reality of her community’s plight",
+                "weaknesses": "sincere appeals regarding the safety of her people and evidence of a shared, determined goal to silence the 'singing'",
+                "penalty": {
+                  "description": "Any attempt to mock the suffering caused by the 'shadow memories' or disparage her role as a leader will be met with immediate hostility",
+                  "penalty": "Reduce the number of rounds the party has to influence Gabridget by 1."
+                }
+              }
+            ],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": []
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "social",
+          "summary": "The elder meets with the party in a private hall to explain the crisis. They describe how the nearby ruined complex in the highlands has begun ",
+          "introduction": "The heavy oak doors creak open, muffling the distant sounds of the village and replacing them with the hushed atmosphere of the inner sanctum. The private hall is lit by several flickering candles perched in wrought-iron sconces, casting long, dancing shadows against walls adorned with faded tapestries of lineage and lore. At the far end of a long, scarred wooden table, an elderly figure waits. The air here carries the faint, dry scent of old parchment and incense—a stark contrast to the outdoor air. It is clear that this is a place for gravity and secrets, where voices are meant to stay low and the weight of history hangs heavy in the atmosphere.",
+          "description": "Gabridget sits at the head of the table, her posture stiff with the burden of leadership. Her face is lined with deep furrows, and her eyes reflect a profound sense of urgency. She welcomes the party into the private hall, signaling them to sit as she begins an intimate recount of the ruins in the highlands. She speaks with a haunting cadence about the history of the complex—how it was once a site of profound significance before it was abandoned and scarred by time. She details the 'current crisis,' describing how the very earth near the structures has begun to react poorly to something unsettling within. During this exchange, Gabridget produces the protective artifact from a velvet-lined box; the object pulses with a faint, steady hum as she explains its purpose for those who must venture into the heart of the disturbance.",
+          "resolution": "As your meeting concludes, Gabridget stands and offers a final word of warning. She acknowledges that while the path ahead is fraught with uncertainty, they have been chosen to act when others could not. The heavy doors are opened once more, and as you step out from the warm light of the private hall into the cooling evening air, the weight of your new task hangs in the breeze. The way toward the highlands lies before you, the daunting silhouette of the distant ruins waiting under the shadow of the mountains.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Local Leader's Residence",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "social",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "The heavy oak doors creak open, muffling the distant sounds of the village and replacing them with the hushed atmosphere of the inner sanctum. The private hall is lit by several flickering candles perched in wrought-iron sconces, casting long, dancing shadows against walls adorned with faded tapestries of lineage and lore. At the far end of a long, scarred wooden table, an elderly figure sits – Gabridget. Her face is lined with deep furrows, and her eyes reflect a profound sense of urgency. She welcomes you into this place for gravity and secrets, where voices are meant to stay low and the weight of history hangs heavy in the atmosphere.",
+            "resolution": "As your meeting concludes, Gabridget stands and offers a final word of warning. She acknowledges that while the path ahead is fraught with uncertainty, you have been chosen to act when others could not. The heavy doors are opened once more, and as you step out from the warm light of the private hall into the cooling evening air, the weight of your new task hangs in the breeze. The way toward the highlands lies before you, the daunting silhouette of the distant ruins waiting under the shadow of the mountains.",
+            "description": "Gabridget sits at the head of the table, her posture stiff with the burden of leadership. She begins an intimate recount of the history of the ruins in the highlands – how it was once a site of profound significance before it was abandoned and scarred by time. She speaks with a haunting cadence about rituals performed within its walls and the people who once called it home. During this exchange, she produces the protective artifact from a velvet-lined box; the object pulses with a faint, steady hum as she explains its purpose for those who must venture into the heart of the disturbance. Gabridget then details the ‘current crisis,’ describing how the very earth near the structures has begun to react poorly to something unsettling within – tremors shake the ground intermittently during her account, and dust motes dance in the candlelight.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [
+              {
+                "npc_name": "Gabridget",
+                "discoveries": [
+                  {
+                    "skill": "Perception",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Religion",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 13
+                  }
+                ],
+                "influences": [
+                  {
+                    "skill": "Diplomacy",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Religion",
+                    "dc": 13
+                  },
+                  {
+                    "skill": "Lore",
+                    "dc": 11
+                  }
+                ],
+                "thresholds": {
+                  "four": "Gabridget provides extra supplies, such as additional rations and blessed lanterns to help the party navigate the ruin complex longer.",
+                  "six": "Gabridget shares specific intelligence on a hidden corridor within the ruins, allowing the party to bypass one hazardous area or encounter.",
+                  "eight": "Gabridget performs a ritual of protection, granting the team a special charm that provides significant resistance against the mental and physical effects of 'the singing' while inside the complex."
+                },
+                "resistances": "appeals centered on personal enrichment or flowery rhetoric that lacks pragmatic application",
+                "weaknesses": "arguments focusing on the well-being of her villagers or methods to end the \"singing\"",
+                "penalty": {
+                  "description": "Any suggestion that would compromise the safety of her people for any reason will be met with an immediate and stern refusal",
+                  "penalty": "Reduce the number of rounds the party has to influence Gabridget by 1."
+                }
+              }
+            ],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": []
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "hazard",
+          "summary": "The party begins the journey toward the highlands. As they move through the wilderness, the ",
+          "introduction": "The air thins as you ascend toward the highlands, becoming crisp and biting against your skin. The vibrant colors of the lower lands have faded into a stark landscape of gray shale and ochre rock. Every step upward is an arduous climb against the incline, where the only constants are the stinging wind that whistles through the high passes and the heavy, lonely silence of the peaks. The ground beneath your boots is jagged and unfored, providing a harsh, desolate path toward the heights above.",
+          "description": "As the group navigates a narrow corridor between two towering rock faces, the environment becomes suffocatingly eerie. The shadows cast by the jagged crags are not empty; they house clinging, ethereal remnants of those who perished in these heights. These spirits do not manifest fully, but rather as oily distortions in the air that seem to merge with the very rocks. They press themselves against the intruders, their presence signaled by a sudden, localized drop in temperature and the sensation of phantom fingers grazing clothing or skin. The 'Disembodied Voices' are a chaotic cacophony—some gurgle with desperate pleas for help, while others hiss frantic, vengeful threats. These sounds do not come from a distance; they originate mere inches from the characters' ears, varying in volume as if several entities are huddling close to whisper warnings of the dangers ahead or curses for trespassing on their haunted ground.",
+          "resolution": "The oppressive atmosphere of the high pass begins to lift as the terrain levels out into a vast, wind-swept expanse. The heavy silence of the peaks is replaced by the steady drone of the wind moving across an open plain. In the distance, the silhouette of a massive complex emerges against the horizon, its obsidian-rich foundation blending with the dark earth of the plateau.",
+          "rest_opportunity": "short rest",
+          "location": "High Altitude Wilderness",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "hazard",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "The air grows colder with each step, pressing against you like a shroud. A sense of unease settles over the group as you navigate this narrow passage between the towering rock faces. The silence is broken not by wind or natural sound, but by something far more unsettling – voices that seem to cling to your very thoughts.",
+            "resolution": "The oppressive atmosphere begins to dissipate as the passage widens, revealing a vast expanse of exposed stone beneath an open sky. The cacophony of spectral whispers fades abruptly, replaced by the steady drone of wind across a stark plateau. Ahead, dominating the horizon, stands a colossal structure – its dark foundations melding seamlessly with the earth, and it's outline stretching into the distance.",
+            "description": "As you proceed deeper into the corridor, the shadows deepen and intensify, twisting around the jagged rocks. Within these dark recesses, shimmering distortions coalesce—the remnants of those who met their end in this desolate place. These spectral impressions press against your bodies, a constant, chilling touch that raises gooseflesh despite the biting wind. The 'Disembodied Voices' erupt – a chaotic blend of whispers and screams. Some plead for aid in broken, mournful tones, while others hiss with furious disdain, promising ill fortune to those who disturb their rest. These voices swirl around you, seemingly originating from everywhere and nowhere at once, inches away from your ears.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Disembodied Voices",
+              "level": 0,
+              "hazard_type": "Haunt",
+              "description": "Angry spirits breathe down the necks of intruders and whisper haunting threats or messages in their ears.",
+              "url": "/Hazards.aspx?ID=135"
+            },
+            "reward_budget": 13,
+            "rewards": [
+              {
+                "name": "Eagle-Eye Elixir (Lesser)",
+                "reward_type": "item",
+                "price": 4.0,
+                "description": "The bonus is +1, or +2 to find secret doors and traps.",
+                "url": "/Equipment.aspx?ID=3306"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 9.0,
+                "description": "An assortment of coins and gems worth 9.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "combat",
+          "summary": "As the party nears the base of the obsidian plateau, the lingering resonance manifests into tangible threats. They are confronted by physical manifestations of the psychic turmoil—hostile entities born from the lingering sorrow that have been drawn to the growing energy. The party must defend themselves against these guardians as they fight through the final stretch of land toward the ruined structures.",
+          "introduction": "The air grows thick and heavy as you approach the jagged base of the obsidian plateau. A low, rhythmic thrum vibrates through the earth, manifesting as a psychic weight that presses against your minds like a physical veil. The once-silent wasteland is now thick with a palpable atmosphere of mourning; the very wind seems to carry the echoes of ancient sorrows. Before you, the crumbling shapes of ruined structures break the horizon, but the path toward them is choked by a swirling, gray haze. Every step forward feels heavier as if the land itself is mourning its lost age, and the veil between thought and reality begins to fray in your presence.",
+          "description": "As the players navigate the final stretch of terrain toward the ruined structures, the psychic turmoil surrounding the obsidian plateau intensifies. The environmental 'resonance' begins to solidify, and the hazy atmosphere coalesces into tangible forms. These entities—distorted by the lingering psychic energy—emerge from the jagged rocks and mounds of gray ash at the base of the cliffs. They are drawn toward the source of power in the ruins, but they perceive any movement as a threat. The transition from searching to active defense occurs as these shambling horrors emerge from the ground and debris. The terrain is difficult to navigate, filled with sharp obsidian shards and uneven ground, making it a perilous trek through the final stretch of land toward the looming structures ahead.",
+          "resolution": "The frantic groans and heavy thuds of movement finally fall silent, replaced by the oppressive stillness of the wasteland. As the last of the stirred spirits collapse into lifeless forms, the threatening haze begins to thin, though the air remains cold. The way forward to the ruined complex is now clear, though the ground is scarred by the struggle and punctuated by the hollow remains of what once were guardians of the path. Ahead, the obsidian structures loom large against the sky, their jagged peaks standing as silent sentinels in the shadow of the plateau.",
+          "rest_opportunity": "short rest",
+          "location": "Outskirts of the Obsidian Plateau",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "combat",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "The air grows thick and heavy as you approach the jagged base of the obsidian plateau. A low, rhythmic thrum vibrates through the earth, manifesting as a psychic weight that presses against your minds like a physical veil. The once-silent wasteland is now thick with a palpable atmosphere of mourning; the very wind seems to carry the echoes of ancient sorrows. Before you, the crumbling shapes of ruined structures break the horizon, but the path toward them is choked by a swirling, gray haze. Suddenly, from amongst the jagged rocks and mounds of gray ash at the base of the cliffs, a slow, unsettling movement begins. Shambling forms rise into view – three Zombie Shamblers emerge, drawn to your presence and the growing energy of the ruins. They advance with grim determination, seeking to defend their domain against intruders.",
+            "resolution": "The frantic groans and heavy thuds of movement finally fall silent, replaced by the oppressive stillness of the wasteland. As the last of the stirred spirits collapse into lifeless forms, the threatening haze begins to thin, though the air remains cold. The way forward to the ruined complex is now clear, though the ground is scarred by the struggle and punctuated by the hollow remains of what once were guardians – the three Zombie Shamblers lie still at your feet, silent and motionless markers of your contested passage. Ahead, the obsidian structures loom large against the sky, their jagged peaks standing as silent sentinels in the shadow of the plateau.",
+            "description": "The ground is difficult to navigate, filled with sharp obsidian shards and uneven ground, making it a perilous trek through the final stretch of land toward the looming structures ahead. The three Zombie Shamblers are roughly humanoid in shape, but horribly distorted by dark energy. Their flesh is gray and decaying, clinging loosely to bone, and they move with an agonizing slowness – each step punctuated by a wet, shuffling sound as they drag their feet across the uneven terrain. They seem driven primarily by instinct, reacting only to movement or perceived threats. They are relentlessly focused on your group and actively attempt to close the distance between themselves and the party, favoring direct attacks against the closest target.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": -1,
+                "name": "Zombie Shambler",
+                "description": "A zombie shambler is a slow-moving horror dangerous in larger groups.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3249"
+              },
+              {
+                "level": -1,
+                "name": "Zombie Shambler",
+                "description": "A zombie shambler is a slow-moving horror dangerous in larger groups.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3249"
+              },
+              {
+                "level": -1,
+                "name": "Zombie Shambler",
+                "description": "A zombie shambler is a slow-moving horror dangerous in larger groups.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3249"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": [
+              {
+                "name": "Elixir of Life (Minor)",
+                "reward_type": "item",
+                "price": 3.0,
+                "description": "The elixir restores 1d6 Hit Points, and the bonus is +1.",
+                "url": "/Equipment.aspx?ID=3308"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 10.0,
+                "description": "An assortment of coins and gems worth 10.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "skill challenge",
+          "summary": "The party reaches the base of the ruinous complex perched upon the obsidian-rich plateau. They must navigate a treacherous, steep climb through crumbling architecture and precarious ledge paths to reach the primary entrance. The ",
+          "introduction": "Before you lies a staggering vista of jagged, obsidian-rich earth. The plateau rises like a crown of black glass against the sky, its surface glittering with an oily sheen. Perched atop this unforgiving land is a ruinous complex, its architecture crumbling into skeletal remains that loom over the terrain like a forgotten throne. To reach the primary entrance, you must ascend a treacherous path where the distinction between the natural rock and the derelict stone of the structures has eroded over centuries. The air here carries a heavy scent of minerals and age, and the climb demands both steady nerves and sure footwork as the massive gates of the ruins loom in your sights above the crumbling parapets.",
+          "description": "The ascent is a grueling test of athleticism and perception. The path begins with unstable sections where loose rocks threaten to tumble down into the depths below at every step. As they move higher, the terrain narrows significantly, forcing them through a constricted corridor where fierce winds whip up clouds of obsidian dust that irritate their eyes and lungs. The walking surface is treacherous—composed of cracked plates of volcanic glass that slick with moisture and buckle under weight. They must navigate sections where the ground falls away into immense, echoing chasms, making every step feel like a gamble against a plummeting fall. Survival depends on gripping onto structures that are partially encased in brittle frost or navigating through hazy veils of shimmering dust particles so thick they obscure vision. The final stretch involves traversing deeply etched grooves and sharp ridges and dodging towering pillars of loose sediment that tremble with the vibration of their movement, all leading toward the towering threshold of the main gate.",
+          "resolution": "With a final surge of effort, your feet find stable ground as you pass through the final transition from the exterior path to the grand threshold. The howling winds of the plateau fade into a heavy, oppressive silence as you step beyond the outer perimeter. Before you stands the primary entrance—a massive structure of weathered stone and obsidian, its surface scarred by time but imposing in its scale. You have survived the ascent, and now the true mysteries within the heart of the ruin lie just beyond the archway.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Obsidian Plateau Entrance",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Trivial",
+            "xp_value": 40,
+            "xp_budget": 40,
+            "introduction": "The air grows colder with every step, and a low rumble echoes from above – a warning of the unstable stone that clings to this plateau. Ahead, the path ahead is a chaotic dance between the remnants of civilization and the relentless forces of nature. The cliff face itself seems to shift beneath your gaze, hinting at hidden dangers within its crumbling walls. Proceed with caution; the ascent demands respect for every footfall.",
+            "resolution": "You’ve successfully navigated a harrowing series of obstacles – a shift in footing, a blast of howling winds, treacherous ledges, and echoing voids. Each careful maneuver has brought you closer to the imposing threshold of the main gate. The final ascent tests your resolve as you brace yourselves against Razor-Sharp Grooves and dodge Shifting Dust Pillars. You press onward, penetrating the swirling Obsidian Veil, and finally emerge unscathed into the grand entrance – a testament to your perseverance and skill.",
+            "description": "The initial climb is a whirlwind of precarious footing. Loose scree cascades down with unsettling regularity—a constant reminder of the instability beneath you. As you push onward, the path narrows dramatically, becoming a claustrophobic corridor where the wind screams around you, whipping up clouds of obsidian dust that burn your eyes and scratch at your throat. The ground is a dangerous mosaic of cracked volcanic glass – slick with moisture and prone to buckle under pressure. You must carefully navigate sections where sheer drops plunge into echoing chasms, each step fraught with the risk of an involuntary fall. Visibility is severely hampered by swirling veils of shimmering dust, forcing you to rely heavily on your perception and awareness of your surroundings. The air vibrates subtly with each movement, as though the very stone beneath your feet is alive with trapped energy.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Shifting Stonefall",
+                "description": "The cliff face ahead is riddled with deep fissures and loose scree. A low rumble indicates that more stone may dislodge at any moment.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "The path remains stable, though the air vibrates momentarily as a small shower of pebbles cascades down from above.",
+                "failure_resolution": "A sudden, localized rockfall occurs, partially blocking the path and forcing the party to spend time clearing debris.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "The Whisperwind Gorge",
+                "description": "The climb opens into a narrow gorge where the wind howls constantly, carrying with it fine particles of obsidian dust that sting the eyes and rasp against exposed skin.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party navigates the gorge efficiently, utilizing the rock formations for support and maintaining their footing.",
+                "failure_resolution": "Several characters become momentarily disoriented by the swirling wind and debris, suffering minor discomfort from dust inhalation and losing a small amount of time regaining their bearings.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Cracked Obsidian Ledges",
+                "description": "The path continues to ascend along increasingly narrow ledges composed of fractured obsidian. The surfaces are slick with moisture and several sections appear unstable, threatening to crumble underfoot.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "With careful footing and coordinated movement, the party makes steady progress across the treacherous ledges.",
+                "failure_resolution": "A section of the ledge collapses beneath one or more characters, sending them tumbling a short distance down the cliff face (potentially leading into a minor drop).",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "The Echoing Void",
+                "description": "The path narrows abruptly before descending slightly. Below is an immense empty space within the ruin, seemingly bottomless and filled with faint echoing sounds carried on the wind.",
+                "skills": [
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "The party cautiously makes their way down the short drop, emerging into a somewhat wider area without incident.",
+                "failure_resolution": "Feeling unnerved by the oppressive emptiness, one or more characters become momentarily paralyzed by fear, losing initiative for a turn.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "The Frozen Handrail",
+                "description": "A section of what was once a sturdy handrail has frozen solid over with thick ice, making it brittle and treacherous to grip. Layers of frost coat the entire structure.",
+                "skills": [
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "The party finds a way to carefully navigate around the icy handrail or utilize their tools and skills to chip away at the ice effectively.",
+                "failure_resolution": "While attempting to use the frozen handrail, it shatters, causing one or more characters to lose their grip and slide downwards.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Shifting Dust Pillars",
+                "description": "Scattered across the path are several towering pillars of loose obsidian dust. They seem unstable, with subtle tremors occasionally shaking them.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 12
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party carefully maneuvers around the pillars, avoiding triggering any minor collapses or slides.",
+                "failure_resolution": "A pillar destabilizes and partially collapses, creating a cloud of obscuring dust that reduces visibility and hindering movement for everyone caught within it.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "The Obsidian Veil",
+                "description": "As the party ascends further into the ruin, they encounter a dense curtain of swirling, iridescent obsidian particles – almost like a shimmering veil. It obscures much of the path ahead.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "The party pushes through the obsidian veil, emerging on the other side relatively unscathed and with clear vision.",
+                "failure_resolution": "The unsettling nature of the veil overwhelms one or more characters, inflicting minor psychic distress (disadvantage on a single skill check).",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Razor-Sharp Grooves",
+                "description": "The final ascent is marked by deep grooves carved into the obsidian surface, polished to an unnervingly sharp edge by centuries of wind and weather.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Thievery",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "Using ropes and careful movements, the party successfully navigates through this treacherous section without sustaining injuries.",
+                "failure_resolution": "A character takes a glancing blow from the razor-sharp grooves, resulting in superficial cuts and abrasions.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Fortitude",
+                  "area_dc": 16
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 0,
+            "rewards": []
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "summary": "As the party delves deeper into the complex, they face physical and psychological challenges, encountering vivid hallucinations of historical tragedies. They must overcome both tangible guardians and intangible waves of sorrow to reach the core of the structure.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "hazard",
+          "summary": "The party passes through the main threshold of the obsidian complex. As they enter the inner grounds, the initial surge of resonance hits them—the air grows heavy and thick with a psychic weight, causing the landscape to distort as memories of ancient sorrows manifest as shimmering, ghostly visions in the periphery of their vision.",
+          "introduction": "As you cross the threshold of the obsidian complex, the air suddenly thickens, turning heavy and oppressive against your lungs. A low-frequency hum seems to vibrate not in your ears, but within your minds—a psychic weight that makes the very ground beneath your boots feel uncertain. Around you, the stark black stone of the vestibule begins to shimmer as if viewed through a heat haze. Ghostly flickers of life from ages past dance at the edges of your vision: a mourning mother's wail caught in a loop, the spectral glow of dying fires, and the lingering shadows of ancient sorrows that haunt the structure’s very stones.",
+          "description": "The chamber is gripped by a powerful hallucinogenic field that warps the physical geometry of the vestibule. To an observer caught within it, the architecture appears to be melting or buckling; walls lean at impossible angles, floors seem to tilt and slope downward in directions that do not align with reality, and heavy stone pillars appear to twist like vines. Objects within the room—tattered banners, discarded debris, or decorative shards—seem to slide across surfaces or change position when glimpsed from different angles. The distortion creates a profound sense of vertigo, making it difficult for those inside to judge distance, height, or the stability of their footing as the environment fluctuates between a dying reality and a fractured memory.",
+          "resolution": "The distorted imagery begins to fray at the seams like old parchment, dissolving into shadow as you move deeper into the complex. The crushing weight on your minds eases slightly, though the heavy, somber atmosphere remains. Before you lies a long, looming hallway; the obsidian here appears darker, and the silence of the inner grounds greets you with a hollow, haunting stillness.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Outer Vestibule",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "hazard",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "As you cross the threshold of the obsidian complex, the air suddenly thickens, turning heavy and oppressive against your lungs. A low-frequency hum seems to vibrate not in your ears, but within your minds—a psychic weight that makes the very ground beneath your boots feel uncertain. Around you, the stark black stone of the vestibule begins to shimmer as if viewed through a heat haze. Ghostly flickers of life from ages past dance at the edges of your vision: a mourning mother’s wail caught in a loop, the spectral glow of dying fires, and the lingering shadows of ancient sorrows that haunt the structure's very stones. You quickly realize you are experiencing a powerful hallucinogenic field – an insidious illusion that is warping reality itself.",
+            "resolution": "The distorted imagery begins to fray at the seams like old parchment, dissolving into shadow as you move deeper into the complex. As you continue your advance through the illusory space, the crushing weight on your minds eases slightly, though the heavy, somber atmosphere remains. Before you lies a long, looming hallway; the obsidian here appears darker, and the silence of the inner grounds greets you with a hollow, haunting stillness.",
+            "description": "The chamber is gripped by a powerful hallucinogenic field that warps the physical geometry of the vestibule. To an observer caught within it, the architecture appears to be melting or buckling; walls lean at impossible angles, floors seem to tilt and slope downward in directions that do not align with reality, and heavy stone pillars appear to twist like vines. Objects within the room—tattered banners, discarded debris, or decorative shards—seem to slide across surfaces or change position when glimpsed from different angles. The distortion creates a profound sense of vertigo, making it difficult for those inside to judge distance, height, or the stability of their footing as the environment fluctuates between a dying reality and a fractured memory. Every step you take feels unsteady, and the shapes around you constantly shift—a disorienting whirlwind that threatens your perception.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Disorienting Illusions",
+              "level": 1,
+              "hazard_type": "Trap",
+              "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, …",
+              "url": "/Hazards.aspx?ID=629"
+            },
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Earplugs",
+                "reward_type": "item",
+                "price": 0.1,
+                "description": "These small pieces of cloth and stuffing have been crafted to dramatically muffle sound and easily slide into and out of the ear canals of humanoid …",
+                "url": "/Equipment.aspx?ID=1203"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 17.9,
+                "description": "An assortment of coins and gems worth 17.9 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "combat",
+          "summary": "In a wide, cavernous courtyard, the 'singing' reaches a crescendo that causes several mindless, and aggressive, physical manifestations of grief to emerge from the very masonry. These entities are warped by the resonance and see the party as any intruders who must be silenced to keep the sanctuary's 'song' intact.",
+          "introduction": "The haunting melody of the sanctuary swells as you step into the expanse of the inner courtyard, the notes vibrating through the soles of your boots and thrumming in your chest. As the song reaches a staggering, piercing crescendo, the air thickens with a heavy, palpable sense of sorrow. Suddenly, the very masonry of the courtyard groans; cracks spiderweb across the pillars and walls as stone fragments begin to reshape themselves. From these fissures, several looming figures—manifestations of grief forged from jagged rock and weeping shadows—lumber forth into the light. These forms move with a desperate, mourning purpose, sensing your presence as an intrusion upon the sacred song that must be silenced.",
+          "description": "The courtyard is a place of heavy architectural weight where the 'singing' acts as a physical force. As the melody peaks, the masonry doesn't just break; it reorganizes itself into grotesque shapes. Amidst these shifting ruins, prominent stone features—archways, pillars, and decorative carvings—detach from the architecture to become mobile. One primary protector, a massive and imposing statue that has served as a silent watchdog for centuries, fully animates under the pressure of the resonance. This entity stands as a grim sentinel among the other warped forms. The transition from inanimate stone to moving guardian is violent; dust shakes from its head, and cracks appear along its limbs, which move with heavy, grinding force. It stands in the path toward the inner sanctum, its purpose clear: to physically blockade any intruder who disrupts the echo.",
+          "resolution": "As the final, discordant notes of the song fade into a lingering hum, the violent energy of the masonry settles. The animated forms lose their cohesion, collapsing back into heaps of inert stone and rubble that settle onto the courtyard floor. A profound, heavy silence falls over the space, leaving only the faint scent of old dust and wet stone in the air. Beneath the weight of this oppressive stillness, the path ahead becomes clear, leading toward the formidable threshold of the inner sanctum.",
+          "rest_opportunity": "short rest",
+          "location": "Inner Courtyard",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The haunting melody of the sanctuary swells as you step into the expanse of the inner courtyard, the notes vibrating through the soles of your boots and thrumming in your chest. As the song reaches a staggering, piercing crescendo, the air thickens with a heavy, palpable sense of sorrow. Suddenly, the very masonry of the courtyard groans; cracks spiderweb across the pillars and walls as stone fragments begin to reshape themselves. From these fissures, several looming figures—manifestations of grief forged from jagged rock and weeping shadows—lumber forth into the light. These forms move with a desperate, mourning purpose, sensing your presence as an intrusion upon the sacred song that must be silenced.",
+            "resolution": "As the final, discordant notes of the song fade into a lingering hum, the violent energy of the masonry settles. The animated forms lose their cohesion, collapsing back into heaps of inert stone and rubble that settle onto the courtyard floor. A profound, heavy silence falls over the space, leaving only the faint scent of old dust and wet stone in the air. Beneath the weight of this oppressive stillness, the animated statue crumbles to pieces, its shadowy energy dissipating entirely. The path ahead becomes clear, leading toward the formidable threshold of the inner sanctum.",
+            "description": "The courtyard is a place of heavy architectural weight where the 'singing' acts as a physical force. As the melody peaks, the masonry doesn't just break; it reorganizes itself into grotesque shapes. Amidst these shifting ruins, prominent stone features—archways, pillars, and decorative carvings—detach from the architecture to become mobile. One primary protector, a massive and imposing statue that has served as a silent watchdog for centuries, fully animates under the pressure of the resonance. This entity stands as a grim sentinel among the other warped forms. The transition from inanimate stone to moving guardian is violent; dust shakes from its head, and cracks appear along its limbs, which move with heavy, grinding force. It stands in the path toward the inner sanctum, its purpose clear: to physically blockade any intruder who disrupts the echo. Its form resembles a humanoid warrior clad in ancient, moss-covered armor, wielding a massive stone hammer. Multiple jagged edges adorn its body, and cracks pulse with an unnatural, shadowy energy.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 3,
+                "name": "Animated Statue",
+                "description": "Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to",
+                "xp_value": 80,
+                "url": "/Monsters.aspx?ID=2820"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Musical Instrument (Handheld)",
+                "reward_type": "item",
+                "price": 0.8,
+                "description": "Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and …",
+                "url": "/Equipment.aspx?ID=2737"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 17.2,
+                "description": "An assortment of coins and gems worth 17.2 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "skill challenge",
+          "summary": "The party enters a long hallway where the obsidian walls seem to bleed memories into reality. They are forced to navigate through a 'maze of laments,' where hallucinated scenes of historical tragedies (a fallen siege, a lost wedding) physically obstruct their path and attempt to trap them in loops of shared despair.",
+          "introduction": "The air grows heavy as you step into the Corridor of Reflection. The obsidian walls lining the passage are polished to a mirror finish, yet they do not seem to reflect only your physical forms; instead, the stone seems to pulse with an internal life, occasionally rippling like water. It feels as though the very architecture is weeping—leaking memories of deep-seated sorrows into the physical world. Ahead of you lies what can only be described as a 'maze of laments,' where history and heartache have coalesced into tangible obstacles. The ground beneath your feet feels unstable, and the atmosphere is thick with an oppressive sense of grief that seems to warp the very dimensions of the hall before you.",
+          "description": "The passage serves as a psychological gauntlet where the environment reacts to the presence of the party's consciousness. It begins with a zone of absolute silence; all ambient noise—the rustle of clothing, the thud of boots, even their own breathing—is swallowed by the 'Echoing Silence,' creating a crushing sense of isolation. As they move forward, the masonry gives way to the 'Fragmented Siege,' where the walls physically crumble and reform into 3D scenes of a desperate war zone, blocking the path with stone debris that feels solid to the touch. This is followed by the 'Whispering Bridal Veil,' where hanging white fabrics draped over the walkway hiss with overlapping voices of betrayed lovers. The geography then becomes unstable in the 'Looming Wedding Dance' section; the hallway twists and folds around a loop of spectral dancers, making navigation difficult as time seems to loop in that specific pocket. \n\nThe walls then transition into 'Mirror's Reflection,' large obsidian plates that don't show the present, but rather fractured visions of the party members’ own past failures and sorrows. Finally, the path enters the 'Frozen Sorrow' zone, where a massive wave of psychic despair manifests as a literal field of jagged, shimmering frost. This area physically taxes the characters, manifesting their inner grief as a freezing weight that hangs in the air like tinder-dry snow.",
+          "resolution": "As you push through the final veil of sorrow, the haunting echoes of the past finally begin to recede, fading into the background noise of your own heartbeats. The obsidian walls lose their shimmering quality, turning into cold, inert stone once more. However, the sense of relief is short-lived. The wide expanse of the corridor suddenly narrows and begins to slope downward into a grinding, claustrophobic tunnel. The air here becomes stiflingly hot and dry, and the distant sound of an unsettling, discordant 'song' begins to vibrate through your teeth as you prepare for the descent ahead.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Corridor of Reflection",
+          "encounter": {
+            "level": 0,
+            "encounter_type": "skill challenge",
+            "threat_level": "Low",
+            "xp_value": 60,
+            "xp_budget": 60,
+            "introduction": "The air grows thick and cold, carrying with it a tangible sorrow. You find yourselves within the Corridor of Reflection, its obsidian walls shimmering with an unsettling vitality. This is no mere passage; it’s a place where time itself has bled into stone. Before you coils the ‘Maze of Laments,’ a treacherous landscape built not of brick and mortar, but of fragments of forgotten grief. The floor beneath your feet feels unsteady, mirroring the precariousness of memories themselves. To proceed is to confront not just obstacles, but the very weight of sorrow – a challenge designed to test not only your strength and skill, but also the resilience of your spirits.",
+            "resolution": "With a final push, fueled by determination against the overwhelming sorrow, the last vestiges of the Corridor's haunting echoes finally fade, dissolving back into the quiet rhythm of your own breathing—a fragile victory bought with an immeasurable cost. The obsidian walls lose their unsettling luminescence, reverting to cold, inert stone. Yet, this respite is brief and unsettling. The corridor abruptly constricts, plunging downward into a narrow, grinding tunnel. The air here hangs thick and stiflingly hot, and a discordant, almost agonizing song vibrates through your teeth – an unsettling accompaniment to the deepening darkness ahead as you prepare for the unknown depths that await.",
+            "description": "The initial zone greets you with the ‘Echoing Silence.’ Suddenly, all sound vanishes—the rustle of your garments, the tread of your boots, even the quickening beat of your hearts are absorbed into a crushing void. A palpable dread presses upon you, intensifying the sense of isolation as you move forward. The next obstacle materializes as the ‘Fragmented Siege’. Before you, the walls themselves transform—rising from the floor with horrifying detail to form the chaotic scene of a forgotten war. Stone debris and shattered towers instantly block the pathway, feeling solid beneath your hands, a desperate trap built by echoes of past conflict. As you attempt to navigate this shifting battleground, the ‘Whispering Bridal Veil’ descends – a heavy curtain of shimmering white fabric that murmurs with the voices of betrayed lovers and broken vows. The whispers grow louder, weaving themselves into an unsettling tapestry of lament. Progress becomes further complicated in the ‘Looming Wedding Dance’ section; the hallway contorts itself around a loop of spectral dancers, time folding in on itself as you struggle to maintain your bearings within the repeating tableau. Next, 'Mirror's Reflection' appears – vast obsidian plates reflecting fractured visions of your past failures and deepest regrets. Finally, and perhaps most acutely distressing, is ‘Frozen Sorrow’ -  a wave of despair solidifies into a field of jagged frost, each shard seemingly carrying the weight of unbearable grief as you attempt to pass through it.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Echoing Silence",
+                "description": "The hallway abruptly falls silent, all ambient sounds vanishing completely. A palpable sense of dread descends, pressing in on the party like a physical weight. The very air feels thick with sorrow.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "A collective feeling of clarity washes over the party. They realize the silence is an attempt to disorient them and become aware of their own emotional states – any immediate panic or despair begins to subside.",
+                "failure_resolution": "The oppressive silence amplifies existing fears and insecurities within the party, causing a wave of disorientation and potentially triggering overwhelming sadness or anxiety for individual characters.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Fragmented Siege",
+                "description": "Before them, a massive stone wall shimmers with the details of a long-ago siege - archers firing, men screaming, collapsing towers. The scene appears to rise from the floor and become partially solid, blocking their path entirely.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "As they focus on observing the illusion, noticing subtle inconsistencies in the repetition of movements and sounds – the loop begins to unravel, and the wall fades away leaving a clear passage.",
+                "failure_resolution": "The party becomes irrevocably drawn into the scene, attempting to fight or help the spectral soldiers. They become trapped within the visual spectacle, experiencing heightened feelings of loss and futile heroism until they force their way free.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Whispering Bridal Veil",
+                "description": "A heavy drape of shimmering white fabric descends from the ceiling, blocking a section of the corridor. As they approach, they hear faint whispers – voices intertwined with lamentations, echoing promises broken and tears wept.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Religion",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 12
+                  }
+                ],
+                "success_resolution": "Recognizing the veil as a projection of grief, the party moves forward with reverence and attempts to offer comfort or acknowledgement to the unseen sorrow. The veil parts gracefully, revealing a clear path.",
+                "failure_resolution": "The oppressive whispers overwhelm the party, creating a powerful sense of anguish. Each character feels a personal loss acutely, becoming paralyzed by sadness and self-doubt.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Looming Wedding Dance",
+                "description": "The corridor ahead is filled with the spectral repetition of a joyous wedding dance – swirling gowns, awkward steps, beaming faces frozen in an eternal embrace. The room seems to subtly shift around them, as if time itself is twisting within this tableau.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "The party recognizes the scene's obsessive nature and finds a way to disrupt the illusion through observation or synchronized movement, causing the dance to collapse.",
+                "failure_resolution": "The rhythmic movements become hypnotic, drawing the party into an endless loop of forced participation in the spectral wedding. They move relentlessly forward, increasingly aware of their own bodies as if separated from themselves.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Mirror’s Reflection",
+                "description": "A vast, perfectly smooth obsidian surface appears along the corridor wall – a mirror reflecting not just them but fragmented versions of past selves, burdened with regret and sorrow.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Diplomacy",
+                    "difficulty": 16
+                  },
+                  {
+                    "skill": "Religion",
+                    "difficulty": 14
+                  }
+                ],
+                "success_resolution": "The party acknowledges these reflections, accepting their own imperfections & confronting painful memories to gain perspective; the reflection fades away.",
+                "failure_resolution": "Individuals become fixated on their mirrored selves, projecting their deepest fears and anxieties onto them. This leads to prolonged self-doubt and potentially crippling emotional distress.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              },
+              {
+                "name": "Frozen Sorrow",
+                "description": "A wave of profound sadness washes over the corridor, solidifying into a field of shimmering frost. Passing through this area causes the party to feel an incredible weight of despair; it’s as if all their grief is made manifest.",
+                "skills": [
+                  {
+                    "skill": "Diplomacy",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Religion",
+                    "difficulty": 14
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 16
+                  }
+                ],
+                "success_resolution": "The party actively work together to support each other and fight off the despair by focusing on positive memories or goals, melting the frost.",
+                "failure_resolution": "The frosted area expands rapidly, trapping the party in a swirling vortex of sorrow and intensifying existential dread until they are completely overwhelmed.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 0,
+                  "hazard_type": "area",
+                  "attack": 11,
+                  "damage": "2d6+3",
+                  "save_type": "Will",
+                  "area_dc": 16
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 13,
+            "rewards": [
+              {
+                "name": "Spiral Rapier",
+                "reward_type": "item",
+                "price": 5.0,
+                "description": "An old Taldan dueling weapon from the empire's height, this rapier has a thicker blade than normal, which is shaped into a corkscrew-like spiral well …",
+                "url": "/Weapons.aspx?ID=241"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 8.0,
+                "description": "An assortment of coins and gems worth 8.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "combat",
+          "summary": "At the entrance to the inner sanctum, they encounter a tattered but imposing guardian—an entity of stone or spirit that has been warped by centuries of resonance. This guardian acts as a physical cork in the bottle, standing watch over the path leading deeper into the heart of the ruin.",
+          "introduction": "The air grows heavy and thick with the scent of ancient dust and stagnant magic as you approach the great archway leading to the inner sanctum. Here, at the heart of the Gate Sanctuary, the transition from the decaying outer halls to the core of the ruin is marked by a chilling shift in atmosphere. Standing squarely within the threshold is a towering figure—a tattered yet imposing guardian. Its form seems woven from weathered stone and flickering spirit energy, twisted by centuries of lingering resonance into an imposing silhouette. It stands like a physical cork in a bottle, its presence commanding authority as it guards the passage toward what lies deeper within the ruins.",
+          "description": "The Gate Sanctuary is a claustrophobic space where the masonry feels uncomfortably dense. The guardian, a Lacrimaemon, manifests as a tragic synthesis of earth and spirit; its 'body' is a jagged mass of rock fused with translucent, weeping ethereal veils that suggest it was once something more substantial. It possesses a heavy, suffocating aura—the psychic residue of souls abandoned in the dark. The ground beneath it vibrates faintly from the constant resonance of the sanctuary. To anyone approaching, the guardian appears less like a sentient being and more like a permanent fixture of the architecture, yet its stance is deliberate. Its eyes, if they can be called that, glow with the dim, flickering light of souls long forgotten in cramped spaces. The surrounding walls are etched with faint, glowing runes that have begun to crack and bleed energy into the figure, feeding it the power to hold its position as a sentinel over the inner sanctum.",
+          "resolution": "As the presence of the guardian fades or is cast aside, the oppressive weight of the atmosphere lifts instantly. The path forward is no longer obstructed by the towering silhouette, and the forced silence of the gateway gives way to a low, resonant hum emanating from the very walls. The ground beneath your feet feels less stable as you step past the threshold, where the air begins to carry a different, more primal energy. Before you lies the true inner sanctum, its doors now open and inviting, beckoning you deeper into the heart of the ruin's secrets.",
+          "rest_opportunity": "short rest",
+          "location": "Gate Sanctuary",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "combat",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The air grows heavy and thick with the scent of ancient dust and stagnant magic as you approach the great archway leading to the inner sanctum. Here, at the heart of the Gate Sanctuary, the transition from the decaying outer halls to the core of the ruin is marked by a chilling shift in atmosphere. Standing squarely within the threshold is a towering figure—a tattered yet imposing guardian. Its form seems woven from weathered stone and flickering spirit energy, twisted by centuries of lingering resonance into an imposing silhouette. It stands like a physical cork in a bottle, its presence commanding authority as it guards the passage toward what lies deeper within the ruins.",
+            "resolution": "As the presence of the guardian fades or is cast aside, the oppressive weight of the atmosphere lifts instantly. The path forward is no longer obstructed by the towering silhouette, and the forced silence of the gateway gives way to a low, resonant hum emanating from the very walls. The ground beneath your feet feels less stable as you step past the threshold, where the air begins to carry a different, more primal energy. Before you lies the true inner sanctum, its doors now open and inviting, beckoning you deeper into the heart of the ruin's secrets.",
+            "description": "The Gate Sanctuary is a claustrophobic space where the masonry feels uncomfortably dense. The guardian, a Lacridaemon, manifests as a tragic synthesis of earth and spirit; its 'body' is a jagged mass of rock fused with translucent, weeping ethereal veils that suggest it was once something more substantial. It possesses a heavy, suffocating aura—the psychic residue of souls abandoned in the dark. The ground beneath it vibrates faintly from the constant resonance of the sanctuary. To anyone approaching, the guardian appears less like a sentient being and more like a permanent fixture of the architecture, yet its stance is deliberate. Its eyes, if they can be called that, glow with the dim, flickering light of souls long forgotten in cramped spaces. The surrounding walls are etched with faint, glowing runes that have begun to crack and bleed energy into the figure, feeding it the power to hold its position as a sentinel over the inner sanctum.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": 3,
+                "name": "Lacridaemon",
+                "description": "Souls who die from neglect or exposure due to becoming lost, trapped in small spaces, or otherwise being far from help can transform into",
+                "xp_value": 80,
+                "url": "/Monsters.aspx?ID=4304"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Elixir of Life (Minor)",
+                "reward_type": "item",
+                "price": 3.0,
+                "description": "The elixir restores 1d6 Hit Points, and the bonus is +1.",
+                "url": "/Equipment.aspx?ID=3308"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 15.0,
+                "description": "An assortment of coins and gems worth 15.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "hazard",
+          "summary": "The final stretch before the central chamber is a claustrophobic, descending tunnel where the psychic feedback becomes intense enough to cause physical discomfort and disorientation. The 'song' here is almost deafening, and the party must push through a gauntlet of overwhelming emotional waves to reach the focal point.",
+          "introduction": "The air grows thick and heavy as you descend into the Lower Conduits, the stone walls pressing inward until the passage feels less like a hallway and more like a narrowing throat. The psychic resonance—the relentless, haunting 'song' that has haunted your journey—reaches a fever pitch here. It is no longer just a sound echoing in your mind; it is a physical weight against your temples, a rhythmic thrumming that makes your skin tingle and your limbs feel heavy. To move forward is to push through waves of raw, unfiltered emotion that buffet you like physical gales, threatening to pull your focus from the path ahead as you fight toward the heart of the complex.",
+          "description": "The geometry of the tunnel begins to buckle under the stress of the psychic feedback. The stone walls seem to ripple and pulse with a life of their own, shifting and rearranging in ways that defy architectural logic. The ground beneath your feet feels uneven as if it were tilting toward an unseen horizon, while the ceiling seems to dip and rise in waves. Shadows stretch and contract erratically, cast by light sources that shouldn't exist. The 'song' manifests as a chaotic kaleidoscope of emotional wavelengths; deep pulses of sorrow resonate through the floor, while sharp spikes of jagged anxiety pierce the air like electricity. The spatial reality is warping; corners seem to fold inward, and distances appear to stretch or contract at random intervals.",
+          "resolution": "The oppressive weight finally breaks. As you round the final bend of the descending passage, the overwhelming psychic pressure suddenly thins, falling away like a receding tide. The distorted melody of the conduit fades into a distant hum, replaced by a localized, heavy stillness. Before you lies the threshold of the central chamber, its entrance framed by stable, unmoving stone. The air here is still and cool, and for the first time in miles, your minds are granted a moment of clarity as you stand before the focal point.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Lower Conduits",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "hazard",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The air grows thick and heavy as you descend into the Lower Conduits, the stone walls pressing inward until the passage feels less like a hallway and more like a narrowing throat. The psychic resonance—the relentless, haunting ‘song’ that has haunted your journey—reaches a fever pitch here. It is no longer just a sound echoing in your mind; it is a physical weight against your temples, a rhythmic thrumming that makes your skin tingle and your limbs feel heavy. To move forward is to push through waves of raw, unfiltered emotion that buffet you like physical gales, threatening to pull your focus from the path ahead as you fight toward the heart of the complex. As you proceed, you become acutely aware of the distortions within the tunnel itself – a subtle, unsettling feeling that reality isn't quite what it seems.",
+            "resolution": "The oppressive weight finally breaks. As you round the final bend of the descending passage, the overwhelming psychic pressure suddenly thins, falling away like a receding tide. The distorted melody of the conduit fades into a distant hum, replaced by a localized, heavy stillness. Before you lies the threshold of the central chamber, its entrance framed by stable, unmoving stone. The air here is still and cool, and for the first time in miles, your minds are granted a moment of clarity as you stand before the focal point. The shifting illusions cease abruptly, as if snapped off mid-flow.",
+            "description": "The geometry of the tunnel begins to buckle under the stress of the psychic feedback. The stone walls seem to ripple and pulse with a life of their own, shifting and rearranging in ways that defy architectural logic. The ground beneath your feet feels uneven as if it were tilting toward an unseen horizon, while the ceiling seems to dip and rise in waves. Shadows stretch and contract erratically, cast by light sources that shouldn’t exist. The ‘song’ manifests as a chaotic kaleidoscope of emotional wavelengths; deep pulses of sorrow resonate through the floor, while sharp spikes of jagged anxiety pierce the air like electricity. The spatial reality is warping; corners seem to fold inward, and distances appear to stretch or contract at random intervals. Suddenly, the already strange environment begins to shift dramatically—the walls twist into impossible angles, familiar objects take on grotesque distortions, and the very floor beneath you seems to undulate with a disturbing fluidity. Illusions cloak this chamber causing it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular…",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Disorienting Illusions",
+              "level": 1,
+              "hazard_type": "Trap",
+              "description": "Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, …",
+              "url": "/Hazards.aspx?ID=629"
+            },
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Elixir of Life (Minor)",
+                "reward_type": "item",
+                "price": 3.0,
+                "description": "The elixir restores 1d6 Hit Points, and the bonus is +1.",
+                "url": "/Equipment.aspx?ID=3308"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 15.0,
+                "description": "An assortment of coins and gems worth 15.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "summary": "In the final chamber, the party confronts the source of the resonance—a massive, pulsing focal point representing the original catastrophe. They perform a ritualistic challenge to stabilize the site and break the loop, leading to the cessation of the 'song' and the restoration of peace to the region.",
+      "scenes": [
+        {
+          "scene_number": 1,
+          "encounter_type": "hazard",
+          "summary": "The party traverses a final, crumbling corridor leading into the heart of the complex. Here, the psychic feedback from the resonance becomes physically taxing, manifesting as overwhelming waves of emotion that threaten to overwhelm their focus and sense of self.",
+          "introduction": "The air in the corridor thickens, growing heavy with a suffocating, metallic tang that clings to the back of your throat. With every step deeper into the Inner Sanctum, the stone beneath your feet feels less like masonry and more like something organic—ancient, decaying, and strained. A psychic resonance hums through your bones, vibrating at a frequency that makes your teeth ache. It isn’t just an audible sound; it is a deluge of raw emotion. Waves of profound sorrow and jagged spikes of terror wash over you in rhythmic pulses, threatening to blur the lines between your own memories and the echoes of those who perished here. The very walls seem to groan under the weight of this psychic pressure, shivering as if the structure itself is struggling to contain the agony stored within its stones.",
+          "description": "As the party moves through the crumbling corridor, they pass a section where the masonry buckles inward. A jagged, horrific visage erupts from the stone—a humanoid face frozen in a permanent, harrowing howl. This is the Entombed Spirit, a psychic residue that has physically warped the surroundings. From the eyes and mouth of the stony visage, thick, vein-like tendrils lash out toward anything that moves nearby. These protrusions do not just strike; they pulse with the same agonizing thoughts as the corridor, attempting to snag onto the minds of those passing by, dragging their focus into a maelstrom of ancient torment. The wall's texture shifts between rough stone and something more supple, suggesting the spirit is physically straining against its prison.",
+          "resolution": "The oppressive pressure of the corridor begins to coalesce, the chaotic noise of overlapping memories settling into a haunting, singular melody—a 'song' of deep lamentation. As you reach the end of the hallway, the frantic psychic echoes fade, replaced by an overwhelming sense of presence from ahead. The atmosphere turns cold and sharp, as if the environment itself has just noticed your intrusion and is preparing to react.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "Inner Sanctum Corridor",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "hazard",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "The air in the corridor thickens, growing heavy with a suffocating, metallic tang that clings to the back of your throat. With every step deeper into the Inner Sanctum, the stone beneath your feet feels less like masonry and more like something organic—ancient, decaying, and strained. A psychic resonance hums through your bones, vibrating at a frequency that makes your teeth ache. It isn’t just an audible sound; it is a deluge of raw emotion. Waves of profound sorrow and jagged spikes of terror wash over you in rhythmic pulses, threatening to blur the lines between your own memories and the echoes of those who perished here. The very walls seem to groan under the weight of this psychic pressure, shivering as if the structure itself is struggling to contain the agony stored within its stones.",
+            "resolution": "The oppressive pressure of the corridor begins to coalesce, the chaotic noise of overlapping memories settling into a haunting, singular melody—a 'song' of deep lamentation. As you reach the end of the hallway, the frantic psychic echoes fade, replaced by an overwhelming sense of presence from ahead. The atmosphere turns cold and sharp, as if the environment itself has just noticed your intrusion and is preparing to react.",
+            "description": "As the party moves through the crumbling corridor, they pass a section where the masonry buckles inward. A jagged, horrific visage erupts from the stone—a humanoid face frozen in a permanent, harrowing howl. This is the Entombed Spirit, a psychic residue that has physically warped the surroundings. From the eyes and mouth of the stony visage, thick, vein-like tendrils lash out toward anything that moves nearby. These protrusions do not just strike; they pulse with the same agonizing thoughts as the corridor, attempting to snag onto the minds of those passing by, dragging their focus into a maelstrom of ancient torment. The wall’s texture shifts between rough stone and something more supple, suggesting the spirit is physically straining against its prison.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": {
+              "name": "Entombed Spirit",
+              "level": 2,
+              "hazard_type": "Haunt",
+              "description": "The wall bulges out in the shape of a howling humanoid face as it twists and forms tendrils reaching for nearby creatures. This haunt is formed when …",
+              "url": "/Hazards.aspx?ID=151"
+            },
+            "reward_budget": 26,
+            "rewards": [
+              {
+                "name": "Elixir of Life (Minor)",
+                "reward_type": "item",
+                "price": 3.0,
+                "description": "The elixir restores 1d6 Hit Points, and the bonus is +1.",
+                "url": "/Equipment.aspx?ID=3308"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 23.0,
+                "description": "An assortment of coins and gems worth 23.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 2,
+          "encounter_type": "skill challenge",
+          "summary": "Upon entering the central chamber, the party views the 'focal point'—a massive, pulsating crystalline structure emitting a haunting melody. They must use their skills to filter through the psychic noise and identify the specific tragic memories that are fueling the core's power before they can begin the stabilization process.",
+          "introduction": "The heavy doors groan open, and you step into a chamber that feels far larger than its external dimensions would suggest. Here, the air is thick and carries a weight—not of physical matter, but of thick, suffocating emotion. At the center of this cavernous space stands a massive crystalline structure, its facets glowing with an inner light that pulses like a slow, rhythmic heartbeat. From its core emanates a haunting melody, a low-toned music that resonates in your bones and seems to vibrate within your very thoughts. The sheer scale of the crystal is imposing; it feels less like a rock and more like a preserved moment in time, anchored at the heart of this sanctuary of sorrow.",
+          "description": "The room is a chaotic swirl of metaphysical interference designed to overwhelm those trying to find clarity. As players move through the space, they are met with 'Echoing Resonance,' where the melody begins to warp into personal sounds of regret that seem to physically wrap around their senses like thick ribbons. The physical space itself is unstable; 'Shifting Geometry' causes walls to blur and doorframes to stretch or retract, making the boundaries of the room feel fluid and treacherous. Beneath the music, 'Spectral Whispers' provide a constant backdrop of multi-layered voices—hushed pleas and echoes of old conversations that are difficult to isolate from the wind. The very flow of time is strained here; 'Temporal Distortion' causes the present moment to overlap with the past, flickering images of different eras onto the chamber's surfaces like a failing film projection. This builds into an 'Intensified Pulse,' where the rhythmic thrumming of the crystal grows more aggressive and the air vibrates with raw energy. Within the heart of these disturbances, 'Layered Memory Fragments' provide visual cues for those who can cut through the noise—ghostly silhouettes of figures caught in moments of great distress, offering clues to the nature of the trauma that fuels the core.",
+          "resolution": "As you successfully sift through the cacophony and isolate the threads of history within the crystal's pulse, the frantic noise begins to level out into a low, steady hum. The erratic flickering of time stabilizes, and for a fleeting moment, the air becomes clear. The fragments of tragic memories are now laid bare before you, clearly defined from the surrounding static. While the core still pulses with power, the overriding sense of chaos has receded enough that the path forward is evident. You have identified what fuels this terrible machine; now, the focus must shift from observation to action as you prepare for the ritual to bind the energy and stitch the breach in the timeline.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "The Core Chamber",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The heavy doors groan open, and you step into a chamber that feels far larger than its external dimensions would suggest. Here, the air is thick and carries a weight—not of physical matter, but of suffocating emotion. At the center of this cavernous space stands a massive crystalline structure, its facets glowing with an inner light that pulses like a slow, rhythmic heartbeat. From its core emanates a haunting melody, a low-toned music that resonates in your bones and seems to vibrate within your very thoughts. The sheer scale of the crystal is imposing; it feels less like a rock and more like a preserved moment in time, anchored at the heart of this sanctuary of sorrow. You’ve come seeking answers, hoping to understand what fuels this immense…thing. Understanding its power will ultimately allow you to stabilize the breach within reality itself. But be warned: this place actively resists comprehension—a vortex of psychic energy guarded by layers of fractured memories.",
+            "resolution": "As you successfully sift through the cacophony and isolate the threads of history within the crystal’s pulse – effectively pushing back against the psychic onslaught – the frantic noise begins to level out into a low, steady hum. The erratic flickering of time stabilizes, and for a fleeting moment—perhaps only a heartbeat—the air becomes clear. The fragments of tragic memories are now laid bare before you, clearly defined from the surrounding static: shimmering outlines of individuals trapped within moments of intense suffering, each representing a key event fueling the crystal's power. While the core still pulses with power – a testament to the lingering trauma – the overriding sense of chaos has receded enough that the path forward is evident. You have identified what fuels this terrible machine; now, the focus must shift from observation to action as you prepare for the ritual to bind the energy and stitch the breach in the timeline - though should any attempt be made to manipulate the crystal’s energy without careful consideration you risk further unraveling the very fabric of reality around you.",
+            "description": "The room is a chaotic swirl of metaphysical interference designed to overwhelm those trying to find clarity. As players move through the space, they are met with ‘Echoing Resonance,’ where the melody begins to warp into personal sounds of regret that seem to physically wrap around their senses like thick ribbons – perhaps voices from your own past, or emotions you struggle to contain. The physical space itself is unstable; ‘Shifting Geometry’ causes walls to shimmer slightly, doorways elongate or retract imperceptibly, and the arrangement of the room shifts in a dizzying, non-threatening way – making navigation inherently unsettling and disorienting. Beneath the music, ‘Spectral Whispers’ provide a constant backdrop of multi-layered voices—hushed pleas and echoes of old conversations that are difficult to isolate from the wind; attempting to discern specific words feels like grasping at smoke. The very flow of time is strained here; ‘Temporal Distortion’ causes the present moment to overlap with the past, flickering images of different eras onto the chamber’s surfaces like a failing film projection – glimpses of figures in antiquated clothing, scenes of conflict frozen mid-action. As you focus your efforts on the crystal's core, this builds into an 'Intensified Pulse,’ where the rhythmic thrumming of the crystal grows more aggressive and the air vibrates with raw energy – causing headaches for many of those that approach its center. Within the heart of these disturbances, ‘Layered Memory Fragments’ provide visual cues for those who can cut through the noise—ghostly silhouettes of figures caught in moments of great distress, offering only glimpses into specific scenes, their actions and emotions frozen in time and inextricably linked with the core's energy.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Echoing Resonance",
+                "description": "As the party approaches the crystalline structure, the haunting melody intensifies, seemingly wrapping around them like an invisible current. The sounds bleed into their thoughts, fragments of sorrow and regret bubbling to the surface.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Religion",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Medicine",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The chaotic stream of psychic noise subsides slightly, allowing for a clearer perception of the core’s pulsations. A sense of calm washes over the group, and they gain a momentary clarity in observing the crystal's structure.",
+                "failure_resolution": "The onslaught of emotion becomes overwhelming; visions of anguish and loss flood their minds, causing disorientation and potentially temporary emotional distress for all members.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Shifting Geometry",
+                "description": "The chamber itself seems to subtly alter around the crystalline focus. Walls shimmer slightly, doorways elongate or retract imperceptibly, and the arrangement of the room shifts in a dizzying, non-threatening way.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The party realizes that the distortions are not dangerous but part of the core's energy field—a manifestation of unprocessed memories attempting to rearrange themselves. The effects passively lessen as they concentrate on the stone.",
+                "failure_resolution": "The shifting seems to accelerate, causing confusion and hindering any attempts to maintain their bearings within the chamber; movement becomes disorienting and difficult.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Spectral Whispers",
+                "description": "Faint voices begin to whisper through the room, too quiet to understand distinctly but undeniably present – fragments of conversations, cries for help, desperate pleas from the past.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "The party discerns that many of the voices are layered and overlapping; filtering them out reveals a clearer emotional thread running beneath the chaos. They get a strong sense of what type of event is being replicated by the core's energy.",
+                "failure_resolution": "The whispers grow stronger, becoming an unbearable cacophony that causes intrusive thoughts and increasing anxiety amongst the party members.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Temporal Distortion",
+                "description": "Brief flashes of the chamber appear briefly layered over themselves – showing hints of different moments in time contained within the crystalline structure’s energy—ghostly echoes of events from the past.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The party gains a deeper understanding of the ‘source’ of the core's power -- they observe a significant, concentrated moment in the tragic event that fuels it, offering insight to what must be done to counteract the trauma.",
+                "failure_resolution": "The temporal flashes are jarring and disorienting; the party experiences momentary confusion, struggling to determine where *now* is amidst fragmented glimpses of the past.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Intensified Pulse",
+                "description": "As the party focuses on the crystal's energy, the rhythmic pulsing increases in intensity, accompanied by a dramatic rise in the haunting melody’s volume. The air becomes thick with resonant energy.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Medicine",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The party discovers that this intensification is tied to an emotional ‘spike’ within the core—a particularly potent memory attempting to surface and overwhelm the stabilization process.",
+                "failure_resolution": "The surging pulse causes a painful ringing in the ears and a profound sense of dread; the very air seems to drain of vitality, weakening resolve.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Layered Memory Fragments",
+                "description": "Visually, within the core itself they begin to see, faintly, shimmering outlines of people caught mid-action – brief, incomplete scenes of events related to the original trauma.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The party is able to clearly distinguish and interpret specific, impactful fragments which ultimately reveal a crucial element regarding the nature of the tragedy fueling the crystal.",
+                "failure_resolution": "The visual onslaught becomes overwhelming; overwhelmed by a chaotic jumble of images, the party experiences a blurring of senses and a temporary inability to coherently think or act.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "The Old Mage Deck",
+                "reward_type": "item",
+                "price": 0.5,
+                "description": "Also known as the Magician's Deck in Taldor or the Deck of Masks in the Shackles, the non-magical deck of cards called the Old Mage Deck exists with …",
+                "url": "/Equipment.aspx?ID=1084"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 17.5,
+                "description": "An assortment of coins and gems worth 17.5 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 3,
+          "encounter_type": "combat",
+          "summary": "As the party begins to approach the focal point, the 'song' reacts violently to their presence. The reservoir of sorrow manifests into several spectral-like entities—guards of the memory—who attempt to drive the intruders away from the center.",
+          "introduction": "As you cross the threshold toward the heart of the chamber, the heavy, rhythmic thrum of the 'song' begins to distort. The mournful melody vibrates through the stone floor and into your very bones, growing increasingly erratic as it reacts to your presence. The swirling mists of the Reservoir of Sorrow coil and churn like boiling water, suddenly coalescing into ethereal shapes. These spectral guardians emerge from the gloom—shadowy remnants of a forgotten memory—standing between you and the center. They are manifestations of the chamber's desperate need to protect itself, and they begin to weave through the mist with haunting purpose, seeking to drive your presence away from the focal point.",
+          "description": "The reservoir reacts violently as the party approaches the core, manifesting six skeletal guardians. These are warriors of old whose remains have been fused with the lingering sorrow of the site, creating a half-physical, half-spectral defense. They appear as hollowed skeletons and bleached bone frames, wreathed in wisps of ghostly grey energy that cling to them like tattered funeral shrouds. They move with jagged, unnatural movements to intercept any who would approach the center, acting as the physical manifestation of the 'song's' defensive instincts.",
+          "resolution": "As the final traces of hostilty vanish, the agonizing pulse of the 'song' abruptly cuts out, replaced by a profound and heavy silence that rings in your ears. The oppressive weight in the air suddenly lifts, and a wave of clarity washes over you as the haunting atmosphere dissolves like mist under a rising sun. The chamber is no longer screaming with sorrow; it has become perfectly still. You are left standing in a site that feels vacated by its torment, transformed from a place of haunted agony into a space of quiet peace, where the song has finally been laid to rest.",
+          "rest_opportunity": "short rest",
+          "location": "The Core Chamber",
+          "encounter": {
+            "level": 2,
+            "encounter_type": "combat",
+            "threat_level": "Severe",
+            "xp_value": 120,
+            "xp_budget": 120,
+            "introduction": "As you cross the threshold toward the heart of the chamber, the heavy, rhythmic thrum of the ‘song’ begins to distort. The mournful melody vibrates through the stone floor and into your very bones, growing increasingly erratic as it reacts to your presence. The swirling mists of the Reservoir of Sorrow coil and churn like boiling water, suddenly coalescing into ethereal shapes. These spectral guardians emerge from the gloom—shadowy remnants of a forgotten memory—standing between you and the center. They are manifestations of the chamber’s desperate need to protect itself, and they begin to weave through the mist with haunting purpose, seeking to drive your presence away from the focal point.",
+            "resolution": "As the final traces of hostility vanish, the agonizing pulse of the ‘song’ abruptly cuts out, replaced by a profound and heavy silence that rings in your ears. The oppressive weight in the air suddenly lifts, and a wave of clarity washes over you as the haunting atmosphere dissolves like mist under a rising sun. The chamber is no longer screaming with sorrow; it has become perfectly still. You are left standing in a site that feels vacated by its torment, transformed from a place of haunted agony into a space of quiet peace, where the song has finally been laid to rest.",
+            "description": "The reservoir reacts violently as the party approaches the core, manifesting six skeletal guardians. These are warriors of old whose remains have been fused with the lingering sorrow of the site, creating a half-physical, half-spectral defense. They appear as hollowed skeletons and bleached bone frames, wreathed in wisps of ghostly grey energy that cling to them like tattered funeral shrouds. They move with jagged, unnatural movements to intercept any who would approach the center, acting as the physical manifestation of the ‘song’s’ defensive instincts.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              },
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              },
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              },
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              },
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              },
+              {
+                "level": -1,
+                "name": "Skeleton Guard",
+                "description": "The most common skeletal minions are mere guardians.",
+                "xp_value": 20,
+                "url": "/Monsters.aspx?ID=3193"
+              }
+            ],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 26,
+            "rewards": [
+              {
+                "name": "Gauntlet Buckler",
+                "reward_type": "item",
+                "price": 5.0,
+                "description": "This  buckler -sized shield is segmented, allowing it to collapse into a housing bound to a  gauntlet  for easy storage. A small catch enables you to …",
+                "url": "/Shields.aspx?ID=8"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 21.0,
+                "description": "An assortment of coins and gems worth 21.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 4,
+          "encounter_type": "skill challenge",
+          "summary": "Having cleared the immediate area, the party performs a multi-stage ritual to stabilize the site. They must work together to channel their intent into the focal point, creating a counter-resonance to harmonize and ultimately break the loop of the historical catastrophe.",
+          "introduction": "The air within the Core Chamber hangs heavy with the weight of centuries, thick with the scent of ozone and ancient dust. Before you lies the focal point—a pulsing nexus where reality feels frayed at the edges, like a tapestry unraveling under its own weight. To undo the tragedy that has looped endlessly through this space, you must now perform a ritual of counter-resonance. You must stand together, center your minds, and cast your combined intent into the heart of the chamber. Only by creating a harmonious harmony against the jagged discord of the past can you weave the threads of time back into a stable tapestry and finally break the cycle of catastrophe once and for all.",
+          "description": "As the ritual begins, the physical environment reacts violently to the influx of spiritual energy. The floor near the focal point becomes unstable; golden sands begin to churn and pulse in rhythmic waves, clogging the air with a gritty, suffocating dust. Simultaneously, the silence is shattered by a cacophony of voices—a haunting chorus of whispers in forgotten tongues that scream of loss and plead for an end to their cycle. The very fabric of reality flickers; objects nearby blink in and out of existence as echoes of past moments flash like struck matches around the perimeter of your perception. As the ritual reaches its zenith, the focal point erupts into a blinding radiance, forcing a violent surge of raw power that makes the air crack with energy. This psychic pressure manifests as a deluge of terrifying imagery, flooding the minds of those present with fractured glimpses of the original catastrophe and the raw emotions of those who suffered within it. Amidst this chaos, the ancient stonework of the chamber begins to crumble silently into powder at the edges, surrendering its form as the core energy reaches its peak.",
+          "resolution": "A sudden, profound stillness washes over the Core Chamber. The discordant noise of the whispers vanishes instantly, replaced by a deep, resonant hum that vibrates in your very bones. The flickering shadows solidify, and the frantic, pulsing light at the focal point softens into a steady, calming glow. The heavy weight of history lifts from your shoulders as if a physical burden has been removed; the jagged edges of time smooth over, and the loop is finally severed. For the first time in ages, the room sits in a state of absolute peace, the atmosphere no longer vibrating with the energy of a recurring tragedy but settled into the quiet grace of a moment held in place.",
+          "rest_opportunity": "no rest opportunity",
+          "location": "The Core Chamber",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "skill challenge",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The air within the Core Chamber hangs heavy with the weight of centuries, thick with the scent of ozone and ancient dust. Before you lies the focal point—a pulsing nexus where reality feels frayed at the edges, like a tapestry unraveling under its own weight. To undo the tragedy that has looped endlessly through this space, you must now perform a ritual of counter-resonance. You must stand together, center your minds, and cast your combined intent into the heart of the chamber. Only by creating a harmonious harmony against the jagged discord of the past can you weave the threads of time back into a stable tapestry and finally break the cycle of catastrophe once and for all.",
+            "resolution": "A sudden, profound stillness washes over the Core Chamber. The discordant noise of the whispers vanishes instantly, replaced by a deep, resonant hum that vibrates in your very bones. The flickering shadows solidify, and the frantic, pulsing light at the focal point softens into a steady, calming glow. The heavy weight of history lifts from your shoulders as if a physical burden has been removed; the jagged edges of time smooth over, and the loop is finally severed. For the first time in ages, the room sits in a state of absolute peace, the atmosphere no longer vibrating with the energy of a recurring tragedy but settled into the quiet grace of a moment held in place.",
+            "description": "As the ritual begins, the physical environment reacts violently to the influx of spiritual energy. The floor near the focal point becomes unstable; golden sands begin to churn and pulse in rhythmic waves, clogging the air with a gritty, suffocating dust. Simultaneously, the silence is shattered by a cacophony of voices—a haunting chorus of whispers in forgotten tongues that scream of loss and plead for an end to their cycle. The very fabric of reality flickers; objects nearby blink in and out of existence as echoes of past moments flash like struck matches around the perimeter of your perception. As the ritual reaches its zenith, the focal point erupts into a blinding radiance, forcing a violent surge of raw power that makes the air crack with energy. This psychic pressure manifests as a deluge of terrifying imagery, flooding the minds of those present with fractured glimpses of the original catastrophe and the raw emotions of those who suffered within it. Amidst this chaos, the ancient stonework of the chamber begins to crumble silently into powder at the edges, surrendering its form as the core energy reaches its peak.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [
+              {
+                "name": "Shifting Sands",
+                "description": "The floor beneath the focal point begins to subtly undulate with an unnatural heat, coalescing into swirling patterns of golden sand that rise and fall in rhythmic pulses. The air grows thick with a gritty dust.",
+                "skills": [
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "With careful coordination, the group manages to maintain their focus on the central point, allowing the chaotic movement to gradually subside, leaving behind smooth, cool stone beneath.",
+                "failure_resolution": "The swirling sands intensify, pulling individuals towards the center of the chamber with surprising force. Several party members become momentarily disoriented and separated, struggling against an unseen current.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Echoing Whispers",
+                "description": "As the ritual progresses, a chorus of whispers fills the chamber, growing in volume and shifting between languages unknown to the party – voices lamenting loss, pleading for release, and promising forgotten truths.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The group, through shared concentration, filters out the disruptive whispers, focusing their intent on the resonant energy they are attempting to create. The air grows calmly silent.",
+                "failure_resolution": "The cacophony of voices overwhelms the party's focus, sowing doubt and paranoia amongst them. Their efforts to channel energy become fragmented and weakened.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Temporal Distortion",
+                "description": "A shimmering haze briefly envelops the chamber; for a heartbeat, the room seems to subtly shift – objects flicker in and out of existence, and echoes of past events play out fleetingly around the edges of perception.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Occultism",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 13
+                  }
+                ],
+                "success_resolution": "Recognizing the instability, the party instinctively adjust their actions, maintaining a synchronized flow of energy that stabilizes the distortions and keeps the ritual on track. The haze vanishes without further issue.",
+                "failure_resolution": "The distortion intensifies, briefly freezing the party in place— each member catches only a fragmented glimpse of impossible moments and timelines before everything resolves back into normal perception, disorientated.",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Resonance Cascade",
+                "description": "As the ritual reaches critical mass, the focal point begins to glow with an almost painful intensity. The air cracks with escalating energy as raw power threatens to overwhelm the chamber.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Athletics",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Crafting",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "By meticulously maintaining a steady and unified flow of intent, the party manages to absorb the surge of resonant energy without being overwhelmed, stabilizing the ritual's output.",
+                "failure_resolution": "The resonance exponentially increases, causing physical discomfort - headaches, nausea, and temporary loss of coordination among those nearby.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Will",
+                  "area_dc": 17
+                }
+              },
+              {
+                "name": "Fragmented Memory",
+                "description": "A surge of disorienting images floods the minds of all present – flickering scenes of the catastrophe’s origin flash vividly before them, overwhelming their senses with fragmented memories and emotional weight.",
+                "skills": [
+                  {
+                    "skill": "Arcana",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Medicine",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Survival",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The party, by grounding themselves in the present task, manages to resist the onslaught of intrusive memories resolving to a concentrated aim for the ritual’s completion.",
+                "failure_resolution": "Overwhelmed by the sensory overload, individual party members seize up with panic and disorientation, struggling to focus on their roles as they are bombarded with the horrifying tale that sparked this disaster",
+                "is_hazard": false,
+                "hazard_stats": null
+              },
+              {
+                "name": "Silent Collapse",
+                "description": "Without warning, segments of the chamber’s ancient stonework begin to silently crumble – not a destructive collapse, but a gradual erosion into dust which quickly spreads around the edges.",
+                "skills": [
+                  {
+                    "skill": "Stealth",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Acrobatics",
+                    "difficulty": 15
+                  },
+                  {
+                    "skill": "Lore",
+                    "difficulty": 17
+                  },
+                  {
+                    "skill": "Nature",
+                    "difficulty": 15
+                  }
+                ],
+                "success_resolution": "The party successfully adjust their actions and the flow of energy, stabilizing the collapsing segments as they return to the stable state that the ritual creates.",
+                "failure_resolution": "Stone slabs crumble rapidly, creating an unstable and labyrinthine environment; the group must navigate a treacherous field of falling debris.",
+                "is_hazard": true,
+                "hazard_stats": {
+                  "level": 1,
+                  "hazard_type": "area",
+                  "attack": 13,
+                  "damage": "2d6+5",
+                  "save_type": "Fortitude",
+                  "area_dc": 17
+                }
+              }
+            ],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Antidote (Lesser)",
+                "reward_type": "item",
+                "price": 3.0,
+                "description": "You gain a +2 item bonus.",
+                "url": "/Equipment.aspx?ID=3296"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 15.0,
+                "description": "An assortment of coins and gems worth 15.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "scene_number": 5,
+          "encounter_type": "social",
+          "summary": "As the ritual concludes, the pulsing sound abruptly ceases, replaced by a profound, peaceful silence. The haunting atmosphere lifts, and the party experiences a moment of clarity as the 'song' is finally laid to rest. They find a site that is no longer haunted, but merely still.",
+          "introduction": "The rhythmic thrumming that has vibrated through your marrow for so long suddenly falters, stumbling like a dying heartbeat. The aggressive pulse of energy in the air snaps into nothingness, replaced by a silence so absolute it feels heavy against your eardrums. The oppressive, ghostly weight of the 'song' lifts from your minds as if a physical veil has been torn away, leaving you with a sudden, jarring moment of clarity. The Core Chamber, once a cauldron of spiritual turmoil, falls into a profound and peaceful stillness.",
+          "description": "The arcane resonance within the chamber undergoes a rapid stabilization. The jagged outlines of lingering spectral energy smooth out and dissipate into the stone walls, losing their chaotic intensity as the ritual's concluding notes resonate through the ley lines. The oppressive aura that previously choked the air thins instantly, replaced by a neutral, stagnant atmosphere. The echoes of the past—the whispers and ghostly wails—are silenced, not just muffled, but effectively erased from the local space. The magical 'pressure' drops to zero, leaving the architecture of the Core Chamber standing as it truly is: a vacant, quiet room.",
+          "resolution": "The heavy shroud that once clouded your senses lifts entirely, leaving you with a profound sense of calm. The air in the chamber feels clean and still, no longer haunted by the echoes of those who came before. As the last remnants of the ritual's influence fade into the masonry, the Core Chamber settles into its new reality—a place of quietude rather than turmoil. You stand in the center of a circle that is no longer vibrating with dark intent, but simply resting in the silence of the deep earth.",
+          "rest_opportunity": "long rest",
+          "location": "The Core Chamber",
+          "encounter": {
+            "level": 1,
+            "encounter_type": "social",
+            "threat_level": "Moderate",
+            "xp_value": 80,
+            "xp_budget": 80,
+            "introduction": "The rhythmic thrumming that has vibrated through your marrow for so long suddenly falters, stumbling like a dying heartbeat. The aggressive pulse of energy in the air snaps into nothingness, replaced by a silence so absolute it feels heavy against your eardrums. The oppressive, ghostly weight of the ‘song’ lifts from your minds as if a physical veil has been torn away, leaving you with a sudden, jarring moment of clarity. The Core Chamber, once a cauldron of spiritual turmoil, falls into a profound and peaceful stillness.",
+            "resolution": "The heavy shroud that once clouded your senses lifts entirely, leaving you with a profound sense of calm. The air in the chamber feels clean and still, no longer haunted by the echoes of those who came before. As the last remnants of the ritual’s influence fade into the masonry, the Core Chamber settles into its new reality—a place of quietude rather than turmoil. You stand in the center of a circle that is no longer vibrating with dark intent, but simply resting in the silence of the deep earth.",
+            "description": "The arcane resonance within the chamber undergoes a rapid stabilization. The jagged outlines of lingering spectral energy smooth out and dissipate into the stone walls, losing their chaotic intensity as the ritual’s concluding notes resonate through the ley lines. The oppressive aura that previously choked the air thins instantly, replaced by a neutral, stagnant atmosphere. The echoes of the past—the whispers and ghostly wails—are silenced, not just muffled, but effectively erased from the local space. The magical ‘pressure’ drops to zero, leaving the architecture of the Core Chamber standing as it truly is: a vacant, quiet room.",
+            "gm_information": "",
+            "turns": 0,
+            "victory_points_required": 0,
+            "enemies": [],
+            "npc_influence_info": [],
+            "obstacles": [],
+            "hazard": null,
+            "reward_budget": 18,
+            "rewards": [
+              {
+                "name": "Cognitive Mutagen (Lesser)",
+                "reward_type": "item",
+                "price": 4.0,
+                "description": "The bonus is +1, and the duration is 1 minute.",
+                "url": "/Equipment.aspx?ID=3316"
+              },
+              {
+                "name": "Coins and Gems",
+                "reward_type": "currency",
+                "price": 14.0,
+                "description": "An assortment of coins and gems worth 14.0 gp.",
+                "url": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Gabridget",
+      "ancestry": "Human",
+      "class_name": "Cleric",
+      "appearance": "Gabridget possesses a weathered, dignified presence characterized by silver-streaked hair pulled back into a practical braid and eyes that seem to carry the weight of many long nights. She wears heavy wool vestments of deep charcoal gray with silver embroidery along the hem, designed to ward off the chill of the high peaks. A tarnished holy symbol hangs from a sturdy necklace around her neck, its surface smoothed by constant handling as she prays for the sanity of her people.",
+      "personality": "She is a pillar of stoic resilience who has become hardened by the years of witnessing her community suffer under the 'singing.' While she possesses a grave and commanding presence, she is deeply empathetic; she feels the burden of every haunted soul walking her lands. She is no longer a woman of flighty emotions, but one of deliberate purpose and profound patience.",
+      "behavior": "Gabridget speaks in measured, rhythmic tones, often pausing as if listening to a distant sound before continuing her sentences. She moves with intentionality, occasionally tensing or closing her eyes briefly when the resonance becomes particularly loud—a physical reflex against the psychic pressure. When she provides instructions, she is clear and concise, knowing that clarity is essential in a land of confusing hallucinations.",
+      "attitude": "She treats the player characters with respectful urgency, viewing them as a necessary lifeline rather than mere hired help. While she remains professional and authoritative as a leader, there is an underlying note of desperate gratitude in her voice; she believes they are the only ones capable of entering the 'song' and bringing silence to her people.",
+      "stats": {
+        "level": -1,
+        "hp": 9,
+        "ac": 15,
+        "perception": 5,
+        "skills": [
+          {
+            "name": "Religion",
+            "modifier": 5
+          },
+          {
+            "name": "Lore",
+            "modifier": 5
+          },
+          {
+            "name": "Diplomacy",
+            "modifier": 5
+          }
+        ],
+        "saves": [
+          {
+            "name": "Will",
+            "modifier": 8
+          },
+          {
+            "name": "Fortitude",
+            "modifier": 5
+          },
+          {
+            "name": "Reflex",
+            "modifier": 2
+          }
+        ],
+        "strike": 8,
+        "damage": "1d4+1",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "The village leader who seeks to halt the resonance and provides the party with essential information and supplies.",
+      "scene_roles": [
+        {
+          "act_number": 1,
+          "scene_number": 1,
+          "role": "Gabridget welcomes the travelers to the settlement, expressing distress over the 'shadow memories' affecting the inhabitants."
+        },
+        {
+          "act_number": 1,
+          "scene_number": 2,
+          "role": "Gabridget meets with the party in a private hall to explain the history of the ruined complex and provide them with the protective artifact."
+        }
+      ]
+    },
+    {
+      "name": "Durnim",
+      "ancestry": "Dwarf",
+      "class_name": "Fighter",
+      "appearance": "Durnim possesses a broad, boulder-like frame that reflects his dwarven heritage, with skin weathered to a leathery texture by the harsh winds of the Silent Peaks. His grey beard is braided into thick coils and tied with scrap leather, and his face bears several scars—some from stone falls, others seemingly etched by the strain of the ruin’s psychic resonance. He wears heavy, practical plate armor that has been scuffed and dullened over years of use, and he carries a massive warhammer whose head is notched from striking rock.",
+      "personality": "Durnim is a man of few words, possessing a stoic and weary disposition. Long exposure to the 'singing' of the ruins has made him somber; he moves with a heavy sense of purpose but lacks any outward enthusiasm. He is pragmatic to a fault, valuing tangible survival over idealistic rhetoric. While he can be gruff, there is an underlying layer of determination in his eyes—the look of someone who has endured a long, hard siege and is waiting for the final blow to land.",
+      "behavior": "Durnim moves with calculated deliberation, often pausing momentarily to listen to the environment or check the stability of the ground before stepping forward. He exhibits high situational awareness, frequently checking perimeters and identifying structural weaknesses in the crumbling masonry. When he speaks, his voice is a low rumble, and he tends to provide concise, survival-oriented instructions rather than long explanations.",
+      "attitude": "Durnim views the party as a necessary instrument of change. While he is not particularly warm or welcoming—his social muscles have atrophied from years of isolation—he treats the adventurers with a grim, respectful professionality. He sees them as the only ones capable of finally silencing the haunting noise that has plagued his life, and therefore views them as allies worth guiding toward the goal, even if he keeps his personal feelings guarded.",
+      "stats": {
+        "level": 0,
+        "hp": 18,
+        "ac": 16,
+        "perception": 6,
+        "skills": [
+          {
+            "name": "Athletics",
+            "modifier": 6
+          },
+          {
+            "name": "Lore",
+            "modifier": 6
+          },
+          {
+            "name": "Survival",
+            "modifier": 6
+          }
+        ],
+        "saves": [
+          {
+            "name": "Fortitude",
+            "modifier": 9
+          },
+          {
+            "name": "Reflex",
+            "modifier": 6
+          },
+          {
+            "name": "Will",
+            "modifier": 3
+          }
+        ],
+        "strike": 8,
+        "damage": "1d6+2",
+        "spellAttack": 8,
+        "spellDC": 16
+      },
+      "quest_role": "A weathered survivor who has lived within the proximity of the ruin for years; he provides guidance on navigating the physical hurdles of the inner grounds.",
+      "scene_roles": [
+        {
+          "act_number": 2,
+          "scene_number": 3,
+          "role": "Durnim provides the party with insight into which hallucinations are merely visual and which ones represent tangible mechanical hazards in the masonry."
+        }
+      ]
+    }
+  ],
+  "player_count": 4,
+  "party_level": 1,
+  "xp_value": 1000
+}
