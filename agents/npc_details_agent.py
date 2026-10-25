@@ -25,7 +25,7 @@ def get_npc_details_creation_agent():
             Provide the following exactly, clearly labeled:
             1. Appearance: A description of the NPC's physical appearance.
             2. Personality: A description of the NPC's personality.
-            3. Behavior: A description of how the NPC behaves.
+            3. Behavior: A description of how the NPC behaves and acts.
             4. Attitude: A description of the NPC's attitude towards the player characters.
 
             # Constraints
@@ -52,6 +52,13 @@ def get_npc_details_extraction_agent():
 
             # Task
             Extract the NPC details (appearance, personality, behavior, attitude) from the provided text.
+
+            # Output Format
+            The output should be an object with the following properties:
+            - appearance: string
+            - personality: string
+            - behavior: string
+            - attitude: string
 
             # Constraints
             - DO NOT add, infer, or simplify any information.

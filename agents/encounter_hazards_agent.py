@@ -22,12 +22,13 @@ def get_encounter_hazard_agent():
                 # Task
                 Select the most appropriate hazard from the list of available hazards that makes sense for the scene based on the provided quest, act and scene information.
                 # Output Format
-                Return ONLY the name of the selected hazard.
+                Return ONLY the name of the selected hazard EXACTLY as it appears in the list of available hazards.
                 # Constraints
                 - DO NOT invent new hazards.
                 - DO NOT select more than one hazard.
                 - DO NOT include any explanations or commentary.
                 - You MUST select an hazard.
+                - The name of the hazard selected MUST match EXACTLY the name of the hazard as it appears in the list of available hazards. This is CRITICAL.
             """)
         )
     )

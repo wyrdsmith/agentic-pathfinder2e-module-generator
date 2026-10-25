@@ -27,6 +27,7 @@ class SceneRole(BaseModel):
     role: str = Field(default="", description="Role the NPC plays in the scene")
 
 class NPC(BaseModel):
+    identifier: str = Field(default="", description="The one to four word descriptive title of the NPC (e.g., 'young farm boy', 'wise woman', 'the elder', 'the mayor')")
     name: str = Field(default="", description="Name of the NPC")
     ancestry: str = Field(default="", description="Ancestry of the NPC")
     class_name: str = Field(default="", description="Class of the NPC")

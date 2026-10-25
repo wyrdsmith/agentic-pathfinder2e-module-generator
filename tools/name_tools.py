@@ -82,7 +82,7 @@ def get_ancestry_name_seeds(ancestry: str) -> list[str]:
     conn.close()
     return [name[0] for name in names]
 
-def get_npc_name(ctx: RunContext[Quest], ancestry: str) -> str:
+def get_npc_name(ancestry: str) -> str:
     """
     Generates a culturally appropriate name for a given ancestry. Ancestry argument is the name of an ancestry, e.g. Dwarf, Elf, etc.
 

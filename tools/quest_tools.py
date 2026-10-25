@@ -108,7 +108,7 @@ def distribute_experience_budgets(quest: Quest) -> Quest:
     for act in quest.acts:
         for scene in act.scenes:
             if scene.encounter:
-                log_write(f"  - Act {act.act_number} Scene {scene.scene_number}: {scene.encounter.threat_level} ({scene.encounter.xp_budget} XP)")
+                log_output(f"  - Act {act.act_number} Scene {scene.scene_number}: {scene.encounter.threat_level} ({scene.encounter.xp_budget} XP)")
                 
     return quest
 
@@ -144,7 +144,7 @@ def distribute_reward_budgets(quest: Quest) -> Quest:
     for act in quest.acts:
         for scene in act.scenes:
             if scene.encounter:
-                log_write(f"  - Act {act.act_number} Scene {scene.scene_number}: Level {scene.encounter.level} ({scene.encounter.threat_level}) {scene.encounter.reward_budget}gp Reward Budget")
+                log_output(f"  - Act {act.act_number} Scene {scene.scene_number}: Level {scene.encounter.level} ({scene.encounter.threat_level}) {scene.encounter.reward_budget}gp Reward Budget")
                 
     return quest
 
@@ -352,3 +352,52 @@ def get_previous_scene_summary(ctx: RunContext[Quest], current_act_number: int, 
     act = current_quest.acts[current_act_number - 1]
     scene = act.scenes[previous_scene_number - 1]
     return f"Act {current_act_number} Scene {previous_scene_number} summary: {scene.summary}"
+
+def scene_has_npc(current_quest: Quest, act_number: int, scene_number: int) -> bool:
+    """
+    Checks if the scene has an NPC.
+
+    Args:
+        current_quest: The Quest object to check.
+        act_number: The act number to check.
+        scene_number: The scene number to check.
+    
+    Returns:
+        bool: True if the scene has an NPC, False otherwise.
+    """
+    for npc in current_quest.npcs:
+        for scene_role in npc.scene_roles:
+            if scene_role.act_number == act_number and scene_role.scene_number == scene_number:
+                return True
+    return False
+
+def write_quest_to_file(current_quest: Quest):
+    """
+    Writes the quest to a file.
+
+    Args:
+        current_quest: The Quest object to write to a file.
+    
+    Returns:
+        None
+    """
+    filename = f"output/{current_quest.name.replace(' ','_')}.json"
+    with open(filename, "w") as f:
+        f.write(current_quest.model_dump_json(indent=2))
+    log_success(f"Quest '{current_quest.name}' written to file: {filename}")
+
+def load_quest_from_file(file: str) -> Quest:
+    """
+    Loads a quest from a file for debugging purposes.
+
+    Args:
+        filename: The name of the file to load the quest from.
+    
+    Returns:
+        The Quest object loaded from the file.
+    """
+    log_status(f"Loading existing quest from file: {file}...")
+    with open(file, "r") as f:
+        quest = Quest.model_validate_json(f.read())
+    log_success("Quest loaded successfully...")
+    return quest
